@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./style.scss";
+import { Anton } from "next/font/google";
+import { WebContextProvider } from "@/contextApi/WebContext";
+import NavBar from "@/components/navbars/NavBar";
+import Footer from "@/components/footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const anton = Anton({
+  weight: "400",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-anton",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +25,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${anton.variable} antialiased`}
+        suppressHydrationWarning={true}
       >
-        {children}
+        <WebContextProvider>
+          <NavBar />
+          {children}
+          <Footer />
+        </WebContextProvider>
       </body>
     </html>
   );

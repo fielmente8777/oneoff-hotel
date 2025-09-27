@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FBF6E3;
+  --primary: #184B56;
+  --secondary: #9C533E;
+  --foreground: #333;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* local font import */
+
+@font-face {
+  font-family: "NeueMontreal-Regular";
+  font-style: normal;
+  src: url("/fonts/NeueMontreal-Regular.otf") format("opentype");
 }
+
+.font-anton {
+  font-family: var(--font-anton);
+}
+
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary);
+  font-family: "NeueMontreal-Regular";
+  letter-spacing: 7%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

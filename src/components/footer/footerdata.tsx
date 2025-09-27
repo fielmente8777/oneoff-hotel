@@ -1,89 +1,104 @@
-import { contacts } from "@/utils/constent";
-import {
-  FillFacebookIcon,
-  FillInstagramIcon,
-  FillLocationIcon,
-  FillMailIcon,
-} from "@/utils/icons";
+import { contacts } from "@/utils/constant";
 import { JSX } from "react";
+import { IoLocationSharp } from "react-icons/io5";
+import { FillCallIcon, FillFaceBook, FillInstagramIcon, FillLinkedin, FillMailIcon, FillX } from '../../utils/Icons';
 
-interface FooterData {
+interface FooterDataProps {
   logo: string;
+  description: string;
+  link: {
+    label: string;
+    href: string;
+  };
   socialMediaUrls: {
     label: string;
     href: string;
     icon: JSX.Element;
   }[];
-  call: {
-    label: string;
-    href: string;
-  }[];
-  listOfDataLinks: {
+  listOfLinks: {
     title: string;
-    description?: string;
     links: {
       label: string;
       href: string;
       icon?: JSX.Element;
     }[];
   }[];
+  images: string[];
 }
 
-export const footerData: FooterData = {
-  logo: "/logo.webp",
+export const footerData: FooterDataProps = {
+  logo: "/logo2.png",
+  description: "Reserve your ultimate holiday!",
+  link: {
+    label: "BOOK NOW",
+    href: "",
+  },
   socialMediaUrls: [
     {
       label: Object.keys(contacts.socialMediaUrls)[0],
       href: contacts.socialMediaUrls.facebookUrl,
-      icon: <FillFacebookIcon />,
+      icon: <FillFaceBook />,
     },
     {
       label: Object.keys(contacts.socialMediaUrls)[1],
       href: contacts.socialMediaUrls.instagramUrl,
-      icon: <FillInstagramIcon />,
+      icon: <FillInstagramIcon/>,
+    },
+    {
+      label: Object.keys(contacts.socialMediaUrls)[2],
+      href: contacts.socialMediaUrls.linkedinUrl,
+      icon: <FillLinkedin />,
+    },
+    {
+      label: Object.keys(contacts.socialMediaUrls)[3],
+      href: contacts.socialMediaUrls.twitterUrl,
+      icon: <FillX />,
     },
   ],
-  call: [
+  listOfLinks: [
     {
-      label: contacts.phoneNumbers[0],
-      href: "tel: " + contacts.phoneNumbers[0],
-    },
-    {
-      label: contacts.phoneNumbers[1],
-      href: "tel: " + contacts.phoneNumbers[1],
-    },
-  ],
-  listOfDataLinks: [
-    {
-      title: "ABOUT THE RESORT",
-      description:
-        "Tucked amidst rocks, river trails, and forest whispers, Nature on the Rocks is Shivpuri’s best kept secret for those who seek stillness. Come sit by the fire, under a sky full of stars, and just… be.",
+      title: "LINKS",
       links: [
-        {
-          label: "BOOK YOUR STAY",
-          href: "",
-        },
+        { label: "ABOUT", href: "/about-us/" },
+        { label: "EXPERIENCE", href: "/experiences/" },
+        { label: "DESTINATION", href: "/destination/" },
+        { label: "CONTACT", href: "/contact-us/" },
       ],
     },
     {
-      title: "LOCATION",
+      title: "USEFUL INFO",
       links: [
-        {
-          label: contacts.address,
-          href: contacts.addressUrl,
-          icon: <FillLocationIcon />,
-        },
+        { label: "DEVELOP WITH US", href: "/develop-with-us/" },
+        { label: "PRIVACY POLICY", href: "/privacy-policy/" },
+        { label: "TERMS & CONDITIONS", href: "/terms-and-conditions/" },
+        { label: "CANCELLATION POLICY", href: "/cancellation-policy/" },
+      ],
+    },
+    {
+      title: "REACH US AT",
+      links: [
         {
           label: contacts.emails[0],
           href: "mailto:" + contacts.emails[0],
           icon: <FillMailIcon />,
         },
         {
-          label: contacts.emails[1],
-          href: "mailto:" + contacts.emails[1],
-          icon: <FillMailIcon />,
+          label: contacts.phoneNumbers[0],
+          href: "tel:" + contacts.phoneNumbers[0],
+          icon: <FillCallIcon />,
+        },
+        {
+          label: contacts.addresses[0],
+          href: "",
+          icon: <IoLocationSharp />,
         },
       ],
     },
+  ],
+  images: [
+    "/ft4.png",
+    "/ft2.png",
+    "/ft1.png",
+    "/ft3.png",
   ],
 };

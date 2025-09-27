@@ -1,6 +1,6 @@
 "use client";
 import { FC } from "react";
-import { Section } from "../sectionComponants";
+import { Section } from "../sectionComponents";
 import { BannerProps } from "@/@types/@type";
 import SwiperCarousel from "../sliders/SwiperCarousel";
 import Image from "next/image";
