@@ -26,6 +26,7 @@ export default function ContactUs() {
               />
             </div>
           </div>
+          right side
           <div className="p-10">
             <form action="" className="space-y-14">
               <div className="flex flex-col gap-1.5">

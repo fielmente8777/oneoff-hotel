@@ -21,7 +21,7 @@ export const navBarData: NavLinksProps[] = [
   },
   {
     label: "Experiences",
-    href: "/experiences",
+    href: "/experience",
   },
   {
     label: "Develop With Us",
