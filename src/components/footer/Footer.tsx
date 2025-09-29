@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import LinkButton from "../buttons/LinkButton";
 import { Container } from "../sectionComponents";
 import { footerData } from "./footerdata";
-import { ArrowUpRight } from "../navbars/NavBar";
-import LinkButton from "../buttons/LinkButton";
 
 const Footer = () => {
   return (

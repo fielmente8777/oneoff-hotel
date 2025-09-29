@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <header className="max_screen">
+      <header className="max_screen border-b border-secondary">
         <Container>
           <nav className="flex items-center justify-between py-3">
             <div className="">
