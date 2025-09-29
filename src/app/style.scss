@@ -1,172 +1,171 @@
 @layer utilities {
-    .demo {
-        .swiper {
-            pointer-events: none;
-        }
-        .swiper-wrapper {
-            transition-timing-function: linear !important;
-        }
+  .demo {
+    .swiper {
+      pointer-events: none;
     }
-
-    .box-shadow {
-        box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+    .swiper-wrapper {
+      transition-timing-function: linear !important;
     }
+  }
 
-    .xx_lg_font_s {
-        font-size: 4.5rem; // 72px
-        @media (max-width: 768px) {
-            font-size: 2rem;
-        }
+  .box-shadow {
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  }
+
+  .xx_lg_font_s {
+    font-size: 4.5rem; // 72px
+    @media (max-width: 768px) {
+      font-size: 2rem;
     }
+  }
 
-    .x_lg_font_s {
-        font-size: 3.5rem; // 56px
-        @media (max-width: 768px) {
-            font-size: 1.5rem;
-        }
+  .x_lg_font_s {
+    font-size: 3.5rem; // 56px
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
     }
+  }
 
-    .lg_font_s {
-        font-size: 2.75rem; // 44px
-        @media (max-width: 768px) {
-            font-size: 1.75rem; // 28px
-        }
+  .lg_font_s {
+    font-size: 2.75rem; // 44px
+    @media (max-width: 768px) {
+      font-size: 1.75rem; // 28px
     }
+  }
 
-    .md_font_s {
-        font-size: 2rem; // 32px
+  .md_font_s {
+    font-size: 2rem; // 32px
+  }
+
+  .sm_font_s {
+    font-size: 1.75rem; // 28px
+  }
+
+  // container sizes
+
+  .max_screen_width {
+    max-width: 1600px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  // container sizes for xl, lg, md, sm screens
+
+  .max_width {
+    max-width: 100%;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    @media (min-width: 768px) {
+      max-width: 720px;
+      padding-inline: 1rem;
     }
-
-    .sm_font_s {
-        font-size: 1.75rem; // 28px
+    @media (min-width: 992px) {
+      max-width: 960px;
+      padding-inline: 1rem;
     }
-
-    // container sizes
-
-    .max_screen_width {
-        max-width: 1600px;
-        width: 100%;
-        margin-inline: auto;
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+      padding-inline: 1rem;
     }
-
-    // container sizes for xl, lg, md, sm screens
-
-    .max_width {
-        max-width: 100%;
-        width: 100%;
-        margin-inline: auto;
-        padding-inline: 1rem;
-        @media (min-width: 768px) {
-            max-width: 720px;
-        padding-inline: 1rem;
-        }
-        @media (min-width: 992px) {
-            max-width: 960px;
-        padding-inline: 1rem;
-        }
-        @media (min-width: 1200px) {
-            max-width: 1140px;
-            padding-inline: 1rem;
-        }
-        @media (min-width: 1400px) {
-            max-width: 1320px;
-            padding-inline: 0;
-        }
+    @media (min-width: 1400px) {
+      max-width: 1320px;
+      padding-inline: 0;
     }
+  }
 }
 
-
 .nav {
-    a {
-        .span-border {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background-color: var(--primary);
-            transition: width 0.3s ease-in-out;
-        }
-        &:hover {
-            .span-border {
-                width: 100%;
-            }
-        }
+  a {
+    .span-border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: var(--primary);
+      transition: width 0.3s ease-in-out;
     }
-    .nav-1 {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        border-radius: 0.25rem;
-        max-height: 0;
-        overflow: hidden;
-        text-wrap: wrap;
-        transition: max-height 0.5s ease-in-out;
-        z-index: 99999;
-        a {
-            padding: 0.5rem 1rem;
-            color: #333;
-            text-decoration: none;
-            transition: background-color 0.3s ease-in-out;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            &:hover {
-                background-color: var(--primary);
-                color: white;
-            }
-        }
-    }
-    &:hover .nav-1 {
-        max-height: 500px;
-        overflow: visible;
-    }
-
     &:hover {
-        .span-border {
-            width: 100%;
-        }
-        .icon {
-            transform: rotate(180deg);
-        }
+      .span-border {
+        width: 100%;
+      }
     }
+  }
+  .nav-1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    max-height: 0;
+    overflow: hidden;
+    text-wrap: wrap;
+    transition: max-height 0.5s ease-in-out;
+    z-index: 99999;
+    a {
+      padding: 0.5rem 1rem;
+      color: #333;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:hover {
+        background-color: var(--primary);
+        color: white;
+      }
+    }
+  }
+  &:hover .nav-1 {
+    max-height: 500px;
+    overflow: visible;
+  }
+
+  &:hover {
+    .span-border {
+      width: 100%;
+    }
+    .icon {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .nav-2 {
-    .nav-link {
-        position: absolute;
-        top: 0;
-        left: 100.12%;
-        background-color: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        border-radius: 0.25rem;
-        max-width: 0;
-        overflow: hidden;
-        transition: max-width 0.5s ease-in-out;
-        z-index: 99999;
-        a {
-            padding: 0.5rem 1rem;
-            color: #333;
-            text-decoration: none;
-            transition: background-color 0.3s ease-in-out;
-            &:hover {
-                background-color: var(--primary);
-                color: white;
-            }
-        }
+  .nav-link {
+    position: absolute;
+    top: 0;
+    left: 100.12%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 0.5s ease-in-out;
+    z-index: 99999;
+    a {
+      padding: 0.5rem 1rem;
+      color: #333;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      &:hover {
+        background-color: var(--primary);
+        color: white;
+      }
     }
-    &:hover .nav-link {
-        max-width: 500px;
-    }
-    &:hover .nav-1 {
-        overflow: visible;
-    }
+  }
+  &:hover .nav-link {
+    max-width: 500px;
+  }
+  &:hover .nav-1 {
+    overflow: visible;
+  }
 }
 
 .book_now,
@@ -289,20 +288,36 @@
   }
 }
 
-
 .pagination_serving,
 .pagination_testimonials {
-    .swiper-pagination-bullet {
-        background-color: #110d3c;
-        inline-size: 0.5rem;
-        block-size: 0.5rem;
-        opacity: 1;
-        border-radius: 50%;
-        transition: all 0.3s ease-in-out;
-    }
+  .swiper-pagination-bullet {
+    background-color: #110d3c;
+    inline-size: 0.5rem;
+    block-size: 0.5rem;
+    opacity: 1;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
 
-    .swiper-pagination-bullet-active {
-        width: 2rem;
-        border-radius: 0.5rem;
-    }
+  .swiper-pagination-bullet-active {
+    width: 2rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.develop-bg {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    // background-color: var(--primary);
+    background-image: url("/DevelopBannerImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    top: 2rem;
+    left: 3rem;
+    width: 214px;
+    height: 204px;
+  }
 }
