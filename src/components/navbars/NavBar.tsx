@@ -8,9 +8,10 @@ import { WebContext } from "@/contextApi/WebContext";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import LinkButton from "../buttons/LinkButton";
+import MobileNav from "./MobileNav";
 
 const NavBar = () => {
-  const { setIsOpenMobileMenu } = useContext(WebContext);
+  const { setIsOpenMobileMenu, isOpenMobileMenu } = useContext(WebContext);
 
   const pathName = usePathname();
 
@@ -103,14 +104,15 @@ const NavBar = () => {
             <div className="max-lg:block hidden">
               <button
                 className="lg:hidden"
-                onClick={() => setIsOpenMobileMenu(true)}
+                onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
               >
                 <GiHamburgerMenu />
               </button>
-              {/* <MobileNav
-                  mobileMenu={mobileMenu}
-                  setMobileMenu={setMobileMenu}
-                /> */}
+
+              <MobileNav
+                isOpen={isOpenMobileMenu}
+                setIsOpen={setIsOpenMobileMenu}
+              />
             </div>
           </nav>
         </Container>

@@ -7,7 +7,7 @@ interface DevelopGridProps {
 
 export const DevelopGrid = ({ images }: DevelopGridProps) => {
   return (
-    <div>
+    <div className="relative">
       <div className="grid grid-cols-3 gap-0.5">
         {images.map((image) => (
           <div
@@ -17,6 +17,17 @@ export const DevelopGrid = ({ images }: DevelopGridProps) => {
             <Image src={image} alt="" fill className="object-cover" />
           </div>
         ))}
+      </div>
+
+      <div className="absolute right-4 -top-12 animate-bounce-slow">
+        <Image
+          src={"/Ten.png"}
+          alt=""
+          // fill
+          className="object-contain"
+          width={100}
+          height={50}
+        />
       </div>
     </div>
   );

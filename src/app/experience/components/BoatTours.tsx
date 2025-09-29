@@ -18,7 +18,9 @@ const BoatTours = ({ title, description, images }: BoatToursProps) => {
       <Container>
         <div className="grid grid-cols-2 items-center">
           <div className="space-y-6 max-w-96 mx-auto">
-            <h2 className="md:text-5xl text-2xl">{title}</h2>
+            <h2 className="md:text-5xl text-2xl font-anton tracking-wider">
+              {title}
+            </h2>
             <p className="text-justify">{description}</p>
           </div>
 

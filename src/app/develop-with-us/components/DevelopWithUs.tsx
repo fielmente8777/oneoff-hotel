@@ -18,11 +18,13 @@ const DevelopWithUsComponent = ({
   return (
     <div>
       <Container>
-        <div className="grid grid-cols-2 gap-4 divide-x divide-secondary items-start h-full">
-          <div className="space-y-4 p-16 h-full">
+        <div className="grid md:grid-cols-2 gap-4 divide-x divide-secondary items-start h-full">
+          <div className="space-y-4 md:p-16 h-full">
             <div>
               <h2>{title}</h2>
-              <h3 className="text-primary text-4xl font-bold">{subTitle}</h3>
+              <h3 className="font-anton text-primary text-4xl tracking-wider">
+                {subTitle}
+              </h3>
             </div>
 
             {description &&
@@ -37,7 +39,8 @@ const DevelopWithUsComponent = ({
               />
             </div>
           </div>
-          <div className="p-16">
+
+          <div className="md:p-16 py-6">
             <form action="" className="space-y-6">
               <p>
                 Join us for a one-on-one chat with the One Off Hotels team to
