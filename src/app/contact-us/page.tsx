@@ -1,9 +1,12 @@
+import Banner from "@/components/banners/Banner";
 import { Container } from "@/components/sectionComponents";
 import Image from "next/image";
+import { contactUsPageData } from "./contactUsPageData";
 
 export default function ContactUs() {
   return (
     <main>
+      <Banner {...contactUsPageData.bannerData} />
       <Container className="">
         <div className="grid grid-cols-2 divide-x divide-secondary">
           {/* left side  */}

@@ -73,39 +73,6 @@
             padding-inline: 0;
         }
     }
-
-    .shadow-4d {
-        &:active {
-            box-shadow: 0px 0px 0px 5px rgba(242, 102, 51, 0.5);
-        }
-    }
-
-    .btn-shadow2 {
-        transition: all 0.3s ease-in-out;
-        box-shadow:
-            25px 25px 0px 0px rgba(242, 102, 51, 0.05),
-            20px 20px 0px 0px rgba(242, 102, 51, 0.1),
-            15px 15px 0px 0px rgba(242, 102, 51, 0.2),
-            10px 10px 0px 0px rgba(242, 102, 51, 0.3),
-            5px 5px 0px 0px rgba(242, 102, 51, 0.4);
-        &:hover {
-            box-shadow:
-                30px 30px 0px 0px rgba(242, 102, 51, 0.05),
-                25px 25px 0px 0px rgba(242, 102, 51, 0.05),
-                20px 20px 0px 0px rgba(242, 102, 51, 0.05),
-                15px 15px 0px 0px rgba(242, 102, 51, 0.1),
-                10px 10px 0px 0px rgba(242, 102, 51, 0.2),
-                5px 5px 0px 0px rgba(242, 102, 51, 0.3),
-                0px 0px 0px 0px rgba(242, 102, 51, 0.4);
-            scale: 1.05;
-            background-color: var(--secondary);
-            color: white;
-        }
-        &:active {
-            box-shadow: none;
-            scale: 0.95;
-        }
-    }
 }
 
 
@@ -202,80 +169,7 @@
     }
 }
 
-.book_now {
-  font-weight: 700;
-  border: 1px solid #fff;
-  position: relative;
-  width: 9rem;
-  height: 3rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid var(--secondary);
-
-  @media (width < 640px) {
-    width: 6rem;
-    height: 2rem;
-  }
-
-  .span2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    transition: color 0.3s ease-in-out;
-  }
-
-  &::after,
-  &::before {
-    content: "Book now";
-    color: #fff;
-    font-weight: 600;
-    font-size: 0.78rem;
-    text-wrap: nowrap;
-    text-transform: uppercase;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background: var(--secondary);
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition:
-      width 0.3s ease-in-out,
-      margin 0.3s ease-in-out;
-
-    @media (width < 640px) {
-      font-size: 0.6rem;
-    }
-  }
-
-  svg{
-    color: var(--secondary);
-  }
-  &:hover {
-    &::after {
-      width: 85%;
-    }
-
-    &::before {
-      width: 100%;
-    }
-
-    svg {
-      transform: rotate(45deg);
-      transition: transform 0.3s ease-in-out;
-      color: #fff;
-    }
-
-    .span2 {
-      color: var(--secondary);
-    }
-  }
-}
-
+.book_now,
 .book_now_2 {
   font-weight: 700;
   border: 1px solid #fff;
@@ -284,7 +178,7 @@
   height: 3rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-    
+
   @media (width < 640px) {
     width: 6rem;
     height: 2rem;
@@ -294,14 +188,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
     transition: color 0.3s ease-in-out;
   }
 
   &::after,
   &::before {
-    content: "Book now";
-    color: var(--secondary);
+    content: attr(data-label); /* 👈 dynamic text */
     font-weight: 700;
     font-size: 0.78rem;
     text-wrap: nowrap;
@@ -311,7 +203,6 @@
     left: 0;
     width: 70%;
     height: 100%;
-    background: #fff;
     z-index: -1;
     display: flex;
     align-items: center;
@@ -325,29 +216,79 @@
     }
   }
 
-  svg{
-    color: #fff;
+  svg {
+    transition: transform 0.3s ease-in-out;
   }
+
   &:hover {
     &::after {
       width: 85%;
     }
-
     &::before {
       width: 100%;
     }
-
     svg {
       transform: rotate(45deg);
-      transition: transform 0.3s ease-in-out;
+    }
+  }
+}
+
+/* Variant 1 (primary) */
+.book_now {
+  border: 1px solid var(--secondary);
+
+  .span2 {
+    color: #fff;
+  }
+
+  &::after,
+  &::before {
+    color: #fff;
+    background: var(--secondary);
+  }
+
+  svg {
+    color: var(--secondary);
+  }
+
+  &:hover {
+    svg {
+      color: #fff;
+    }
+    .span2 {
       color: var(--secondary);
     }
+  }
+}
 
+/* Variant 2 (secondary) */
+.book_now_2 {
+  border: 1px solid #fff;
+
+  .span2 {
+    color: #fff;
+  }
+
+  &::after,
+  &::before {
+    color: var(--secondary);
+    background: #fff;
+  }
+
+  svg {
+    color: #fff;
+  }
+
+  &:hover {
+    svg {
+      color: var(--secondary);
+    }
     .span2 {
       color: #fff;
     }
   }
 }
+
 
 .pagination_serving,
 .pagination_testimonials {

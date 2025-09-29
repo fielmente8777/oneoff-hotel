@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { WebContext } from "@/contextApi/WebContext";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
+import LinkButton from "../buttons/LinkButton";
 
 const NavBar = () => {
   const { setIsOpenMobileMenu } = useContext(WebContext);
@@ -98,16 +99,7 @@ const NavBar = () => {
                 );
               })}
             </ul>
-            <Link
-              href="#"
-              className={`book_now lg:grid hidden grid-cols-3 items-center justify-center`}
-              aria-label="Book Now"
-            >
-              <span className="text-primary col-span-2 span1"></span>
-              <span className="col-span-1 span2">
-                <ArrowUpRight />
-              </span>
-            </Link>
+            <LinkButton href="/book-now" label="Book Now" variant="primary" />
             <div className="max-lg:block hidden">
               <button
                 className="lg:hidden"

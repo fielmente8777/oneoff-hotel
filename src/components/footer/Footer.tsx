@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "../sectionComponents";
 import { footerData } from "./footerdata";
 import { ArrowUpRight } from "../navbars/NavBar";
+import LinkButton from "../buttons/LinkButton";
 
 const Footer = () => {
   return (
@@ -36,16 +37,7 @@ const Footer = () => {
         {/* call contact */}
         <div className="flex flex-col gap-2">
           <p className="text-white ">{footerData.description}</p>
-          <Link
-            href="#"
-            className={`book_now_2 lg:grid hidden grid-cols-3 items-center justify-center self-end`}
-            aria-label="Book Now"
-          >
-            <span className="col-span-2 span1"></span>
-            <span className="col-span-1 span2">
-              <ArrowUpRight />
-            </span>
-          </Link>
+          <LinkButton href={footerData.link.href} label={footerData.link.label} variant={"secondary"} className="ml-auto" />
         </div>
       </div>
       <div className="bg-bg2 h-[1px] w-full" />

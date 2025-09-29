@@ -2,7 +2,7 @@ import { contacts } from "@/utils/constant";
 
 export const contactUsPageData = {
   bannerData: {
-    images: [""],
+    images: ["/Rectangle.png"],
   },
   contactUsData: {
     title: "CONTACT US TODAY!",
