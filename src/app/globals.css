@@ -26,6 +26,10 @@
   font-family: var(--font-anton);
 }
 
+a,
+button {
+  cursor: pointer;
+}
 
 body {
   background: var(--background);

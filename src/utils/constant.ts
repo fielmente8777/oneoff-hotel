@@ -1,11 +1,9 @@
 export const contacts = {
   addresses: [
-    "Dhaka, Bangladesh",
-    "Chittagong, Bangladesh",
-    "Sylhet, Bangladesh",
+    "LOREM IPSUM DOLOR SIT A AMET, CONSECTETUR.",
   ],
-  phoneNumbers: ["+880 2 555 5555", "+880 3 555 5555", "+880 4 555 5555"],
-  emails: ["p2EYH@example.com", "p2EYH@example.com", "p2EYH@example.com"],
+  phoneNumbers: ["XX XXXXX XXXXX",],
+  emails: ["LOREMIPSUMAXYZ.COM", "LOREMIPSUMAXYZ.COM", "LOREMIPSUMAXYZ.COM"],
   socialMediaUrls: {
     facebookUrl: "https://www.facebook.com/",
     instagramUrl: "https://www.instagram.com/",
