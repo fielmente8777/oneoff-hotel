@@ -19,7 +19,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   return (
     <Link
       href={href}
-      className={`${variant === "primary" ? "book_now" : "book_now_2"} lg:grid hidden grid-cols-3 items-center justify-center ${className}`}
+      className={`${variant === "primary" ? "book_now" : "book_now_2"} lg:grid hidden grid-cols-3 items-center justify-center  ${className}`}
       aria-label={label}
       data-label={label}
       {...props}

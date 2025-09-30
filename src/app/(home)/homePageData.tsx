@@ -15,8 +15,26 @@ export const homePageData = {
       subTitle: "LOREM IPSUM DOLOR",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      src: "",
-      images: [""],
+      src: "/gallery4.jpg",
+      images: [
+        "/slider1.jpg",
+        "/gallery4.jpg",
+      ],
+      link: {
+        label: "EXPLORE HOTELS",
+        href: "",
+      },
+    },
+    {
+      title: "LOCATIONS",
+      subTitle: "LOREM IPSUM DOLOR",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      src: "/gallery4.jpg",
+      images: [
+        "/gallery4.jpg",
+        "/slider1.jpg",
+      ],
       link: {
         label: "EXPLORE HOTELS",
         href: "",

@@ -43,7 +43,7 @@ const Footer = () => {
       <Container className="border-t border-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:py-20 py-10">
           {/* footer links */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-4">
             {footerData.listOfLinks.map((item, itemIndex) => (
               <div key={itemIndex} className="flex flex-col gap-4">
                 <h3 className="text-2xl text-white font-anton tracking-wider">

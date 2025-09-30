@@ -30,10 +30,10 @@ const ExperiencesCard: React.FC<ExploreExperienceDataProps["cards"][0]> = ({
             className="object-cover"
             loading="lazy" // Explicit lazy load
           />
-          <h3 className="absolute text-primary group-hover:top-0 -top-full left-0 px-4 py-2 duration-300 transition-all ease-in-out bg-background w-full font-anton">
+          <h3 className="absolute text-primary group-hover:top-0 -top-full left-0 right-0 px-4 py-2 duration-300 transition-all ease-in-out bg-background w-full font-anton">
             {title}
           </h3>
-          <p className="text-primary absolute group-hover:bottom-0 -bottom-full left-0 px-4 py-2 duration-300 transition-all ease-in-out bg-background w-full">
+          <p className="text-primary absolute group-hover:bottom-0 -bottom-full left-0 right-0 px-4 py-2 duration-300 transition-all ease-in-out bg-background w-full">
             {description}
           </p>
         </>
