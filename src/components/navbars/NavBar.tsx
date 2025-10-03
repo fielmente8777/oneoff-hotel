@@ -32,7 +32,7 @@ const NavBar = () => {
               {navBarData.map((link, index) => {
                 // const id = index + 1;
                 return (
-                  <li key={index} className="relative nav">
+                  <li key={index + "vn"} className="relative nav">
                     <Link
                       href={link.href ? link.href : "#"}
                       className="relative text-nowrap tracking-widest py-2 uppercase font-bold text-sm flex items-center gap-1 text-dark"
@@ -47,51 +47,49 @@ const NavBar = () => {
                     </Link>
                     {link.subLinks && (
                       <span className="nav-1">
-                        {link.subLinks.map((subLink, index) => {
+                        {link.subLinks.map((subLink, subIndex) => {
                           return (
-                            <>
-                              <span
-                                className="relative group nav-2"
-                                key={index + 1}
+                            <span
+                              className="relative group nav-2"
+                              key={subIndex + "sub"}
+                            >
+                              <Link
+                                href={subLink.href ? subLink.href : "#"}
+                                className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group uppercase font-bold text-sm text-dark ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
                               >
-                                <Link
-                                  href={subLink.href ? subLink.href : "#"}
-                                  className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group uppercase font-bold text-sm text-dark ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
-                                >
-                                  {subLink.label}
-                                  {subLink.subLinks && (
-                                    <span className="group-hover:rotate-90 -rotate-90 duration-300 transition-all ease-in-out">
-                                      <FillDropDownIcon />
-                                    </span>
-                                  )}
-                                </Link>
+                                {subLink.label}
                                 {subLink.subLinks && (
-                                  <span className="nav-link">
-                                    {subLink.subLinks?.map(
-                                      (nestedSubLink, nestedIndex) => {
-                                        return (
-                                          <span
-                                            className=""
-                                            key={nestedIndex + 2}
-                                          >
-                                            <Link
-                                              href={
-                                                nestedSubLink.href
-                                                  ? nestedSubLink.href
-                                                  : "#"
-                                              }
-                                              className={`w-full text-nowrap py-2 px-4 flex items-center text-light gap-1 group uppercase font-bold text-sm hover:bg-gray-200 ${pathName === nestedSubLink.href ? "bg-primary !text-white" : ""}`}
-                                            >
-                                              {nestedSubLink.label}
-                                            </Link>
-                                          </span>
-                                        );
-                                      }
-                                    )}
+                                  <span className="group-hover:rotate-90 -rotate-90 duration-300 transition-all ease-in-out">
+                                    <FillDropDownIcon />
                                   </span>
                                 )}
-                              </span>
-                            </>
+                              </Link>
+                              {subLink.subLinks && (
+                                <span className="nav-link">
+                                  {subLink.subLinks?.map(
+                                    (nestedSubLink, nestedIndex) => {
+                                      return (
+                                        <span
+                                          className=""
+                                          key={nestedIndex + 2}
+                                        >
+                                          <Link
+                                            href={
+                                              nestedSubLink.href
+                                                ? nestedSubLink.href
+                                                : "#"
+                                            }
+                                            className={`w-full text-nowrap py-2 px-4 flex items-center text-light gap-1 group uppercase font-bold text-sm hover:bg-gray-200 ${pathName === nestedSubLink.href ? "bg-primary !text-white" : ""}`}
+                                          >
+                                            {nestedSubLink.label}
+                                          </Link>
+                                        </span>
+                                      );
+                                    }
+                                  )}
+                                </span>
+                              )}
+                            </span>
                           );
                         })}
                       </span>

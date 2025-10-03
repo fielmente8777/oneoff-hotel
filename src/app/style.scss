@@ -299,21 +299,20 @@
     transition: all 0.3s ease-in-out;
   }
 
-    .swiper-pagination-bullet-active {
-        width: 2rem;
-        border-radius: 0.5rem;
-    }
+  .swiper-pagination-bullet-active {
+    width: 2rem;
+    border-radius: 0.5rem;
+  }
 }
 
-
-.room-bg{
+.room-bg {
   position: relative;
   &::before,
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
   }
-  &::after{
+  &::after {
     background-color: var(--secondary);
     z-index: -2;
     top: 0;
@@ -322,7 +321,6 @@
     height: 100%;
   }
 }
-
 
 .develop-bg {
   position: relative;
@@ -338,5 +336,133 @@
     left: 3rem;
     width: 214px;
     height: 204px;
+  }
+}
+
+.locations {
+  position: absolute;
+  top: 15rem !important;
+  left: 6rem !important;
+  z-index: 999;
+  display: flex;
+  gap: 1rem;
+  width: fit-content !important;
+  height: fit-content !important;
+
+  .swiper-pagination-bullet {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    cursor: pointer;
+    z-index: 9999; // keep bullets above slides
+
+    // ✅ make only the bullet itself clickable
+    pointer-events: auto;
+
+    .bullet-label {
+      position: absolute;
+      font-size: 1.2rem;
+      color: #fff;
+      z-index: 3;
+      pointer-events: none; // ✅ text won’t block click
+    }
+
+    .progress-ring {
+      transform: rotate(-90deg);
+      position: absolute;
+      inset: 0;
+      pointer-events: none; // ✅ SVG won’t block click
+
+      &__circle {
+        fill: transparent;
+        stroke: #fff;
+        stroke-width: 1px; // initial
+        stroke-dasharray: 138;
+        stroke-dashoffset: 138;
+      }
+    }
+
+    &.swiper-pagination-bullet-active {
+      .progress-ring__circle {
+        stroke-dashoffset: 0;
+        animation: ring-progress 2.5s linear forwards,
+                   stroke-thickness 0.3s ease forwards;
+      }
+    }
+  }
+}
+
+@keyframes ring-progress {
+  from {
+    stroke-dashoffset: 138;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes stroke-thickness {
+  from {
+    stroke-width: 1px;
+  }
+  to {
+    stroke-width: 2px;
+  }
+}
+
+
+.experience{
+  .swiper-pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    // margin-top: 4rem;
+    height: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    position: relative ! important;
+    z-index: 1;
+    bottom: 24px !important;
+
+    .swiper-pagination-bullet {
+      font-size: 16px;
+      font-weight: 500;
+      color: #846b52;
+      opacity: 0.5;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      width: auto;
+      height: max-content;
+      transition: all 0.3s ease-in-out;
+
+      span {
+        margin-left: 4px;
+        font-weight: 400;
+        opacity: 0.5;
+        width: 0.75rem;
+        height: 0.0625rem;
+        background-color: #846b52;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &-active {
+        color: #3b3b3b;
+        opacity: 1;
+
+        span {
+          opacity: 1;
+          background-color: #3b3b3b;
+          width: 2.0625rem;
+        }
+      }
+    }
   }
 }

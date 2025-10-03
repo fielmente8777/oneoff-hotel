@@ -1,6 +1,7 @@
 import { ExploreExperienceDataProps } from "@/@types/type";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 // Dynamically import YoutubePlayer with lazy loading (no SSR to prevent hydration mismatch)
 const YoutubePlayer = dynamic(() => import("../Video/YoutubePlayer"), {
@@ -19,10 +20,11 @@ const ExperiencesCard: React.FC<ExploreExperienceDataProps["cards"][0]> = ({
   videoSrc,
   thumbNail,
 }) => {
+  const href = "/experience/#" + title?.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
   return (
     <div className="w-full cursor-pointer relative aspect-[4/3.5] group overflow-hidden">
       {src && (
-        <>
+        <Link href={href || ""} className="block w-full h-full">
           <Image
             src={src}
             alt={title || "image"}
@@ -34,9 +36,9 @@ const ExperiencesCard: React.FC<ExploreExperienceDataProps["cards"][0]> = ({
             {title}
           </h3>
           <p className="text-primary absolute group-hover:bottom-0 -bottom-full left-0 right-0 px-4 py-2 duration-300 transition-all ease-in-out bg-background w-full">
-            {description}
+            {description?.slice(0,100) || ""} <span className="text-secondary">Read More</span>
           </p>
-        </>
+        </Link>
       )}
       {videoSrc && (
         <div className="w-full h-full relative">

@@ -55,20 +55,19 @@ export const FillCallIcon = () => (
 );
 
 export const FillFaceBook = () => (
-    <svg
-  width={12}
-  height={24}
-  viewBox="0 0 12 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M8 13.8H10.8571L12 9H8V6.6C8 5.364 8 4.2 10.2857 4.2H12V0.168C11.6274 0.1164 10.2206 0 8.73486 0C5.632 0 3.42857 1.9884 3.42857 5.64V9H0V13.8H3.42857V24H8V13.8Z"
-    fill="#9C533E"
-  />
-</svg>
-
-)
+  <svg
+    width={12}
+    height={24}
+    viewBox="0 0 12 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M8 13.8H10.8571L12 9H8V6.6C8 5.364 8 4.2 10.2857 4.2H12V0.168C11.6274 0.1164 10.2206 0 8.73486 0C5.632 0 3.42857 1.9884 3.42857 5.64V9H0V13.8H3.42857V24H8V13.8Z"
+      fill="#9C533E"
+    />
+  </svg>
+);
 
 export const FillInstagramIcon = ({ ...props }) => (
   <svg
@@ -87,57 +86,116 @@ export const FillInstagramIcon = ({ ...props }) => (
   </svg>
 );
 export const FillLinkedin = () => (
-    <svg
-  width={18}
-  height={19}
-  viewBox="0 0 18 19"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M17.9116 18.0804V11.6344C17.9116 8.46639 17.2297 6.04639 13.5338 6.04639C11.7519 6.04639 10.5639 7.01439 10.0799 7.93839H10.0359V6.33239H6.53809V18.0804H10.1899V12.2504C10.1899 10.7104 10.4759 9.23639 12.3679 9.23639C14.2378 9.23639 14.2598 10.9744 14.2598 12.3384V18.0584H17.9116V18.0804Z"
-    fill="#9C533E"
-  />
-  <path
-    d="M0.486328 6.33203H4.13818V18.0801H0.486328V6.33203Z"
-    fill="#9C533E"
-  />
-  <path
-    d="M2.31211 0.200195C1.14616 0.200195 0.200195 1.1462 0.200195 2.3122C0.200195 3.4782 1.14616 4.4462 2.31211 4.4462C3.47807 4.4462 4.42403 3.4782 4.42403 2.3122C4.42403 1.1462 3.47807 0.200195 2.31211 0.200195Z"
-    fill="#9C533E"
-  />
-</svg>
-
-)
-
-export const FillX = () => (
-    <svg
-  width={21}
-  height={21}
-  viewBox="0 0 21 21"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <mask
-    id="mask0_4_184"
-    style={{ maskType: "luminance" }}
-    maskUnits="userSpaceOnUse"
-    x={0}
-    y={0}
-    width={21}
-    height={21}
+  <svg
+    width={18}
+    height={19}
+    viewBox="0 0 18 19"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M0.400391 0.399902H20.1364V20.1359H0.400391V0.399902Z"
-      fill="white"
-    />
-  </mask>
-  <g mask="url(#mask0_4_184)">
-    <path
-      d="M15.9425 1.32471H18.9691L12.3576 8.90051L20.1364 19.2112H14.0464L9.27313 12.9591L3.81754 19.2112H0.788062L7.85919 11.1053L0.400391 1.32612H6.64542L10.9535 7.03969L15.9425 1.32471ZM14.8782 17.3954H16.5557L5.72911 3.04597H3.93032L14.8782 17.3954Z"
+      d="M17.9116 18.0804V11.6344C17.9116 8.46639 17.2297 6.04639 13.5338 6.04639C11.7519 6.04639 10.5639 7.01439 10.0799 7.93839H10.0359V6.33239H6.53809V18.0804H10.1899V12.2504C10.1899 10.7104 10.4759 9.23639 12.3679 9.23639C14.2378 9.23639 14.2598 10.9744 14.2598 12.3384V18.0584H17.9116V18.0804Z"
       fill="#9C533E"
     />
-  </g>
-</svg>
+    <path
+      d="M0.486328 6.33203H4.13818V18.0801H0.486328V6.33203Z"
+      fill="#9C533E"
+    />
+    <path
+      d="M2.31211 0.200195C1.14616 0.200195 0.200195 1.1462 0.200195 2.3122C0.200195 3.4782 1.14616 4.4462 2.31211 4.4462C3.47807 4.4462 4.42403 3.4782 4.42403 2.3122C4.42403 1.1462 3.47807 0.200195 2.31211 0.200195Z"
+      fill="#9C533E"
+    />
+  </svg>
+);
 
-)
+export const FillX = () => (
+  <svg
+    width={21}
+    height={21}
+    viewBox="0 0 21 21"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask
+      id="mask0_4_184"
+      style={{ maskType: "luminance" }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={21}
+      height={21}
+    >
+      <path
+        d="M0.400391 0.399902H20.1364V20.1359H0.400391V0.399902Z"
+        fill="white"
+      />
+    </mask>
+    <g mask="url(#mask0_4_184)">
+      <path
+        d="M15.9425 1.32471H18.9691L12.3576 8.90051L20.1364 19.2112H14.0464L9.27313 12.9591L3.81754 19.2112H0.788062L7.85919 11.1053L0.400391 1.32612H6.64542L10.9535 7.03969L15.9425 1.32471ZM14.8782 17.3954H16.5557L5.72911 3.04597H3.93032L14.8782 17.3954Z"
+        fill="#9C533E"
+      />
+    </g>
+  </svg>
+);
+
+export const BtnNextIcon = () => (
+  <svg
+    width={32}
+    height={32}
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask
+      id="mask0_380_541"
+      style={{ maskType: "alpha" }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={32}
+      height={32}
+    >
+      <rect width={32} height={32} fill="#D9D9D9" />
+    </mask>
+    <g mask="url(#mask0_380_541)">
+      <path
+        d="M17.2603 15.9999L11.127 9.86661L12.532 8.46161L20.0703 15.9999L12.532 23.5383L11.127 22.1333L17.2603 15.9999Z"
+        fill="#9C533E"
+      />
+    </g>
+  </svg>
+);
+
+export const BtnPrevIcon = () => (
+  <svg
+    width={32}
+    height={32}
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask
+      id="mask0_272_702"
+      style={{ maskType: "alpha" }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={32}
+      height={32}
+    >
+      <rect
+        width={32}
+        height={32}
+        transform="matrix(-1 0 0 1 32 0)"
+        fill="#D9D9D9"
+      />
+    </mask>
+    <g mask="url(#mask0_272_702)">
+      <path
+        d="M14.7387 16L20.8721 9.86667L19.4671 8.46167L11.9287 16L19.4671 23.5383L20.8721 22.1333L14.7387 16Z"
+        fill="#9C533E"
+      />
+    </g>
+  </svg>
+);

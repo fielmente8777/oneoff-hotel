@@ -9,7 +9,7 @@ const page = () => {
     <div>
       <Banner {...ExperiencePageData.bannerData} />
       <Explore {...ExperiencePageData.experience} />
-      <BoatTours {...ExperiencePageData.tourData} />
+      <BoatTours cards={ExperiencePageData.tourData} />
     </div>
   );
 };
