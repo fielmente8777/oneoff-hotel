@@ -42,7 +42,7 @@ const Rooms: React.FC<RoomsProps> = ({
         </div>
         <div className="md:col-span-2 text-white">
           <div className="flex flex-col gap-6">
-            <h2 className="text-lg md:text-5xl font-anton">{title}</h2>
+            <h2 className="text-3xl md:text-5xl font-anton">{title}</h2>
             {amenities && (
               <button className="w-fit underline underline-offset-4">
                 VIEW AMENITIES
@@ -59,7 +59,7 @@ const Rooms: React.FC<RoomsProps> = ({
               href={links[2].href}
               label={links[2].label}
               variant="secondary"
-              className="w-fit mt-8"
+              className="lg:!w-fit !w-full max-lg:!h-12 md:mt-8"
             />
           </div>
         </div>

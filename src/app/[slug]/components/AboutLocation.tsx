@@ -23,7 +23,7 @@ const AboutLocation: React.FC<AboutLocationProps> = ({
           <Link href={link.href} className="text-lg text-primary text-center w-fit mx-auto flex items-center">
           <span className="text-secondary">{link.icon}</span>
           {link.label}</Link>
-          <h2 className="md:text-[4rem] text-center text-primary font-anton">
+          <h2 className="md:text-[4rem] text-[2rem] text-center text-primary font-anton">
             {title}
           </h2>
         </div>

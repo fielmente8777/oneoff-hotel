@@ -18,7 +18,7 @@ const DevelopWithUsComponent = ({
   return (
     <div>
       <Container>
-        <div className="grid md:grid-cols-2 gap-4 divide-x divide-secondary items-start h-full">
+        <div className="grid md:grid-cols-2 gap-4 md:divide-x divide-secondary items-start h-full">
           <div className="space-y-4 md:p-16 h-full">
             <div>
               <h2>{title}</h2>
@@ -28,7 +28,7 @@ const DevelopWithUsComponent = ({
             </div>
 
             {description &&
-              description?.map((item, index) => <p key={index}>{item}</p>)}
+              description?.slice(0, 1).map((item, index) => <p key={index}>{item}</p>)}
 
             <div className="relative w-full aspect-[4/1.5]">
               <Image
@@ -48,59 +48,7 @@ const DevelopWithUsComponent = ({
               </p>
 
               <ContactForm />
-              {/* <div className="mt-6">
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="flex flex-col">
-                    <label htmlFor="">First Name*</label>
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      className="bg-transparent outline-none border-b border-b-secondary"
-                    />
-                  </div>
-
-                  <div className="flex flex-col">
-                    <label htmlFor="">Last Name*</label>
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      className="bg-transparent outline-none border-b border-b-secondary"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex flex-col">
-                  <label htmlFor="">First Name*</label>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    className="bg-transparent outline-none border-b border-b-secondary"
-                  />
-                </div>
-
-                <div className="flex flex-col">
-                  <label htmlFor="">First Name*</label>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    className="bg-transparent outline-none border-b border-b-secondary"
-                  />
-                </div>
-
-                <div className="flex flex-col">
-                  <label htmlFor="">First Name*</label>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    className="bg-transparent outline-none border-b border-b-secondary"
-                  />
-                </div>
-              </div> */}
+             
             </form>
           </div>
         </div>

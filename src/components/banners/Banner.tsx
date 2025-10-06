@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Autoplay, Pagination } from "swiper/modules";
 import { BannerProps } from "@/@types/type";
 import YoutubePlayer from "../Video/YoutubePlayer";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Banner: FC<BannerProps> = ({
   images,
@@ -23,7 +24,7 @@ const Banner: FC<BannerProps> = ({
       {/* ✅ Case 1: Both Video + Images */}
       {videoSrc && hasImages ? (
         <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 lg:py-12">
-          <div className="w-full h-full relative md:col-span-3">
+          <div className="w-full h-full relative md:col-span-3 lg:block hidden">
             <YoutubePlayer
               poster={thumbNail || ""}
               url={videoSrc}
@@ -31,7 +32,34 @@ const Banner: FC<BannerProps> = ({
               title={title || ""}
             />
           </div>
-          <div className="md:col-span-2 flex flex-col gap-6">
+          <div className="lg:hidden block">
+            <Swiper
+              className="w-full h-full"
+              spaceBetween={0}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{ delay: 2000 }}
+              modules={[Autoplay]}
+            >
+              <SwiperSlide >
+                <YoutubePlayer
+                  poster={thumbNail || ""}
+                  url={videoSrc}
+                  youtubeUrl={videoSrc}
+                  title={title || ""}
+                />
+              </SwiperSlide>
+              <SwiperSlide className="w-full relative aspect-[4/3]">
+                <Image
+                  src={images[0]}
+                  alt="image"
+                  fill
+                  className="object-cover"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div className="md:col-span-2 flex flex-col gap-6 max-lg:px-4">
             <div className="">
               {title && <h1 className="text-lg">{title}</h1>}
               {subTitle && (
@@ -41,16 +69,16 @@ const Banner: FC<BannerProps> = ({
               )}
               {description && <p className="md:text-lg mt-10">{description}</p>}
             </div>
-            {hasSingleImage ? (
-              <div className="w-full relative aspect-[4/3]">
-                <Image
-                  src={images[0]}
-                  alt="image"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ) : (
+            {/* {hasSingleImage ? ( */}
+            <div className="w-full lg:block hidden relative aspect-[4/3]">
+              <Image
+                src={images[0]}
+                alt="image"
+                fill
+                className="object-cover"
+              />
+            </div>
+            {/* ) : (
               <SwiperCarousel
                 data={images}
                 slidesPerView={1}
@@ -71,7 +99,7 @@ const Banner: FC<BannerProps> = ({
                   </div>
                 )}
               />
-            )}
+            )} */}
           </div>
         </div>
       ) : /* ✅ Case 2: Only Video */

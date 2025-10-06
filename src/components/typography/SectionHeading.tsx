@@ -37,7 +37,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
         />
       )}
       {subTitle && (
-        <div className={line ? "flex items-center justify-center gap-5 w-full" : ""}>
+        <div className={line ? "flex items-center justify-center gap-5 w-full overflow-clip" : ""}>
           {line && (
             <span className="rotate-180 block">
               <Line />
@@ -45,7 +45,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
           )}
           <Headings
             level={3}
-            className={`${subTitleClassName} ${mdTextCenter ? "md:text-center" : ""} ${textCenter ? "text-center" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} font-anton md:text-[4rem] text-primary`}
+            className={`${subTitleClassName} ${mdTextCenter ? "md:text-center" : ""} ${line ? "w-full text-nowrap" : ""} ${textCenter ? "text-center" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} font-anton text-[2rem] md:text-[4rem] text-primary`}
             heading={subTitle}
           />
           {line && (
@@ -63,7 +63,7 @@ export default SectionHeading;
 
 export const Line = () => (
   <svg
-    width={590}
+    width={524}
     height={26}
     viewBox="0 0 524 26"
     fill="none"

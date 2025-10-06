@@ -65,9 +65,9 @@ const Gallery: React.FC<GalleryProps> = ({
           ))}
         </div>
 
-        <button className="w-fit underline underline-offset-4 text-secondary mx-auto md:text-lg">
+        {/* <button className="w-fit underline underline-offset-4 text-secondary mx-auto md:text-lg">
           {button}
-        </button>
+        </button> */}
       </div>
     </SectionWithContainer>
   );

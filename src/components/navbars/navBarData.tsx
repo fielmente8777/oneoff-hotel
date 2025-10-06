@@ -3,16 +3,16 @@ import { NavLinksProps } from "@/@types/type";
 export const navBarData: NavLinksProps[] = [
   {
     label: "Locations",
-    href: "/locations",
+    href: "",
     subLinks: [
       {
         label: "Varanasi",
         href: "/varanasi",
       },
-      {
-        label: "Jaipur/Up coming",
-        href: "/mumbai",
-      },
+      // {
+      //   label: "Jaipur/Up coming",
+      //   href: "/mumbai",
+      // },
     ],
   },
   {

@@ -1,4 +1,5 @@
 import { SectionWithContainer } from "@/components/sectionComponents";
+import { SectionHeading } from "@/components/typography";
 
 interface AboutHomeProps {
   title: string;
@@ -13,10 +14,7 @@ const HomeAbout: React.FC<AboutHomeProps> = ({
   return (
     <SectionWithContainer>
       <div className="max-w-[37rem] mx-auto w-full space-y-6 md:space-y-8">
-        <div className="">
-          <h2 className="text-lg text-primary text-center">{title}</h2>
-          <h3 className="md:text-[4rem] text-center text-primary font-anton">{subTitle}</h3>
-        </div>
+        <SectionHeading title={title} subTitle={subTitle} textCenter />
         <p className="md:text-lg text-center ">{description}</p>
       </div>
     </SectionWithContainer>

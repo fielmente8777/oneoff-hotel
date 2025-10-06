@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import LinkButton from "../buttons/LinkButton";
 import MobileNav from "./MobileNav";
+import { MdClose } from "react-icons/md";
 
 const NavBar = () => {
   const { setIsOpenMobileMenu, isOpenMobileMenu } = useContext(WebContext);
@@ -98,19 +99,21 @@ const NavBar = () => {
                 );
               })}
             </ul>
-            <LinkButton href="/book-now" label="Book Now" variant="primary" />
+            <LinkButton
+              hide
+              href="/book-now"
+              label="Book Now"
+              variant="primary"
+            />
             <div className="max-lg:block hidden">
               <button
-                className="lg:hidden"
+                className={`lg:hidden transition-all ease-in-out duration-300 ${isOpenMobileMenu ? "rotate-90" : ""}`}
                 onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
               >
-                <GiHamburgerMenu />
+                {!isOpenMobileMenu ? <GiHamburgerMenu /> : <MdClose />}
               </button>
 
-              <MobileNav
-                isOpen={isOpenMobileMenu}
-                setIsOpen={setIsOpenMobileMenu}
-              />
+              <MobileNav />
             </div>
           </nav>
         </Container>

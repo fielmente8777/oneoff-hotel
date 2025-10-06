@@ -16,10 +16,10 @@ const ExperiencesSlider: React.FC<ExperiencesSliderProps> = ({ cards }) => {
         slidesPerView={1}
         spaceBetween={24}
         modules={[Autoplay]}
-        autoplay={{
-          delay: 2500,
-          pauseOnMouseEnter: true,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   pauseOnMouseEnter: true,
+        // }}
         loop={true}
         speed={1000}
         breakpoints={{
