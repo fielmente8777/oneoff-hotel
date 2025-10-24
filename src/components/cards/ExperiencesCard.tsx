@@ -30,7 +30,7 @@ const ExperiencesCard: React.FC<ExploreExperienceDataProps["cards"][0]> = ({
   return (
     <>
       <div className="w-full cursor-pointer relative aspect-[4/3.5] group overflow-hidden">
-        <div className="w-full h-full inset-0 bg-gradient-to-b from-black/0 to-black/70 z-10 absolute pointer-events-none" />
+        <div className="w-full h-full inset-0 max-lg:bg-gradient-to-b from-black/0 to-black/70 z-10 absolute pointer-events-none" />
         {src && (
           <Link
             href={href || ""}

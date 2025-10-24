@@ -9,19 +9,23 @@ export const navBarData: NavLinksProps[] = [
         label: "Varanasi",
         href: "/varanasi",
       },
-      // {
-      //   label: "Jaipur/Up coming",
-      //   href: "/mumbai",
-      // },
+      {
+        label: "Jaipur (Up coming)",
+        href: "#",
+      },
+      {
+        label: "Delhi (Up coming)",
+        href: "#",
+      },
     ],
   },
   {
-    label: "About Us",
-    href: "/about-us",
+    label: "Culture",
+    href: "/culture",
   },
   {
-    label: "Experiences",
-    href: "/experience",
+    label: "XPERIENCES",
+    href: "/xperiences",
   },
   {
     label: "Develop With Us",

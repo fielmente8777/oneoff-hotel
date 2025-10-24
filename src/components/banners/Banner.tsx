@@ -1,12 +1,12 @@
 "use client";
+import { BannerProps } from "@/@types/type";
+import Image from "next/image";
 import { FC } from "react";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Section } from "../sectionComponents";
 import SwiperCarousel from "../sliders/SwiperCarousel";
-import Image from "next/image";
-import { Autoplay, Pagination } from "swiper/modules";
-import { BannerProps } from "@/@types/type";
 import YoutubePlayer from "../Video/YoutubePlayer";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 const Banner: FC<BannerProps> = ({
   images,
@@ -24,12 +24,13 @@ const Banner: FC<BannerProps> = ({
       {/* ✅ Case 1: Both Video + Images */}
       {videoSrc && hasImages ? (
         <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 lg:py-12">
-          <div className="w-full h-full relative md:col-span-3 lg:block hidden">
+          <div className="w-full h-full relative aspect-[4/3] md:col-span-3 lg:block hidden">
             <YoutubePlayer
               poster={thumbNail || ""}
               url={videoSrc}
               youtubeUrl={videoSrc}
               title={title || ""}
+              
             />
           </div>
           <div className="lg:hidden block">
@@ -124,12 +125,11 @@ const Banner: FC<BannerProps> = ({
           slidesPerView={1}
           spaceBetween={0}
           loop
-          modules={[Autoplay, Pagination]}
-          pagination={{ clickable: true }}
+          modules={[Autoplay]}
           autoplay={{ delay: 2500 }}
           className="w-full"
           renderSlide={(image) => (
-            <div className="w-full relative aspect-[4/3]">
+            <div className="w-full relative md:aspect-[4/2] aspect-square">
               <Image src={image} alt="image" fill className="object-cover" />
             </div>
           )}

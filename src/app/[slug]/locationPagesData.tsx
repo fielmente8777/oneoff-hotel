@@ -21,9 +21,10 @@ export const locationPageData = [
       },
     },
     rooms: {
-      title: "SUPERIOR KING ROOM",
+      name:"One Off ",
+      title: "DASHASHWAMEDH",
       description: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Welcome to our 5-room boutique hotel in the spiritual heart of Varanasi—just 2 minutes from Kashi Vishwanath Temple and 5 minutes from the Ganga ghats. Each 300 sqft room offers minimalist design, warm lighting, and handcrafted details for a serene stay amidst the city’s vibrant energy.",
       ],
       links: [
         {
@@ -41,7 +42,7 @@ export const locationPageData = [
         },
       ],
       amenities: [""],
-      images: ["/Rectangle9.png"],
+      images: ["/Rectangle9.png","/DSC_5999 copy.jpg","/DSC07476.jpg","/Develop2.jpg","/Develop1.jpg","/DSC_5957 copy.jpg"],
     },
 
     gallery: {

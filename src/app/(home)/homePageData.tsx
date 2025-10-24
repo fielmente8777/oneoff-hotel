@@ -1,7 +1,8 @@
 export const homePageData = {
   bannerData: {
-    videoSrc: "/Group56.png",
-    thumbNail: "/Group56.png",
+    // videoSrc: "/Group56.png",
+    // thumbNail: "/Group56.png",
+    images: ["/DSC_5999 copy.jpg","/DSC07476.jpg","/Develop2.jpg","/Develop1.jpg"],
   },
   aboutHomePage: {
     title: "EXPERIENCE THE",
@@ -12,52 +13,52 @@ export const homePageData = {
   locations: [
     {
       title: "LOCATIONS",
-      subTitle: "LOREM IPSUM DOLOR",
+      subTitle: "Varanasi",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "One-Off Dashashwamedh in Varanasi offers family rooms with air-conditioning, private bathrooms, and modern amenities. Each room includes a work desk, TV, and free WiFi, ensuring a pleasant stay.",
       src: "/gallery4.jpg",
       images: ["/slider1.jpg", "/gallery4.jpg"],
       link: {
         label: "EXPLORE HOTELS",
-        href: "",
+        href: "/varanasi",
       },
     },
-    {
-      title: "LOCATIONS",
-      subTitle: "LOREM IPSUM DOLOR",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      src: "/gallery4.jpg",
-      images: ["/gallery4.jpg", "/slider1.jpg"],
-      link: {
-        label: "EXPLORE HOTELS",
-        href: "",
-      },
-    },
-    {
-      title: "LOCATIONS",
-      subTitle: "LOREM IPSUM DOLOR",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      src: "/gallery4.jpg",
-      images: ["/slider1.jpg", "/gallery4.jpg"],
-      link: {
-        label: "EXPLORE HOTELS",
-        href: "",
-      },
-    },
-    {
-      title: "LOCATIONS",
-      subTitle: "LOREM IPSUM DOLOR",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      src: "/gallery4.jpg",
-      images: ["/gallery4.jpg", "/slider1.jpg"],
-      link: {
-        label: "EXPLORE HOTELS",
-        href: "",
-      },
-    },
+    // {
+    //   title: "LOCATIONS",
+    //   subTitle: "LOREM IPSUM DOLOR",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   src: "/gallery4.jpg",
+    //   images: ["/gallery4.jpg", "/slider1.jpg"],
+    //   link: {
+    //     label: "EXPLORE HOTELS",
+    //     href: "",
+    //   },
+    // },
+    // {
+    //   title: "LOCATIONS",
+    //   subTitle: "LOREM IPSUM DOLOR",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   src: "/gallery4.jpg",
+    //   images: ["/slider1.jpg", "/gallery4.jpg"],
+    //   link: {
+    //     label: "EXPLORE HOTELS",
+    //     href: "",
+    //   },
+    // },
+    // {
+    //   title: "LOCATIONS",
+    //   subTitle: "LOREM IPSUM DOLOR",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   src: "/gallery4.jpg",
+    //   images: ["/gallery4.jpg", "/slider1.jpg"],
+    //   link: {
+    //     label: "EXPLORE HOTELS",
+    //     href: "",
+    //   },
+    // },
   ],
   exploreExperienceData: {
     title: "EXPLORE EXPERIENCES",
@@ -71,7 +72,7 @@ export const homePageData = {
         title: "BOAT TOURS",
         description:
           "Sail along the sacred Ganges and witness the city’s soul from the water with our curated boat tours. Begin your day with Subah-e-Banaras, a serene sunrise boat ride, or immerse yourself in the spiritual aura of Sham-e-Banaras during the evening Ganga Aarti. Choose from traditional row boat tours for an authentic experience or indulge in comfort with our luxury boats. We also offer customized experiences—celebrate your special day on the river, enjoy exclusive photography tours, or host unforgettable gatherings on a houseboat (Bajra) designed for parties. Every journey on the Ganges is a story waiting to be lived.",
-        src: "/boat-tours.png",
+        src: "/img.jpg",
       },
       {
         title: "WALKING TOURS",
@@ -117,11 +118,18 @@ export const homePageData = {
   },
   upcomingHotels: [
     {
-      title: "BANARAS",
+      title: "JAIPUR",
       subTitle: "UPCOMING HOTELS",
       description:
         "Experience timeless charm and modern luxury at our upcoming hotel in the heart of Varanasi.",
-      images: ["/Rectangle14.png", "/Rectangle13.png"],
+      images: ["/jaipur2.jpg", "/jaipur.jpg"],
+    },
+    {
+      title: "DELHI",
+      subTitle: "UPCOMING HOTELS",
+      description:
+        "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Delhi.",
+      images: ["/delhi.jpg", "/delhi2.jpg"],
     },
   ],
 };

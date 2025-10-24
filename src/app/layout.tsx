@@ -5,6 +5,7 @@ import { Anton } from "next/font/google";
 import { WebContextProvider } from "@/contextApi/WebContext";
 import NavBar from "@/components/navbars/NavBar";
 import Footer from "@/components/footer/Footer";
+import XperiencesPopUp from "@/components/pop-up/XperiencesPopUp";
 
 const anton = Anton({
   weight: "400",
@@ -32,6 +33,7 @@ export default function RootLayout({
           <NavBar />
           {children}
           <Footer />
+          <XperiencesPopUp/>
         </WebContextProvider>
       </body>
     </html>

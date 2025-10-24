@@ -59,8 +59,8 @@ export const footerData: FooterDataProps = {
     {
       title: "LINKS",
       links: [
-        { label: "ABOUT", href: "/about-us/" },
-        { label: "EXPERIENCE", href: "/experiences/" },
+        { label: "CULTURE", href: "/culture/" },
+        { label: "XPERIENCES", href: "/xperiences/" },
         // { label: "DESTINATION", href: "/destination/" },
         { label: "CONTACT", href: "/contact-us/" },
       ],

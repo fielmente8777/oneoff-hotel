@@ -37,3 +37,17 @@ export interface UpcomingHotelsProps {
     images: string[];
   }[];
 }
+
+export interface BoatToursProps {
+  cards: {
+    title: string;
+    subTitle?: string;
+    description?: string;
+    images?: { src: string }[];
+    src?: string;
+    popUpData: {
+        title: string;
+        desc: string;
+    }[];
+  }[];
+}

@@ -51,7 +51,7 @@ const UpcomingHotelsCard: React.FC<UpcomingHotelsProps["cards"][0]> = ({
           />
         </div>
       </div>
-      <div className="w-full relative md:aspect-[4/4] aspect-[4/4] max-md:hidden">
+      <div className="w-full relative md:aspect-[4/4.17] aspect-[4/4] max-md:hidden">
         <Image
           src={(images ?? [])[1] || ""}
           alt="image"
