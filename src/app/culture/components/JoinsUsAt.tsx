@@ -14,7 +14,7 @@ interface JoinsUsAtProps {
 
 const JoinsUsAt: React.FC<JoinsUsAtProps> = ({title, description, link, src}) => {
     return (
-        <div className="relative w-full aspect-[4/1.8]">
+        <div className="relative w-full lg:aspect-[4/1.8] aspect-square">
             <Image
                 src={src}
                 alt="image"

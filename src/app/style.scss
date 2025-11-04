@@ -327,7 +327,7 @@
     bottom: 0;
     left: 10rem;
     width: 8rem;
-    height: 180%;
+    height: 80%;
     @media (width < 768px) {
       top: 25%;
       left: 0;
@@ -337,6 +337,8 @@
     }
   }
 }
+
+
 .room-img {
   position: relative;
   &::after {
@@ -351,8 +353,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     @media (width < 768px) {
-      top: -50px;
-      left: 87%;
+      top: 17rem;
+      left: 75%;
       right: 0;
       width: 4rem;
       height: 6rem;
@@ -360,6 +362,34 @@
     }
   }
 }
+
+.location-bg {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(/Ten.png);
+    top: -90px;
+    left: 10.5rem;
+    z-index: -1;
+    width: 7rem;
+    height: 6rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (width < 768px) {
+      top: 17rem;
+      left: 75%;
+      right: 0;
+      width: 4rem;
+      height: 5rem;
+      background-image: url(/ten-white.png);
+    }
+  }
+}
+
+
+
+
 .develop-bg {
   position: relative;
   &::before {

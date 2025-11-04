@@ -1,11 +1,9 @@
 "use client";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { FaPlay, FaPause } from "react-icons/fa";
+import { FaPause, FaPlay } from "react-icons/fa";
 
 const YoutubePlayer = ({
   url,
-  youtubeUrl,
   title,
   poster,
 }: {

@@ -1,3 +1,5 @@
+import { contacts } from "@/utils/constant";
+
 export const DevelopWithUsPageData = {
   bannerData: {
     title: "LOREM IPSUM",
@@ -6,12 +8,16 @@ export const DevelopWithUsPageData = {
   },
 
   whyChooseUs: {
-    title: "LOREM IPSUM",
+    title: "TRANSFORM SPACES INTO EXPERIENCES!",
     subTitle: "WHY DEVELOP WITH US?",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Partnering with ONE//OFF Hotels means aligning with a brand that dares to redefine hospitality. We believe in creating spaces that inspire, connect, and leave a lasting impression. As a hotel brand driven by design, individuality, and meaningful experiences, we bring a distinctive identity and proven operational expertise to every collaboration. With ONE//OFF Hotels, you don’t just partner with a brand—you join a movement that turns ordinary stays into extraordinary stories.",
       "Join us for a one-on-one chat with the One Off Hotels team to explore your ideas and opportunities.",
     ],
-    src: "",
+    src: "/developWithUs.png",
+    link:{
+      label:"CONTACT: +91 98676 03699",
+      href:"tel:"+contacts.phoneNumbers[2]
+    }
   },
 };

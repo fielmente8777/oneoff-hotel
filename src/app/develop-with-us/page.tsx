@@ -1,5 +1,4 @@
 import { DevelopBanner } from "./components/DevelopBanner";
-import { DevelopGrid } from "./components/DevelopGrid";
 import DevelopWithUsComponent from "./components/DevelopWithUs";
 import { DevelopWithUsPageData } from "./developWithUsData";
 

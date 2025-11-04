@@ -30,7 +30,6 @@ const Banner: FC<BannerProps> = ({
               url={videoSrc}
               youtubeUrl={videoSrc}
               title={title || ""}
-              
             />
           </div>
           <div className="lg:hidden block">

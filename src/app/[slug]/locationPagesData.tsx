@@ -3,16 +3,16 @@ export const locationPageData = [
   {
     slug: "varanasi",
     metaData: {
-      title: "LOREM IPSUM",
-      description: "LOREM IPSUM",
+      title: "One Off Dashashwamedh",
+      description: "One Off Dashashwamedh",
     },
     bannerData: {
       images: ["/Rectangle1.png"],
     },
     aboutLocation: {
-      title: "ONE OFF HOTELS",
+      title: "ONE OFF DASHASHWAMEDH",
       description: [
-        "Each of our rooms is a calming retreat—crafted with a minimalist aesthetic, warm neutral tones, and thoughtfully chosen decor. Expect the cozy comfort of a private sanctuary paired with world-class amenities found in luxury hotels— plush beds, high-speed Wi-Fi, Jaquar Showers, Air Conditioning, Smart TVs, Premium Bath Essentials, and more.",
+        "Stay in the heart of Varanasi at our beautifully designed 5-room boutique hotel, just steps from the Kashi Vishwanath Temple and Ganga ghats. Each room is a cozy, 300 sqft retreat with minimalist interiors, modern comforts, and hotel-style luxury. Enjoy the charm of the old city with everything within walking distance—temples, aartis, boat rides, and more. The perfect blend of aesthetic design, comfort, and location.",
       ],
       link: {
         label: "VARANASI",
@@ -21,8 +21,7 @@ export const locationPageData = [
       },
     },
     rooms: {
-      name:"One Off ",
-      title: "DASHASHWAMEDH",
+      title: "One Off DASHASHWAMEDH",
       description: [
         "Welcome to our 5-room boutique hotel in the spiritual heart of Varanasi—just 2 minutes from Kashi Vishwanath Temple and 5 minutes from the Ganga ghats. Each 300 sqft room offers minimalist design, warm lighting, and handcrafted details for a serene stay amidst the city’s vibrant energy.",
       ],
@@ -42,7 +41,13 @@ export const locationPageData = [
         },
       ],
       amenities: [""],
-      images: ["/Rectangle9.png","/DSC_5999 copy.jpg","/DSC07476.jpg","/Develop2.jpg","/Develop1.jpg","/DSC_5957 copy.jpg"],
+      images: [
+        "/DSC07476.jpg",
+        "/DSC_5999 copy.jpg",
+        "/Develop2.jpg",
+        "/Develop1.jpg",
+        "/DSC_5957 copy.jpg",
+      ],
     },
 
     gallery: {

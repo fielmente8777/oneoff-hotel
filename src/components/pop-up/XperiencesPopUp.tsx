@@ -33,7 +33,7 @@ const XperiencesPopUp = () => {
               <MdClose />
             </button>
             <h2 className="text-lg uppercase">{popUpData?.title} details</h2>
-            <div className="max-h-[450px] overflow-y-scroll space-y-6 pr-8">
+            <div className="max-h-[450px] overflow-y-auto space-y-6 pr-8">
               {popUpData?.popUpData?.map((item, index) => (
                 <div className="space-y-2" key={index}>
                   <h3 className="md:text-2xl text-xl font-anton">

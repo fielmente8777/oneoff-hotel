@@ -30,7 +30,7 @@ const StayAt: React.FC<StayAtProps> = ({
         <div className="flex flex-col md:gap-14 gap-8">
           <SectionHeading title={title} subTitle={subTitle} />
           <p className="md:text-lg">{description}</p>
-          <LinkButton href={link.href} label={link.label} variant="primary" />
+          <LinkButton href={link.href} label={link.label} className="!w-[12rem]" variant="primary" />
         </div>
       </div>
     </SectionWithContainer>

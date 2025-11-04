@@ -110,6 +110,26 @@ export const ExperiencePageData = {
       ],
     },
     {
+      title: "PHOTOGRAPHY TOUR",
+      description:
+        "Capture Varanasi’s essence on our photography tours. Explore lively streets and ghats on a Street Photography tour, document traditions with our Documentary Movie experiences, or create lasting memories with a Pre-Wedding Shoot along the sacred Ganges and historic lanes. Each tour is designed to inspire creativity while showcasing the vibrant culture, timeless beauty, and unique spirit of Kashi.",
+      src: "/photography-tour.png",
+      popUpData: [
+        {
+          title: "1. Street Photography",
+          desc: "Capture the heartbeat of Varanasi through its bustling lanes, vibrant ghats, and everyday moments. A paradise for photographers seeking raw emotion and timeless frames.",
+        },
+        {
+          title: "2. Documentary Movies",
+          desc: "Bring stories to life amid Varanasi’s spiritual and cultural backdrop. From rituals to river life, every frame here tells a story of faith and humanity.",
+        },
+        {
+          title: "3. Pre-Wedding Shoot",
+          desc: "Frame your love story against the soulful charm of the Ganges and ancient ghats. A perfect blend of tradition, romance, and timeless beauty.",
+        },
+      ],
+    },
+    {
       title: "CITY TOURS",
       description:
         "Discover the vibrant spirit of Varanasi with our expertly guided city tours. Explore the city in depth with a Full Day City Tour or experience the local charm on a South City Tour. Venture beyond the city limits with a Sarnath Trip, visiting the sacred site where Lord Buddha gave his first sermon. For a fun and immersive ride through the bustling streets, try our Tuk-Tuk Tours, perfect for seeing the city like a local. Each tour offers a unique perspective, blending history, culture, and everyday life in the holy city of Kashi.",
@@ -133,39 +153,7 @@ export const ExperiencePageData = {
         },
       ],
     },
-    {
-      title: "TOUR PACKAGES",
-      description:
-        "Discover Varanasi with our guided city tours. Enjoy a Full Day City Tour or explore local life on the South City Tour. Visit the sacred Sarnath Trip, where Buddha gave his first sermon, or experience the bustling streets on a fun Tuk-Tuk Tour. Each journey blends history, culture, and the everyday rhythm of Kashi, offering a unique and immersive experience.",
-      src: "/tour-packages.png",
-      popUpData: [
-        {
-          title: "1. A Day in Varanasi",
-          desc: "Experience the best of Varanasi in a single day—from sunrise on the Ganges to evening Aarti and everything in between. Perfect for a short yet soulful visit.",
-        },
-        {
-          title:
-            "2. Complete Varanasi – Hinduism, Buddhism, Culture, Wisdom & Liberation",
-          desc: "Dive deep into the spiritual and cultural essence of Kashi. Explore sacred temples, ancient monasteries, and the philosophies that define India’s oldest living city.",
-        },
-        {
-          title: "3. 2N / 3D Varanasi",
-          desc: "Spend two nights soaking in the mystique of Varanasi. From temple visits to boat rides and local walks, it’s a perfect blend of culture and calm.",
-        },
-        {
-          title: "4. Golden Triangle",
-          desc: "Explore India’s most iconic circuit—Delhi, Agra, and Jaipur—where history, architecture, and heritage come alive in royal splendour.",
-        },
-        {
-          title: "5. 2N / 3D Varanasi–Prayagraj Trip",
-          desc: "Journey through two sacred cities where faith meets the flow of rivers. Witness the confluence at Triveni Sangam and the divine aura of Kashi.",
-        },
-        {
-          title: "6. 4N / 5D Varanasi–Prayagraj–Ayodhya",
-          desc: "A spiritual odyssey through three holy cities—Varanasi, Prayagraj, and Ayodhya. Discover India’s deep-rooted traditions, temples, and timeless tales of devotion.",
-        },
-      ],
-    },
+
     {
       title: "SPIRITUAL YATRAS",
       description:
@@ -222,23 +210,37 @@ export const ExperiencePageData = {
         },
       ],
     },
+
     {
-      title: "PHOTOGRAPHY TOUR",
+      title: "TOUR PACKAGES",
       description:
-        "Capture Varanasi’s essence on our photography tours. Explore lively streets and ghats on a Street Photography tour, document traditions with our Documentary Movie experiences, or create lasting memories with a Pre-Wedding Shoot along the sacred Ganges and historic lanes. Each tour is designed to inspire creativity while showcasing the vibrant culture, timeless beauty, and unique spirit of Kashi.",
-      src: "/photography-tour.png",
+        "Discover Varanasi with our guided city tours. Enjoy a Full Day City Tour or explore local life on the South City Tour. Visit the sacred Sarnath Trip, where Buddha gave his first sermon, or experience the bustling streets on a fun Tuk-Tuk Tour. Each journey blends history, culture, and the everyday rhythm of Kashi, offering a unique and immersive experience.",
+      src: "/tour-packages.png",
       popUpData: [
         {
-          title: "1. Street Photography",
-          desc: "Capture the heartbeat of Varanasi through its bustling lanes, vibrant ghats, and everyday moments. A paradise for photographers seeking raw emotion and timeless frames.",
+          title: "1. A Day in Varanasi",
+          desc: "Experience the best of Varanasi in a single day—from sunrise on the Ganges to evening Aarti and everything in between. Perfect for a short yet soulful visit.",
         },
         {
-          title: "2. Documentary Movies",
-          desc: "Bring stories to life amid Varanasi’s spiritual and cultural backdrop. From rituals to river life, every frame here tells a story of faith and humanity.",
+          title:
+            "2. Complete Varanasi – Hinduism, Buddhism, Culture, Wisdom & Liberation",
+          desc: "Dive deep into the spiritual and cultural essence of Kashi. Explore sacred temples, ancient monasteries, and the philosophies that define India’s oldest living city.",
         },
         {
-          title: "3. Pre-Wedding Shoot",
-          desc: "Frame your love story against the soulful charm of the Ganges and ancient ghats. A perfect blend of tradition, romance, and timeless beauty.",
+          title: "3. 2N / 3D Varanasi",
+          desc: "Spend two nights soaking in the mystique of Varanasi. From temple visits to boat rides and local walks, it’s a perfect blend of culture and calm.",
+        },
+        {
+          title: "4. Golden Triangle",
+          desc: "Explore India’s most iconic circuit—Delhi, Agra, and Jaipur—where history, architecture, and heritage come alive in royal splendour.",
+        },
+        {
+          title: "5. 2N / 3D Varanasi–Prayagraj Trip",
+          desc: "Journey through two sacred cities where faith meets the flow of rivers. Witness the confluence at Triveni Sangam and the divine aura of Kashi.",
+        },
+        {
+          title: "6. 4N / 5D Varanasi–Prayagraj–Ayodhya",
+          desc: "A spiritual odyssey through three holy cities—Varanasi, Prayagraj, and Ayodhya. Discover India’s deep-rooted traditions, temples, and timeless tales of devotion.",
         },
       ],
     },

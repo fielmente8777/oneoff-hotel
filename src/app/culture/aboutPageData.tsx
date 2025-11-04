@@ -18,17 +18,21 @@ export const aboutPageData = {
       href: "",
     },
   },
-  images: ["/gallery1.png", "/gallery2.png", "/gallery3.png"],
+  images: [
+    "/oneoff.jpg", 
+    "/gallery6.jpg",
+    "/oneoff2.jpg", 
+  ],
   stayAt: {
-    title: "STAY AT",
-    subTitle: "ONE OFF HOTELS",
+    title: "MEET OUR FOUNDER",
+    subTitle: "ADITYA",
     description: [
-      "Stay at One Off Hotels, where design, comfort, and local culture come together to create truly distinctive stays. Each property is thoughtfully curated to blend aesthetic charm with modern luxury, offering guests a boutique experience that captures the essence of its city. After our Varanasi property, we’re excited to announce upcoming hotels in Delhi and Jaipur, continuing our vision of crafting unique stays across India.",
+      "I am Aditya, a lawyer-turned-entrepreneur who chose to step beyond the courtroom and embrace a life of exploration, creativity, and meaningful connections. Guided by the mantra “Stay Foolish, Stay Hungry,” I have spent the past few years building my entrepreneurial journey while traveling the world and drawing inspiration from diverse cultures and experiences. My ventures reflect my belief in individuality, purpose, and reinvention—values that come alive through ONE-OFF Hotels, where every stay is a story and every space is designed to be truly one of a kind.",
     ],
     src: "/about3.png",
     link: {
-      label: "BOOK NOW",
-      href: "",
+      label: "Develop with us",
+      href: "/develop-with-us/",
     },
   },
   joinUsAt:{

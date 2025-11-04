@@ -13,11 +13,12 @@ export const homePageData = {
   locations: [
     {
       title: "LOCATIONS",
-      subTitle: "Varanasi",
+      location: "VARANASI",
+      subTitle: "ONE OFF DASHASHWAMEDH",
       description:
         "One-Off Dashashwamedh in Varanasi offers family rooms with air-conditioning, private bathrooms, and modern amenities. Each room includes a work desk, TV, and free WiFi, ensuring a pleasant stay.",
       src: "/gallery4.jpg",
-      images: ["/slider1.jpg", "/gallery4.jpg"],
+      images: ["/slider1.jpg", "/DSC07476.jpg"],
       link: {
         label: "EXPLORE HOTELS",
         href: "/varanasi",
@@ -122,14 +123,14 @@ export const homePageData = {
       subTitle: "UPCOMING HOTELS",
       description:
         "Experience timeless charm and modern luxury at our upcoming hotel in the heart of Varanasi.",
-      images: ["/jaipur2.jpg", "/jaipur.jpg"],
+      images: ["/Develop1.jpg", "/Develop2.jpg"],
     },
     {
       title: "DELHI",
       subTitle: "UPCOMING HOTELS",
       description:
         "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Delhi.",
-      images: ["/delhi.jpg", "/delhi2.jpg"],
+      images: ["/Develop1.jpg", "/Develop2.jpg"],
     },
   ],
 };

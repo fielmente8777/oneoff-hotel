@@ -18,7 +18,7 @@ const AboutLocation: React.FC<AboutLocationProps> = ({
 }) => {
   return (
     <SectionWithContainer>
-      <div className="max-w-[37rem] mx-auto w-full space-y-6 md:space-y-8">
+      <div className="max-w-2xl mx-auto w-full space-y-6 md:space-y-8">
         <div className="">
           <Link href={link.href} className="text-lg text-primary text-center w-fit mx-auto flex items-center">
           <span className="text-secondary">{link.icon}</span>

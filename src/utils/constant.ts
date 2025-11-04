@@ -1,9 +1,9 @@
 export const contacts = {
   addresses: [
-    "LOREM IPSUM DOLOR SIT A AMET, CONSECTETUR.",
+    "D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
   ],
-  phoneNumbers: ["XX XXXXX XXXXX",],
-  emails: ["LOREMIPSUMAXYZ.COM", "LOREMIPSUMAXYZ.COM", "LOREMIPSUMAXYZ.COM"],
+  phoneNumbers: ["XX XXXXX XXXXX",,"+91 98676 03699"],
+  emails: ["RESERVATIONS@ONEOFFHOTELS.COM", "LOREMIPSUMAXYZ.COM", "LOREMIPSUMAXYZ.COM"],
   socialMediaUrls: {
     facebookUrl: "https://www.facebook.com/",
     instagramUrl: "https://www.instagram.com/",

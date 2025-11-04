@@ -1,8 +1,10 @@
 import { contacts } from "@/utils/constant";
+import { EmailIcon } from "@/utils/Icons";
+import { PhoneIcon, AddressIcon } from "../../utils/Icons";
 
 export const contactUsPageData = {
   bannerData: {
-    images: ["/Rectangle.png"],
+    images: ["/Rectangle.jpg"],
   },
   contactUsData: {
     title: "CONTACT US TODAY!",
@@ -13,19 +15,19 @@ export const contactUsPageData = {
         title: "Email Address:",
         label: contacts.emails[0],
         href: "mailto:" + contacts.emails[0],
-        icon: "",
+        icon: <EmailIcon />,
       },
       {
-        title: "Phone",
+        title: "Phone:",
         label: contacts.phoneNumbers[0],
         href: "tel:" + contacts.phoneNumbers[0],
-        icon: "",
+        icon: <PhoneIcon />,
       },
       {
         title: "Address:",
         label: contacts.addresses[0],
         href: contacts.addresses[0],
-        icon: "",
+        icon: <AddressIcon />,
       },
     ],
   },
