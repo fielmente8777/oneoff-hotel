@@ -15,9 +15,9 @@ export const DevelopWithUsPageData = {
       "Join us for a one-on-one chat with the One Off Hotels team to explore your ideas and opportunities.",
     ],
     src: "/developWithUs.png",
-    link:{
-      label:"CONTACT: +91 98676 03699",
-      href:"tel:"+contacts.phoneNumbers[2]
-    }
+    link: {
+      label: "CONTACT: " + contacts.phoneNumbers[1],
+      href: "tel:" + contacts.phoneNumbers[1],
+    },
   },
 };
