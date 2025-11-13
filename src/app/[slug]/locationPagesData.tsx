@@ -1,3 +1,4 @@
+import { contacts } from "@/utils/constant";
 import { IoLocationSharp } from "react-icons/io5";
 export const locationPageData = [
   {
@@ -69,5 +70,37 @@ export const locationPageData = [
       ],
       button: "VIEW MORE",
     },
+  },
+  {
+    slug: "jaipur",
+    metaData: {
+      title: "One Off",
+      description: "One Off",
+    },
+    upComingData:{
+      location:"JAIPUR",
+      title:"SOMETHING EXCITING IS COMING SOON, STAY TUNED!",
+      link:{
+        label:"FOR RESERVATIONS: " + contacts.phoneNumbers[0],
+        href:"tel:" + contacts.phoneNumbers[0]
+      },
+      images:["/upcoming1.png","/upcoming2.png"]
+    }
+  },
+  {
+    slug: "delhi",
+    metaData: {
+      title: "One Off",
+      description: "One Off",
+    },
+    upComingData:{
+      location:"DELHI",
+      title:"SOMETHING EXCITING IS COMING SOON, STAY TUNED!",
+      link:{
+        label:"FOR RESERVATIONS: " + contacts.phoneNumbers[0],
+        href:"tel:" + contacts.phoneNumbers[0]
+      },
+      images:["/upcoming1.png","/upcoming2.png"]
+    }
   },
 ];

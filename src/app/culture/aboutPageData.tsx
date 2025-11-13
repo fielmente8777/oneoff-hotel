@@ -20,14 +20,18 @@ export const aboutPageData = {
   },
   images: [
     "/oneoff.jpg", 
-    "/gallery6.jpg",
+    "/img/img.webp",
     "/oneoff2.jpg", 
+    "/img/image00010.webp",
+    "/img/image00014.webp",
+    "/img/image00015.webp",
+    "/gallery6.jpg",
   ],
   stayAt: {
     title: "MEET OUR FOUNDER",
     subTitle: "ADITYA",
     description: [
-      "I am Aditya, a lawyer-turned-entrepreneur who chose to step beyond the courtroom and embrace a life of exploration, creativity, and meaningful connections. Guided by the mantra “Stay Foolish, Stay Hungry,” I have spent the past few years building my entrepreneurial journey while traveling the world and drawing inspiration from diverse cultures and experiences. My ventures reflect my belief in individuality, purpose, and reinvention—values that come alive through ONE-OFF Hotels, where every stay is a story and every space is designed to be truly one of a kind.",
+      "I’m Aditya, a lawyer-turned-entrepreneur who stepped beyond the courtroom to explore a life driven by creativity, curiosity, and purpose. Guided by the mantra “Stay Foolish, Stay Hungry,” I’ve built ventures inspired by global travels and diverse cultures. ONE-OFF Hotels reflects my belief in individuality and reinvention, where every stay tells a story and every space is truly one of a kind.",
     ],
     src: "/about3.png",
     link: {

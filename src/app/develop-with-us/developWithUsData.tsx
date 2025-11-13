@@ -2,7 +2,7 @@ import { contacts } from "@/utils/constant";
 
 export const DevelopWithUsPageData = {
   bannerData: {
-    title: "LOREM IPSUM",
+    title: "ONE OFF HOTELS",
     subTitle: "DEVELOP WITH US",
     images: ["/Develop1.jpg", "/Develop2.jpg", "/Develop3.jpg"],
   },

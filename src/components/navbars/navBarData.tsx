@@ -10,12 +10,12 @@ export const navBarData: NavLinksProps[] = [
         href: "/varanasi",
       },
       {
-        label: "Jaipur (Up coming)",
-        href: "#",
+        label: "Jaipur (Upcoming)",
+        href: "/jaipur",
       },
       {
-        label: "Delhi (Up coming)",
-        href: "#",
+        label: "Delhi (Upcoming)",
+        href: "/delhi",
       },
     ],
   },

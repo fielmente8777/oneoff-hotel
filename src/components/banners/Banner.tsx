@@ -1,12 +1,15 @@
 "use client";
 import { BannerProps } from "@/@types/type";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { FC } from "react";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import NavBar2 from "../navbars/NavBar2";
 import { Section } from "../sectionComponents";
 import SwiperCarousel from "../sliders/SwiperCarousel";
 import YoutubePlayer from "../Video/YoutubePlayer";
+import { LazyLoadedVideo } from "../Video2";
 
 const Banner: FC<BannerProps> = ({
   images,
@@ -19,17 +22,21 @@ const Banner: FC<BannerProps> = ({
   const hasImages = images && images.length > 0;
   const hasSingleImage = images && images.length === 1;
 
+  const pathName = usePathname();
+
   return (
     <Section defaultPadding={false} className="banner">
       {/* ✅ Case 1: Both Video + Images */}
       {videoSrc && hasImages ? (
         <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 lg:py-12">
           <div className="w-full h-full relative aspect-[4/3] md:col-span-3 lg:block hidden">
-            <YoutubePlayer
+            <LazyLoadedVideo
               poster={thumbNail || ""}
-              url={videoSrc}
-              youtubeUrl={videoSrc}
-              title={title || ""}
+              src={videoSrc}
+              loop
+              autoPlay
+              muted
+              controls={false}
             />
           </div>
           <div className="lg:hidden block">
@@ -41,7 +48,7 @@ const Banner: FC<BannerProps> = ({
               autoplay={{ delay: 2000 }}
               modules={[Autoplay]}
             >
-              <SwiperSlide >
+              <SwiperSlide>
                 <YoutubePlayer
                   poster={thumbNail || ""}
                   url={videoSrc}
@@ -119,20 +126,28 @@ const Banner: FC<BannerProps> = ({
         </div>
       ) : /* ✅ Case 4: Multiple Images (Carousel) */
       hasImages ? (
-        <SwiperCarousel
-          data={images}
-          slidesPerView={1}
-          spaceBetween={0}
-          loop
-          modules={[Autoplay]}
-          autoplay={{ delay: 2500 }}
-          className="w-full"
-          renderSlide={(image) => (
-            <div className="w-full relative md:aspect-[4/2] aspect-square">
-              <Image src={image} alt="image" fill className="object-cover" />
+        <div className="relative w-full">
+          <SwiperCarousel
+            data={images}
+            slidesPerView={1}
+            spaceBetween={0}
+            loop
+            modules={[Autoplay]}
+            autoplay={{ delay: 2500 }}
+            className="w-full"
+            renderSlide={(image) => (
+              <div className="w-full relative md:aspect-[4/2] aspect-square">
+                <Image src={image} alt="image" fill className="object-cover" />
+                <div className="absolute inset-0 z-10 bg-black/20" />
+              </div>
+            )}
+          />
+          {pathName === "/" && (
+            <div className="absolute top-0 left-0 w-full z-10">
+              <NavBar2 />
             </div>
           )}
-        />
+        </div>
       ) : null}
     </Section>
   );

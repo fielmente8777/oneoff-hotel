@@ -3,6 +3,7 @@ import useClickOutside from "@/hooks/useClickOutside";
 import { countries } from "@/utils/constant";
 import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
+import { ArrowUpRight } from "../navbars/NavBar";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -168,7 +169,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
         <div className="col-span-2 w-full">
           <div
             ref={hotelRef}
-            className="relative border border-clr2 bg-transparent  w-full h-auto"
+            className="relative border border-secondary bg-transparent  w-full h-auto"
           >
             <button
               type="button"
@@ -176,12 +177,12 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
               onClick={() => setIsOpen(!isOpen)}
               className="w-full py-4 px-4 h-full text-left flex items-center  justify-between gap-3"
             >
-              <span className="uppercase text-black text-sm font-medium">
+              <span className="uppercase  text-sm font-medium">
                 {hotel || hotels[0]}
               </span>
 
               <span
-                className={`w-5 h-5 text-clr2 transition-transform ${
+                className={` transition-transform ${
                   isOpen ? "rotate-180" : ""
                 }`}
               >
@@ -204,8 +205,8 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
                     setHotel(hotelOption);
                     setIsOpen(false); // Close after selection
                   }}
-                  className={`w-full px-4 bg-white text-wrap py-2 border-b border-clr6 text-left uppercase text-sm font-medium hover:text-clr2 hover:border-clr2 transition-colors duration-300 ease-in-out ${
-                    hotel === hotelOption ? "text-clr2 border-clr2" : ""
+                  className={`w-full px-4 bg-white text-wrap py-2 border-b border-clr6 text-left uppercase text-sm font-medium hover: hover:border-secondary transition-colors duration-300 ease-in-out ${
+                    hotel === hotelOption ? " border-secondary" : ""
                   }`}
                 >
                   {hotelOption}
@@ -226,7 +227,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
           autoComplete="off"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
-          className="w-full px-1 py-3 max-lg:col-span-2 border-b border-clr2 placeholder:text-clr2 text-clr2 bg-transparent outline-none focus:outline-none"
+          className="w-full px-1 py-3 max-lg:col-span-2 border-b border-secondary placeholder:  bg-transparent outline-none focus:outline-none"
         />
         <input
           aria-label="Last Name"
@@ -237,7 +238,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
           autoComplete="off"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
-          className="w-full px-1 py-3 max-lg:col-span-2 border-b border-clr2 placeholder:text-clr2 text-clr2 bg-transparent outline-none focus:outline-none"
+          className="w-full px-1 py-3 max-lg:col-span-2 border-b border-secondary placeholder:  bg-transparent outline-none focus:outline-none"
         />
         <input
           aria-label="Email Address"
@@ -248,12 +249,12 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
           autoComplete="off"
           value={email}
           onChange={handleEmailChange}
-          className="col-span-2  w-full px-1 py-3 border-b border-clr2 placeholder:text-clr2 text-clr2 bg-transparent outline-none focus:outline-none"
+          className="col-span-2  w-full px-1 py-3 border-b border-secondary placeholder:  bg-transparent outline-none focus:outline-none"
         />
         {emailErrorMessage && (
           <span className="text-red-500 col-span-2">{emailErrorMessage}</span>
         )}
-        <div className="col-span-2 flex gap-4 items-center px-1 py-3 border-b border-clr2 placeholder:text-clr2 text-clr2 bg-transparent">
+        <div className="col-span-2 flex gap-4 items-center px-1 py-3 border-b border-secondary placeholder:  bg-transparent">
           <select
             name="countryCode"
             id="countryCode"
@@ -278,7 +279,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
             autoComplete="off"
             max={9999999999}
             onChange={handlePhoneChange}
-            className="w-full bg-transparent no-spinner outline-none focus:outline-none placeholder:text-clr2 text-clr2"
+            className="w-full bg-transparent no-spinner outline-none focus:outline-none placeholder: "
           />
         </div>
         {errorMessage && (
@@ -294,7 +295,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
           placeholder="Message*"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="col-span-2 resize-none w-full px-1 py-3 border-b border-clr2 placeholder:text-clr2 text-clr2 bg-transparent outline-none focus:outline-none"
+          className="col-span-2 resize-none w-full px-1 py-3 border-b border-secondary placeholder:  bg-transparent outline-none focus:outline-none"
         ></textarea>
       </div>
       <div className="flex-col flex gap-6">
@@ -304,10 +305,10 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
               type="checkbox"
               name="subscribe"
               id="subscribe"
-              className="mr-2 md:w-6 w-4 rounded-none aspect-[1/1] border border-clr2 focus:outline-none outline-none bg-transparent placeholder:bg-transparent checked:bg-transparent"
+              className="mr-2 md:w-6 w-4 rounded-none aspect-[1/1] border border-secondary focus:outline-none outline-none bg-transparent placeholder:bg-transparent checked:bg-transparent"
             />
           </span>
-          <label htmlFor="subscribe " className="text-clr2 description1">
+          <label htmlFor="subscribe " className=" description1">
             Sign up for latest events and offers
           </label>
         </div> */}
@@ -317,10 +318,10 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
               type="checkbox"
               name="consent"
               id="consent"
-              className="mr-2 md:w-6 w-4 rounded-none aspect-[1/1] border border-clr2 focus:outline-none outline-none bg-transparent placeholder:bg-transparent checked:bg-transparent"
+              className="mr-2 md:w-6 w-4 rounded-none aspect-[1/1] border border-secondary focus:outline-none outline-none bg-transparent placeholder:bg-transparent checked:bg-transparent"
             />
           </span>
-          <label htmlFor="consent " className="text-clr2 description1">
+          <label htmlFor="consent " className=" description1">
             By clicking submit, I consent to the collection of my data in
             accordance to One Off Hotel’s privacy policy. *
           </label>
@@ -328,9 +329,9 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
       </div>
       <button
         type="submit"
-        className="btn w-full bg-clr2 hover:bg-transparent text-secondary py-3 px-6 border border-clr2 transition-all duration-300 ease-in-out hover:text-clr2 uppercase active:scale-95 hover:scale-105"
+        className="btn w-full bg-secondary hover:bg-transparent text-white py-3 px-6 border border-secondary transition-all duration-300 ease-in-out hover: uppercase active:scale-95 hover:scale-105"
       >
-        {formRes ? "loading..." : "Submit"}
+        {formRes ? "loading..." : <span className="flex items-center justify-center gap-2">Submit<span><ArrowUpRight /></span> </span>}
       </button>
     </form>
   );
@@ -373,16 +374,29 @@ export const states = [
 const DropDownIcon = () => {
   return (
     <svg
-      width="12"
-      height="8"
-      viewBox="0 0 12 8"
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M5.99994 7.05369L0.346191 1.39994L1.39994 0.346191L5.99994 4.94619L10.5999 0.346191L11.6537 1.39994L5.99994 7.05369Z"
-        fill="#184B56"
-      />
+      <mask
+        id="mask0_77_758"
+        style={{ maskType: "alpha" }}
+        maskUnits="userSpaceOnUse"
+        x={0}
+        y={0}
+        width={24}
+        height={24}
+      >
+        <rect width={24} height={24} fill="#D9D9D9" />
+      </mask>
+      <g mask="url(#mask0_77_758)">
+        <path
+          d="M11.9999 15.0537L6.34619 9.39994L7.39994 8.34619L11.9999 12.9462L16.5999 8.34619L17.6537 9.39994L11.9999 15.0537Z"
+          fill="#184B56"
+        />
+      </g>
     </svg>
   );
 };

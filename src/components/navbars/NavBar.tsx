@@ -15,10 +15,11 @@ const NavBar = () => {
   const { setIsOpenMobileMenu, isOpenMobileMenu } = useContext(WebContext);
 
   const pathName = usePathname();
+  if (pathName ? pathName === "/thank-you/" || pathName === "/" : false) return null;
 
   return (
     <div>
-      <header className="max_screen border-b border-secondary">
+      <header className={`max_screen border-b border-secondary`}>
         <Container>
           <nav className="flex items-center justify-between py-3">
             <div className="">

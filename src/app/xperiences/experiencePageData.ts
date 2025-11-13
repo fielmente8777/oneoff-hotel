@@ -1,6 +1,8 @@
+import { contacts } from "@/utils/constant";
+
 export const ExperiencePageData = {
   bannerData: {
-    images: ["/Rectangle99.png"],
+    images: ["/img/xp.webp"],
   },
   experience: {
     title: "EXPERIENCE",
@@ -10,7 +12,7 @@ export const ExperiencePageData = {
     links: [
       {
         label:
-          "Reach us at +91 XXXXX XXXXX or send an enquiry — we’ll connect with you shortly.",
+          `Reach us at ${contacts.phoneNumbers[0]} or send an enquiry — we’ll connect with you shortly.`,
         href: "",
       },
       {

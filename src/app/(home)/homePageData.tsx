@@ -2,7 +2,7 @@ export const homePageData = {
   bannerData: {
     // videoSrc: "/Group56.png",
     // thumbNail: "/Group56.png",
-    images: ["/DSC_5999 copy.jpg","/DSC07476.jpg","/Develop2.jpg","/Develop1.jpg"],
+    images: ["/bnr-slide1.webp", "/bnr-slide2.webp", "/bnr-slide3.webp", "/bnr-slide4.webp"],
   },
   aboutHomePage: {
     title: "EXPERIENCE THE",
@@ -122,7 +122,7 @@ export const homePageData = {
       title: "JAIPUR",
       subTitle: "UPCOMING HOTELS",
       description:
-        "Experience timeless charm and modern luxury at our upcoming hotel in the heart of Varanasi.",
+        "Experience timeless charm and modern luxury at our upcoming hotel in the heart of Jaipur.",
       images: ["/Develop1.jpg", "/Develop2.jpg"],
     },
     {
@@ -130,6 +130,13 @@ export const homePageData = {
       subTitle: "UPCOMING HOTELS",
       description:
         "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Delhi.",
+      images: ["/Develop1.jpg", "/Develop2.jpg"],
+    },
+    {
+      title: "BANARAS",
+      subTitle: "UPCOMING HOTELS",
+      description:
+        "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Banaras.",
       images: ["/Develop1.jpg", "/Develop2.jpg"],
     },
   ],
