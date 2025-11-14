@@ -12,7 +12,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
   const hasImages = images.length < 4 ? [...images, ...images] : images;
 
   return (
-    <Section>
+    <Section defaultPadding={false}>
       <SwiperCarousel
         data={hasImages}
         className="w-full"

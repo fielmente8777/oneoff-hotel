@@ -1,3 +1,4 @@
+import Gallery from "@/app/culture/components/Gallery";
 import Image from "next/image";
 import React from "react";
 
@@ -8,7 +9,7 @@ interface DevelopGridProps {
 export const DevelopGrid = ({ images }: DevelopGridProps) => {
   return (
     <div className="relative">
-      <div className="grid grid-cols-3 gap-0.5">
+      {/* <div className="grid grid-cols-3 gap-0.5">
         {images.map((image) => (
           <div
             key={image}
@@ -16,10 +17,11 @@ export const DevelopGrid = ({ images }: DevelopGridProps) => {
           >
             <Image src={image} alt="" fill className="object-cover" />
           </div>
-        ))}
-      </div>
+        ))} */}
+      {/* </div> */}
+      <Gallery images={images} />
 
-      <div className="absolute right-4 -top-12 animate-bounce-slow">
+      <div className="absolute z-20 right-4 -top-12 animate-bounce-slow">
         <Image
           src={"/Ten.png"}
           alt=""

@@ -4,7 +4,7 @@ export const DevelopWithUsPageData = {
   bannerData: {
     title: "ONE OFF HOTELS",
     subTitle: "DEVELOP WITH US",
-    images: ["/Develop1.jpg", "/Develop2.jpg", "/Develop3.jpg"],
+    images: ["/Develop1.jpg", "/Develop2.jpg", "/Develop3.jpg","/bns/BANARAS-ON.jpg", "/bns/BANARAS-ON2.jpg","/one/IMG-20250909-WA0010.jpg", "/one/IMG-20250909-WA0016.jpg"],
   },
 
   whyChooseUs: {

@@ -36,30 +36,6 @@ export const homePageData = {
     //     href: "",
     //   },
     // },
-    // {
-    //   title: "LOCATIONS",
-    //   subTitle: "LOREM IPSUM DOLOR",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //   src: "/gallery4.jpg",
-    //   images: ["/slider1.jpg", "/gallery4.jpg"],
-    //   link: {
-    //     label: "EXPLORE HOTELS",
-    //     href: "",
-    //   },
-    // },
-    // {
-    //   title: "LOCATIONS",
-    //   subTitle: "LOREM IPSUM DOLOR",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //   src: "/gallery4.jpg",
-    //   images: ["/gallery4.jpg", "/slider1.jpg"],
-    //   link: {
-    //     label: "EXPLORE HOTELS",
-    //     href: "",
-    //   },
-    // },
   ],
   exploreExperienceData: {
     title: "EXPLORE EXPERIENCES",
@@ -130,14 +106,14 @@ export const homePageData = {
       subTitle: "UPCOMING HOTELS",
       description:
         "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Delhi.",
-      images: ["/Develop1.jpg", "/Develop2.jpg"],
+      images: ["/one/IMG-20250909-WA0010.jpg", "/one/IMG-20250909-WA0016.jpg"],
     },
     {
       title: "BANARAS",
       subTitle: "UPCOMING HOTELS",
       description:
         "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Banaras.",
-      images: ["/Develop1.jpg", "/Develop2.jpg"],
+      images: ["/bns/BANARAS-ON.jpg", "/bns/BANARAS-ON2.jpg"],
     },
   ],
 };

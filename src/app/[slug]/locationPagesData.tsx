@@ -33,8 +33,8 @@ export const locationPageData = [
           href: "",
         },
         {
-          label: "CONTACT: +91 XXXXX XXXX",
-          href: "",
+          label: "CONTACT: " + contacts.phoneNumbers[0],
+          href: "tel:" + contacts.phoneNumbers[0],
         },
         {
           label: "BOOK NOW",
@@ -44,10 +44,11 @@ export const locationPageData = [
       amenities: [""],
       images: [
         "/DSC07476.jpg",
-        "/DSC_5999 copy.jpg",
-        "/Develop2.jpg",
-        "/Develop1.jpg",
-        "/DSC_5957 copy.jpg",
+        "/img/Rectangle 4077.png",
+        "/bnr-slide3.webp",
+        "/img/image00020.webp",
+        "/img/Rectangle 4079.png",
+        "/img/Rectangle 4080.png",
       ],
     },
 
