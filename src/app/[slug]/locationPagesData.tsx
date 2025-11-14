@@ -44,11 +44,11 @@ export const locationPageData = [
       amenities: [""],
       images: [
         "/DSC07476.jpg",
-        "/img/Rectangle 4077.png",
+        "/Img/Rectangle 4077.png",
         "/bnr-slide3.webp",
-        "/img/image00020.webp",
-        "/img/Rectangle 4079.png",
-        "/img/Rectangle 4080.png",
+        "/Img/image00020.webp",
+        "/Img/Rectangle 4079.png",
+        "/Img/Rectangle 4080.png",
       ],
     },
 

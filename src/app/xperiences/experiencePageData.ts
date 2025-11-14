@@ -2,7 +2,7 @@ import { contacts } from "@/utils/constant";
 
 export const ExperiencePageData = {
   bannerData: {
-    images: ["/img/xp.webp"],
+    images: ["/Img/xp.webp"],
   },
   experience: {
     title: "EXPERIENCE",

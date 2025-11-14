@@ -20,11 +20,11 @@ export const aboutPageData = {
   },
   images: [
     "/oneoff.jpg", 
-    "/img/img.webp",
+    "/Img/img2.webp",
     "/oneoff2.jpg", 
-    "/img/image00010.webp",
-    "/img/image00014.webp",
-    "/img/image00015.webp",
+    "/Img/image00010.webp",
+    "/Img/image00014.webp",
+    "/Img/image00015.webp",
     "/gallery6.jpg",
   ],
   stayAt: {
