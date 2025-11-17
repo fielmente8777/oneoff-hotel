@@ -36,6 +36,7 @@ export const ExperiencePageData = {
       description:
         "Experience Varanasi from the Ganges with our curated boat tours—serene sunrise rides, soulful evening Aarti views, or luxury cruises on the Bajra. Celebrate special moments, capture timeless photos, or simply soak in the city’s spiritual essence from the water. Each journey is guided by local boatmen who share stories of faith and tradition. Discover Varanasi’s timeless charm as the river reflects the rhythm of life itself.",
       src: "/img.jpg",
+      images: ["/img.jpg", "/BoatTour1.jpg", "/exp/one-off-exp13.jpg"],
       popUpData: [
         {
           title: "1. Subah ‘e’ Banaras – Sunrise Boat Tour",
@@ -76,6 +77,7 @@ export const ExperiencePageData = {
       description:
         "Step into Varanasi’s soul with our guided walking tours. Discover hidden gems in Gupta Kashi, stroll through South City’s vibrant streets, or experience devotion on the Spiritual Walk and Kashi Darshan. Feel the city’s energy after dark on the Night Walk, savor local flavors on the Food Tour, and explore colorful markets on the Shopping Tour, capturing the true essence of Banaras.",
       src: "/exp4.jpg",
+      images: ["/exp4.jpg", "/exp5.jpg","/exp/one-off-exp9.jpg", "/exp/one-off-exp2.jpg"],
       popUpData: [
         {
           title: "1. Gupta Kashi – Ancient and Hidden Varanasi",
@@ -116,6 +118,7 @@ export const ExperiencePageData = {
       description:
         "Capture Varanasi’s essence on our photography tours. Explore lively streets and ghats on a Street Photography tour, document traditions with our Documentary Movie experiences, or create lasting memories with a Pre-Wedding Shoot along the sacred Ganges and historic lanes. Each tour is designed to inspire creativity while showcasing the vibrant culture, timeless beauty, and unique spirit of Kashi.",
       src: "/photography-tour.png",
+      images: ["/photography-tour.png", "/exp5.jpg", "/exp/one-off-exp9.jpg", "/exp/one-off-exp2.jpg"],
       popUpData: [
         {
           title: "1. Street Photography",
@@ -136,6 +139,7 @@ export const ExperiencePageData = {
       description:
         "Discover the vibrant spirit of Varanasi with our expertly guided city tours. Explore the city in depth with a Full Day City Tour or experience the local charm on a South City Tour. Venture beyond the city limits with a Sarnath Trip, visiting the sacred site where Lord Buddha gave his first sermon. For a fun and immersive ride through the bustling streets, try our Tuk-Tuk Tours, perfect for seeing the city like a local. Each tour offers a unique perspective, blending history, culture, and everyday life in the holy city of Kashi.",
       src: "/city-tours.png",
+      images: ["/city-tours.png", "/exp/one-off-exp3.jpg", "/exp/one-off-exp12.jpg"],
       popUpData: [
         {
           title: "1. Full Day City",
@@ -161,6 +165,7 @@ export const ExperiencePageData = {
       description:
         "Embark on a spiritual journey through Varanasi with our curated yatras. Join the Panchkroshi pilgrimage, explore the 12 Jyotirlinga and 12 Aaditya Yatras, or seek blessings at Astha Bhairav, 9 Durga, and Astha Vinayak temples. Each yatra offers a deep connection to Kashi’s sacred heritage, immersing travelers in devotion, tradition, and the timeless spiritual essence of this holy city.",
       src: "/spiritual-yatras.png",
+      images: ["/spiritual-yatras.png", "/exp/one-off-exp7.jpg", "/exp/one-off-exp5.jpg"],
       popUpData: [
         {
           title: "1. Panchkroshi Yatra",
@@ -193,6 +198,7 @@ export const ExperiencePageData = {
       description:
         "Extend your journey from Varanasi with our thoughtfully planned day trips. Visit the holy confluence at Prayagraj, explore Bodhgaya’s sacred sites, discover the legendary city of Ayodhya, or feel the divine aura of Vindhyachal. Each trip blends history, culture, and spirituality, offering travelers a seamless way to experience the region’s iconic landmarks and sacred heritage in just one enriching day.",
       src: "/BoatTour1.jpg",
+      images: ["/BoatTour1.jpg", "/exp/one-off-exp11.jpg", "/exp/one-off-exp10.jpg"],
       popUpData: [
         {
           title: "1. A Trip to Prayagraj",
@@ -218,6 +224,7 @@ export const ExperiencePageData = {
       description:
         "Discover Varanasi with our guided city tours. Enjoy a Full Day City Tour or explore local life on the South City Tour. Visit the sacred Sarnath Trip, where Buddha gave his first sermon, or experience the bustling streets on a fun Tuk-Tuk Tour. Each journey blends history, culture, and the everyday rhythm of Kashi, offering a unique and immersive experience.",
       src: "/tour-packages.png",
+      images: ["/tour-packages.png", "/exp/one-off-exp8.jpg", "/exp/one-off-exp6.jpg"],
       popUpData: [
         {
           title: "1. A Day in Varanasi",

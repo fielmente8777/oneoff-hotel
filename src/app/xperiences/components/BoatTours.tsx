@@ -85,7 +85,7 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
                 </button>
               </div>
               {card.src && (
-                <div className="relative w-full aspect-[4/3]">
+                <div className="relative w-full aspect-[4/3.5]">
                   <Image
                     src={card.src}
                     alt={card.title}

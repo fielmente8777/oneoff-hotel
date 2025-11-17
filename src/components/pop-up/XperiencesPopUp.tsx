@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useContext, useEffect } from "react";
 import { MdClose } from "react-icons/md";
 import LinkButton from "../buttons/LinkButton";
+import { SwiperCarousel } from "../sliders";
+import { Autoplay } from "swiper/modules";
 
 const XperiencesPopUp = () => {
   const { isXperiencePopUpOpen, setIsXperiencePopUpOpen, popUpData } =
@@ -52,13 +54,25 @@ const XperiencesPopUp = () => {
               className="md:tracking-wider"
             />
           </div>
-          {popUpData?.src && (
-            <div className="relative w-full md:aspect-[4/4]">
-              <Image
-                src={popUpData?.src}
-                alt={popUpData?.title}
-                className="object-cover"
-                fill
+          {popUpData?.images && (
+            <div className="">
+              <SwiperCarousel
+                data={popUpData?.images || []}
+                slidesPerView={1}
+                modules={[Autoplay]}
+                autoplay={{ delay: 3000 }}
+                speed={2000}
+                loop={true}
+                renderSlide={(src: string) => (
+                  <div className="relative w-full md:aspect-[4/4]">
+                    <Image
+                      src={src}
+                      alt={popUpData?.title}
+                      className="object-cover"
+                      fill
+                    />
+                  </div>
+                )}
               />
             </div>
           )}
