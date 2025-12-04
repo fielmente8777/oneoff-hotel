@@ -58,7 +58,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
             <div className="w-full">
               <Container className="">
                 <div className="grid lg:grid-cols-6 items-center gap-5">
-                  <div className="md:col-span-4 room-img flex flex-col h-full justify-between border-white">
+                  <div className="md:col-span-4 room-img1 flex flex-col h-full justify-between border-white">
                     <h2 className="md:text-5xl block lg:hidden text-white mb-4 text-2xl font-anton tracking-wider">
                       {location.title}
                     </h2>

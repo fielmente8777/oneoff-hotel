@@ -87,10 +87,10 @@ export const homePageData = {
           "Capture the soul of Varanasi through our specialized photography tours. Explore the vibrant streets and bustling ghats on a Street Photography tour, or document the city’s timeless traditions and culture with our Documentary Movie experiences. For couples, our Pre-Wedding Shoot packages provide a magical backdrop along the sacred Ganges and historic lanes, creating memories that last a lifetime. Each tour is crafted to inspire creativity while showcasing the unique essence of Kashi.",
         src: "/photography-tour.png",
       },
-      {
-        videoSrc: "/slide3.jpg",
-        thumbNail: "/slide3.jpg",
-      },
+      // {
+      //   videoSrc: "/slide3.jpg",
+      //   thumbNail: "/slide3.jpg",
+      // },
     ],
   },
   upcomingHotels: [

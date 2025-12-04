@@ -55,13 +55,13 @@ const MobileNav: React.FC = () => {
                         <Link
                           href={link.href}
                           onClick={() => setIsOpenMobileMenu(false)}
-                          className="w-4/5"
+                          className="w-4/5 uppercase"
                         >
                           {link.label}
                         </Link>
                       ) : (
                         <span
-                          className="w-4/5"
+                          className="w-4/5 uppercase"
                           onClick={() =>
                             setOpenDropDown(
                               openDropDown === index ? null : index
@@ -104,7 +104,7 @@ const MobileNav: React.FC = () => {
                                   setIsOpenMobileMenu(false);
                                   setOpenSubDropDown(null);
                                 }}
-                                className={`w-4/5 ${pathName === subLink.href ? "text-secondary" : ""} capitalize text-sm`}
+                                className={`w-4/5 uppercase ${pathName === subLink.href ? "text-secondary" : ""} capitalize text-sm`}
                               >
                                 {subLink.label}
                               </Link>
@@ -140,7 +140,7 @@ const MobileNav: React.FC = () => {
                                           setIsOpenMobileMenu(false);
                                           setOpenSubDropDown(null);
                                         }}
-                                        className={`w-5/6 ${pathName === subSubLink.href ? "text-secondary" : ""} capitalize text-sm`}
+                                        className={`w-5/6 uppercase ${pathName === subSubLink.href ? "text-secondary" : ""} capitalize text-sm`}
                                       >
                                         {subSubLink.label}
                                       </Link>
