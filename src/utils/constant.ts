@@ -10,7 +10,7 @@ export const contacts = {
     linkedinUrl: "https://www.linkedin.com/",
     twitterUrl: "https://twitter.com/",
   },
-  formDomain: "https://nexon.eazotel.com/",
+  formDomain: "oneoffhotel",
   ctas: [""],
   mapUrls: {
     location: "Dhaka",

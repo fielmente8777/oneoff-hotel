@@ -6,6 +6,7 @@ import { WebContextProvider } from "@/contextApi/WebContext";
 import NavBar from "@/components/navbars/NavBar";
 import Footer from "@/components/footer/Footer";
 import XperiencesPopUp from "@/components/pop-up/XperiencesPopUp";
+import Script from "next/script";
 
 const anton = Anton({
   weight: "400",
@@ -33,8 +34,22 @@ export default function RootLayout({
           <NavBar />
           {children}
           <Footer />
-          <XperiencesPopUp/>
+          <XperiencesPopUp />
         </WebContextProvider>
+
+        {/* <!-- Eazbot Script (Next.js) --> */}
+        <Script id="chatbot-config" strategy="afterInteractive">
+          {`
+            window.eazbotConfig = {
+              ndid: "ecb52f46-ee8b-4b1a-a2b4-05cfaafa6c54",
+              hid: "77433588",
+            };
+          `}
+        </Script>
+        <Script
+          src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

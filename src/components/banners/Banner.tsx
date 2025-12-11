@@ -29,7 +29,7 @@ const Banner: FC<BannerProps> = ({
       {/* ✅ Case 1: Both Video + Images */}
       {videoSrc && hasImages ? (
         <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 lg:py-12">
-          <div className="w-full h-full relative aspect-[4/3] md:col-span-3 lg:block hidden">
+          <div className="w-full h-full relative aspect-[4/3] md:col-span-3">
             <LazyLoadedVideo
               poster={thumbNail || ""}
               src={videoSrc}
@@ -39,7 +39,7 @@ const Banner: FC<BannerProps> = ({
               controls={false}
             />
           </div>
-          <div className="lg:hidden block">
+          {/* <div className="lg:hidden block">
             <Swiper
               className="w-full h-full"
               spaceBetween={0}
@@ -65,7 +65,7 @@ const Banner: FC<BannerProps> = ({
                 />
               </SwiperSlide>
             </Swiper>
-          </div>
+          </div> */}
           <div className="md:col-span-2 flex flex-col gap-6 max-lg:px-4">
             <div className="">
               {title && <h1 className="text-lg">{title}</h1>}
@@ -77,7 +77,7 @@ const Banner: FC<BannerProps> = ({
               {description && <p className="md:text-lg mt-10">{description}</p>}
             </div>
             {/* {hasSingleImage ? ( */}
-            <div className="w-full lg:block hidden relative aspect-[4/3]">
+            <div className="w-full  relative aspect-[4/3]">
               <Image
                 src={images[0]}
                 alt="image"

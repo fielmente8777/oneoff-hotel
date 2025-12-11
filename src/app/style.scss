@@ -414,11 +414,17 @@
     background-image: url("/DevelopBannerImage.png");
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 10;
+    z-index: -1;
     top: 2rem;
     left: 3rem;
     width: 214px;
     height: 204px;
+    @media (width < 768px) {
+      top: 2rem;
+      left: 1rem;
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
