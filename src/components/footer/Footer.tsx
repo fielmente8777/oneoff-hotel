@@ -92,7 +92,7 @@ const Footer = () => {
         <Container className="flex  border-t border-white justify-center items-center  w-full gap-2 md:gap-0">
           <div className="flex flex-col md:flex-row items-center justify-between  text-white  uppercase tracking-wider w-full py-4">
             <span className="px-2 text-lg">
-              © ONE OFF HOTELS {new Date().getFullYear()}
+              © ONE OFF HOSPITALITY PRIVATE LIMITED {new Date().getFullYear()}
             </span>
             <span>POWERED BY EAZOTEL</span>
           </div>
