@@ -53,3 +53,7 @@ body {
   animation: bounce-slow 2.4s forwards;
   /* animation-delay: 0.5s; */
 }
+
+.custom-shadow{
+  /* box-shadow: 20px 0px 25px 25px 0px #9C533E; */
+}

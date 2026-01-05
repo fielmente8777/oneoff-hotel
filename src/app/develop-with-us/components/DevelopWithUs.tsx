@@ -25,19 +25,21 @@ const DevelopWithUsComponent = ({
   return (
     <div>
       <Container>
-        <div className="grid md:grid-cols-2 gap-4 md:divide-x divide-secondary items-start h-full">
-          <div className="space-y-4 md:p-16 h-full">
-            <div className="space-y-2">
+        <div className="grid md:grid-cols-2 gap-4 items-start h-full">
+          <div className="h-full">
+            {/* <div className="space-y-2">
               <h2 className="text-lg text-center">{title}</h2>
               <h3 className="font-anton text-primary md:text-5xl text-center text-4xl tracking-wider">
                 {subTitle}
               </h3>
-            </div>
+            </div> */}
 
-            <div className="relative w-full aspect-[4/3.5]">
-              <Image src={src} alt="" className="object-contain" fill />
+            <div className="relative w-full aspect-[4/4] custom-shadow">
+              <Image src={src} alt="" className="object-cover" fill />
+
+              <div className="absolute -right-5 top-12 w-20 h-[95%] bg-secondary -z-10 lg:block hidden" />
             </div>
-            {description && (
+            {/* {description && (
               <p className="md:text-lg text-center">{description[0]}</p>
             )}
             {link && (
@@ -47,7 +49,7 @@ const DevelopWithUsComponent = ({
               >
                 {link.label}
               </Link>
-            )}
+            )} */}
           </div>
 
           <div className="md:p-16 py-6">

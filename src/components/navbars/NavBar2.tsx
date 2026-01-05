@@ -62,7 +62,7 @@ const NavBar2 = () => {
                               )}
                               <Link
                                 href={subLink.href ? subLink.href : "#"}
-                                className={`w-full py-2 px-4 tracking-wider flex flex-col gap-1 group  font-bold  text-dark ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
+                                className={`w-full py-2 px-4 tracking-wider flex flex-col gap-1 group  font-bold  text-dark ${pathName === subLink.href ? "bg-secondary !text-white" : ""}`}
                               >
                                 <span className="uppercase">
                                   {" "}

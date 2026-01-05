@@ -4,6 +4,7 @@ import AboutLocation from "./components/AboutLocation";
 import Rooms from "./components/Rooms";
 import Gallery from "./components/Gallery";
 import UpComingLocations from "./components/UpComingLocations";
+import Amenties from "./components/Amenties";
 
 interface Params {
   params: Promise<{
@@ -53,6 +54,7 @@ export default async function Page({ params }: Params) {
       {pageData.bannerData && <Banner {...pageData.bannerData} />}
       {pageData.aboutLocation && <AboutLocation {...pageData.aboutLocation} />}
       {pageData.rooms && <Rooms {...pageData.rooms} />}
+      {pageData.amenties && <Amenties amenties={pageData?.amenties} />}
       {pageData.gallery && <Gallery {...pageData.gallery} />}
 
       {pageData.upComingData && (

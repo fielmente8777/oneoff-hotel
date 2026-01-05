@@ -1,7 +1,14 @@
 import { contacts } from "@/utils/constant";
 import { JSX } from "react";
 import { IoLocationSharp } from "react-icons/io5";
-import { FillCallIcon, FillFaceBook, FillInstagramIcon, FillLinkedin, FillMailIcon, FillX } from '../../utils/Icons';
+import {
+  FillCallIcon,
+  FillFaceBook,
+  FillInstagramIcon,
+  FillLinkedin,
+  FillMailIcon,
+  FillX,
+} from "../../utils/Icons";
 
 interface FooterDataProps {
   logo: string;
@@ -42,7 +49,7 @@ export const footerData: FooterDataProps = {
     {
       label: Object.keys(contacts.socialMediaUrls)[1],
       href: contacts.socialMediaUrls.instagramUrl,
-      icon: <FillInstagramIcon/>,
+      icon: <FillInstagramIcon />,
     },
     {
       label: Object.keys(contacts.socialMediaUrls)[2],
@@ -95,10 +102,5 @@ export const footerData: FooterDataProps = {
       ],
     },
   ],
-  images: [
-    "/ft4.png",
-    "/ft2.png",
-    "/ft1.png",
-    "/ft3.png",
-  ],
+  images: ["/ft6.jpg", "/ft2.png", "/ft5.jpg", "/ft3.png"],
 };

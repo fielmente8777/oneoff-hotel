@@ -22,7 +22,7 @@ export const DevelopBanner = ({
         </div>
       </div>
 
-      <DevelopGrid images={images} />
+      {/* <DevelopGrid images={images} /> */}
     </main>
   );
 };

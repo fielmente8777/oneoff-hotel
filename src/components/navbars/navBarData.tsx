@@ -11,11 +11,11 @@ export const navBarData: NavLinksProps[] = [
         href: "/one-off-dashashwamedh/",
         sub: "Boutique stays in the heart of the world’s oldest living city",
       },
-      // {
-      //   label: "One Off X",
-      //   href: "/one-off-x/",
-      //   sub: "Boutique stays in the heart of the world’s oldest living city",
-      // },
+      {
+        label: "One Off X",
+        href: "/one-off-x/",
+        sub: "Boutique stays in the heart of the world’s oldest living city",
+      },
       {
         location: "Upcoming",
         label: "Jaipur (Upcoming)",

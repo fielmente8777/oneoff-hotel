@@ -114,7 +114,7 @@ export const homePageData = {
       subTitle: "UPCOMING HOTELS",
       description:
         "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Delhi.",
-      images: ["/one/Rectangle-14.webp", "/one/Rectangle-13.webp"],
+      images: ["/one/Rectangle-14.webp", "/one/Rectangle-15.jpg"],
     },
     {
       title: "BANARAS",
@@ -124,4 +124,25 @@ export const homePageData = {
       images: ["/Develop1.jpg", "/Develop2.jpg"],
     },
   ],
+  upcomingCafe: {
+    title: "CAFE CULTURE, REDEFINED",
+    subTitle: "UPCOMING CAFE",
+    cards: [
+      {
+        src: "/cafe/CafeImage1.jpg",
+      },
+      {
+        src: "/cafe/CafeImage2.jpg",
+      },
+      {
+        src: "/cafe/CafeImage3.jpg",
+      },
+      {
+        src: "/cafe/CafeImage4.jpg",
+      },
+      {
+        src: "/cafe/CafeImage5.jpg",
+      },
+    ],
+  },
 };
