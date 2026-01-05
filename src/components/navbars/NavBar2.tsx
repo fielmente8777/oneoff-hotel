@@ -10,6 +10,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import LinkButton from "../buttons/LinkButton";
 import MobileNav from "./MobileNav";
 import { MdClose } from "react-icons/md";
+import { contacts } from "@/utils/constant";
 
 const NavBar2 = () => {
   const { setIsOpenMobileMenu, isOpenMobileMenu } = useContext(WebContext);
@@ -54,11 +55,22 @@ const NavBar2 = () => {
                               className="relative group nav-2"
                               key={subIndex + "sub"}
                             >
+                              {subLink.location && (
+                                <span className="p-4 uppercase block">
+                                  {subLink.location}
+                                </span>
+                              )}
                               <Link
                                 href={subLink.href ? subLink.href : "#"}
-                                className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group uppercase font-bold text-sm text-dark ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
+                                className={`w-full py-2 px-4 tracking-wider flex flex-col gap-1 group  font-bold  text-dark ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
                               >
-                                {subLink.label}
+                                <span className="uppercase">
+                                  {" "}
+                                  {subLink.label}
+                                </span>
+                                {subLink.sub && (
+                                  <span className="text-sm">{subLink.sub}</span>
+                                )}
                                 {subLink.subLinks && (
                                   <span className="group-hover:rotate-90 -rotate-90 duration-300 transition-all ease-in-out">
                                     <FillDropDownIcon />
@@ -101,7 +113,9 @@ const NavBar2 = () => {
             </ul>
             <LinkButton
               hide
-              href="/book-now"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={contacts.bookingCta.oneOffDashashwamedh}
               label="Book Now"
               variant="secondary"
             />

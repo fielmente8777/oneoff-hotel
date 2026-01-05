@@ -2,13 +2,18 @@ import { contacts } from "@/utils/constant";
 import { IoLocationSharp } from "react-icons/io5";
 export const locationPageData = [
   {
-    slug: "varanasi",
+    slug: "one-off-dashashwamedh",
     metaData: {
       title: "One Off Dashashwamedh",
       description: "One Off Dashashwamedh",
     },
     bannerData: {
-      images: ["/Rectangle1.png"],
+      images: [
+        "/Rectangle1.png",
+        "/bnr-slide3.webp",
+        "/Img/Rectangle 4079.png",
+        "/Img/Rectangle 4080.png",
+      ],
     },
     aboutLocation: {
       title: "ONE OFF DASHASHWAMEDH",
@@ -24,7 +29,7 @@ export const locationPageData = [
     rooms: {
       title: "One Off DASHASHWAMEDH",
       description: [
-        "Welcome to our 5-room boutique hotel in the spiritual heart of Varanasi—just 2 minutes from Kashi Vishwanath Temple and 5 minutes from the Ganga ghats. Each 300 sqft room offers minimalist design, warm lighting, and handcrafted details for a serene stay amidst the city’s vibrant energy.",
+        "Welcome to our hotel in the spiritual heart of Varanasi—just 2 minutes from Kashi Vishwanath Temple and 5 minutes from the Ganga ghats. Each 300 sqft room offers minimalist design, warm lighting, and handcrafted details for a serene stay amidst the city’s vibrant energy.",
       ],
       links: [
         {
@@ -38,7 +43,7 @@ export const locationPageData = [
         },
         {
           label: "BOOK NOW",
-          href: "",
+          href: contacts.bookingCta.oneOffDashashwamedh,
         },
       ],
       amenities: [""],
@@ -78,15 +83,15 @@ export const locationPageData = [
       title: "One Off",
       description: "One Off",
     },
-    upComingData:{
-      location:"JAIPUR",
-      title:"SOMETHING EXCITING IS COMING SOON, STAY TUNED!",
-      link:{
-        label:"FOR RESERVATIONS: " + contacts.phoneNumbers[0],
-        href:"tel:" + contacts.phoneNumbers[0]
+    upComingData: {
+      location: "JAIPUR",
+      title: "SOMETHING EXCITING IS COMING SOON, STAY TUNED!",
+      link: {
+        label: "FOR RESERVATIONS: " + contacts.phoneNumbers[0],
+        href: "tel:" + contacts.phoneNumbers[0],
       },
-      images:["/upcoming1.png","/upcoming2.png"]
-    }
+      images: ["/upcoming1.png", "/upcoming2.png"],
+    },
   },
   {
     slug: "delhi",
@@ -94,14 +99,14 @@ export const locationPageData = [
       title: "One Off",
       description: "One Off",
     },
-    upComingData:{
-      location:"DELHI",
-      title:"SOMETHING EXCITING IS COMING SOON, STAY TUNED!",
-      link:{
-        label:"FOR RESERVATIONS: " + contacts.phoneNumbers[0],
-        href:"tel:" + contacts.phoneNumbers[0]
+    upComingData: {
+      location: "DELHI",
+      title: "SOMETHING EXCITING IS COMING SOON, STAY TUNED!",
+      link: {
+        label: "FOR RESERVATIONS: " + contacts.phoneNumbers[0],
+        href: "tel:" + contacts.phoneNumbers[0],
       },
-      images:["/upcoming1.png","/upcoming2.png"]
-    }
+      images: ["/upcoming1.png", "/upcoming2.png"],
+    },
   },
 ];

@@ -23,8 +23,8 @@ interface LocationsCardsProps {
 
 const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
   return (
-    <Section className="room-bg" >
-      <div className="relative w-full location-bg">
+    <Section className="bg-secondary" defaultPadding={false}>
+      <div className="relative w-full">
         <SwiperCarousel
           data={locations}
           slidesPerView={1}
@@ -56,51 +56,49 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
           // speed={1000}
           renderSlide={(location) => (
             <div className="w-full">
-              <Container className="">
-                <div className="grid lg:grid-cols-6 items-center gap-5">
-                  <div className="md:col-span-4 room-img1 flex flex-col h-full justify-between border-white">
-                    <h2 className="md:text-5xl block lg:hidden text-white mb-4 text-2xl font-anton tracking-wider">
-                      {location.title}
-                    </h2>
-                    <div className="relative w-full aspect-[4/2.5]">
-                      <Image
-                        src={location.images[1]}
-                        alt={location.title}
-                        fill
-                        className="object-cover lg:rounded-4xl rounded-3xl border-[3px] border-white box-shadow"
-                      />
-                    </div>
-                  </div>
-                  <div className="flex flex-col justify-between w-full text-white md:col-span-2 h-full">
-                    <h2 className="md:text-5xl lg:block hidden text-2xl font-anton tracking-wider">
-                      {location.title}
-                    </h2>
-
-                    <div className="lg:block hidden space-y-4">
-                      {location.location && (
-                        <p className="md:text-lg flex items-center gap-2 text-white">
-                          <span className="text-lg">
-                            <IoLocationSharp />
-                          </span>
-                          {location.location}
-                        </p>
-                      )}
-                      <h3 className="md:text-4xl text-2xl font-anton tracking-wider">
-                        {location.subTitle}
-                      </h3>
-                      <p className="md:text-lg">{location.description}</p>
-                    </div>
-                    <div className="w-full lg:block hidden">
-                      <LinkButton
-                        href={location.link.href}
-                        label={location.link.label}
-                        variant="secondary"
-                        className="!w-48 pointer-events-auto "
-                      />
-                    </div>
+              <div className="grid lg:grid-cols-6 items-center">
+                <div className="md:col-span-4 room-img1 flex flex-col h-full justify-between border-white">
+                  <h2 className="md:text-5xl px-4 py-10 block lg:hidden text-white text-2xl font-anton tracking-wider">
+                    {location.title}
+                  </h2>
+                  <div className="relative w-full aspect-[4/2.5]">
+                    <Image
+                      src={location.images[1]}
+                      alt={location.title}
+                      fill
+                      className="object-cover box-shadow"
+                    />
                   </div>
                 </div>
-              </Container>
+                <div className="lg:flex hidden flex-col justify-between w-full text-white md:col-span-2 h-full p-8">
+                  <h2 className="md:text-5xl  text-2xl font-anton tracking-wider">
+                    {location.title}
+                  </h2>
+
+                  <div className=" space-y-4">
+                    {location.location && (
+                      <p className="md:text-lg flex items-center gap-2 text-white">
+                        <span className="text-lg">
+                          <IoLocationSharp />
+                        </span>
+                        {location.location}
+                      </p>
+                    )}
+                    <h3 className="md:text-4xl text-2xl font-anton tracking-wider">
+                      {location.subTitle}
+                    </h3>
+                    <p className="md:text-lg">{location.description}</p>
+                  </div>
+                  <div className="w-full ">
+                    <LinkButton
+                      href={location.link.href}
+                      label={location.link.label}
+                      variant="secondary"
+                      className="!w-48 pointer-events-auto "
+                    />
+                  </div>
+                </div>
+              </div>
               <div className="lg:hidden px-4 mt-4 flex flex-col gap-4">
                 {location.location && (
                   <p className="md:text-lg flex items-center gap-2 text-white">
@@ -115,7 +113,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
                 </h3>
                 {/* <p className="md:text-lg">{location.description}</p> */}
               </div>
-              <div className="lg:hidden px-4 mt-4 flex flex-col">
+              <div className="lg:hidden p-4 mt-4 flex flex-col">
                 <p className=" text-white">{location.description}</p>
                 <LinkButton
                   href={location.link.href}

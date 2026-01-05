@@ -10,12 +10,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import LinkButton from "../buttons/LinkButton";
 import MobileNav from "./MobileNav";
 import { MdClose } from "react-icons/md";
+import { contacts } from "@/utils/constant";
 
 const NavBar = () => {
   const { setIsOpenMobileMenu, isOpenMobileMenu } = useContext(WebContext);
 
   const pathName = usePathname();
-  if (pathName ? pathName === "/thank-you/" || pathName === "/" : false) return null;
+  if (pathName ? pathName === "/thank-you/" || pathName === "/" : false)
+    return null;
 
   return (
     <div>
@@ -48,24 +50,36 @@ const NavBar = () => {
                       )}
                     </Link>
                     {link.subLinks && (
-                      <span className="nav-1">
+                      <span className="nav-1 backdrop-blur-md">
                         {link.subLinks.map((subLink, subIndex) => {
                           return (
                             <span
                               className="relative group nav-2"
                               key={subIndex + "sub"}
                             >
+                              {subLink.location && (
+                                <span className="ps-4 py-2 font-semibold block uppercase">
+                                  {subLink.location}
+                                </span>
+                              )}
                               <Link
                                 href={subLink.href ? subLink.href : "#"}
-                                className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group uppercase font-bold text-sm text-dark ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
+                                className={`w-full tracking-wider py-2 px-4 flex flex-col gap-1 group font-bold text-sm text-dark ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
                               >
-                                {subLink.label}
+                                <span className="uppercase">
+                                  {" "}
+                                  {subLink.label}
+                                </span>
+                                {subLink.sub && (
+                                  <span className="text-sm">{subLink.sub}</span>
+                                )}
                                 {subLink.subLinks && (
                                   <span className="group-hover:rotate-90 -rotate-90 duration-300 transition-all ease-in-out">
                                     <FillDropDownIcon />
                                   </span>
                                 )}
                               </Link>
+
                               {subLink.subLinks && (
                                 <span className="nav-link">
                                   {subLink.subLinks?.map(
@@ -102,7 +116,9 @@ const NavBar = () => {
             </ul>
             <LinkButton
               hide
-              href="/book-now"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={contacts.bookingCta.oneOffDashashwamedh}
               label="Book Now"
               variant="primary"
             />

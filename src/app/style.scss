@@ -47,6 +47,10 @@
     max-width: 1600px;
     width: 100%;
     margin-inline: auto;
+    // screens sizes greater than 1600px
+    @media (min-width: 1700px) {
+      max-width: 1920px;
+    }
   }
 
   // container sizes for xl, lg, md, sm screens
@@ -96,24 +100,27 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
+    background-color: rgba(255, 255, 255 , 0.7);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     border-radius: 0.25rem;
     max-height: 0;
     overflow: hidden;
+    visibility: hidden;
     text-wrap: wrap;
     transition: max-height 0.5s ease-in-out;
     z-index: 99999;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     a {
       padding: 0.5rem 1rem;
       color: #333;
       text-decoration: none;
       transition: background-color 0.3s ease-in-out;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
       &:hover {
         background-color: var(--primary);
         color: white;
@@ -123,6 +130,7 @@
   &:hover .nav-1 {
     max-height: 500px;
     overflow: visible;
+    visibility: visible;
   }
 
   &:hover {
@@ -430,8 +438,9 @@
 
 .locations {
   position: absolute;
-  top: 15rem !important;
-  left: 6rem !important;
+  top: 8.5rem !important;
+  left: 65.5rem !important;
+  // border: #110d3c solid 1px;
   z-index: 9999;
   display: flex;
   gap: 1rem;
@@ -439,8 +448,8 @@
   height: fit-content !important;
 
   @media (width < 640px) {
-    top: 20rem !important;
-    left: 2rem !important;
+    top: 1.8rem !important;
+    left: 14.5rem !important;
   }
 
   .swiper-pagination-bullet {
@@ -483,6 +492,8 @@
     }
 
     &.swiper-pagination-bullet-active {
+      font-weight: 900;
+      scale: 1.3;
       .progress-ring__circle {
         stroke-dashoffset: 0;
         animation:

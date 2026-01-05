@@ -31,7 +31,7 @@ export const footerData: FooterDataProps = {
   description: "Reserve your ultimate holiday!",
   link: {
     label: "BOOK NOW",
-    href: "",
+    href: contacts.bookingCta.oneOffDashashwamedh,
   },
   socialMediaUrls: [
     {

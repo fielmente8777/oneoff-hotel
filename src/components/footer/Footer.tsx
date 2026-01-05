@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="max_width flex max-md:flex-col gap-6 items-center justify-between py-6">
         {/* social media links */}
         <ul className="flex items-center gap-4 max-md:order-2">
-          {footerData.socialMediaUrls.map((item, index) => (
+          {footerData.socialMediaUrls.filter((item) => item.href !== "").map((item, index) => (
             <li key={index}>
               <Link
                 href={item.href}
@@ -43,6 +43,8 @@ const Footer = () => {
             <LinkButton
               href={footerData.link.href}
               label={footerData.link.label}
+              target="_blank"
+              rel="noopener noreferrer"
               variant={"secondary"}
             />
           </div>
@@ -52,7 +54,7 @@ const Footer = () => {
       <Container className="border-t border-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:py-20 py-10">
           {/* footer links */}
-          <div className="grid grid-cols-2 lg:grid-cols-[auto_1fr_1fr]  gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-[.8fr_1.3fr_1.5fr]  gap-6">
             {footerData.listOfLinks.map((item, itemIndex) => (
               <div key={itemIndex} className={`flex flex-col gap-4 ${itemIndex === 2 ? "max-md:col-span-2" : ""}`}>
                 <h3 className="text-2xl text-white font-anton tracking-wider">

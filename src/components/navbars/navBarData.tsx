@@ -6,33 +6,43 @@ export const navBarData: NavLinksProps[] = [
     href: "",
     subLinks: [
       {
-        label: "Varanasi",
-        href: "/varanasi",
+        location: "Varanasi",
+        label: "One Off Dashashwamedh",
+        href: "/one-off-dashashwamedh/",
+        sub: "Boutique stays in the heart of the world’s oldest living city",
       },
+      // {
+      //   label: "One Off X",
+      //   href: "/one-off-x/",
+      //   sub: "Boutique stays in the heart of the world’s oldest living city",
+      // },
       {
+        location: "Upcoming",
         label: "Jaipur (Upcoming)",
-        href: "/jaipur",
+        href: "/jaipur/",
+        sub: "An upcoming minimalist stay inspired by the Pink City’s heritage",
       },
       {
         label: "Delhi (Upcoming)",
-        href: "/delhi",
+        href: "/delhi/",
+        sub: "A forthcoming urban retreat in the capital’s creative quarters",
       },
     ],
   },
   {
     label: "Culture",
-    href: "/culture",
+    href: "/culture/",
   },
   {
     label: "XPERIENCES",
-    href: "/xperiences",
+    href: "/xperiences/",
   },
   {
     label: "Develop With Us",
-    href: "/develop-with-us",
+    href: "/develop-with-us/",
   },
   {
     label: "Contact Us",
-    href: "/contact-us",
+    href: "/contact-us/",
   },
 ];

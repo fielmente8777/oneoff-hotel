@@ -21,7 +21,7 @@ const ExperiencesCard: React.FC<ExploreExperienceDataProps["cards"][0]> = ({
   thumbNail,
 }) => {
   const href =
-    "/experience/#" +
+    "/xperiences/#" +
     title
       ?.toLowerCase()
       .replace(/\s+/g, "-")

@@ -1,6 +1,8 @@
 export interface NavLinksProps {
   href: string;
   label: string;
+  sub?: string;
+  location?: string;
   subLinks?: NavLinksProps[];
 }
 

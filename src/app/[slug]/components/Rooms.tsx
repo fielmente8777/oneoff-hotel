@@ -84,6 +84,8 @@ const Rooms: React.FC<RoomsProps> = ({
               href={links[2].href}
               label={links[2].label}
               variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
               className="lg:!w-[10rem] !w-full max-lg:!h-12 md:mt-8"
             />
           </div>

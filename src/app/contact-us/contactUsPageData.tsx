@@ -4,7 +4,7 @@ import { PhoneIcon, AddressIcon } from "../../utils/Icons";
 
 export const contactUsPageData = {
   bannerData: {
-    images: ["/Rectangle.jpg"],
+    images: ["/Rectangle.jpg", "/contact-1.webp", "/Rectangle-3.webp"],
   },
   contactUsData: {
     title: "CONTACT US TODAY!",

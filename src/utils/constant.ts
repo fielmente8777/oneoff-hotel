@@ -2,18 +2,26 @@ export const contacts = {
   addresses: [
     "D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
   ],
-  phoneNumbers: ["+91 77530 42847","+91 98676 03699"],
-  emails: ["reservations@oneoffhotels.com", "LOREMIPSUMAXYZ.COM", "LOREMIPSUMAXYZ.COM"],
+  phoneNumbers: ["+91 77530 42847", "+91 98676 03699"],
+  emails: [
+    "reservations@oneoffhotels.com",
+    "LOREMIPSUMAXYZ.COM",
+    "LOREMIPSUMAXYZ.COM",
+  ],
   socialMediaUrls: {
-    facebookUrl: "https://www.facebook.com/",
-    instagramUrl: "https://www.instagram.com/",
-    linkedinUrl: "https://www.linkedin.com/",
-    twitterUrl: "https://twitter.com/",
+    facebookUrl: "",
+    instagramUrl: "https://www.instagram.com/oneoffhotels?igsh=MTZ6aGp6c2NhYTd0YQ%3D%3D&utm_source=qr",
+    linkedinUrl: "",
+    twitterUrl: "",
   },
   formDomain: "oneoffhotel",
   ctas: [""],
   mapUrls: {
     location: "Dhaka",
+  },
+  bookingCta: {
+    oneOffDashashwamedh:
+      "https://www.booking.com/hotel/in/one-off-dashashwamedh.en-gb.html?aid=311984&label=one-off-dashashwamedh-YB5WA4PAV%2AuB7jb%2AkzpdJQSM749430019360%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2448404997761%3Alp9196528%3Ali%3Adem%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YbSsBl3MCvHsD8UKUHIRFxY-Share-bVCdXlM%401767172723&sid=cefa84f70cd5c8c1546dc4771a0b3e8d&dest_id=-2114217&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1767176605&srpvid=edb72fcaddf7e135990d8b52fc1d9371&type=total&ucfs=1&",
   },
 };
 

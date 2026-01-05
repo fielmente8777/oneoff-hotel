@@ -1,8 +1,15 @@
+import { contacts } from "@/utils/constant";
+
 export const homePageData = {
   bannerData: {
     // videoSrc: "/Group56.png",
     // thumbNail: "/Group56.png",
-    images: ["/bnr-slide1.webp", "/bnr-slide2.webp", "/bnr-slide3.webp", "/bnr-slide4.webp"],
+    images: [
+      "/newim-2.webp",
+      "/bnr-slide4.webp",
+      "/newim-1.webp",
+      "/bnr-slide1.webp",
+    ],
   },
   aboutHomePage: {
     title: "EXPERIENCE THE",
@@ -24,25 +31,26 @@ export const homePageData = {
         href: "/varanasi",
       },
     },
-    // {
-    //   title: "LOCATIONS",
-    //   subTitle: "LOREM IPSUM DOLOR",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //   src: "/gallery4.jpg",
-    //   images: ["/gallery4.jpg", "/slider1.jpg"],
-    //   link: {
-    //     label: "EXPLORE HOTELS",
-    //     href: "",
-    //   },
-    // },
+    {
+      title: "LOCATIONS",
+      location: "VARANASI",
+      subTitle: "ONE OFF X",
+      description:
+        "One-Off X in Varanasi offers family rooms with air-conditioning, private bathrooms, and modern amenities. Each room includes a work desk, TV, and free WiFi, ensuring a pleasant stay.",
+      src: "/gallery4.jpg",
+      images: ["/gallery4.jpg", "/newim-3.webp"],
+      link: {
+        label: "EXPLORE HOTELS",
+        href: "",
+      },
+    },
   ],
   exploreExperienceData: {
     title: "EXPLORE EXPERIENCES",
     subTitle: "IN VARANASI",
     link: {
       label: "BOOK NOW",
-      href: "",
+      href: contacts.bookingCta.oneOffDashashwamedh,
     },
     cards: [
       {
@@ -99,21 +107,21 @@ export const homePageData = {
       subTitle: "UPCOMING HOTELS",
       description:
         "Experience timeless charm and modern luxury at our upcoming hotel in the heart of Jaipur.",
-      images: ["/Develop1.jpg", "/Develop2.jpg"],
+      images: ["/one/Rectangle 14.png", "/one/Rectangle 13.png"],
     },
     {
       title: "DELHI",
       subTitle: "UPCOMING HOTELS",
       description:
         "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Delhi.",
-      images: ["/one/IMG-20250909-WA0010.jpg", "/one/IMG-20250909-WA0016.jpg"],
+      images: ["/one/Rectangle-14.webp", "/one/Rectangle-13.webp"],
     },
     {
       title: "BANARAS",
       subTitle: "UPCOMING HOTELS",
       description:
         "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Banaras.",
-      images: ["/bns/BANARAS-ON.jpg", "/bns/BANARAS-ON2.jpg"],
+      images: ["/Develop1.jpg", "/Develop2.jpg"],
     },
   ],
 };

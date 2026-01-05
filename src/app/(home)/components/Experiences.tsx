@@ -20,6 +20,8 @@ const Experiences: FC<ExploreExperienceDataProps> = ({
           href={link.href}
           label={link.label}
           variant="primary"
+          target="_blank"
+          rel="noopener noreferrer"
           className="lg:mx-auto max-lg:mx-4 max-lg:!w-[90%] max-lg:!h-12"
         />
       </div>
