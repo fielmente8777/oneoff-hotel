@@ -125,7 +125,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
             </div>
           )}
         />
-        <div className="locations" />
+        <div className="locations xl:right-[23%] xxxl:right-[25%] lg:right-[20%] md:right-[15%] right-[10%] bottom-[10%] flex gap-4 absolute" />
       </div>
     </Section>
   );

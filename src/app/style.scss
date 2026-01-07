@@ -437,7 +437,8 @@
 .locations {
   position: absolute;
   top: 8.5rem !important;
-  left: 65.5rem !important;
+  // left: 65.5rem !important;
+  // right: 10rem !important;
   // border: #110d3c solid 1px;
   z-index: 9999;
   display: flex;
@@ -447,7 +448,8 @@
 
   @media (width < 640px) {
     top: 1.8rem !important;
-    left: 14.5rem !important;
+    // left: 14.5rem !important;
+    // right: 1rem !important;
   }
 
   .swiper-pagination-bullet {
