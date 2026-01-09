@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FBF6E3;
+  --primary: #184B56;
+  --secondary: #9C533E;
+  --foreground: #333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-foreground: var(--foreground);
+}
+
+/* local font import */
+
+@font-face {
+  font-family: "NeueMontreal-Regular";
+  font-style: normal;
+  src: url("/fonts/NeueMontreal-Regular.otf") format("opentype");
+}
+
+.font-anton {
+  font-family: var(--font-anton);
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+body {
+  background: var(--background);
+  color: var(--primary);
+  font-family: "NeueMontreal-Regular";
+  letter-spacing: 7%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+@keyframes bounce-slow {
+  0%   { transform: translateY(-320px); }
+  60%  { transform: translateY(0px); }   /* hit ground */
+  80%  { transform: translateY(-40px); } /* small rebound */
+  100% { transform: translateY(0px); }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2.4s forwards;
+  /* animation-delay: 0.5s; */
+}
+
+.custom-shadow{
+  /* box-shadow: 20px 0px 25px 25px 0px #9C533E; */
+}
