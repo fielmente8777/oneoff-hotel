@@ -11,7 +11,7 @@ const UpcomingHotelsCard: React.FC<UpcomingHotelsProps["cards"][0]> = ({
 }) => {
   return (
     <div className="grid w-full md:grid-cols-2 grid-cols-1 gap-4 md:gap-14">
-      <div className="flex flex-col gap-8 md:gap-14">
+      <div className="flex flex-col gap-8 justify-between md:gap-14">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-1">
             <span className="text-secondary text-lg">

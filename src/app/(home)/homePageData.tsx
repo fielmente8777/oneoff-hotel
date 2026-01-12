@@ -5,9 +5,9 @@ export const homePageData = {
     // videoSrc: "/Group56.png",
     // thumbNail: "/Group56.png",
     images: [
-      "/newim-2.webp",
-      "/bnr-slide4.webp",
+      // "/newim-2.webp",
       "/newim-1.webp",
+      "/bnr-slide4.webp",
       "/bnr-slide1.webp",
     ],
   },
