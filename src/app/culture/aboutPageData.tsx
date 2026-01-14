@@ -8,7 +8,7 @@ export const aboutPageData = {
     description:
       "A Switch from the Ordinary. The Hotel You Didn't Expect, But Always Wanted. At One Off Hotels, every stay is designed to surprise, inspire, and delight — not just a stay, a ONE-OFF experience.",
     videoSrc:
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/REEL.mp4",
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/MODEL+REEL+2.mp4",
     thumbNailSrc: "/about1.png",
   },
   aboutStayPage: {
@@ -22,13 +22,27 @@ export const aboutPageData = {
     },
   },
   images: [
-    "/oneoff.jpg",
-    "/Img/img2.webp",
-    "/oneoff2.jpg",
-    "/Img/image00010.webp",
-    "/Img/image00014.webp",
-    "/Img/image00015.webp",
-    "/gallery6.jpg",
+    { src: "/InstaImage1.jpg" },
+    {
+      videoSrc:
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ModelReel1.mp4",
+    },
+    { src: "/InstaImage3.jpg" },
+    { src: "/InstaImage2.jpg" },
+    {
+      videoSrc:
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/MODEL+REEL+2.mp4",
+    },
+    { src: "/InstaImage6.jpg" },
+    { src: "/InstaImage4.jpg" },
+    {
+      videoSrc:
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/PropertyReel.mp4",
+    },
+    { src: "/InstaImage5.jpg" },
+    { src: "/InstaImage7.jpg" },
+    { src: "/InstaImage9.jpg" },
+    { src: "/InstaImage8.jpg" },
   ],
   stayAt: {
     title: "MEET OUR FOUNDER",

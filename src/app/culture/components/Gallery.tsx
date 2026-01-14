@@ -1,11 +1,15 @@
 "use client";
 import { Section } from "@/components/sectionComponents";
 import { SwiperCarousel } from "@/components/sliders";
+import { LazyLoadedVideo } from "@/components/Video2";
 import Image from "next/image";
 import { Navigation, Pagination } from "swiper/modules";
 
 interface GalleryProps {
-  images: string[];
+  images: {
+    src?: string;
+    videoSrc?: string;
+  }[];
 }
 
 const Gallery: React.FC<GalleryProps> = ({ images }) => {
@@ -30,7 +34,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
           prevEl: ".button-prev",
         }}
         autoplay={{ delay: 2500 }}
-        swiperSlideClassName="relative w-full aspect-[4/4.5]"
+        swiperSlideClassName="relative w-full aspect-[4/7]"
         breakpoints={{
           768: {
             slidesPerView: 2,
@@ -40,7 +44,27 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
           },
         }}
         renderSlide={(image) => (
-          <Image src={image} alt={image} fill className="object-cover" />
+          <div>
+            {image.videoSrc && (
+              <div className="h-full">
+                <LazyLoadedVideo
+                  src={image.videoSrc}
+                  autoPlay
+                  loop
+                  muted
+                  controls={false}
+                />
+              </div>
+            )}
+            {image.src && (
+              <Image
+                src={image.src}
+                alt=""
+                fill
+                className="w-full h-full object-cover"
+              />
+            )}
+          </div>
         )}
       />
       <div className="flex justify-evenly items-center mt-4 gap-4 w-fit mx-auto ">

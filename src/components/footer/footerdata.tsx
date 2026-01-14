@@ -7,6 +7,7 @@ import {
   FillInstagramIcon,
   FillLinkedin,
   FillMailIcon,
+  FillPinterest,
   FillX,
 } from "../../utils/Icons";
 
@@ -58,8 +59,8 @@ export const footerData: FooterDataProps = {
     },
     {
       label: Object.keys(contacts.socialMediaUrls)[3],
-      href: contacts.socialMediaUrls.twitterUrl,
-      icon: <FillX />,
+      href: contacts.socialMediaUrls.pinterestUrl,
+      icon: <FillPinterest />,
     },
   ],
   listOfLinks: [
@@ -70,6 +71,8 @@ export const footerData: FooterDataProps = {
         { label: "XPERIENCES", href: "/xperiences/" },
         // { label: "DESTINATION", href: "/destination/" },
         { label: "CONTACT", href: "/contact-us/" },
+        { label: "CONTACT", href: "/contact-us/" },
+        { label: "BLOG", href: "/blog/" },
       ],
     },
     {
@@ -102,5 +105,5 @@ export const footerData: FooterDataProps = {
       ],
     },
   ],
-  images: ["/ft6.jpg", "/ft2.png", "/ft5.jpg", "/ft3.png"],
+  images: ["/ft5.jpg", "/ft7.jpg", "/ft8.png", "/ft9.png"],
 };

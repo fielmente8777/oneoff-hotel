@@ -29,7 +29,7 @@ const WhyDevelopWithUs = ({
   return (
     <Section>
       <div className="grid lg:grid-cols-12 grid-cols-1">
-        <div className="lg:col-span-5 col-span-1 bg-secondary text-white p-5  flex flex-col gap-8 items-start justify-center">
+        <div className="lg:col-span-5 col-span-1 bg-secondary text-white p-8  flex flex-col gap-8 items-start justify-center relative">
           <div className="space-y-3">
             <h1 className="uppercase tracking-widest">{title}</h1>
             <h2 className="uppercase md:text-5xl text-3xl font-semibold">
@@ -42,6 +42,17 @@ const WhyDevelopWithUs = ({
           <Link href={link.href} className="">
             {link.label}
           </Link>
+
+          <div className="absolute bottom-1 right-0">
+            <div className="relative w-40 aspect-[4/2]">
+              <Image
+                src={"/dwu/DevelopBanner2.png"}
+                alt="image"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="lg:col-span-7 col-span-1 develop-card">

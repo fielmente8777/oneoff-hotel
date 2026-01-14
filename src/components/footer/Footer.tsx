@@ -10,19 +10,21 @@ const Footer = () => {
       <div className="max_width flex max-md:flex-col gap-6 items-center justify-between py-6">
         {/* social media links */}
         <ul className="flex items-center gap-4 max-md:order-2">
-          {footerData.socialMediaUrls.filter((item) => item.href !== "").map((item, index) => (
-            <li key={index}>
-              <Link
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={item.label}
-                className="w-10 h-10 rounded-sm flex items-center justify-center bg-white text-primary transition-all"
-              >
-                {item.icon}
-              </Link>
-            </li>
-          ))}
+          {footerData.socialMediaUrls
+            .filter((item) => item.href !== "")
+            .map((item, index) => (
+              <li key={index}>
+                <Link
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.label}
+                  className="w-10 h-10 rounded-sm flex items-center justify-center bg-white text-primary transition-all"
+                >
+                  {item.icon}
+                </Link>
+              </li>
+            ))}
         </ul>
         {/* logo */}
         <Link
@@ -33,6 +35,7 @@ const Footer = () => {
             src={footerData.logo}
             alt="logo"
             fill
+            sizes="(max-width: 400px) 100vw, 400px"
             className="object-contain"
           />
         </Link>
@@ -54,9 +57,12 @@ const Footer = () => {
       <Container className="border-t border-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:py-20 py-10">
           {/* footer links */}
-          <div className="grid grid-cols-2 lg:grid-cols-[.8fr_1.3fr_1.5fr]  gap-6">
+          <div className="grid grid-cols-2 xl:grid-cols-[.8fr_1.3fr_1.5fr]  gap-6">
             {footerData.listOfLinks.map((item, itemIndex) => (
-              <div key={itemIndex} className={`flex flex-col gap-4 ${itemIndex === 2 ? "max-md:col-span-2" : ""}`}>
+              <div
+                key={itemIndex}
+                className={`flex flex-col gap-4 ${itemIndex === 2 ? "max-md:col-span-2" : ""}`}
+              >
                 <h3 className="text-2xl text-white font-anton tracking-wider">
                   {item.title}
                 </h3>
@@ -81,7 +87,7 @@ const Footer = () => {
             ))}
           </div>
           {/* footer image */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 xl:grid-cols-4 gap-4">
             {footerData.images.map((image, index) => (
               <div key={index} className="relative aspect-[4/5.5] w-full">
                 <Image src={image} alt="image" fill className="object-cover" />

@@ -80,9 +80,10 @@ const SEOVideo: React.FC<VideoProps> = ({
         controls={controls}
         loop={loop}
         muted={muted}
-        preload={preload}
+        preload={preload || "metadata"}
         autoPlay={autoPlay}
-        controlsList="nodownload"
+        disablePictureInPicture
+        controlsList="nodownload noplaybackrate nofullscreen"
         className="w-full h-full object-cover overflow-hidden"
         onPlay={handlePlay}
         playsInline

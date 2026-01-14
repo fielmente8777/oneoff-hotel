@@ -5,6 +5,7 @@ import Rooms from "./components/Rooms";
 import Gallery from "./components/Gallery";
 import UpComingLocations from "./components/UpComingLocations";
 import Amenties from "./components/Amenties";
+import { Metadata } from "next";
 
 interface Params {
   params: Promise<{
@@ -17,27 +18,71 @@ export async function generateStaticParams() {
   return paths;
 }
 
-export async function generateMetadata(props: Params) {
-  const params = await props.params;
-  const paramsData = await params.slug;
+// export async function generateMetadata(props: Params) {
+//   const params = await props.params;
+//   const paramsData = await params.slug;
 
-  const slugPageData = locationPageData?.find(
-    (data) => data.slug === paramsData
-  );
+//   const slugPageData = locationPageData?.find(
+//     (data) => data.slug === paramsData
+//   );
+//   return {
+//     title: slugPageData?.metaData?.title,
+//     description: slugPageData?.metaData?.description,
+//     // alternates: {
+//     //   canonical: `https://immigration.theapexcodes.com/${paramsData}/`,
+//     //   languages: {
+//     //     "en-US": `https://immigration.theapexcodes.com/${paramsData}/`,
+//     //     "fr-CA": `https://immigration.theapexcodes.com/${paramsData}/`,
+//     //   },
+//     // },
+//     // openGraph: {
+//     //   title: slugPageData?.metaData?.title,
+//     //   description: slugPageData?.metaData?.description,
+//     // },
+//   };
+// }
+
+export async function generateMetadata(props: Params): Promise<Metadata> {
+  const { slug } = await props.params;
+
+  const pageData = locationPageData.find((item) => item.slug === slug);
+
+  // Fallback metadata (important for build safety)
+  if (!pageData || !pageData.metaData) {
+    return {
+      title: "ONE-OFF Hotels",
+      description: "ONE-OFF Hotels",
+      alternates: {
+        canonical: "https://oneoffhotels.com/",
+      },
+    };
+  }
+
+  const { title, description } = pageData.metaData;
+
+  const canonicalUrl = `https://oneoffhotels.com/${slug}/`;
+
   return {
-    title: slugPageData?.metaData?.title,
-    description: slugPageData?.metaData?.description,
-    // alternates: {
-    //   canonical: `https://immigration.theapexcodes.com/${paramsData}/`,
-    //   languages: {
-    //     "en-US": `https://immigration.theapexcodes.com/${paramsData}/`,
-    //     "fr-CA": `https://immigration.theapexcodes.com/${paramsData}/`,
-    //   },
-    // },
-    // openGraph: {
-    //   title: slugPageData?.metaData?.title,
-    //   description: slugPageData?.metaData?.description,
-    // },
+    title,
+    description,
+
+    alternates: {
+      canonical: canonicalUrl,
+    },
+
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      siteName: "ONE-OFF Hotels",
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 

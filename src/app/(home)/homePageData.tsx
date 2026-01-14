@@ -6,9 +6,13 @@ export const homePageData = {
     // thumbNail: "/Group56.png",
     images: [
       // "/newim-2.webp",
-      "/newim-1.webp",
-      "/bnr-slide4.webp",
+      "/HomeBanner3.jpg",
       "/bnr-slide1.webp",
+      "/bnr-slide4.webp",
+      // "/newim-1.webp",
+      "/HomeBanner6.png",
+      "/HomeBanner7.jpg",
+      "/Banner-image.webp",
     ],
   },
   aboutHomePage: {
@@ -23,25 +27,25 @@ export const homePageData = {
       location: "VARANASI",
       subTitle: "ONE OFF DASHASHWAMEDH",
       description:
-        "One-Off Dashashwamedh in Varanasi offers family rooms with air-conditioning, private bathrooms, and modern amenities. Each room includes a work desk, TV, and free WiFi, ensuring a pleasant stay.",
+        "ONE-OFF Dashashwamedh offers a calm, design-led retreat just steps from the ghats and the spiritual heart of Varanasi. Thoughtfully crafted interiors, modern comforts, and attentive service create a peaceful counterpoint to the city’s vibrant energy. Ideal for conscious travelers, it’s a stay where culture, location, and understated living come together effortlessly.",
       src: "/gallery4.jpg",
-      images: ["/slider1.jpg", "/DSC07476.jpg"],
+      images: ["/slider1.jpg", "/Loneimage.jpg"],
       link: {
         label: "EXPLORE HOTELS",
-        href: "/varanasi",
+        href: "/one-off-dashashwamedh",
       },
     },
     {
       title: "LOCATIONS",
       location: "VARANASI",
-      subTitle: "ONE OFF X",
+      subTitle: "ONEOFF X ASSI",
       description:
-        "One-Off X in Varanasi offers family rooms with air-conditioning, private bathrooms, and modern amenities. Each room includes a work desk, TV, and free WiFi, ensuring a pleasant stay.",
-      src: "/gallery4.jpg",
-      images: ["/gallery4.jpg", "/newim-3.webp"],
+        "Tucked away in Ravindrapuri’s quiet lanes, ONEOFF X ASSI is an 80-year-old ancestral bungalow—once filled with the laughter of the Koirala family and a childhood refuge for actress Manisha Koirala—now restored. Rooted in Wabi-Sabi philosophy, it celebrates natural textures and understated comfort, offering a calm lifestyle amid Varanasi’s vibrant energy.",
+      src: "/gallery.jpg",
+      images: ["/gallery4.jpg", "/Ltwoimage.jpg"],
       link: {
         label: "EXPLORE HOTELS",
-        href: "",
+        href: "/one-off-x",
       },
     },
   ],
@@ -106,22 +110,22 @@ export const homePageData = {
       title: "JAIPUR",
       subTitle: "UPCOMING HOTELS",
       description:
-        "Experience timeless charm and modern luxury at our upcoming hotel in the heart of Jaipur.",
+        "Experience timeless charm and modern luxury at our upcoming hotel in Jaipur.",
       images: ["/one/Rectangle 14.png", "/one/Rectangle 13.png"],
     },
     {
       title: "DELHI",
       subTitle: "UPCOMING HOTELS",
       description:
-        "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Delhi.",
-      images: ["/one/Rectangle-14.webp", "/one/Rectangle-15.jpg"],
+        "Experience timeless charm and modern luxury at our upcoming hotel in Delhi.",
+      images: ["/one/Rectangle-14.webp", "/one/Rectangle-18.jpg"],
     },
     {
       title: "BANARAS",
       subTitle: "UPCOMING HOTELS",
       description:
-        "Discover urban elegance and unmatched comfort at our upcoming hotel in the vibrant capital city of Banaras.",
-      images: ["/Develop1.jpg", "/Develop2.jpg"],
+        "Experience timeless charm and modern luxury at our upcoming hotel in Bamaras.",
+      images: ["/one/Rectangle-16.png", "/one/Rectangle-17.jpg"],
     },
   ],
   upcomingCafe: {
@@ -129,19 +133,43 @@ export const homePageData = {
     subTitle: "UPCOMING CAFE",
     cards: [
       {
-        src: "/cafe/CafeImage1.jpg",
+        cafe: [
+          {
+            src: "/cafe/0.webp",
+          },
+          {
+            src: "/cafe/9.webp",
+          },
+          {
+            src: "/cafe/2.webp",
+          },
+          {
+            src: "/cafe/6.webp",
+          },
+          {
+            src: "/cafe/10.webp",
+          },
+        ],
       },
       {
-        src: "/cafe/CafeImage2.jpg",
-      },
-      {
-        src: "/cafe/CafeImage3.jpg",
-      },
-      {
-        src: "/cafe/CafeImage4.jpg",
-      },
-      {
-        src: "/cafe/CafeImage5.jpg",
+        cafe: [
+          {
+            src: "/cafe/CafeImage1.jpg",
+          },
+          {
+            src: "/cafe/CafeImage3.jpg",
+          },
+          {
+            src: "/cafe/CafeImage4.jpg",
+          },
+          {
+            src: "/cafe/CafeImage2.jpg",
+          },
+
+          {
+            src: "/cafe/CafeImage5.jpg",
+          },
+        ],
       },
     ],
   },

@@ -21,7 +21,7 @@ const Amenties = ({ amenties }: AmentiesProps) => {
           {amenties.map((amentie, index) => (
             <div key={index} className="flex flex-col items-center gap-2">
               {amentie.icon}
-              <span>{amentie.label}</span>
+              <span className="uppercase">{amentie.label}</span>
             </div>
           ))}
         </div>

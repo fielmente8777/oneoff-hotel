@@ -329,7 +329,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
       </div>
       <button
         type="submit"
-        className="btn w-full bg-secondary hover:bg-transparent text-white py-3 px-6 border border-secondary transition-all duration-300 ease-in-out hover: uppercase active:scale-95 hover:scale-105"
+        className="btn w-full bg-secondary text-white py-3 px-6 border border-secondary transition-all duration-300 ease-in-out hover: uppercase active:scale-95 hover:scale-105"
       >
         {formRes ? "loading..." : <span className="flex items-center justify-center gap-2">Submit<span><ArrowUpRight /></span> </span>}
       </button>

@@ -4,16 +4,22 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
-function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {
+function Whatsapp({
+  whatsAppNumber,
+  src,
+}: {
+  whatsAppNumber?: string;
+  src?: string;
+}) {
   const pathName = usePathname();
-  
-    if (pathName === "/thank-you/") {
-      return null;
-    }
+
+  if (pathName === "/thank-you/") {
+    return null;
+  }
   return (
     <div className={`fixed bottom-24 lg:left-3 left-4 z-20 cursor-pointer`}>
       <Link
-        href={`https://wa.me/${whatsAppNumber.replace(/\s+/g, "")}?text=Hello`}
+        href={`${whatsAppNumber ? `https://wa.me/${whatsAppNumber.replace(/\s+/g, "")}?text=Hello` : src} `}
         target="_blank"
         rel="noreferrer"
         className="w-12 h-12 rounded-full flex items-center justify-center bg-green-500 hover:bg-green-600 transition-all hover:shadow-2xl"

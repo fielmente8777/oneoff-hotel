@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
   // images: {
   //   unoptimized: true,
   // },
+  compiler: {
+    removeConsole : true,
+  },
+  compress: true,
 };
 
 export default nextConfig;

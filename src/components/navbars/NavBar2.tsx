@@ -27,10 +27,10 @@ const NavBar2 = () => {
                 href={"/"}
                 className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1]"
               >
-                <Image src="/logo1.png" alt="one off hotel" fill />
+                <Image src="/logo1.png" alt="one off hotel" sizes="(max-width: 400px) 100vw, 400px" fill />
               </Link>
             </div>
-            <ul className="lg:flex hidden item-center gap-10">
+            <ul className="xl:flex hidden item-center gap-10">
               {navBarData.map((link, index) => {
                 // const id = index + 1;
                 return (
@@ -119,12 +119,16 @@ const NavBar2 = () => {
               label="Book Now"
               variant="secondary"
             />
-            <div className="max-lg:block hidden">
+            <div className="max-xl:block hidden">
               <button
-                className={`lg:hidden transition-all ease-in-out duration-300 ${isOpenMobileMenu ? "rotate-90" : ""}`}
+                className={`xl:hidden transition-all ease-in-out duration-300 ${isOpenMobileMenu ? "rotate-90" : ""}`}
                 onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
               >
-                {!isOpenMobileMenu ? <GiHamburgerMenu /> : <MdClose />}
+                {!isOpenMobileMenu ? (
+                  <GiHamburgerMenu color="#fff" />
+                ) : (
+                  <MdClose color="#fff" />
+                )}
               </button>
 
               <MobileNav />

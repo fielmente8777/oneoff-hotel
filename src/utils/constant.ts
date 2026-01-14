@@ -9,10 +9,12 @@ export const contacts = {
     "LOREMIPSUMAXYZ.COM",
   ],
   socialMediaUrls: {
-    facebookUrl: "",
-    instagramUrl: "https://www.instagram.com/oneoffhotels?igsh=MTZ6aGp6c2NhYTd0YQ%3D%3D&utm_source=qr",
-    linkedinUrl: "",
-    twitterUrl: "",
+    facebookUrl: "https://www.facebook.com/share/p/19U6puJmcx",
+    instagramUrl:
+      "https://www.instagram.com/oneoffhotels?igsh=MTZ6aGp6c2NhYTd0YQ%3D%3D&utm_source=qr",
+    linkedinUrl:
+      "https://www.linkedin.com/company/oneoff-hotels/posts/?feedView=all&viewAsMember=true",
+    pinterestUrl: "https://in.pinterest.com/homefeed/",
   },
   formDomain: "oneoffhotel",
   ctas: [""],
@@ -22,6 +24,8 @@ export const contacts = {
   bookingCta: {
     oneOffDashashwamedh:
       "https://www.booking.com/hotel/in/one-off-dashashwamedh.en-gb.html?aid=311984&label=one-off-dashashwamedh-YB5WA4PAV%2AuB7jb%2AkzpdJQSM749430019360%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2448404997761%3Alp9196528%3Ali%3Adem%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YbSsBl3MCvHsD8UKUHIRFxY-Share-bVCdXlM%401767172723&sid=cefa84f70cd5c8c1546dc4771a0b3e8d&dest_id=-2114217&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1767176605&srpvid=edb72fcaddf7e135990d8b52fc1d9371&type=total&ucfs=1&",
+    oneOffXAssi:
+      "https://www.booking.com/hotel/in/oneoff-x-assi.en-gb.html?label=gen173nr-10CAsobEINb25lb2ZmLXgtYXNzaUgzWARobIgBAZgBM7gBB8gBDdgBA-gBAfgBAYgCAagCAbgC35z1ygbAAgHSAiQ0ZGRhYWVlYS0yYzFkLTRiMTItYjUwNy0xZWVmNDVlOTYwNDHYAgHgAgE&sid=e4cc5aa617717cc9a945be3bc89e20d0&dist=0&group_adults=2&keep_landing=1&sb_price_type=total&type=total&lang=en-gb&soz=1&lang_changed=1",
   },
 };
 

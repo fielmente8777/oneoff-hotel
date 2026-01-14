@@ -54,7 +54,7 @@ const Explore: React.FC<ExploreProps> = ({
 
   return (
     <SectionWithContainer>
-      <div className="grid lg:grid-cols-5 grid-cols-1 gap-4">
+      <div className="grid lg:grid-cols-5 items-center grid-cols-1 gap-4">
         <div className="md:col-span-3">
           <div className="grid md:grid-cols-3 grid-cols-2 gap-4 grid-flow-row">
             {chunkedImages.map((col, colIndex) => (

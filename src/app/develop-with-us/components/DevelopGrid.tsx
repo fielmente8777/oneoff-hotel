@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 interface DevelopGridProps {
-  images: string[];
+  images: { src?: string; videoSrc?: string }[];
 }
 
 export const DevelopGrid = ({ images }: DevelopGridProps) => {

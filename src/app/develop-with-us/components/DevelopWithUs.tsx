@@ -1,8 +1,6 @@
 import ContactForm from "@/components/forms/ContactForm";
 import { Container } from "@/components/sectionComponents";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 
 interface DevelopBannerProps {
   title: string;
@@ -34,10 +32,10 @@ const DevelopWithUsComponent = ({
               </h3>
             </div> */}
 
-            <div className="relative w-full aspect-[4/4] custom-shadow">
-              <Image src={src} alt="" className="object-cover" fill />
+            <div className="relative w-full aspect-[4/4.2] custom-shadow">
+              <Image src={src} alt="" className="object-contain" fill />
 
-              <div className="absolute -right-5 top-12 w-20 h-[95%] bg-secondary -z-10 lg:block hidden" />
+              {/* <div className="absolute -right-5 top-12 w-20 h-[95%] bg-secondary -z-10 lg:block hidden" /> */}
             </div>
             {/* {description && (
               <p className="md:text-lg text-center">{description[0]}</p>

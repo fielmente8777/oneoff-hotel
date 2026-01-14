@@ -1,17 +1,32 @@
 import { contacts } from "@/utils/constant";
-import { WifiIcon } from "@/utils/Icons";
+import {
+  CoffeIcon,
+  FamilyRoomIcon,
+  LaundaryIcon,
+  PetFriendly,
+  RoomServiceIcon,
+  SecurityIcon,
+  TvIcon,
+  WifiIcon,
+} from "@/utils/Icons";
 import { IoLocationSharp } from "react-icons/io5";
 export const locationPageData = [
   {
     slug: "one-off-dashashwamedh",
     metaData: {
-      title: "One Off Dashashwamedh",
-      description: "One Off Dashashwamedh",
+      title:
+        "One Off Dashashwamedh, Varanasi | Boutique Hotel Near Kashi Vishwanath Temple",
+      description:
+        "Stay at One Off Dashashwamedh, a boutique hotel in Varanasi just steps from Kashi Vishwanath Temple and the Ganga ghats. Minimalist rooms, modern comforts, and an unbeatable old-city location.",
     },
+
     bannerData: {
       images: [
-        "/Rectangle1.png",
+        "/DasBanner1.jpg",
         "/bnr-slide3.webp",
+        "/DasBanner3.jpg",
+        "/DasBanner2.jpg",
+        // "/Rectangle1.png",
         "/Img/Rectangle 4079.png",
         "/Img/Rectangle 4080.png",
       ],
@@ -49,12 +64,12 @@ export const locationPageData = [
       ],
       amenities: [""],
       images: [
-        "/DSC07476.jpg",
-        "/Img/Rectangle 4077.png",
-        "/bnr-slide3.webp",
-        "/Img/image00020.webp",
-        "/Img/Rectangle 4079.png",
-        "/Img/Rectangle 4080.png",
+        "/VRoom1.jpg",
+        "/VRoom2.jpg",
+        "/VRoom3.jpg",
+        "/VRoom4.jpg",
+        "/VRoom5.jpg",
+        "/VRoom6.jpg",
       ],
     },
 
@@ -64,32 +79,32 @@ export const locationPageData = [
         icon: <WifiIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "FAMILY ROOMS",
+        icon: <FamilyRoomIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "ROOM SERVICE",
+        icon: <RoomServiceIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "PET FRIENDLY",
+        icon: <PetFriendly />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "SECURITY",
+        icon: <SecurityIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "TEA/COFFEE MAKER",
+        icon: <CoffeIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "Tv",
+        icon: <TvIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "LAUNDRY (ADD-ON)",
+        icon: <LaundaryIcon />,
       },
     ],
 
@@ -116,21 +131,27 @@ export const locationPageData = [
   {
     slug: "one-off-x",
     metaData: {
-      title: "One Off Dashashwamedh",
-      description: "One Off Dashashwamedh",
+      title: "One Off X Assi, Varanasi | Boutique Apartments Near Assi Ghat",
+      description:
+        "One Off X Assi offers spacious boutique apartments in Ravindrapuri, Varanasi. Heritage design, Wabi-Sabi aesthetics, modern comforts, and close proximity to Assi Ghat.",
     },
+
     bannerData: {
-      images: [
-        "/Rectangle1.png",
-        "/bnr-slide3.webp",
-        "/Img/Rectangle 4079.png",
-        "/Img/Rectangle 4080.png",
-      ],
+      // images: [
+      //   "/Rectangle1.png",
+      //   "/bnr-slide3.webp",
+      //   "/Img/Rectangle 4079.png",
+      //   "/Img/Rectangle 4080.png",
+      // ],
+      videoSrc:
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ONE+OFF+MAIN+FILM/master.m3u8",
+      // videoSrc:
+      //   "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ONE+OFF+MAIN+FILM.mp4",
     },
     aboutLocation: {
-      title: "ONE OFF DASHASHWAMEDH",
+      title: "ONE OFF X ASSI",
       description: [
-        "Stay in the heart of Varanasi at our beautifully designed 5-room boutique hotel, just steps from the Kashi Vishwanath Temple and Ganga ghats. Each room is a cozy, 300 sqft retreat with minimalist interiors, modern comforts, and hotel-style luxury. Enjoy the charm of the old city with everything within walking distance—temples, aartis, boat rides, and more. The perfect blend of aesthetic design, comfort, and location.",
+        "ONEOFF X ASSI is a thoughtfully restored 80-year-old ancestral bungalow offering spacious, design-led boutique apartments in Ravindrapuri—Varanasi’s most prestigious and serene residential neighborhood. Rooted in Wabi-Sabi philosophy, the property blends heritage character, handcrafted interiors, and modern comforts, just minutes from Assi Ghat. Ravindrapuri’s wide, tree-lined streets, cultural spaces, yoga centres, bookstores, and celebrated cafés create a calm yet connected setting, allowing guests to experience the spiritual rhythm of Kashi while returning to a quiet, refined sanctuary.",
       ],
       link: {
         label: "VARANASI",
@@ -139,14 +160,14 @@ export const locationPageData = [
       },
     },
     rooms: {
-      title: "One Off DASHASHWAMEDH",
+      title: "ONE OFF X ASSI ",
       description: [
-        "Welcome to our hotel in the spiritual heart of Varanasi—just 2 minutes from Kashi Vishwanath Temple and 5 minutes from the Ganga ghats. Each 300 sqft room offers minimalist design, warm lighting, and handcrafted details for a serene stay amidst the city’s vibrant energy.",
+        "Each apartment is a spacious private residence featuring two large bedrooms with premium linens, a sunlit living area with deep seating and handcrafted jute, rattan, and linen details, and en-suite bathrooms fitted with high-quality fixtures and organic, artisanal toiletries. A fully equipped kitchen and dedicated dining space complete the experience, offering the comfort of home elevated by thoughtful, boutique-style luxury.",
       ],
       links: [
         {
           label:
-            "ADDRESS: D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
+            "ADDRESS: Ravindrapuri Colony B-1/84-P Ravindrapuri Extention, Opposite Bankati Hanuman Ji Temple, Varanasi",
           href: "",
         },
         {
@@ -155,17 +176,17 @@ export const locationPageData = [
         },
         {
           label: "BOOK NOW",
-          href: contacts.bookingCta.oneOffDashashwamedh,
+          href: contacts.bookingCta?.oneOffXAssi,
         },
       ],
       amenities: [""],
       images: [
-        "/DSC07476.jpg",
-        "/Img/Rectangle 4077.png",
-        "/bnr-slide3.webp",
-        "/Img/image00020.webp",
-        "/Img/Rectangle 4079.png",
-        "/Img/Rectangle 4080.png",
+        "/one-x-image1.jpg",
+        "/one-x-image2.jpg",
+        "/one-x-image3.jpg",
+        "/one-x-image4.jpg",
+        "/one-x-image5.jpg",
+        "/one-x-image6.jpg",
       ],
     },
 
@@ -175,32 +196,32 @@ export const locationPageData = [
         icon: <WifiIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "FAMILY ROOMS",
+        icon: <FamilyRoomIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "ROOM SERVICE",
+        icon: <RoomServiceIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "PET FRIENDLY",
+        icon: <PetFriendly />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "SECURITY",
+        icon: <SecurityIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "TEA/COFFEE MAKER",
+        icon: <CoffeIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "Tv",
+        icon: <TvIcon />,
       },
       {
-        label: "FREE WIFI",
-        icon: <WifiIcon />,
+        label: "LAUNDRY (ADD-ON)",
+        icon: <LaundaryIcon />,
       },
     ],
 
@@ -208,18 +229,18 @@ export const locationPageData = [
       title: "EXPLORE",
       subTitle: "OUR GALLERY",
       images: [
-        "/gallery1.png",
-        "/about2.png",
-        "/gallery4.jpg",
-        "/gallery5.jpg",
-        "/gallery6.jpg",
-        "/gallery7.jpg",
-        "/gallery8.jpg",
-        "/gallery9.jpg",
-        "/gallery10.jpg",
-        "/gallery11.jpg",
-        "/gallery2.png",
-        "/gallery12.jpg",
+        "/one-x-gallery1.jpg",
+        "/one-x-gallery2.jpg",
+        "/one-x-gallery3.jpg",
+        "/one-x-gallery4.jpg",
+        "/one-x-gallery5.jpg",
+        "/one-x-gallery6.jpg",
+        "/one-x-gallery7.jpg",
+        "/one-x-gallery8.jpg",
+        "/one-x-gallery9.jpg",
+        "/one-x-gallery10.jpg",
+        "/one-x-gallery11.jpg",
+        "/one-x-gallery12.jpg",
       ],
       button: "VIEW MORE",
     },

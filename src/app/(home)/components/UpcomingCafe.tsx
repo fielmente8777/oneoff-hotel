@@ -9,14 +9,15 @@ import { Autoplay } from "swiper/modules";
 interface UpcomingCafeProps {
   title: string;
   subTitle: string;
-
   cards: {
-    src: string;
+    cafe: {
+      src: string;
+    }[];
   }[];
 }
 
 const UpcomingCafe = ({ title, subTitle, cards }: UpcomingCafeProps) => {
-  const phoneViewCardsData = cards.slice(1);
+  const phoneViewCardsData = [...cards.flatMap((item) => item.cafe)];
   console.log(phoneViewCardsData);
   return (
     <Section className="pb-0!">
@@ -24,51 +25,20 @@ const UpcomingCafe = ({ title, subTitle, cards }: UpcomingCafeProps) => {
         <div className="flex flex-col md:gap-14 gap-8">
           <SectionHeading title={title} subTitle={subTitle} textCenter />
 
-          <div className="md:grid hidden grid-cols-3">
-            {/* Left Column */}
-            <div className="grid grid-rows-2">
-              {cards.slice(0, 2).map((card, index) => (
-                <div className="w-full h-full relative" key={index}>
-                  <Image
-                    src={card.src}
-                    alt=""
-                    fill
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-
-            {/* Center Column */}
-            <div className="w-full aspect-[4/5] relative">
-              {cards.slice(2, 3).map((card, index) => (
-                <Image
-                  key={index}
-                  src={card.src}
-                  alt=""
-                  fill
-                  className="w-full h-full object-cover"
-                />
-              ))}
-            </div>
-
-            {/* Right Column */}
-            <div className="grid grid-rows-2">
-              {cards.slice(3, 5).map((card, index) => (
-                <div className="w-full h-full relative" key={index}>
-                  <Image
-                    src={card.src}
-                    alt=""
-                    fill
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
+          {/* GridView */}
+          <div>
+            <SwiperCarousel
+              data={cards}
+              autoplay={{
+                delay: 3000,
+              }}
+              modules={[Autoplay]}
+              renderSlide={(item) => <GridView {...item} />}
+            />
           </div>
         </div>
 
-        <div className="mt-6">
+        <div className="mt-6 md:hidden block">
           <SwiperCarousel
             data={phoneViewCardsData}
             autoplay={{
@@ -93,3 +63,30 @@ const UpcomingCafe = ({ title, subTitle, cards }: UpcomingCafeProps) => {
 };
 
 export default UpcomingCafe;
+
+export const GridView = ({ cafe }: { cafe: { src: string }[] }) => {
+  const gridPattern = [
+    "row-span-2",
+    "row-span-4",
+    "row-span-2",
+    "row-span-2",
+    "row-span-2",
+  ];
+  return (
+    <div className="grid grid-cols-3 grid-flow-row auto-rows-[11rem] gap-px">
+      {cafe.map((item, index) => (
+        <div
+          key={index}
+          className={`relative w-full h-full aspect-auto ${gridPattern[index]}`}
+        >
+          <Image
+            src={item.src}
+            alt=""
+            fill
+            className="object-cover"
+          />
+        </div>
+      ))}
+    </div>
+  );
+};

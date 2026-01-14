@@ -112,17 +112,22 @@ const Banner: FC<BannerProps> = ({
       ) : /* ✅ Case 2: Only Video */
       videoSrc ? (
         <div className="w-full h-full relative">
-          <YoutubePlayer
-            poster={thumbNail || ""}
-            url={videoSrc}
-            youtubeUrl={videoSrc}
-            title=""
+          <LazyLoadedVideo
+            src={videoSrc}
+            autoPlay
+            loop
+            controls={false}
+            muted
           />
         </div>
       ) : /* ✅ Case 3: Only Single Image */
       hasSingleImage ? (
-        <div className="w-full relative aspect-[4/1.5]">
+        <div className="w-full relative aspect-[4/2]">
           <Image src={images[0]} alt="image" fill className="object-cover" />
+
+          <div className="absolute top-0 left-0 w-full z-10">
+            <NavBar2 />
+          </div>
         </div>
       ) : /* ✅ Case 4: Multiple Images (Carousel) */
       hasImages ? (
@@ -136,17 +141,16 @@ const Banner: FC<BannerProps> = ({
             autoplay={{ delay: 2500 }}
             className="w-full"
             renderSlide={(image) => (
-              <div className="w-full relative md:aspect-[4/2.5] aspect-square">
+              <div className="w-full relative md:aspect-[4/2.8] aspect-square">
                 <Image src={image} alt="image" fill className="object-cover" />
                 <div className="absolute inset-0 z-10 bg-black/20" />
               </div>
             )}
           />
-          {pathName === "/" && (
-            <div className="absolute top-0 left-0 w-full z-10">
-              <NavBar2 />
-            </div>
-          )}
+
+          <div className="absolute top-0 left-0 w-full z-10">
+            <NavBar2 />
+          </div>
         </div>
       ) : null}
     </Section>

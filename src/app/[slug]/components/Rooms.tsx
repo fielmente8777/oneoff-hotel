@@ -29,7 +29,7 @@ const Rooms: React.FC<RoomsProps> = ({
       className="relative after:absolute after:inset-0 after:bg-secondary after:-z-10"
       defaultPadding={false}
     >
-      <div className="w-full grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
+      <div className="w-full grid grid-cols-1 xl:grid-cols-5 gap-4 items-center">
         <div className="md:col-span-3">
           <div className="lg:hidden flex flex-col gap-2 p-4 text-white">
             <h2 className="text-3xl md:text-3xl uppercase font-anton">
@@ -68,7 +68,7 @@ const Rooms: React.FC<RoomsProps> = ({
           </div>
         </div>
 
-        <div className="md:col-span-2 text-white md:p-16 p-4">
+        <div className="md:col-span-2 text-white xl:p-0 p-4">
           <div className="flex flex-col gap-6">
             <h2 className="text-3xl md:text-3xl uppercase font-anton lg:block hidden">
               {title}

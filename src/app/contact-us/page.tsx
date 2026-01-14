@@ -2,6 +2,47 @@ import Banner from "@/components/banners/Banner";
 import Image from "next/image";
 import { contactUsPageData } from "./contactUsPageData";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact ONE-OFF Hotels | Reservations, Enquiries & Support",
+  description:
+    "Get in touch with ONE-OFF Hotels for reservations, enquiries, partnerships, or support. We’re here to help.",
+
+  keywords: [
+    "contact one off hotels",
+    "one off hotels reservations",
+    "boutique hotel contact india",
+  ],
+
+  alternates: {
+    canonical: "https://oneoffhotels.com/contact-us/",
+  },
+
+  openGraph: {
+    type: "website",
+    title: "Contact ONE-OFF Hotels | Reservations, Enquiries & Support",
+    description:
+      "Contact ONE-OFF Hotels for bookings, enquiries, or partnership opportunities.",
+    url: "https://oneoffhotels.com/contact-us/",
+    siteName: "ONE-OFF Hotels",
+    images: [
+      {
+        url: "https://oneoffhotels.com/og-contact.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact ONE-OFF Hotels",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact ONE-OFF Hotels | Reservations, Enquiries & Support",
+    description: "Reach out to ONE-OFF Hotels for reservations and support.",
+    images: ["https://oneoffhotels.com/og-contact.jpg"],
+  },
+};
 
 export default function ContactUs() {
   return (

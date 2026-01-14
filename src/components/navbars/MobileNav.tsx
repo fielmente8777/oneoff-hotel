@@ -26,7 +26,7 @@ const MobileNav: React.FC = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full h-screen pointer-events-none z-50 bg-black/60 transition-all duration-300 ${isOpenMobileMenu ? "translate-x-0" : "-translate-x-full"}`}
+      className={`fixed top-0 left-0 w-full h-screen pointer-events-none z-[9999] bg-black/60 transition-all duration-300 ${isOpenMobileMenu ? "translate-x-0" : "-translate-x-full"}`}
     >
       <div className="w-[80%] h-full relative pointer-events-auto">
         <div className="w-full h-full bg-background py-4 ps-4">
