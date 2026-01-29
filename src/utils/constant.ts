@@ -5,7 +5,7 @@ export const contacts = {
   phoneNumbers: ["+91 77530 42847", "+91 98676 03699"],
   emails: [
     "reservations@oneoffhotels.com",
-    "LOREMIPSUMAXYZ.COM",
+    "bookings@oneoffhotels.com",
     "LOREMIPSUMAXYZ.COM",
   ],
   socialMediaUrls: {

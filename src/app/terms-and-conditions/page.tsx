@@ -1,7 +1,7 @@
 import { contacts } from "@/utils/constant";
 
 export default function TermsAndConditionsPage() {
-  const email = contacts.emails[0];
+  const email = contacts.emails[1];
   const hotelAddress = contacts.addresses[0];
 
   return (

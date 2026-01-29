@@ -7,8 +7,7 @@ import {
   FillInstagramIcon,
   FillLinkedin,
   FillMailIcon,
-  FillPinterest,
-  FillX,
+  FillPinterest
 } from "../../utils/Icons";
 
 interface FooterDataProps {
@@ -88,8 +87,8 @@ export const footerData: FooterDataProps = {
       title: "REACH US AT",
       links: [
         {
-          label: contacts.emails[0],
-          href: "mailto:" + contacts.emails[0],
+          label: contacts.emails[1],
+          href: "mailto:" + contacts.emails[1],
           icon: <FillMailIcon />,
         },
         {

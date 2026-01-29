@@ -13,8 +13,8 @@ export const contactUsPageData = {
     links: [
       {
         title: "Email Address:",
-        label: contacts.emails[0],
-        href: "mailto:" + contacts.emails[0],
+        label: contacts.emails[1],
+        href: "mailto:" + contacts.emails[1],
         icon: <EmailIcon />,
       },
       {
