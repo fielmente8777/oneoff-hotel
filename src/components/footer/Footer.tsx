@@ -102,7 +102,7 @@ const Footer = () => {
             <span className="px-2 text-lg">
               © ONE OFF HOSPITALITY PRIVATE LIMITED {new Date().getFullYear()}
             </span>
-            <span>POWERED BY EAZOTEL</span>
+            {/* <span>POWERED BY EAZOTEL</span> */}
           </div>
         </Container>
       </div>
