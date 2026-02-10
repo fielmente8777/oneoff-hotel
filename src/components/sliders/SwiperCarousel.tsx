@@ -1,15 +1,15 @@
 "use client";
 
-import React, { ReactNode } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { SwiperProps } from "swiper/react";
+import { ReactNode } from "react";
+import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
 
 // @import swiperr css
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 interface SwiperCaroselProps<T> extends SwiperProps {
   data: T[];

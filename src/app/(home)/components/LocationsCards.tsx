@@ -4,7 +4,7 @@ import { Container, Section } from "@/components/sectionComponents";
 import { SwiperCarousel } from "@/components/sliders";
 import Image from "next/image";
 import { IoLocationSharp } from "react-icons/io5";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 
 interface LocationsCardsProps {
   locations: {
@@ -31,7 +31,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
             slidesPerView={1}
             spaceBetween={0}
             loop={true}
-            modules={[Autoplay, Pagination]}
+            modules={[Autoplay, Pagination, EffectFade]}
             pagination={{
               clickable: true,
               el: ".locations",
@@ -46,16 +46,12 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
               `;
               },
             }}
+            effect="fade"
+            fadeEffect={{ crossFade: true }}
+            speed={800}
             className="w-full "
             swiperSlideClassName="w-full"
             autoplay={{ delay: 3000 }}
-            speed={1000}
-            effect={"fade"}
-            fadeEffect={{
-              // crossfade: true,
-              crossFade: true,
-            }}
-            // speed={1000}
             renderSlide={(location) => (
               <div className="w-full">
                 <div className="grid xl:grid-cols-6 items-center">
