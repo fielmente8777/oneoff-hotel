@@ -124,7 +124,7 @@ export const homePageData = {
       title: "BANARAS",
       subTitle: "UPCOMING HOTELS",
       description:
-        "Experience timeless charm and modern luxury at our upcoming hotel in Bamaras.",
+        "Experience timeless charm and modern luxury at our upcoming hotel in Banaras.",
       images: ["/one/Rectangle-16.png", "/one/Rectangle-17.jpg"],
     },
   ],
