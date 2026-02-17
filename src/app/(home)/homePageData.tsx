@@ -3,7 +3,6 @@ import { contacts } from "@/utils/constant";
 export const homePageData = {
   bannerData: {
     // videoSrc: "/Group56.png",
-    // thumbNail: "/Group56.png",
     images: [
       // "/newim-2.webp",
       "/HomeBanner3.jpg",
