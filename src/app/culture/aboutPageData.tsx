@@ -66,6 +66,6 @@ export const aboutPageData = {
       label: "CONTACT US",
       href: "/contact-us",
     },
-    src: "/img07.png",
+    src: "/img07.webp",
   },
 };
