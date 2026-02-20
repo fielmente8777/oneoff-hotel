@@ -115,7 +115,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
           Domain: contacts.formDomain, // Replace with your actual domain value
           email: email,
           Name: `${firstName} ${lastName}`,
-          Contact: `${countryCode}${phone}`, // Combine country code and phone number
+          Contact: `${countryCode}${phone}`,
           Description: fullMessage, // Include the modified message
         },
         {
