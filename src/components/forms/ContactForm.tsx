@@ -116,7 +116,9 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
           email: email,
           Name: `${firstName} ${lastName}`,
           Contact: `${countryCode}${phone}`,
-          Description: fullMessage, // Include the modified message
+          Description: fullMessage,
+          created_from: "Webform",
+          source_url: window.location.href,
         },
         {
           headers: {
