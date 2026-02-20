@@ -1,6 +1,6 @@
 "use client";
 import useClickOutside from "@/hooks/useClickOutside";
-import { countries } from "@/utils/constant";
+import { contacts, countries } from "@/utils/constant";
 import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 import { ArrowUpRight } from "../navbars/NavBar";
@@ -112,8 +112,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
       const { data } = await axios.post(
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
-          // Domain: "sumit", // Replace with your actual domain value
-          Domain: "minimalist", // Replace with your actual domain value
+          Domain: contacts.formDomain, // Replace with your actual domain value
           email: email,
           Name: `${firstName} ${lastName}`,
           Contact: `${countryCode}${phone}`, // Combine country code and phone number
@@ -331,7 +330,16 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
         type="submit"
         className="btn w-full bg-secondary text-white py-3 px-6 border border-secondary transition-all duration-300 ease-in-out hover: uppercase active:scale-95 hover:scale-105"
       >
-        {formRes ? "loading..." : <span className="flex items-center justify-center gap-2">Submit<span><ArrowUpRight /></span> </span>}
+        {formRes ? (
+          "loading..."
+        ) : (
+          <span className="flex items-center justify-center gap-2">
+            Submit
+            <span>
+              <ArrowUpRight />
+            </span>{" "}
+          </span>
+        )}
       </button>
     </form>
   );
