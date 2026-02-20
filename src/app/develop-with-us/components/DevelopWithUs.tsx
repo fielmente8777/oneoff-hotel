@@ -14,10 +14,10 @@ interface DevelopBannerProps {
 }
 
 const DevelopWithUsComponent = ({
+  src,
   title,
   subTitle,
   description,
-  src,
   link,
 }: DevelopBannerProps) => {
   return (
@@ -51,14 +51,14 @@ const DevelopWithUsComponent = ({
           </div>
 
           <div className="md:p-16 py-6">
-            <form action="" className="space-y-6">
+            <div className="space-y-6">
               <p>
                 Join us for a one-on-one chat with the One Off Hotels team to
                 explore your ideas and opportunities.
               </p>
 
               <ContactForm />
-            </form>
+            </div>
           </div>
         </div>
       </Container>

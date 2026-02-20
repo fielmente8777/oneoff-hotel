@@ -1,156 +1,38 @@
 "use client";
+
 import useClickOutside from "@/hooks/useClickOutside";
 import { contacts, countries } from "@/utils/constant";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import React, { useEffect, useRef, useState } from "react";
-import { ArrowUpRight } from "../navbars/NavBar";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-interface formProps {
-  setShowModal?: React.Dispatch<React.SetStateAction<boolean>>;
-  tours?: boolean;
-}
-const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
+const ContactForm = () => {
   const hotels = React.useMemo(() => {
     return ["Select State", ...states];
   }, []);
 
-  const [isOpen, setIsOpen] = useState(false);
   const hotelRef = useRef<HTMLDivElement | null>(null);
 
-  const [hotel, setHotel] = useState(hotels[0]);
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [countryCode, setCountryCode] = useState("+91");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  const [emailErrorMessage, setEmailErrorMessage] = useState("");
-  const [formRes, setFormRes] = useState(false);
-  const [optionErrorMessage, setOptionErrorMessage] = useState("");
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [hotel, setHotel] = useState<string>(hotels[0]);
+  const [firstName, setFirstName] = useState<string>("");
+  const [lastName, setLastName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [countryCode, setCountryCode] = useState<string>("+91");
+  const [phone, setPhone] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [consent, setConsent] = useState<boolean>(false);
 
-  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
-    if (value.length <= 10) {
-      setPhone(value);
-      setErrorMessage(value.length < 10 ? "Please enter a valid number" : "");
-    }
-  };
+  const [optionError, setOptionError] = useState<string>("");
+  const [emailError, setEmailError] = useState<string>("");
+  const [phoneError, setPhoneError] = useState<string>("");
+  const [consentError, setConsentError] = useState<string>("");
 
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setEmail(value);
-    setEmailErrorMessage(
-      !emailRegex.test(value) ? "Please enter a valid email address" : ""
-    );
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormRes(true);
-
-    // Reset previous errors
-    setErrorMessage("");
-    setEmailErrorMessage("");
-    setOptionErrorMessage("");
-
-    let isValid = true;
-
-    // Phone validation
-    if (phone.length !== 10) {
-      setErrorMessage("Please enter a valid phone number");
-      isValid = false;
-    }
-
-    // Email validation
-    if (!emailRegex.test(email)) {
-      setEmailErrorMessage("Please enter a valid email address");
-      isValid = false;
-    }
-
-    // Dropdown validation
-    const invalidOptions = [
-      "select hotel",
-      "select EXPERIENCE",
-      "Select State",
-    ];
-    if (
-      invalidOptions
-        .map((opt) => opt.toLowerCase())
-        .includes(hotel.toLowerCase())
-    ) {
-      setOptionErrorMessage("Please select an option");
-      isValid = false;
-    }
-
-    if (!isValid) {
-      setFormRes(false); // Stop loading animation if validation fails
-      return; // Stop form submission
-    }
-
-    // Check if checkboxes are checked
-    const subscribeChecked = (
-      document.getElementById("subscribe") as HTMLInputElement
-    )?.checked;
-    const consentChecked = (
-      document.getElementById("consent") as HTMLInputElement
-    )?.checked;
-
-    const subscribeMessage = subscribeChecked
-      ? "Subscribed to latest events and offers. "
-      : "";
-    const consentMessage = consentChecked
-      ? "Consent to the collection of data in accordance with the privacy policy. "
-      : "";
-
-    const fullMessage = `${subscribeMessage}${consentMessage}Selected Option: ${hotel}, Message: ${message}`;
-
-    // Submit the form
-    try {
-      const { data } = await axios.post(
-        "https://nexon.eazotel.com/eazotel/addcontacts",
-        {
-          Domain: contacts.formDomain, // Replace with your actual domain value
-          email: email,
-          Name: `${firstName} ${lastName}`,
-          Contact: `${countryCode}${phone}`, // Combine country code and phone number
-          Description: fullMessage, // Include the modified message
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      if (data.Status) {
-        // Reset form fields on success
-        setFirstName("");
-        setLastName("");
-        setEmail("");
-        setCountryCode("+91");
-        setPhone("");
-        setMessage("");
-        setHotel("");
-        alert("Message sent successfully");
-        if (setShowModal) {
-          setShowModal(false);
-        }
-      } else {
-        alert("Something went wrong");
-      }
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setFormRes(false); // Stop loading animation
-    }
-  };
+  const [loading, setLoading] = useState<boolean>(false);
 
   useClickOutside(hotelRef, () => {
-    if (isOpen) {
-      setIsOpen(false);
-    }
+    if (isOpen) setIsOpen(false);
   });
 
   useEffect(() => {
@@ -159,12 +41,120 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
     }
   }, [hotels, hotel]);
 
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value.replace(/\D/g, "");
+    if (value.length <= 10) {
+      setPhone(value);
+      setPhoneError(
+        value.length < 10 ? "Please enter a valid 10 digit number" : ""
+      );
+    }
+  };
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setEmail(value);
+    setEmailError(
+      !emailRegex.test(value) ? "Please enter a valid email address" : ""
+    );
+  };
+
+  const validateForm = (): boolean => {
+    let valid = true;
+
+    setOptionError("");
+    setEmailError("");
+    setPhoneError("");
+    setConsentError("");
+
+    if (hotel === "Select State") {
+      setOptionError("Please select a state");
+      valid = false;
+    }
+
+    if (!emailRegex.test(email)) {
+      setEmailError("Please enter a valid email address");
+      valid = false;
+    }
+
+    if (phone.length !== 10) {
+      setPhoneError("Please enter a valid phone number");
+      valid = false;
+    }
+
+    if (!consent) {
+      setConsentError("Please accept the privacy policy");
+      valid = false;
+    }
+
+    return valid;
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!validateForm()) return;
+
+    setLoading(true);
+
+    try {
+      const { data } = await axios.post(
+        "https://nexon.eazotel.com/eazotel/addcontacts",
+        {
+          Domain: contacts.formDomain,
+          email: email,
+          Name: `${firstName} ${lastName}`,
+          Contact: `${countryCode}${phone}`,
+          Description: `Selected Option: ${hotel}\nMessage: ${message}\naccepted : ${consent ? "yes  I consent to the collection of my data in accordance to One Off Hotel’s privacy policy. " : "no  I consent to the collection of my data in accordance to One Off Hotel’s privacy policy. "}`,
+          created_from: "Webform",
+          source_url: window.location.href,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (data?.Status) {
+        alert("Message sent successfully!");
+
+        // Reset form
+        setHotel(hotels[0]);
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setCountryCode("+91");
+        setPhone("");
+        setMessage("");
+        setConsent(false);
+      } else {
+        alert(data?.message || "Something went wrong");
+      }
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error)) {
+        const axiosError = error as AxiosError<{ message?: string }>;
+        console.log("Axios Error:", axiosError.response?.data);
+        alert(
+          axiosError.response?.data?.message ||
+            "Server error. Please try again."
+        );
+      } else {
+        console.log("Unexpected Error:", error);
+        alert("Unexpected error occurred.");
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col lg:gap-12 gap-8 justify-center items-center w-full h-full"
+      className="flex flex-col  gap-6 justify-center items-center w-full h-full"
     >
       <div className="w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-5 gap-4">
+        {/* STATE DROPDOWN */}
         <div className="col-span-2 w-full">
           <div
             ref={hotelRef}
@@ -176,10 +166,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
               onClick={() => setIsOpen(!isOpen)}
               className="w-full py-4 px-4 h-full text-left flex items-center  justify-between gap-3"
             >
-              <span className="uppercase  text-sm font-medium">
-                {hotel || hotels[0]}
-              </span>
-
+              <span className="uppercase  text-sm font-medium">{hotel}</span>
               <span
                 className={` transition-transform ${
                   isOpen ? "rotate-180" : ""
@@ -188,6 +175,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
                 <DropDownIcon />
               </span>
             </button>
+
             <div
               className={`absolute top-full left-0 right-0 shadow-lg z-10 overflow-hidden transition-all duration-300 ease-in-out overflow-y-scroll hidescrollbar ${
                 isOpen
@@ -195,28 +183,30 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
                   : "max-h-0 opacity-0 pointer-events-none"
               }`}
             >
-              {hotels.map((hotelOption, i) => (
+              {hotels.map((option, i) => (
                 <button
                   key={i}
                   type="button"
-                  aria-label={hotelOption}
+                  aria-label={option}
                   onClick={() => {
-                    setHotel(hotelOption);
+                    setHotel(option);
                     setIsOpen(false); // Close after selection
                   }}
                   className={`w-full px-4 bg-white text-wrap py-2 border-b border-clr6 text-left uppercase text-sm font-medium hover: hover:border-secondary transition-colors duration-300 ease-in-out ${
-                    hotel === hotelOption ? " border-secondary" : ""
+                    hotel === option ? " border-secondary" : ""
                   }`}
                 >
-                  {hotelOption}
+                  {option}
                 </button>
               ))}
             </div>
           </div>
-          {optionErrorMessage && (
-            <p className="text-red-500 text-sm mt-1">{optionErrorMessage}</p>
+          {optionError && (
+            <p className="text-red-500 text-sm mt-1">{optionError}</p>
           )}
         </div>
+
+        {/* FIRST NAME */}
         <input
           type="text"
           name="name"
@@ -226,8 +216,10 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
           autoComplete="off"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
-          className="w-full px-1 py-3 max-lg:col-span-2 border-b border-secondary placeholder:  bg-transparent outline-none focus:outline-none"
+          className="w-full px-1 py-3 max-lg:col-span-2 border-b border-secondary  bg-transparent outline-none focus:outline-none"
         />
+
+        {/* LAST NAME */}
         <input
           aria-label="Last Name"
           type="text"
@@ -237,8 +229,10 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
           autoComplete="off"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
-          className="w-full px-1 py-3 max-lg:col-span-2 border-b border-secondary placeholder:  bg-transparent outline-none focus:outline-none"
+          className="w-full px-1 py-3 max-lg:col-span-2 border-b border-secondary  bg-transparent outline-none focus:outline-none"
         />
+
+        {/* EMAIL */}
         <input
           aria-label="Email Address"
           type="email"
@@ -248,12 +242,14 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
           autoComplete="off"
           value={email}
           onChange={handleEmailChange}
-          className="col-span-2  w-full px-1 py-3 border-b border-secondary placeholder:  bg-transparent outline-none focus:outline-none"
+          className="col-span-2  w-full px-1 py-3 border-b border-secondary  bg-transparent outline-none focus:outline-none"
         />
-        {emailErrorMessage && (
-          <span className="text-red-500 col-span-2">{emailErrorMessage}</span>
+        {emailError && (
+          <span className="text-red-500 col-span-2">{emailError}</span>
         )}
-        <div className="col-span-2 flex gap-4 items-center px-1 py-3 border-b border-secondary placeholder:  bg-transparent">
+
+        {/* PHONE */}
+        <div className="col-span-2 flex gap-4 items-center px-1 py-3 border-b border-secondary  bg-transparent">
           <select
             name="countryCode"
             id="countryCode"
@@ -268,6 +264,7 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
               </option>
             ))}
           </select>
+
           <input
             type="tel"
             name="phone"
@@ -278,12 +275,14 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
             autoComplete="off"
             max={9999999999}
             onChange={handlePhoneChange}
-            className="w-full bg-transparent no-spinner outline-none focus:outline-none placeholder: "
+            className="w-full bg-transparent no-spinner outline-none focus:outline-none"
           />
         </div>
-        {errorMessage && (
-          <span className="text-red-500 col-span-2">{errorMessage}</span>
+        {phoneError && (
+          <span className="text-red-500 col-span-2">{phoneError}</span>
         )}
+
+        {/* MESSAGE */}
         <textarea
           aria-label="Message"
           name="message"
@@ -294,52 +293,32 @@ const ContactForm: React.FC<formProps> = ({ setShowModal, tours = false }) => {
           placeholder="Message*"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="col-span-2 resize-none w-full px-1 py-3 border-b border-secondary placeholder:  bg-transparent outline-none focus:outline-none"
-        ></textarea>
+          className="col-span-2 resize-none w-full px-1 py-3 border-b border-secondary  bg-transparent outline-none focus:outline-none overflow-hidden"
+        />
       </div>
-      <div className="flex-col flex gap-6">
-        {/* <div className="flex w-full">
-          <span className="">
-            <input
-              type="checkbox"
-              name="subscribe"
-              id="subscribe"
-              className="mr-2 md:w-6 w-4 rounded-none aspect-[1/1] border border-secondary focus:outline-none outline-none bg-transparent placeholder:bg-transparent checked:bg-transparent"
-            />
-          </span>
-          <label htmlFor="subscribe " className=" description1">
-            Sign up for latest events and offers
-          </label>
-        </div> */}
-        <div className="flex items-start w-full">
-          <span>
-            <input
-              type="checkbox"
-              name="consent"
-              id="consent"
-              className="mr-2 md:w-6 w-4 rounded-none aspect-[1/1] border border-secondary focus:outline-none outline-none bg-transparent placeholder:bg-transparent checked:bg-transparent"
-            />
-          </span>
-          <label htmlFor="consent " className=" description1">
-            By clicking submit, I consent to the collection of my data in
-            accordance to One Off Hotel’s privacy policy. *
-          </label>
-        </div>
+
+      {/* CONSENT */}
+      <div className="flex items-start w-full ">
+        <input
+          type="checkbox"
+          checked={consent}
+          onChange={(e) => setConsent(e.target.checked)}
+          className="mr-2 mt-1 md:w-6 w-4 rounded-none aspect-[1/1] border border-secondary focus:outline-none outline-none bg-transparent placeholder:bg-transparent checked:bg-transparent"
+        />
+        <label className="description1">
+          By clicking submit, I consent to the collection of my data in
+          accordance to One Off Hotel’s privacy policy. *
+        </label>
       </div>
+      {consentError && <span className="text-red-500">{consentError}</span>}
+
+      {/* SUBMIT */}
       <button
         type="submit"
-        className="btn w-full bg-secondary text-white py-3 px-6 border border-secondary transition-all duration-300 ease-in-out hover: uppercase active:scale-95 hover:scale-105"
+        disabled={loading}
+        className="btn mt-12 w-full bg-secondary text-white py-3 px-6 border border-secondary transition-all duration-300 hover:scale-105 active:scale-95"
       >
-        {formRes ? (
-          "loading..."
-        ) : (
-          <span className="flex items-center justify-center gap-2">
-            Submit
-            <span>
-              <ArrowUpRight />
-            </span>{" "}
-          </span>
-        )}
+        {loading ? "loading..." : "Submit"}
       </button>
     </form>
   );
