@@ -69,3 +69,5 @@ export const aboutPageData = {
     src: "/img07.webp",
   },
 };
+
+
