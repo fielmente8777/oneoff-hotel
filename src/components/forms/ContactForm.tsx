@@ -5,6 +5,7 @@ import { contacts, countries } from "@/utils/constant";
 import axios, { AxiosError } from "axios";
 import React, { useEffect, useRef, useState } from "react";
 
+
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const ContactForm = () => {
