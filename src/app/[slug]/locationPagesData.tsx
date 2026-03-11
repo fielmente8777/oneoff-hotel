@@ -181,12 +181,12 @@ export const locationPageData = [
       ],
       amenities: [""],
       images: [
-        "/one-x-image1.jpg",
-        "/one-x-image2.jpg",
-        "/one-x-image3.jpg",
-        "/one-x-image4.jpg",
-        "/one-x-image5.jpg",
-        "/one-x-image6.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/x/img-1.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/x/img-6.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/x/img-4.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/x/img-3.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/x/img-5.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/x/img-2.jpg",
       ],
     },
 
