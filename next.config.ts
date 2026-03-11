@@ -8,10 +8,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   
-  compiler: {
-    removeConsole : true,
-  },
-  compress: true,
+  
 };
 
 export default nextConfig;
