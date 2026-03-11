@@ -22,13 +22,12 @@ export const locationPageData = [
 
     bannerData: {
       images: [
-        "/DasBanner1.jpg",
-        "/bnr-slide3.webp",
-        "/DasBanner3.jpg",
-        "/DasBanner2.jpg",
-        // "/Rectangle1.png",
-        "/Img/Rectangle 4079.png",
-        "/Img/Rectangle 4080.png",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-1.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-4.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-9.png",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-8.png",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-5.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-10.png",
       ],
     },
     aboutLocation: {
@@ -64,12 +63,12 @@ export const locationPageData = [
       ],
       amenities: [""],
       images: [
-        "/VRoom1.jpg",
-        "/VRoom2.jpg",
-        "/VRoom3.jpg",
-        "/VRoom4.jpg",
-        "/VRoom5.jpg",
-        "/VRoom6.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-7.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-1.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-2.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-4.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-3.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-6.jpg",
       ],
     },
 
