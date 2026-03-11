@@ -22,27 +22,27 @@ export const aboutPageData = {
     },
   },
   images: [
-    { src: "/InstaImage1.jpg" },
+    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-4.png" },
     {
       videoSrc:
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ModelReel1.mp4",
     },
-    { src: "/InstaImage3.jpg" },
-    { src: "/InstaImage2.jpg" },
+    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-3.png" },
+    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-6.png" },
     {
       videoSrc:
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/MODEL+REEL+2.mp4",
     },
-    { src: "/InstaImage6.jpg" },
-    { src: "/InstaImage4.jpg" },
+    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-5.png" },
+    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-8.png" },
     {
       videoSrc:
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/PropertyReel.mp4",
     },
-    { src: "/InstaImage5.jpg" },
-    { src: "/InstaImage7.jpg" },
-    { src: "/InstaImage9.jpg" },
-    { src: "/InstaImage8.jpg" },
+    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-11.png" },
+    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-10.png" },
+    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-9.png" },
+    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-12.png" },
   ],
   stayAt: {
     title: "MEET OUR FOUNDER",
@@ -52,7 +52,7 @@ export const aboutPageData = {
 
       "ONE-OFF Hotels is my canvas for reinvention, a place where individuality is celebrated, stories are crafted through design and detail, and every stay feels like a one-of-a-kind experience.",
     ],
-    src: "/founder.png",
+    src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-1.png",
     link: {
       label: "Develop with us",
       href: "/develop-with-us/",
@@ -66,7 +66,7 @@ export const aboutPageData = {
       label: "CONTACT US",
       href: "/contact-us",
     },
-    src: "/img07.webp",
+    src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-7.png",
   },
 };
 
