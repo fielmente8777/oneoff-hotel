@@ -5,13 +5,20 @@ export const homePageData = {
     // videoSrc: "/Group56.png",
     images: [
       // "/newim-2.webp",
-      "/HomeBanner3.jpg",
-      "/bnr-slide1.webp",
-      "/bnr-slide4.webp",
-      // "/newim-1.webp",
-      "/HomeBanner6.png",
-      "/HomeBanner7.jpg",
-      "/Banner-image.webp",
+      // "/HomeBanner3.jpg",
+      // "/bnr-slide1.webp",
+      // "/bnr-slide4.webp",
+      // // "/newim-1.webp",
+      // "/HomeBanner6.png",
+      // "/HomeBanner7.jpg",
+      // "/Banner-image.webp",
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-5.jpg",
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-2.jpg",
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-16.png",
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-1.jpg",
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-4.jpg",
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-6.png",
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-3.jpg",
     ],
   },
   aboutHomePage: {
@@ -28,7 +35,10 @@ export const homePageData = {
       description:
         "ONE-OFF Dashashwamedh offers a calm, design-led retreat just steps from the ghats and the spiritual heart of Varanasi. Thoughtfully crafted interiors, modern comforts, and attentive service create a peaceful counterpoint to the city’s vibrant energy. Ideal for conscious travelers, it’s a stay where culture, location, and understated living come together effortlessly.",
       src: "/gallery4.jpg",
-      images: ["/slider1.jpg", "/Loneimage.jpg"],
+      images: [
+        "/slider1.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-21.png",
+      ],
       link: {
         label: "EXPLORE HOTELS",
         href: "/one-off-dashashwamedh",
@@ -41,7 +51,10 @@ export const homePageData = {
       description:
         "Tucked away in Ravindrapuri’s quiet lanes, ONEOFF X ASSI is an 80-year-old ancestral bungalow—once filled with the laughter of the Koirala family and a childhood refuge for actress Manisha Koirala—now restored. Rooted in Wabi-Sabi philosophy, it celebrates natural textures and understated comfort, offering a calm lifestyle amid Varanasi’s vibrant energy.",
       src: "/gallery.jpg",
-      images: ["/gallery4.jpg", "/Ltwoimage.jpg"],
+      images: [
+        "/gallery4.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-22.png",
+      ],
       link: {
         label: "EXPLORE HOTELS",
         href: "/one-off-x",
@@ -110,21 +123,30 @@ export const homePageData = {
       subTitle: "UPCOMING HOTELS",
       description:
         "Experience timeless charm and modern luxury at our upcoming hotel in Jaipur.",
-      images: ["/one/Rectangle 14.png", "/one/Rectangle 13.png"],
+      images: [
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-11.png",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-8.png",
+      ],
     },
     {
       title: "DELHI",
       subTitle: "UPCOMING HOTELS",
       description:
         "Experience timeless charm and modern luxury at our upcoming hotel in Delhi.",
-      images: ["/one/Rectangle-14.webp", "/one/Rectangle-18.jpg"],
+      images: [
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-10.png",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-7.png",
+      ],
     },
     {
       title: "BANARAS",
       subTitle: "UPCOMING HOTELS",
       description:
         "Experience timeless charm and modern luxury at our upcoming hotel in Banaras.",
-      images: ["/one/Rectangle-16.png", "/one/Rectangle-17.jpg"],
+      images: [
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-12.png",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-9.png",
+      ],
     },
   ],
   upcomingCafe: {
@@ -153,20 +175,20 @@ export const homePageData = {
       {
         cafe: [
           {
-            src: "/cafe/CafeImage1.jpg",
+            src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-17.png",
           },
           {
-            src: "/cafe/CafeImage3.jpg",
+            src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-15.png",
           },
           {
-            src: "/cafe/CafeImage4.jpg",
+            src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-18.png",
           },
           {
-            src: "/cafe/CafeImage2.jpg",
+            src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-20.png",
           },
 
           {
-            src: "/cafe/CafeImage5.jpg",
+            src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-19.png",
           },
         ],
       },

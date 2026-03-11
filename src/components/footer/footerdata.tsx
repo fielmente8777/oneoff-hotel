@@ -7,7 +7,7 @@ import {
   FillInstagramIcon,
   FillLinkedin,
   FillMailIcon,
-  FillPinterest
+  FillPinterest,
 } from "../../utils/Icons";
 
 interface FooterDataProps {
@@ -104,5 +104,10 @@ export const footerData: FooterDataProps = {
       ],
     },
   ],
-  images: ["/ft5.jpg", "/ft7.jpg", "/ft8.png", "/ft9.png"],
+  images: [
+    "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-23.png",
+    "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-24.png",
+    "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-13.png",
+    "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-14.png",
+  ],
 };
