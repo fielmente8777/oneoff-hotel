@@ -70,7 +70,6 @@ export const footerData: FooterDataProps = {
         { label: "XPERIENCES", href: "/xperiences/" },
         // { label: "DESTINATION", href: "/destination/" },
         { label: "CONTACT", href: "/contact-us/" },
-        { label: "CONTACT", href: "/contact-us/" },
         { label: "BLOG", href: "/blog/" },
       ],
     },
