@@ -52,7 +52,8 @@ export const aboutPageData = {
 
       "ONE-OFF Hotels is my canvas for reinvention, a place where individuality is celebrated, stories are crafted through design and detail, and every stay feels like a one-of-a-kind experience.",
     ],
-    src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-1.png",
+    src: "/founder01.png",
+    // src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-1.png",
     link: {
       label: "Develop with us",
       href: "/develop-with-us/",

@@ -18,7 +18,6 @@ interface UpcomingCafeProps {
 
 const UpcomingCafe = ({ title, subTitle, cards }: UpcomingCafeProps) => {
   const phoneViewCardsData = [...cards.flatMap((item) => item.cafe)];
-  console.log(phoneViewCardsData);
   return (
     <Section className="pb-0!">
       <div>
