@@ -53,6 +53,26 @@
     }
   }
 
+  // .max_screen_width_2 {
+  //   width: 100%;
+  //   max-width: 1440px; // base for most laptops
+  //   margin-inline: auto;
+
+  //   // MacBook Pro 14"
+  //   @media (min-width: 1512px) {
+  //     max-width: 1512px;
+  //   }
+
+  //   // MacBook Pro 16"
+  //   @media (min-width: 1728px) {
+  //     max-width: 1728px;
+  //   }
+
+  //   // Large external displays
+  //   @media (min-width: 1920px) {
+  //     max-width: 1920px;
+  //   }
+  // }
   // container sizes for xl, lg, md, sm screens
 
   .max_width {

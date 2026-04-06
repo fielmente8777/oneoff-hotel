@@ -1,14 +1,11 @@
 "use client";
 import { BannerProps } from "@/@types/type";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { FC } from "react";
 import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 import NavBar2 from "../navbars/NavBar2";
 import { Section } from "../sectionComponents";
 import SwiperCarousel from "../sliders/SwiperCarousel";
-import YoutubePlayer from "../Video/YoutubePlayer";
 import { LazyLoadedVideo } from "../Video2";
 
 const Banner: FC<BannerProps> = ({
@@ -22,10 +19,9 @@ const Banner: FC<BannerProps> = ({
   const hasImages = images && images.length > 0;
   const hasSingleImage = images && images.length === 1;
 
-  const pathName = usePathname();
 
   return (
-    <Section defaultPadding={false} className="banner">
+    <section className="banner max_screen_width_2">
       {/* ✅ Case 1: Both Video + Images */}
       {videoSrc && hasImages ? (
         <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 lg:py-12">
@@ -153,7 +149,7 @@ const Banner: FC<BannerProps> = ({
           </div>
         </div>
       ) : null}
-    </Section>
+    </section>
   );
 };
 
