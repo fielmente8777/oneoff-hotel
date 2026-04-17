@@ -142,10 +142,10 @@ export const locationPageData = [
       //   "/Img/Rectangle 4079.png",
       //   "/Img/Rectangle 4080.png",
       // ],
-      videoSrc:
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ONE+OFF+MAIN+FILM/master.m3u8",
       // videoSrc:
-      //   "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ONE+OFF+MAIN+FILM.mp4",
+      //   "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ONE+OFF+MAIN+FILM/master.m3u8",
+      videoSrc:
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ONE%2BOFF%2BMAIN%2BFILM.mp4",
     },
     aboutLocation: {
       title: "ONE OFF X ASSI",
