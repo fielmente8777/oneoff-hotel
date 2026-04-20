@@ -1,6 +1,7 @@
 export const contacts = {
   addresses: [
-    "D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
+    // "D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
+    "*E-574, Greater Kailash II, New Delhi - 110048*",
   ],
   phoneNumbers: ["+91 77530 42847", "+91 98676 03699"],
   emails: [
