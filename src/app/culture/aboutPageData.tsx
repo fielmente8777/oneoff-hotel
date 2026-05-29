@@ -18,7 +18,7 @@ export const aboutPageData = {
       "ONE-OFF Hotels celebrates individuality, offering thoughtfully designed spaces that blend seamlessly with their surroundings and reflect a true sense of place. Rooted in sustainability and community, each property encourages guests to rest, connect, and truly be themselves. Inspired by the philosophy of Wabi Sabi, we embrace beauty in authenticity and imperfection—creating stays that are not just luxurious, but meaningful and enriching.",
     link: {
       label: "BOOK NOW",
-      href: contacts.bookingCta.oneOffDashashwamedh,
+      href: contacts.bookingCta.oneOffDelhi,
     },
   },
   images: [

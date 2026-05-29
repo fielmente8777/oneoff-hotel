@@ -1,3 +1,4 @@
+import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponents";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +11,10 @@ interface UpComingLocationsProps {
     label: string;
     href: string;
   };
+  booking?: {
+    label: string;
+    href: string;
+  };
   images: string[];
 }
 const UpComingLocations: React.FC<UpComingLocationsProps> = ({
@@ -17,6 +22,7 @@ const UpComingLocations: React.FC<UpComingLocationsProps> = ({
   title,
   link,
   images,
+  booking,
 }) => {
   return (
     <SectionWithContainer sectionClassName="upcoming-class">
@@ -40,7 +46,18 @@ const UpComingLocations: React.FC<UpComingLocationsProps> = ({
           <h2 className="md:text-[4rem] text-[2rem] text-center text-primary font-anton">
             {title}
           </h2>
-          <Link href={link.href} className="font-anton mt-10 md:text-2xl text-lg">
+
+          {booking && (
+            <LinkButton
+              href={booking?.href}
+              label={booking?.label}
+              variant="primary"
+            />
+          )}
+          <Link
+            href={link.href}
+            className="font-anton mt-10 md:text-2xl text-lg"
+          >
             {link.label}
           </Link>
         </div>

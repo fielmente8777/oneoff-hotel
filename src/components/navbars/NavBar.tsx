@@ -129,7 +129,7 @@ const NavBar = () => {
               hide
               target="_blank"
               rel="noopener noreferrer"
-              href={contacts.bookingCta.oneOffDashashwamedh}
+              href={contacts.bookingCta.oneOffDelhi}
               label="Book Now"
               variant="primary"
             />

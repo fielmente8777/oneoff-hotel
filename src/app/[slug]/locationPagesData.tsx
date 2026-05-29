@@ -273,6 +273,10 @@ export const locationPageData = [
         label: "FOR RESERVATIONS: " + contacts.phoneNumbers[0],
         href: "tel:" + contacts.phoneNumbers[0],
       },
+      booking: {
+        label: "BOOK NOW",
+        href: contacts.bookingCta?.oneOffDelhi,
+      },
       images: ["/upcoming1.png", "/upcoming2.png"],
     },
   },
