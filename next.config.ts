@@ -3,12 +3,19 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   trailingSlash: true,
+<<<<<<< HEAD
   compress: true,
 
   poweredByHeader: false,
 
   reactStrictMode: true,
   images: {
+=======
+
+  
+ images: {
+    // unoptimized: true,
+>>>>>>> 54ccf4fb75bac90abcca235593e83d1710250b44
     remotePatterns: [
       {
         protocol: "https",
