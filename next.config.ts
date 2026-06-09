@@ -4,7 +4,6 @@ const nextConfig: NextConfig = {
   /* config options here */
   trailingSlash: true,
   compress: true,
-
   poweredByHeader: false,
 
   reactStrictMode: true,
