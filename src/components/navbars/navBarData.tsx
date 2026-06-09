@@ -17,15 +17,16 @@ export const navBarData: NavLinksProps[] = [
         sub: "Boutique stays in the heart of the world’s oldest living city",
       },
       {
+        location: "Delhi",
+        label: "The South Delhi Edition",
+        href: "/the-south-delhi-edition/",
+        sub: "Boutique stays in the heart of the world’s oldest living city",
+      },
+      {
         location: "Upcoming",
         label: "Jaipur (Upcoming)",
         href: "/jaipur/",
         sub: "An upcoming minimalist stay inspired by the Pink City’s heritage",
-      },
-      {
-        label: "Delhi (Upcoming)",
-        href: "/delhi/",
-        sub: "A forthcoming urban retreat in the capital’s creative quarters",
       },
     ],
   },

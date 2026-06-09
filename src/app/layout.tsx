@@ -8,6 +8,7 @@ import Footer from "@/components/footer/Footer";
 import XperiencesPopUp from "@/components/pop-up/XperiencesPopUp";
 import Script from "next/script";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
+import ImagePopup from "@/components/pop-up/ImagePopup";
 
 const anton = Anton({
   weight: "400",
@@ -16,8 +17,7 @@ const anton = Anton({
 });
 
 export const metadata: Metadata = {
-  title:
-    "ONE-OFF Hotels | Design Forward Boutique Hotels in India",
+  title: "ONE-OFF Hotels | Design Forward Boutique Hotels in India",
   description:
     "Discover ONE-OFF Hotels—boutique luxury stays designed to be one of a kind, offering immersive cultural experiences across India.",
 
@@ -35,8 +35,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    title:
-      "ONE-OFF Hotels | Design Forward Boutique Hotels in India",
+    title: "ONE-OFF Hotels | Design Forward Boutique Hotels in India",
     description:
       "Bespoke boutique hotels offering culturally rooted luxury stays and experiences across India.",
     url: "https://oneoffhotels.com/",
@@ -53,8 +52,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "ONE-OFF Hotels | Design Forward Boutique Hotels in India",
+    title: "ONE-OFF Hotels | Design Forward Boutique Hotels in India",
     description:
       "Explore ONE-OFF Hotels—design-led boutique stays inspired by culture and place.",
     images: ["https://oneoffhotels.com/og-home.jpg"],
@@ -85,6 +83,7 @@ export default function RootLayout({
           <Footer />
           <Whatsapp src="https://wa.me/message/OGSNGP4SG3LDE1" />
           <XperiencesPopUp />
+          <ImagePopup />
         </WebContextProvider>
 
         {/* <!-- Eazbot Script (Next.js) --> */}

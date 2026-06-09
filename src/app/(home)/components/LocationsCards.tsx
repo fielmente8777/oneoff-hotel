@@ -1,6 +1,6 @@
 "use client";
 import LinkButton from "@/components/buttons/LinkButton";
-import { Container, Section } from "@/components/sectionComponents";
+import { Section } from "@/components/sectionComponents";
 import { SwiperCarousel } from "@/components/sliders";
 import Image from "next/image";
 import { IoLocationSharp } from "react-icons/io5";

@@ -1,5 +1,8 @@
+
+"use client";
 import { SectionWithContainer } from "@/components/sectionComponents";
 import { SectionHeading } from "@/components/typography";
+import { useWebContext } from "@/contextApi/WebContext";
 import Image from "next/image";
 
 interface GalleryProps {
@@ -9,12 +12,7 @@ interface GalleryProps {
   button: string;
 }
 
-const Gallery: React.FC<GalleryProps> = ({
-  title,
-  subTitle,
-  images,
-  button,
-}) => {
+const Gallery: React.FC<GalleryProps> = ({ title, subTitle, images }) => {
   // Helper: chunk images into groups of 3 for the grid layout
   const chunkedImages: string[][] = [];
   for (let i = 0; i < images.length; i += 3) {
@@ -32,10 +30,12 @@ const Gallery: React.FC<GalleryProps> = ({
       "aspect-[4/4.5]", // tall
       "aspect-[4/2.5]", // wide
     ];
-    
+
     // Use modulo to cycle through the pattern
     return pattern[globalIndex % pattern.length] || "aspect-[4/3]";
   };
+
+  const { openGallery } = useWebContext();
 
   return (
     <SectionWithContainer>
@@ -50,6 +50,12 @@ const Gallery: React.FC<GalleryProps> = ({
                 return (
                   <div
                     key={globalIndex}
+                    onClick={() =>
+                      openGallery({
+                        images,
+                        index,
+                      })
+                    }
                     className={`relative w-full ${getAspectRatio(globalIndex)}`}
                   >
                     <Image

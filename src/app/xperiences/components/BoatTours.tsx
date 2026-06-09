@@ -1,14 +1,14 @@
 "use client";
+import { BoatToursProps } from "@/@types/type";
+import { ArrowUpRight } from "@/components/navbars/NavBar";
 import { Container, Section } from "@/components/sectionComponents";
 import { SwiperCarousel } from "@/components/sliders";
-import { BtnPrevIcon, BtnNextIcon } from "@/utils/Icons";
+import { useWebContext } from "@/contextApi/WebContext";
+import { BtnNextIcon, BtnPrevIcon } from "@/utils/Icons";
 import Image from "next/image";
-import React, { useContext, useEffect, useRef } from "react";
-import { Navigation, Pagination } from "swiper/modules";
+import React, { useEffect, useRef } from "react";
 import { Swiper as SwiperType } from "swiper";
-import { ArrowUpRight } from "@/components/navbars/NavBar";
-import { WebContext } from "@/contextApi/WebContext";
-import { BoatToursProps } from "@/@types/type";
+import { Navigation, Pagination } from "swiper/modules";
 
 
 
@@ -35,7 +35,6 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
       .replace(/\s+/g, "-")
       .replace(/[^a-z0-9-]/g, "");
 
-  // 🔥 On mount, check for hash and navigate Swiper
   useEffect(() => {
     if (typeof window !== "undefined" && swiperRef.current) {
       const hash = window.location.hash.replace("#", ""); // e.g. "sunset-cruise"
@@ -48,7 +47,7 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
     }
   }, [cards]);
 
-  const {setIsXperiencePopUpOpen,setPopUpData} = useContext(WebContext);
+  const {setIsXperiencePopUpOpen,setPopUpData} = useWebContext();
   const handleClick = (card: BoatToursProps["cards"][0]) => {
     setIsXperiencePopUpOpen(true);
     setPopUpData(card);

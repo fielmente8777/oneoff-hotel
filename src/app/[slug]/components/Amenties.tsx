@@ -14,12 +14,12 @@ interface AmentiesProps {
 const Amenties = ({ amenties }: AmentiesProps) => {
   return (
     <Section>
-      <Container>
+      <Container className="pb-16">
         <SectionHeading title="HOTEL" subTitle="AMENITIES" textCenter />
 
-        <div className="md:grid grid-cols-4 mt-12 gap-16 hidden">
+        <div className="md:flex flex-wrap justify-center mt-12 gap-16 hidden">
           {amenties.map((amentie, index) => (
-            <div key={index} className="flex flex-col items-center gap-2">
+            <div key={index} className="flex flex-col items-center gap-2 max-w-[250px] w-full">
               {amentie.icon}
               <span className="uppercase">{amentie.label}</span>
             </div>

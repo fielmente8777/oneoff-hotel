@@ -481,6 +481,161 @@ export const FamilyRoomIcon = () => {
   );
 };
 
+export const PrivateIcon = () => (
+  <svg
+    width={64}
+    height={64}
+    viewBox="0 0 64 64"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask
+      id="mask0_1022_1372"
+      style={{ maskType: "luminance" }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={64}
+      height={64}
+    >
+      <path d="M0 3.8147e-06H64V64H0V3.8147e-06Z" fill="white" />
+    </mask>
+    <g mask="url(#mask0_1022_1372)">
+      <path
+        d="M60.2759 35H3.72461C2.82711 35 2.09961 34.2725 2.09961 33.375V2.5625C2.09961 1.665 2.82711 0.937504 3.72461 0.937504H60.2759C61.1734 0.937504 61.9009 1.665 61.9009 2.5625V33.375C61.9009 34.2725 61.1734 35 60.2759 35Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M17.05 63.0625H2.09961V54.6431C2.09961 52.9171 3.49873 51.5181 5.22461 51.5181H13.925C15.6509 51.5181 17.05 52.9171 17.05 54.6431V63.0625Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M32.0012 63.0625H17.0508V54.6431C17.0508 52.9171 18.4499 51.5181 20.1758 51.5181H28.8762C30.602 51.5181 32.0012 52.9171 32.0012 54.6431V63.0625Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M46.9504 63.0625H32V54.6431C32 52.9171 33.3992 51.5181 35.125 51.5181H43.8254C45.5512 51.5181 46.9504 52.9171 46.9504 54.6431V63.0625Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M61.8996 63.0625H46.9492V54.6431C46.9492 52.9171 48.3483 51.5181 50.0742 51.5181H58.7746C60.5005 51.5181 61.8996 52.9171 61.8996 54.6431V63.0625Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M28.2129 13.733V22.2046C28.2129 23.1283 29.2245 23.6951 30.0123 23.2129L36.9318 18.9771C37.685 18.516 37.685 17.4218 36.9318 16.9606L30.0123 12.7248C29.2245 12.2426 28.2129 12.8094 28.2129 13.733Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M42.0503 17.969C42.0503 23.5198 37.5506 28.0195 31.9998 28.0195C26.449 28.0195 21.9492 23.5198 21.9492 17.969C21.9492 12.4183 26.449 7.91853 31.9998 7.91853C37.5506 7.91853 42.0503 12.4183 42.0503 17.969Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.9243 51.5176C15.6502 51.5176 17.0493 52.9167 17.0493 54.6426C17.0493 52.9167 18.4485 51.5176 20.1743 51.5176H24.5245V44.8217C24.5245 43.0957 23.1253 41.6967 21.3995 41.6967H12.6992C10.9733 41.6967 9.57422 43.0957 9.57422 44.8217V51.5176H13.9243Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M28.8755 51.5176C30.6014 51.5176 32.0005 52.9167 32.0005 54.6426C32.0005 52.9167 33.3995 51.5176 35.1255 51.5176H39.4756V44.8217C39.4756 43.0957 38.0765 41.6967 36.3506 41.6967H27.6504C25.9245 41.6967 24.5254 43.0957 24.5254 44.8217V51.5176H28.8755Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M43.8268 51.5176C45.5527 51.5176 46.9518 52.9167 46.9518 54.6426C46.9518 52.9167 48.3508 51.5176 50.0768 51.5176H54.4271V44.8217C54.4271 43.0957 53.0278 41.6967 51.3021 41.6967H42.6016C40.8758 41.6967 39.4766 43.0957 39.4766 44.8217V51.5176H43.8268Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </svg>
+)
+
+
+export const ArtisanalToiletriesIcon= () => (
+  <svg
+    width={64}
+    height={64}
+    viewBox="0 0 64 64"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask
+      id="mask0_1022_1322"
+      style={{ maskType: "luminance" }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={64}
+      height={64}
+    >
+      <path d="M0 3.8147e-06H64V64H0V3.8147e-06Z" fill="white" />
+    </mask>
+    <g mask="url(#mask0_1022_1322)">
+      <path
+        d="M21.9068 62.125H11.746C6.10678 62.125 1.9079 56.9183 3.10265 51.4071L3.56328 49.2828C5.1474 41.9758 5.59728 34.4684 4.89715 27.0245V27.0244C4.17753 19.3738 10.1958 12.7629 17.8803 12.7629C25.5647 12.7629 31.5832 19.3738 30.8635 27.0244V27.0245C30.4494 31.4271 30.4377 35.8518 30.8248 40.2443"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+      />
+      <path
+        d="M33.4609 8.3125V1.87587H6.17188"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+      />
+      <path
+        d="M22.5879 1.87481V13.8984"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+      />
+      <path
+        d="M13.1719 1.87481V13.8984"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+      />
+      <path
+        d="M30.8648 25.5098H4.89844"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+      />
+      <path d="M21.906 49.377H3.5625" stroke="#9C533E" strokeMiterlimit={10} />
+      <path
+        d="M61.1006 49.3779H21.9062V62.125H61.1006V49.3779Z"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+      />
+      <path
+        d="M57.8377 49.377V46.5003C57.8377 43.0428 55.0349 40.2398 51.5772 40.2398H31.4325C27.9749 40.2398 25.1719 43.0428 25.1719 46.5003V49.377"
+        stroke="#9C533E"
+        strokeMiterlimit={10}
+      />
+    </g>
+  </svg>
+)
+
 export const RoomServiceIcon = () => {
   return (
     <svg
@@ -940,3 +1095,72 @@ export const LaundaryIcon = () => {
     </svg>
   );
 };
+
+
+export const ZoomIcon = () => (
+  <svg
+    width={48}
+    height={48}
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_1042_1625)">
+      <mask
+        id="mask0_1042_1625"
+        style={{ maskType: "luminance" }}
+        maskUnits="userSpaceOnUse"
+        x={0}
+        y={0}
+        width={48}
+        height={48}
+      >
+        <path d="M48 0H0V48H48V0Z" fill="white" />
+      </mask>
+      <g mask="url(#mask0_1042_1625)">
+        <mask
+          id="mask1_1042_1625"
+          style={{ maskType: "luminance" }}
+          maskUnits="userSpaceOnUse"
+          x={0}
+          y={0}
+          width={48}
+          height={48}
+        >
+          <path d="M0 3.8147e-06H48V48H0V3.8147e-06Z" fill="white" />
+        </mask>
+        <g mask="url(#mask1_1042_1625)">
+          <path
+            d="M46.125 34.9688C46.125 38.0753 43.6066 40.5938 40.5 40.5938H7.5C4.39341 40.5938 1.875 38.0753 1.875 34.9688V13.0312C1.875 9.92466 4.39341 7.40625 7.5 7.40625H40.5C43.6066 7.40625 46.125 9.92466 46.125 13.0312V25.5938"
+            stroke="white"
+            strokeWidth={3}
+            strokeMiterlimit={10}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M30.9375 15H35.8125C37.3657 15 38.625 16.2592 38.625 17.8125V22.7812"
+            stroke="white"
+            strokeWidth={3}
+            strokeMiterlimit={10}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M16.9688 33H12.1875C10.6342 33 9.375 31.7408 9.375 30.1875V25.2188"
+            stroke="white"
+            strokeWidth={3}
+            strokeMiterlimit={10}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </g>
+      </g>
+    </g>
+    <defs>
+      <clipPath id="clip0_1042_1625">
+        <rect width={48} height={48} fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+)

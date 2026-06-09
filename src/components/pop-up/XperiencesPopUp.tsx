@@ -1,16 +1,16 @@
 "use client";
 
-import { WebContext } from "@/contextApi/WebContext";
+import { useWebContext } from "@/contextApi/WebContext";
 import Image from "next/image";
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 import { MdClose } from "react-icons/md";
+import { Autoplay } from "swiper/modules";
 import LinkButton from "../buttons/LinkButton";
 import { SwiperCarousel } from "../sliders";
-import { Autoplay } from "swiper/modules";
 
 const XperiencesPopUp = () => {
   const { isXperiencePopUpOpen, setIsXperiencePopUpOpen, popUpData } =
-    useContext(WebContext);
+    useWebContext();
   useEffect(() => {
     if (isXperiencePopUpOpen) {
       document.body.style.overflow = "hidden";

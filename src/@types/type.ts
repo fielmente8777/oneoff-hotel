@@ -53,3 +53,17 @@ export interface BoatToursProps {
     }[];
   }[];
 }
+
+export interface NewRoomsProps {
+    title: string;
+    subTitle: string;
+    description: string[];
+    links: {
+        label: string;
+        href: string;
+    }[];
+    rooms: {
+        src: string;
+        alt: string;
+    }[];
+}

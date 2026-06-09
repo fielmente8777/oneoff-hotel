@@ -1,31 +1,25 @@
 "use client";
-import Link from "next/link";
-import { Container } from "../sectionComponents";
-import { navBarData } from "./navBarData";
+import { useWebContext } from "@/contextApi/WebContext";
+import { contacts } from "@/utils/constant";
 import Image from "next/image";
-import { useContext } from "react";
-import { WebContext } from "@/contextApi/WebContext";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
-import LinkButton from "../buttons/LinkButton";
-import MobileNav from "./MobileNav";
 import { MdClose } from "react-icons/md";
-import { contacts } from "@/utils/constant";
+import LinkButton from "../buttons/LinkButton";
+import { Container } from "../sectionComponents";
+import MobileNav from "./MobileNav";
+import { navBarData } from "./navBarData";
 
 const NavBar = () => {
-  const { setIsOpenMobileMenu, isOpenMobileMenu } = useContext(WebContext);
+  const { setIsOpenMobileMenu, isOpenMobileMenu } = useWebContext();
 
   const pathName = usePathname();
+  const paths = ["/","/thank-you/", "/", "/contact-us/", "/one-off-dashashwamedh/", "/one-off-x/", "/develop-with-us/", "/xperiences/", "/the-south-delhi-edition/"];
   if (
     pathName
-      ? pathName === "/thank-you/" ||
-        pathName === "/" ||
-        pathName === "/contact-us/" ||
-        pathName === "/one-off-dashashwamedh/" ||
-        pathName === "one-off-x" ||
-        pathName === "/develop-with-us/" ||
-        pathName.includes("blog") ||
-        pathName === "/xperiences/"
+      ? paths.includes(pathName) ||
+        pathName.includes("blog") 
       : false
   )
     return null;

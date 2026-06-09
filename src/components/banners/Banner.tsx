@@ -134,7 +134,8 @@ const Banner: FC<BannerProps> = ({
             spaceBetween={0}
             loop
             modules={[Autoplay]}
-            autoplay={{ delay: 2500 }}
+            autoplay={{ delay: 3000 }}
+            speed={2500}
             className="w-full"
             renderSlide={(image) => (
               <div className="w-full relative md:aspect-[4/2.8] aspect-square">

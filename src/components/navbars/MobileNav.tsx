@@ -1,17 +1,17 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navBarData } from "./navBarData";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FillDropDownIcon } from "./NavBar";
-import Image from "next/image";
-import { WebContext } from "@/contextApi/WebContext";
+import { navBarData } from "./navBarData";
+import { useWebContext } from '../../contextApi/WebContext';
 
 const MobileNav: React.FC = () => {
   const [openDropDown, setOpenDropDown] = useState<number | null>(null);
   const [openSubDropDown, setOpenSubDropDown] = useState<number | null>(null);
   const pathName = usePathname();
-  const { setIsOpenMobileMenu, isOpenMobileMenu } = useContext(WebContext);
+  const { setIsOpenMobileMenu, isOpenMobileMenu } = useWebContext();
 
   useEffect(() => {
     if (isOpenMobileMenu) {

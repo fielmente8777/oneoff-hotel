@@ -1,19 +1,18 @@
 "use client";
-import Link from "next/link";
-import { Container } from "../sectionComponents";
-import { navBarData } from "./navBarData";
+import { useWebContext } from "@/contextApi/WebContext";
+import { contacts } from "@/utils/constant";
 import Image from "next/image";
-import { useContext } from "react";
-import { WebContext } from "@/contextApi/WebContext";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
-import LinkButton from "../buttons/LinkButton";
-import MobileNav from "./MobileNav";
 import { MdClose } from "react-icons/md";
-import { contacts } from "@/utils/constant";
+import LinkButton from "../buttons/LinkButton";
+import { Container } from "../sectionComponents";
+import MobileNav from "./MobileNav";
+import { navBarData } from "./navBarData";
 
 const NavBar2 = () => {
-  const { setIsOpenMobileMenu, isOpenMobileMenu } = useContext(WebContext);
+  const { setIsOpenMobileMenu, isOpenMobileMenu } = useWebContext();
 
   const pathName = usePathname();
 
