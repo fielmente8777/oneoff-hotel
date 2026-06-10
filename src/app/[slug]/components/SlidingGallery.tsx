@@ -47,7 +47,7 @@ const SlidingGallery: React.FC<SlidingGalleryProps> = ({ images }) => {
       />
       <button
         onClick={() => openGallery({ images, index: 0 })}
-        className="absolute z-10 bottom-4 right-4 p-2  rounded-lg gap-2 flex items-center justify-center"
+        className="absolute z-10 bottom-0 right-0 p-2  rounded-lg gap-2 flex items-center justify-center"
       >
         <ZoomIcon />
         <span className="sr-only">Gallery</span>

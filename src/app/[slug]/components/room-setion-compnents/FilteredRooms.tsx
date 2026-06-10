@@ -20,7 +20,7 @@ const FilteredRooms: React.FC<{ rooms: NewRoomsProps["rooms"] }> = ({
   return (
     <div className="space-y-8">
       <Container>
-        <ul className="flex items-center gap-4 max-lg:overflow-x-auto ">
+        <ul className="flex items-center gap-4 max-lg:overflow-x-auto hide-scroll">
           {allButtons.map((button) => (
             <li className="" key={button}>
               <button
@@ -82,17 +82,17 @@ const FilteredRooms: React.FC<{ rooms: NewRoomsProps["rooms"] }> = ({
               index: 0,
             })
           }
-          className="absolute z-10 bottom-4 right-4 p-2  rounded-lg gap-2 flex items-center justify-center"
+          className="absolute z-10 bottom-0 right-0 p-2  rounded-lg gap-2 flex items-center justify-center"
         >
           <ZoomIcon />
           <span className="sr-only">Gallery</span>
         </button>
-        <div className="absolute max-lg:inset-x-0 max-w-[52rem] w-full text-secondary z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-between">
-          <button className="new-room-prev w-12 aspect-square rounded-full bg-white flex items-center justify-center">
+        <div className="absolute max-lg:inset-x-0 lg:max-w-[52rem] w-full text-secondary z-10 top-1/2 lg:left-1/2 lg:-translate-x-1/2 -translate-y-1/2 flex items-center justify-between">
+          <button className="new-room-prev md:w-12 w-8 aspect-square rounded-full bg-white flex items-center justify-center">
             <span className="sr-only">previous</span>
             <GrPrevious />
           </button>
-          <button className="new-room-next w-12 aspect-square rounded-full bg-white flex items-center justify-center">
+          <button className="new-room-next md:w-12 w-8 aspect-square rounded-full bg-white flex items-center justify-center">
             <span className="sr-only">next</span>
             <GrNext />
           </button>

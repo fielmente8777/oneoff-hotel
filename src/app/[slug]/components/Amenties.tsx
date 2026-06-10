@@ -14,7 +14,7 @@ interface AmentiesProps {
 const Amenties = ({ amenties }: AmentiesProps) => {
   return (
     <Section>
-      <Container className="pb-16">
+      <Container className="md:pb-16">
         <SectionHeading title="HOTEL" subTitle="AMENITIES" textCenter />
 
         <div className="md:flex flex-wrap justify-center mt-12 gap-16 hidden">
@@ -37,7 +37,7 @@ const Amenties = ({ amenties }: AmentiesProps) => {
             renderSlide={(amentie, index) => (
               <div key={index} className="flex flex-col items-center gap-2">
                 {amentie.icon}
-                <span>{amentie.label}</span>
+                <span className="text-center">{amentie.label}</span>
               </div>
             )}
           />

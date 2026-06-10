@@ -27,12 +27,12 @@ const NewRooms: React.FC<NewRoomsProps> = ({
         />
       </Container>
       <FilteredRooms rooms={rooms} />
-      <Container className="flex flex-col items-center gap-4 text-white">
+      <Container className="flex flex-col items-center gap-4 text-center text-white">
         <p className="md:text-lg tracking-wider text-center">{description}</p>
         <Link href={links[0].href} className="w-fit tracking-wider">
           {links[0].label}
         </Link>
-        <Link href={links[1].href} className="w-fit tracking-wider">
+        <Link href={links[1].href} className="w-fit tracking-wider ">
           {links[1].label}
         </Link>
         <LinkButton

@@ -102,7 +102,7 @@ export const locationPageData = [
         icon: <CoffeIcon />,
       },
       {
-        label: "Tv",
+        label: "SMART TV",
         icon: <TvIcon />,
       },
       {
@@ -219,7 +219,7 @@ export const locationPageData = [
         icon: <CoffeIcon />,
       },
       {
-        label: "Tv",
+        label: "SMART TV",
         icon: <TvIcon />,
       },
       {
@@ -716,7 +716,7 @@ export const locationPageData = [
         icon: <CoffeIcon />,
       },
       {
-        label: "Tv",
+        label: "SMART TV",
         icon: <TvIcon />,
       },
       {

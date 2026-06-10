@@ -2,7 +2,6 @@
 "use client";
 import { SectionWithContainer } from "@/components/sectionComponents";
 import { SectionHeading } from "@/components/typography";
-import { useWebContext } from "@/contextApi/WebContext";
 import Image from "next/image";
 
 interface GalleryProps {
@@ -35,7 +34,7 @@ const Gallery: React.FC<GalleryProps> = ({ title, subTitle, images }) => {
     return pattern[globalIndex % pattern.length] || "aspect-[4/3]";
   };
 
-  const { openGallery } = useWebContext();
+  // const { openGallery } = useWebContext();
 
   return (
     <SectionWithContainer>
@@ -50,12 +49,12 @@ const Gallery: React.FC<GalleryProps> = ({ title, subTitle, images }) => {
                 return (
                   <div
                     key={globalIndex}
-                    onClick={() =>
-                      openGallery({
-                        images,
-                        index,
-                      })
-                    }
+                    // onClick={() =>
+                    //   openGallery({
+                    //     images,
+                    //     index,
+                    //   })
+                    // }
                     className={`relative w-full ${getAspectRatio(globalIndex)}`}
                   >
                     <Image
