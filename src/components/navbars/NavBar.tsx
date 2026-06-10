@@ -15,136 +15,139 @@ const NavBar = () => {
   const { setIsOpenMobileMenu, isOpenMobileMenu } = useWebContext();
 
   const pathName = usePathname();
-  const paths = ["/","/thank-you/", "/", "/contact-us/", "/one-off-dashashwamedh/", "/one-off-x/", "/develop-with-us/", "/xperiences/", "/the-south-delhi-edition/"];
-  if (
-    pathName
-      ? paths.includes(pathName) ||
-        pathName.includes("blog") 
-      : false
-  )
+  const paths = [
+    "/",
+    "/contact-us/",
+    "/one-off-dashashwamedh/",
+    "/one-off-x/",
+    "/develop-with-us/",
+    "/xperiences/",
+    "/the-south-delhi-edition/",
+  ];
+  if (pathName ? paths.includes(pathName) || pathName.includes("blog") : false)
     return null;
 
   return (
-    <div>
-      <header className={`max_screen border-b border-secondary`}>
-        <Container>
-          <nav className="flex items-center justify-between py-3">
-            <div className="">
-              <Link
-                href={"/"}
-                className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1]"
-              >
-                <Image src="/logo.png" alt="one off hotel" sizes="(max-width: 400px) 100vw, 400px" fill />
-              </Link>
-            </div>
-            <ul className="xl:flex hidden item-center gap-10">
-              {navBarData.map((link, index) => {
-                // const id = index + 1;
-                return (
-                  <li key={index + "vn"} className="relative nav">
-                    <Link
-                      href={link.href ? link.href : "#"}
-                      className="relative text-nowrap tracking-widest py-2 uppercase font-bold text-sm flex items-center gap-1 text-dark"
-                    >
-                      {link.label}
-                      <span className="span-border"></span>
-                      {link.subLinks && (
-                        <span className="icon duration-300 transition-all ease-in-out">
-                          <FillDropDownIcon />
-                        </span>
-                      )}
-                    </Link>
+    <header className={`max_screen border-b border-secondary`}>
+      <Container>
+        <nav className="flex items-center justify-between py-3">
+          <div className="">
+            <Link
+              href={"/"}
+              className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1]"
+            >
+              <Image
+                src="/logo.png"
+                alt="one off hotel"
+                sizes="(max-width: 400px) 100vw, 400px"
+                fill
+              />
+            </Link>
+          </div>
+          <ul className="xl:flex hidden item-center gap-10">
+            {navBarData.map((link, index) => {
+              // const id = index + 1;
+              return (
+                <li key={index + "vn"} className="relative nav">
+                  <Link
+                    href={link.href ? link.href : "#"}
+                    className="relative text-nowrap tracking-widest py-2 uppercase font-bold text-sm flex items-center gap-1 text-dark"
+                  >
+                    {link.label}
+                    <span className="span-border"></span>
                     {link.subLinks && (
-                      <span className="nav-1 backdrop-blur-md">
-                        {link.subLinks.map((subLink, subIndex) => {
-                          return (
-                            <span
-                              className="relative group nav-2"
-                              key={subIndex + "sub"}
-                            >
-                              {subLink.location && (
-                                <span className="ps-4 py-2 font-semibold block uppercase">
-                                  {subLink.location}
-                                </span>
-                              )}
-                              <Link
-                                href={subLink.href ? subLink.href : "#"}
-                                className={`w-full tracking-wider py-2 px-4 flex flex-col gap-1 group font-bold text-sm text-dark ${pathName === subLink.href ? "bg-secondary !text-white" : ""}`}
-                              >
-                                <span className="uppercase">
-                                  {" "}
-                                  {subLink.label}
-                                </span>
-                                {subLink.sub && (
-                                  <span className="text-sm">{subLink.sub}</span>
-                                )}
-                                {subLink.subLinks && (
-                                  <span className="group-hover:rotate-90 -rotate-90 duration-300 transition-all ease-in-out">
-                                    <FillDropDownIcon />
-                                  </span>
-                                )}
-                              </Link>
-
-                              {subLink.subLinks && (
-                                <span className="nav-link">
-                                  {subLink.subLinks?.map(
-                                    (nestedSubLink, nestedIndex) => {
-                                      return (
-                                        <span
-                                          className=""
-                                          key={nestedIndex + 2}
-                                        >
-                                          <Link
-                                            href={
-                                              nestedSubLink.href
-                                                ? nestedSubLink.href
-                                                : "#"
-                                            }
-                                            className={`w-full text-nowrap py-2 px-4 flex items-center text-light gap-1 group uppercase font-bold text-sm hover:bg-gray-200 ${pathName === nestedSubLink.href ? "bg-primary !text-white" : ""}`}
-                                          >
-                                            {nestedSubLink.label}
-                                          </Link>
-                                        </span>
-                                      );
-                                    }
-                                  )}
-                                </span>
-                              )}
-                            </span>
-                          );
-                        })}
+                      <span className="icon duration-300 transition-all ease-in-out">
+                        <FillDropDownIcon />
                       </span>
                     )}
-                  </li>
-                );
-              })}
-            </ul>
-            <LinkButton
-              hide
-              target="_blank"
-              rel="noopener noreferrer"
-              href={contacts.bookingCta.oneOffDelhi}
-              label="Book Now"
-              variant="primary"
-            />
-            <div className="max-xl:block hidden">
-              <button
-                className={`xl:hidden transition-all ease-in-out duration-300 ${isOpenMobileMenu ? "rotate-90" : ""}`}
-                onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
-              >
-                {!isOpenMobileMenu ? (
-                  <GiHamburgerMenu color="#fff" />
-                ) : (
-                  <MdClose />
-                )}
-              </button>
+                  </Link>
+                  {link.subLinks && (
+                    <span className="nav-1 backdrop-blur-md">
+                      {link.subLinks.map((subLink, subIndex) => {
+                        return (
+                          <span
+                            className="relative group nav-2"
+                            key={subIndex + "sub"}
+                          >
+                            {subLink.location && (
+                              <span className="ps-4 py-2 font-semibold block uppercase">
+                                {subLink.location}
+                              </span>
+                            )}
+                            <Link
+                              href={subLink.href ? subLink.href : "#"}
+                              className={`w-full tracking-wider py-2 px-4 flex flex-col gap-1 group font-bold text-sm text-dark ${pathName === subLink.href ? "bg-secondary !text-white" : ""}`}
+                            >
+                              <span className="uppercase">
+                                {" "}
+                                {subLink.label}
+                              </span>
+                              {subLink.sub && (
+                                <span className="text-sm">{subLink.sub}</span>
+                              )}
+                              {subLink.subLinks && (
+                                <span className="group-hover:rotate-90 -rotate-90 duration-300 transition-all ease-in-out">
+                                  <FillDropDownIcon />
+                                </span>
+                              )}
+                            </Link>
 
-              <MobileNav />
-            </div>
-          </nav>
-        </Container>
-      </header>
-    </div>
+                            {subLink.subLinks && (
+                              <span className="nav-link">
+                                {subLink.subLinks?.map(
+                                  (nestedSubLink, nestedIndex) => {
+                                    return (
+                                      <span className="" key={nestedIndex + 2}>
+                                        <Link
+                                          href={
+                                            nestedSubLink.href
+                                              ? nestedSubLink.href
+                                              : "#"
+                                          }
+                                          className={`w-full text-nowrap py-2 px-4 flex items-center text-light gap-1 group uppercase font-bold text-sm hover:bg-gray-200 ${pathName === nestedSubLink.href ? "bg-primary !text-white" : ""}`}
+                                        >
+                                          {nestedSubLink.label}
+                                        </Link>
+                                      </span>
+                                    );
+                                  }
+                                )}
+                              </span>
+                            )}
+                          </span>
+                        );
+                      })}
+                    </span>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+          <LinkButton
+            hide
+            target="_blank"
+            rel="noopener noreferrer"
+            href={contacts.bookingCta.oneOffDelhi}
+            label="Book Now"
+            variant="primary"
+          />
+          <div className="max-xl:block hidden">
+            <button
+              className={`xl:hidden transition-all ease-in-out duration-300 ${isOpenMobileMenu ? "rotate-90" : ""}`}
+              onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
+            >
+              {!isOpenMobileMenu ? (
+                <GiHamburgerMenu color="#fff" />
+              ) : (
+                <MdClose />
+              )}
+            </button>
+
+            <MobileNav />
+          </div>
+        </nav>
+      </Container>
+    </header>
   );
 };
 

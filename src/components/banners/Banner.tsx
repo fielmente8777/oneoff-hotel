@@ -19,7 +19,6 @@ const Banner: FC<BannerProps> = ({
   const hasImages = images && images.length > 0;
   const hasSingleImage = images && images.length === 1;
 
-
   return (
     <section className="banner max_screen_width_2">
       {/* ✅ Case 1: Both Video + Images */}
@@ -115,6 +114,9 @@ const Banner: FC<BannerProps> = ({
             controls={false}
             muted
           />
+          <div className="absolute top-0 left-0 w-full z-10">
+            <NavBar2 />
+          </div>
         </div>
       ) : /* ✅ Case 3: Only Single Image */
       hasSingleImage ? (
