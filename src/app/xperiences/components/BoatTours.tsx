@@ -78,7 +78,10 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
                 <h2 className="md:text-5xl text-2xl font-anton tracking-wider">
                   {card.title}
                 </h2>
-                <p className="text-justify">{card.description}</p>
+                {card?.descriptionlist?.map((description,index) => (  
+                   <p key={index} className="text-justify">{description}</p>
+                ))}
+                
                 <button onClick={() => handleClick(card)} className="text-secondary flex items-center gap-1 w-fit mt-24 underline underline-offset-1">
                   KNOW MORE <ArrowUpRight />
                 </button>

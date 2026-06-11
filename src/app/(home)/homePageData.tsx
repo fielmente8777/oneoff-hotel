@@ -30,20 +30,21 @@ export const homePageData = {
   locations: [
     {
       title: "LOCATIONS",
-      location: "VARANASI",
-      subTitle: "ONE OFF DASHASHWAMEDH",
+      location: "DELHI ",
+      subTitle: "THE SOUTH DELHI EDITION",
       description:
-        "ONE-OFF Dashashwamedh offers a calm, design-led retreat just steps from the ghats and the spiritual heart of Varanasi. Thoughtfully crafted interiors, modern comforts, and attentive service create a peaceful counterpoint to the city’s vibrant energy. Ideal for conscious travelers, it’s a stay where culture, location, and understated living come together effortlessly.",
-      src: "/gallery4.jpg",
+        "ONE OFF - The South Delhi Edition is a 13-room design hotel set in the beating heart of Greater Kailash II - where South Delhi's most storied residential lanes meet its most exciting cultural and culinary energy. For the modern traveller who refuses to choose between beauty and belonging, this is your base.",
+      src: "/card1.jpg",
       images: [
-        "/slider1.jpg",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-21.png",
+        "/card1.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-22.png",
       ],
       link: {
         label: "EXPLORE HOTELS",
-        href: "/one-off-dashashwamedh",
+        href: "/the-south-delhi-edition",
       },
     },
+
     {
       title: "LOCATIONS",
       location: "VARANASI",
@@ -58,6 +59,23 @@ export const homePageData = {
       link: {
         label: "EXPLORE HOTELS",
         href: "/one-off-x",
+      },
+    },
+
+    {
+      title: "LOCATIONS",
+      location: "VARANASI",
+      subTitle: "ONE OFF DASHASHWAMEDH",
+      description:
+        "ONE-OFF Dashashwamedh offers a calm, design-led retreat just steps from the ghats and the spiritual heart of Varanasi. Thoughtfully crafted interiors, modern comforts, and attentive service create a peaceful counterpoint to the city’s vibrant energy. Ideal for conscious travelers, it’s a stay where culture, location, and understated living come together effortlessly.",
+      src: "/gallery4.jpg",
+      images: [
+        "/slider1.jpg",
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-21.png",
+      ],
+      link: {
+        label: "EXPLORE HOTELS",
+        href: "/one-off-dashashwamedh",
       },
     },
   ],

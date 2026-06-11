@@ -41,7 +41,10 @@ const XperiencesPopUp = () => {
                   <h3 className="md:text-2xl text-xl font-anton">
                     {item.title}
                   </h3>
-                  <p className="md:text-lg ">{item.desc}</p>
+                  {/* <p className="md:text-lg ">{item.desc}</p> */}
+                  {item?.desclist?.map((desc,index) => (  
+                   <p key={index} className="text-justify">{desc}</p>
+                ))}
                 </div>
               ))}
             </div>

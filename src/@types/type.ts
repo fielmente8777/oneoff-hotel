@@ -45,11 +45,13 @@ export interface BoatToursProps {
     title: string;
     subTitle?: string;
     description?: string;
+     descriptionlist?: string[];
     images?: string[];
     src?: string;
     popUpData: {
       title: string;
-      desc: string;
+      desc?: string;
+      desclist?: string[];
     }[];
   }[];
 }

@@ -56,7 +56,7 @@ const page = () => {
   return (
     <div>
       <Banner {...ExperiencePageData.bannerData} />
-      <Explore {...ExperiencePageData.experience} />
+      <Explore card={ExperiencePageData.experience} />
       <BoatTours cards={ExperiencePageData.tourData} />
     </div>
   );

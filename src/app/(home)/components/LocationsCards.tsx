@@ -48,7 +48,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
             }}
             effect="fade"
             fadeEffect={{ crossFade: true }}
-            speed={800}
+            speed={8000}
             className="w-full "
             swiperSlideClassName="w-full"
             autoplay={{ delay: 3000 }}
@@ -61,7 +61,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
                     </h2>
                     <div className="relative w-full aspect-[4/2.5]">
                       <Image
-                        src={location.images[1]}
+                        src={location.images[0]}
                         alt={location.title}
                         fill
                         className="object-cover box-shadow"
