@@ -48,7 +48,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
             }}
             effect="fade"
             fadeEffect={{ crossFade: true }}
-            speed={8000}
+            speed={5000}
             className="w-full "
             swiperSlideClassName="w-full"
             autoplay={{ delay: 3000 }}

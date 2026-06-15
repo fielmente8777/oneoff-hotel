@@ -176,7 +176,7 @@ export const ExperiencePageData = {
     },
     {
       title: "The Architectural Heritage of Sunder Nursery & Humayun's Tomb",
-          desclist: [
+          descriptionlist: [
             "Discover one of Delhi's most remarkable heritage restorations. Wander through beautifully landscaped gardens, historic monuments, and the magnificent Humayun's Tomb in a serene cultural setting.",
 
             "Price: ₹5,000 + Taxes",
@@ -317,65 +317,75 @@ export const ExperiencePageData = {
         // // },
       ],
     },
-    // {
-    //   title: "DAY TRIP",
-    //   description:
-    //     "Extend your journey from Varanasi with our thoughtfully planned day trips. Visit the holy confluence at Prayagraj, explore Bodhgaya’s sacred sites, discover the legendary city of Ayodhya, or feel the divine aura of Vindhyachal. Each trip blends history, culture, and spirituality, offering travelers a seamless way to experience the region’s iconic landmarks and sacred heritage in just one enriching day.",
-    //   src: "/BoatTour1.jpg",
-    //   images: ["/BoatTour1.jpg", "/exp/one-off-exp11.jpg", "/exp/one-off-exp10.jpg"],
-    //   popUpData: [
-    //     {
-    //       title: "1. A Trip to Prayagraj",
-    //       desc: "Visit the holy confluence of the Ganga, Yamuna, and Saraswati at Triveni Sangam. Explore temples and experience the serene spirituality of this sacred city.",
-    //     },
-    //     {
-    //       title: "2. Bodhgaya Trip",
-    //       desc: "Journey to the land of enlightenment where Lord Buddha attained Nirvana. Visit the Mahabodhi Temple and soak in the peace of this timeless pilgrimage site.",
-    //     },
-    //     {
-    //       title: "3. Ayodhya Trip",
-    //       desc: "Explore the birthplace of Lord Ram and witness the grandeur of Ram Mandir. A journey filled with devotion, history, and divine charm.",
-    //     },
-    //     {
-    //       title: "4. Vindhyachal Trip",
-    //       desc: "Pay respects to Goddess Vindhyavasini at her powerful hilltop shrine. Surrounded by scenic beauty, this trip blends devotion with nature’s calm.",
-    //     },
-    //   ],
-    // },
+    {
+      title: "DAY TRIP",
+      descriptionlist: [
+        "Extend your journey from Varanasi with our thoughtfully planned day trips. Visit the holy confluence at Prayagraj, explore Bodhgaya’s sacred sites, discover the legendary city of Ayodhya, or feel the divine aura of Vindhyachal. Each trip blends history, culture, and spirituality, offering travelers a seamless way to experience the region’s iconic landmarks and sacred heritage in just one enriching day."],
+      src: "/BoatTour1.jpg",
+      images: ["/BoatTour1.jpg", "/exp/one-off-exp11.jpg", "/exp/one-off-exp10.jpg"],
+      popUpData: [
+        {
+          title: "1. A Trip to Prayagraj",
+          desc:"",
+          desclist: ["Visit the holy confluence of the Ganga, Yamuna, and Saraswati at Triveni Sangam. Explore temples and experience the serene spirituality of this sacred city."],
+        },
+        {
+          title: "2. Bodhgaya Trip",
+          desc:"",
+          desclist: ["Journey to the land of enlightenment where Lord Buddha attained Nirvana. Visit the Mahabodhi Temple and soak in the peace of this timeless pilgrimage site."],
+        },
+        {
+          title: "3. Ayodhya Trip",
+          desc:"",
+          desclist: "Explore the birthplace of Lord Ram and witness the grandeur of Ram Mandir. A journey filled with devotion, history, and divine charm.",
+        },
+        {
+          title: "4. Vindhyachal Trip",
+          desc:"",
+          desclist: ["Pay respects to Goddess Vindhyavasini at her powerful hilltop shrine. Surrounded by scenic beauty, this trip blends devotion with nature’s calm."],
+        },
+      ],
+    },
 
-    // {
-    //   title: "TOUR PACKAGES",
-    //   description:
-    //     "Discover Varanasi with our guided city tours. Enjoy a Full Day City Tour or explore local life on the South City Tour. Visit the sacred Sarnath Trip, where Buddha gave his first sermon, or experience the bustling streets on a fun Tuk-Tuk Tour. Each journey blends history, culture, and the everyday rhythm of Kashi, offering a unique and immersive experience.",
-    //   src: "/tour-packages.png",
-    //   images: ["/tour-packages.png", "/exp/one-off-exp8.jpg", "/exp/one-off-exp6.jpg"],
-    //   popUpData: [
-    //     {
-    //       title: "1. A Day in Varanasi",
-    //       desc: "Experience the best of Varanasi in a single day—from sunrise on the Ganges to evening Aarti and everything in between. Perfect for a short yet soulful visit.",
-    //     },
-    //     {
-    //       title:
-    //         "2. Complete Varanasi – Hinduism, Buddhism, Culture, Wisdom & Liberation",
-    //       desc: "Dive deep into the spiritual and cultural essence of Kashi. Explore sacred temples, ancient monasteries, and the philosophies that define India’s oldest living city.",
-    //     },
-    //     {
-    //       title: "3. 2N / 3D Varanasi",
-    //       desc: "Spend two nights soaking in the mystique of Varanasi. From temple visits to boat rides and local walks, it’s a perfect blend of culture and calm.",
-    //     },
-    //     {
-    //       title: "4. Golden Triangle",
-    //       desc: "Explore India’s most iconic circuit—Delhi, Agra, and Jaipur—where history, architecture, and heritage come alive in royal splendour.",
-    //     },
-    //     {
-    //       title: "5. 2N / 3D Varanasi–Prayagraj Trip",
-    //       desc: "Journey through two sacred cities where faith meets the flow of rivers. Witness the confluence at Triveni Sangam and the divine aura of Kashi.",
-    //     },
-    //     {
-    //       title: "6. 4N / 5D Varanasi–Prayagraj–Ayodhya",
-    //       desc: "A spiritual odyssey through three holy cities—Varanasi, Prayagraj, and Ayodhya. Discover India’s deep-rooted traditions, temples, and timeless tales of devotion.",
-    //     },
-    //   ],
-    // },
+    {
+      title: "TOUR PACKAGES",
+      descriptionlist: [
+        "Discover Varanasi with our guided city tours. Enjoy a Full Day City Tour or explore local life on the South City Tour. Visit the sacred Sarnath Trip, where Buddha gave his first sermon, or experience the bustling streets on a fun Tuk-Tuk Tour. Each journey blends history, culture, and the everyday rhythm of Kashi, offering a unique and immersive experience."],
+      src: "/tour-packages.png",
+      images: ["/tour-packages.png", "/exp/one-off-exp8.jpg", "/exp/one-off-exp6.jpg"],
+      popUpData: [
+        {
+          title: "1. A Day in Varanasi",
+          desc:"",
+          desclist: ["Experience the best of Varanasi in a single day—from sunrise on the Ganges to evening Aarti and everything in between. Perfect for a short yet soulful visit."],
+        },
+        {
+          title:
+            "2. Complete Varanasi – Hinduism, Buddhism, Culture, Wisdom & Liberation",
+          desc:"",
+          desclist: ["Dive deep into the spiritual and cultural essence of Kashi. Explore sacred temples, ancient monasteries, and the philosophies that define India’s oldest living city."],
+        },
+        {
+          title: "3. 2N / 3D Varanasi",
+          desc:"",
+          desclist: ["Spend two nights soaking in the mystique of Varanasi. From temple visits to boat rides and local walks, it’s a perfect blend of culture and calm."],
+        },
+        {
+          title: "4. Golden Triangle",
+          desc:"",
+          desclist: ["Explore India’s most iconic circuit—Delhi, Agra, and Jaipur—where history, architecture, and heritage come alive in royal splendour."],
+        },
+        {
+          title: "5. 2N / 3D Varanasi–Prayagraj Trip",
+          desc:"",
+          desclist: ["Journey through two sacred cities where faith meets the flow of rivers. Witness the confluence at Triveni Sangam and the divine aura of Kashi."],
+        },
+        {
+          title: "6. 4N / 5D Varanasi–Prayagraj–Ayodhya",
+          desc:"",
+          desclist: ["A spiritual odyssey through three holy cities—Varanasi, Prayagraj, and Ayodhya. Discover India’s deep-rooted traditions, temples, and timeless tales of devotion."],
+        },
+      ],
+    },
   ],
 };
