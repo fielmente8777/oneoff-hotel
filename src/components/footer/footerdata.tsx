@@ -105,10 +105,12 @@ export const footerData: FooterDataProps = {
   ],
   images: [
     "/Rectangle-17.png",
+    "/Rectangle-18.jpg",
     // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-24.png",
-    "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-23.png",
+    // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-23.png",
     // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-13.png",
     "/Rectangle-20.png",
-    "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-14.png",
+    "/Rectangle-21.png"
+    // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-14.png",
   ],
 };

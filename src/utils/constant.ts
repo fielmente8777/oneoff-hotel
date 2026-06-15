@@ -30,6 +30,10 @@ export const contacts = {
     oneOffDelhi:
       "https://letsbook.me/booking/oneoffthesouthdelhiedition?checkin=2026-05-26&checkout=2026-05-27&adults=2&children=0",
   },
+  contactCta:{
+     delhi:"+91  92898 92779",
+     varanasi:"+91 77530 42847",
+  },
 };
 
 interface data_Type {

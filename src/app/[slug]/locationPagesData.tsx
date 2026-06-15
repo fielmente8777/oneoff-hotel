@@ -57,8 +57,8 @@ export const locationPageData = [
           href: "",
         },
         {
-          label: "CONTACT: " + contacts.phoneNumbers[0],
-          href: "tel:" + contacts.phoneNumbers[0],
+          label: "CONTACT: " + contacts.contactCta.varanasi,
+          href: "tel:" + contacts.contactCta.varanasi,
         },
         {
           label: "BOOK NOW",
@@ -174,8 +174,8 @@ export const locationPageData = [
           href: "",
         },
         {
-          label: "CONTACT: " + contacts.phoneNumbers[0],
-          href: "tel:" + contacts.phoneNumbers[0],
+          label: "CONTACT: " + contacts.contactCta.varanasi,
+          href: "tel:" + contacts.contactCta.varanasi,
         },
         {
           label: "BOOK NOW",
@@ -292,8 +292,8 @@ export const locationPageData = [
           href: "",
         },
         {
-          label: "CONTACT: " + contacts.phoneNumbers[0],
-          href: "tel:" + contacts.phoneNumbers[0],
+          label: "CONTACT: " + contacts.contactCta.delhi,
+          href: "tel:" + contacts.contactCta.delhi,
         },
         {
           label: "BOOK NOW",
