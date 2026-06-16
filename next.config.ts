@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   compress: true,
   poweredByHeader: false,
-
   reactStrictMode: true,
   images: {
     remotePatterns: [
