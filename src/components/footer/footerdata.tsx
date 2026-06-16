@@ -97,7 +97,7 @@ export const footerData: FooterDataProps = {
         },
         {
           label: contacts.addresses[0],
-          href: "",
+          href: contacts.locationsAddress.delhi.link,
           icon: <IoLocationSharp />,
         },
       ],
