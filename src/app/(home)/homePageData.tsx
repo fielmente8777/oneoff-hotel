@@ -31,8 +31,8 @@ export const homePageData = {
         "ONE OFF - The South Delhi Edition is a 13-room design hotel set in the beating heart of Greater Kailash II - where South Delhi's most storied residential lanes meet its most exciting cultural and culinary energy. For the modern traveller who refuses to choose between beauty and belonging, this is your base.",
       src: "/card1.jpg",
       images: [
-        "/card1.jpg",
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-22.png",
+        "/card1.jpg",
       ],
       link: {
         label: "EXPLORE HOTELS",
