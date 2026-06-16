@@ -2,24 +2,18 @@ import { contacts } from "@/utils/constant";
 
 export const homePageData = {
   bannerData: {
-    // videoSrc: "/Group56.png",
-    images: [
-      // "/newim-2.webp",
-      // "/HomeBanner3.jpg",
-      // "/bnr-slide1.webp",
-      // "/bnr-slide4.webp",
-      // // "/newim-1.webp",
-      // "/HomeBanner6.png",
-      // "/HomeBanner7.jpg",
-      // "/Banner-image.webp",
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-5.jpg",
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-2.jpg",
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-16.png",
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-1.jpg",
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-4.jpg",
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-6.png",
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-3.jpg",
-    ],
+    videoSrc: "/video/ONE-OFF-GK-MAIN-VIDEO.mp4",
+    thumbNail:"/video/ONE-OFF-GK-MAIN-VIDEO.png",
+    // images: [
+      //
+      // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-5.jpg",
+      // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-2.jpg",
+      // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-16.png",
+      // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-1.jpg",
+      // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-4.jpg",
+      // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-6.png",
+      // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-3.jpg",
+    // ],
   },
   aboutHomePage: {
     title: "EXPERIENCE THE",
@@ -81,7 +75,7 @@ export const homePageData = {
   ],
   exploreExperienceData: {
     title: "EXPLORE EXPERIENCES",
-    subTitle: "IN VARANASI",
+    subTitle: "ONE OFF XPERIENCES",
     link: {
       label: "BOOK NOW",
       href: contacts.bookingCta.oneOffDashashwamedh,
@@ -146,16 +140,16 @@ export const homePageData = {
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-8.png",
       ],
     },
-    {
-      title: "DELHI",
-      subTitle: "UPCOMING HOTELS",
-      description:
-        "Experience timeless charm and modern luxury at our upcoming hotel in Delhi.",
-      images: [
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-10.png",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-7.png",
-      ],
-    },
+    // {
+    //   title: "DELHI",
+    //   subTitle: "UPCOMING HOTELS",
+    //   description:
+    //     "Experience timeless charm and modern luxury at our upcoming hotel in Delhi.",
+    //   images: [
+    //     "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-10.png",
+    //     "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-7.png",
+    //   ],
+    // },
     {
       title: "BANARAS",
       subTitle: "UPCOMING HOTELS",

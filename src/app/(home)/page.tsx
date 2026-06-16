@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <main>
       <Banner {...homePageData.bannerData} />
+      
       <HomeAbout
         {...homePageData.aboutHomePage}
         wrapperClassName="max-w-[37rem]"

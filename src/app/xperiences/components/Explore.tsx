@@ -87,25 +87,25 @@ const Explore: React.FC<ExploreProps> = ({ card }) => {
                 key={colIndex}
                 className="flex flex-col gap-4"
               >
-                {/* {col.map((image, index) => {
+                {col.map((image, index) => {
                   const globalIndex = colIndex * 3 + index;
 
                   return (
                     <div
-                      key={${image}-${globalIndex}}
+                      key={index}
                       className={`relative w-full ${getAspectRatio(
                         globalIndex
                       )}`}
                     >
                       <Image
                         src={image}
-                        alt={gallery-image-${globalIndex}}
+                        alt={"gallery-image"}
                         fill
                         className="object-cover"
                       />
                     </div>
                   );
-                })} */}
+                })}
               </div>
             ))}
           </div>

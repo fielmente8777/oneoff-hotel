@@ -73,6 +73,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="p:domain_verify"
+          content="143ac45682ac63ebaf178364749edffc"
+        />
+      </head>
       <body
         className={`${anton.variable} antialiased`}
         suppressHydrationWarning={true}

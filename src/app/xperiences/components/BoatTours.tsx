@@ -8,7 +8,7 @@ import { BtnNextIcon, BtnPrevIcon } from "@/utils/Icons";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { Swiper as SwiperType } from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
 
 
@@ -62,7 +62,9 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
           slidesPerView={1}
           spaceBetween={20}
           loop={true}
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination,EffectFade]}
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
           navigation={{
             nextEl: ".button-next",
             prevEl: ".button-prev",
@@ -78,6 +80,9 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
                 <h2 className="md:text-5xl text-2xl font-anton tracking-wider">
                   {card.title}
                 </h2>
+                {card.description && (
+                  <p className="text-justify">{card.description}</p>
+                )}
                 {card?.descriptionlist?.map((description,index) => (  
                    <p key={index} className="text-justify">{description}</p>
                 ))}

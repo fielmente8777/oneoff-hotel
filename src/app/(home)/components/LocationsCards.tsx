@@ -48,7 +48,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
             }}
             effect="fade"
             fadeEffect={{ crossFade: true }}
-            speed={5000}
+            speed={800}
             className="w-full "
             swiperSlideClassName="w-full"
             autoplay={{ delay: 3000 }}
@@ -61,7 +61,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
                     </h2>
                     <div className="relative w-full aspect-[4/2.5]">
                       <Image
-                        src={location.images[0]}
+                        src={location.images[1]}
                         alt={location.title}
                         fill
                         className="object-cover box-shadow"
@@ -73,7 +73,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
                       {location.title}
                     </h2>
 
-                    <div className=" space-y-4 mt-16">
+                    <div className=" space-y-4 mt-20">
                       {location.location && (
                         <p className="md:text-lg flex items-center gap-2 text-white">
                           <span className="text-lg">
@@ -127,7 +127,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
             )}
           />
         </div>
-        <div className="absolute xl:right-[23%] xl:top-[20%] top-[4%] xxl:right-[25%] lg:right-[20%] md:right-[15%] right-[10%] z-30 w-fit">
+        <div className="absolute xl:right-[18%] xl:top-[20%] top-[4%] xxl:right-[25%] lg:right-[20%] md:right-[15%] right-[10%] z-30 w-fit">
           <div className="locations " />
         </div>
       </div>

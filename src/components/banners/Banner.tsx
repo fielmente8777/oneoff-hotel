@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FC } from "react";
 import { Autoplay } from "swiper/modules";
 import NavBar2 from "../navbars/NavBar2";
-import { Section } from "../sectionComponents";
 import SwiperCarousel from "../sliders/SwiperCarousel";
 import { LazyLoadedVideo } from "../Video2";
 

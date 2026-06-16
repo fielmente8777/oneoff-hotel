@@ -14,7 +14,7 @@ export const DevelopBanner = ({
   return (
     <main>
       <div className="flex items-center justify-center min-h-72 develop-bg max_screen_width">
-        <div>
+        <div className="space-y-2">
           <h1 className="text-center ">{title}</h1>
           <h2 className="md:text-6xl text-3xl text-primary font-anton tracking-wider">
             {subTitle}

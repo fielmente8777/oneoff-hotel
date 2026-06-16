@@ -5,6 +5,7 @@ import { JSX } from "react";
 interface AboutLocationProps {
   title: string;
   description: string[];
+  tagLine?: string;
   link: {
     label: string;
     href: string;
@@ -14,6 +15,7 @@ interface AboutLocationProps {
 const AboutLocation: React.FC<AboutLocationProps> = ({
   title,
   description,
+  tagLine,
   link,
 }) => {
   return (
@@ -31,7 +33,10 @@ const AboutLocation: React.FC<AboutLocationProps> = ({
             {title}
           </h2>
         </div>
-        <p className="md:text-lg text-center ">{description}</p>
+        <div className="space-y-2">
+          {tagLine && <p className="md:text-[1.375rem] font-semibold text-lg text-center ">{tagLine}</p>}
+          <p className="md:text-lg text-center ">{description}</p>
+        </div>
       </div>
     </SectionWithContainer>
   );

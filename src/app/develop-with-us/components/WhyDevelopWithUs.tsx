@@ -27,12 +27,12 @@ const WhyDevelopWithUs = ({
   cards,
 }: WhyDevelopWithUsProps) => {
   return (
-    <Section>
+    <Section defaultPadding={false}>
       <div className="grid lg:grid-cols-12 grid-cols-1">
         <div className="lg:col-span-5 col-span-1 bg-secondary text-white p-8  flex flex-col gap-8 items-start justify-center relative">
           <div className="space-y-3">
             <h1 className="uppercase tracking-widest">{title}</h1>
-            <h2 className="uppercase md:text-5xl text-3xl font-semibold">
+            <h2 className="md:text-5xl text-white text-2xl font-anton tracking-wider">
               {subTitle}
             </h2>
           </div>

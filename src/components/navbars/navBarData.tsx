@@ -6,6 +6,12 @@ export const navBarData: NavLinksProps[] = [
     href: "",
     subLinks: [
       {
+        location: "Delhi",
+        label: "The South Delhi Edition",
+        href: "/the-south-delhi-edition/",
+        sub: "Boutique stays in the heart of the world’s oldest living city",
+      },
+      {
         location: "Varanasi",
         label: "One Off Dashashwamedh",
         href: "/one-off-dashashwamedh/",
@@ -16,12 +22,7 @@ export const navBarData: NavLinksProps[] = [
         href: "/one-off-x/",
         sub: "Boutique stays in the heart of the world’s oldest living city",
       },
-      {
-        location: "Delhi",
-        label: "The South Delhi Edition",
-        href: "/the-south-delhi-edition/",
-        sub: "Boutique stays in the heart of the world’s oldest living city",
-      },
+
       {
         location: "Upcoming",
         label: "Jaipur (Upcoming)",

@@ -31,10 +31,10 @@ export const DevelopWithUsPageData = {
     title: "TRANSFORM SPACES INTO EXPERIENCES!",
     subTitle: "WHY DEVELOP WITH US?",
     description:
-      "Partnering with ONE//OFF Hotels means aligning with a brand that dares to redefine hospitality. We believe in creating spaces that inspire, connect, and leave a lasting impression. As a hotel brand driven by design, individuality, and meaningful experiences, we bring a distinctive identity and proven operational expertise to every collaboration. With ONE//OFF Hotels, you don’t just partner with a brand, you join a movement that turns ordinary stays into extraordinary stories.",
+      "Partnering with ONE OFF Hotels means aligning with a brand that dares to redefine hospitality. We believe in creating spaces that inspire, connect, and leave a lasting impression. As a hotel brand driven by design, individuality, and meaningful experiences, we bring a distinctive identity and proven operational expertise to every collaboration. With ONE OFF Hotels, you don’t just partner with a brand, you join a movement that turns ordinary stays into extraordinary stories.",
     link: {
-      label: "CONTACT: " + contacts.phoneNumbers[1],
-      href: "tel:" + contacts.phoneNumbers[1],
+      label: "CONTACT: " + contacts.phoneNumbers[2],
+      href: "tel:" + contacts.phoneNumbers[2],
     },
     cards: [
       "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/develop/img-5.jpg",
@@ -51,10 +51,10 @@ export const DevelopWithUsPageData = {
     title: "TRANSFORM SPACES INTO EXPERIENCES!",
     subTitle: "WHY DEVELOP WITH US ?",
     description: [
-      "Partnering with ONE//OFF Hotels means aligning with a brand that dares to redefine hospitality. We believe in creating spaces that inspire, connect, and leave a lasting impression. As a hotel brand driven by design, individuality, and meaningful experiences, we bring a distinctive identity and proven operational expertise to every collaboration. With ONE//OFF Hotels, you don’t just partner with a brand—you join a movement that turns ordinary stays into extraordinary stories.",
+      "Partnering with ONE OFF Hotels means aligning with a brand that dares to redefine hospitality. We believe in creating spaces that inspire, connect, and leave a lasting impression. As a hotel brand driven by design, individuality, and meaningful experiences, we bring a distinctive identity and proven operational expertise to every collaboration. With ONE OFF Hotels, you don’t just partner with a brand—you join a movement that turns ordinary stays into extraordinary stories.",
       "Join us for a one-on-one chat with the One Off Hotels team to explore your ideas and opportunities.",
     ],
-    src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/develop/img-13.png",
+    src: "/develop/Group-89.webp",
     link: {
       label: "CONTACT: " + contacts.phoneNumbers[1],
       href: "tel:" + contacts.phoneNumbers[1],
