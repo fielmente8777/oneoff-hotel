@@ -25,7 +25,7 @@ const UpcomingCafe = ({ title, subTitle, cards }: UpcomingCafeProps) => {
           <SectionHeading title={title} subTitle={subTitle} textCenter />
 
           {/* GridView */}
-          <div>
+          <div className="md:block hidden">
             <SwiperCarousel
               data={cards}
               autoplay={{
