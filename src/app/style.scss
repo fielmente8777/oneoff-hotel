@@ -135,7 +135,7 @@
     overflow: hidden;
     visibility: hidden;
     text-wrap: wrap;
-    transition: max-height 0.7s ease-in-out;
+    transition: max-height 0.2s ease-in-out;
     z-index: 99999;
     width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -165,7 +165,7 @@
 
     > * {
       opacity: 1;
-      transition-delay: 0.2s;
+      transition-delay: 0.3s;
     }
   }
 
