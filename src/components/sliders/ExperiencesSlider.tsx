@@ -1,4 +1,5 @@
 "use client";
+import { useMemo } from "react";
 import { ExploreExperienceDataProps } from "@/@types/type";
 import SwiperCarousel from "./SwiperCarousel";
 import { Autoplay } from "swiper/modules";
@@ -9,10 +10,15 @@ interface ExperiencesSliderProps {
 }
 
 const ExperiencesSlider: React.FC<ExperiencesSliderProps> = ({ cards }) => {
+  const shuffledCards = useMemo(
+    () => [...cards].sort(() => Math.random() - 0.5),
+    [cards]
+  );
+
   return (
     <div>
       <SwiperCarousel
-        data={cards}
+        data={shuffledCards}
         slidesPerView={1}
         spaceBetween={24}
         modules={[Autoplay]}

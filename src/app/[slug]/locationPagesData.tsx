@@ -2,6 +2,8 @@ import { contacts } from "@/utils/constant";
 import {
   ArtisanalToiletriesIcon,
   CoffeIcon,
+  CommunalSpaceIcon,
+  CoworkingAreaIcon,
   FamilyRoomIcon,
   LaundaryIcon,
   PetFriendly,
@@ -261,9 +263,9 @@ export const locationPageData = [
         "/the-south-delhi-edition/banner/Rectangle-4076.png",
         "/the-south-delhi-edition/banner/Rectangle-4079.png",
         "/the-south-delhi-edition/banner/Rectangle-4080.png",
-        "/the-south-delhi-edition/banner/Rectangle-4081.png",
+        "/develop-with-us/develop/Rectangle-4031.png",
         "/the-south-delhi-edition/banner/Rectangle-4082.png",
-        "/the-south-delhi-edition/banner/Rectangle-4083.png",
+        "/the-south-delhi-edition/banner/Rectangle-4081.png",
       ],
     },
 
@@ -276,7 +278,7 @@ export const locationPageData = [
       ],
       link: {
         label: "DELHI",
-        href: "",
+        href: contacts.locationsAddress.delhi.link,
         icon: <IoLocationSharp />,
       },
     },
@@ -290,7 +292,7 @@ export const locationPageData = [
       links: [
         {
           label: "ADDRESS: E-574, Greater Kailash II, New Delhi - 110048",
-          href: "",
+          href: contacts.locationsAddress.delhi.link,
         },
         {
           label: "CONTACT: " + contacts.contactCta.delhi,
@@ -708,9 +710,14 @@ export const locationPageData = [
         label: "PET FRIENDLY",
         icon: <PetFriendly />,
       },
+
       {
         label: "SECURITY",
         icon: <SecurityIcon />,
+      },
+      {
+        label: "COMMUNAL SPACE",
+        icon: <CommunalSpaceIcon />,
       },
       {
         label: "TEA/COFFEE MAKER",
@@ -727,6 +734,10 @@ export const locationPageData = [
       {
         label: "ARTISANAL TOILETRIES",
         icon: <ArtisanalToiletriesIcon />,
+      },
+      {
+        label: "COWORKING AREA",
+        icon: <CoworkingAreaIcon />,
       },
       {
         label: "LAUNDRY (ADD-ON)",

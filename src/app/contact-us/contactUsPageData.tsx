@@ -4,7 +4,13 @@ import { PhoneIcon, AddressIcon } from "../../utils/Icons";
 
 export const contactUsPageData = {
   bannerData: {
-    images: ["/Rectangle.jpg", "/contact-1.webp", "/Rectangle-3.webp"],
+    images: [
+      "/contact-us/bnr/Rectangle-2.webp",
+      "/contact-us/bnr/Rectangle-3.webp",
+      "/contact-us/bnr/Rectangle-4.webp",
+      "/contact-us/bnr/Rectangle-5.webp",
+      "/contact-us/bnr/Rectangle-6.webp",
+    ],
   },
   contactUsData: {
     title: "CONTACT US TODAY!",
@@ -25,8 +31,8 @@ export const contactUsPageData = {
       },
       {
         title: "Address:",
-        label: contacts.addresses[0],
-        href: contacts.addresses[0],
+        label: contacts.locationsAddress.delhi.address,
+        href: contacts.locationsAddress.delhi.link,
         icon: <AddressIcon />,
       },
     ],

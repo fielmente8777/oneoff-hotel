@@ -22,27 +22,44 @@ export const aboutPageData = {
     },
   },
   images: [
-    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-4.png" },
+    { src: "/about-us/Rectangle-4072.png" },
     {
-      videoSrc:
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ModelReel1.mp4",
+      videoSrc: "/video/ONE-OFF-GK-4.mp4",
     },
-    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-3.png" },
-    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-6.png" },
+    {
+      src: "/about-us/Rectangle-4071.png",
+    },
+    {
+      src: "/about-us/Rectangle-4074.png",
+    },
     {
       videoSrc:
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/MODEL+REEL+2.mp4",
     },
-    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-5.png" },
-    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-8.png" },
+    {
+      src: "/about-us/Rectangle-4073.png",
+    },
+    {
+      src: "/about-us/Rectangle-4075.png",
+    },
     {
       videoSrc:
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/PropertyReel.mp4",
     },
-    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-11.png" },
-    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-10.png" },
-    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-9.png" },
-    { src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-12.png" },
+    {
+      src: "/about-us/Rectangle-4098.png",
+    },
+    {
+      src: "/about-us/Rectangle-4078.png",
+    },
+    {
+       videoSrc:
+        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ModelReel1.mp4",
+    },
+    {
+      src: "/about-us/Rectangle-4100.png",
+    },
+   
   ],
   stayAt: {
     title: "MEET OUR FOUNDER",
@@ -70,5 +87,3 @@ export const aboutPageData = {
     src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-7.png",
   },
 };
-
-

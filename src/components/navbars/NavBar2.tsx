@@ -18,7 +18,7 @@ const NavBar2 = () => {
 
   return (
     <div>
-      <header className={`max_screen  backdrop-blur-md bg-white/30`}>
+      <header className={`max_screen  backdrop-blur-md bg-black/70`}>
         <Container>
           <nav className="flex items-center justify-between py-3">
             <div className="">
