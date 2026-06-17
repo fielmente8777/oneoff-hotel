@@ -14,7 +14,6 @@ const nextConfig: NextConfig = {
         hostname: "eazotel-clients-images.s3.ap-south-1.amazonaws.com",
       },
     ],
-
     
     formats: ["image/avif", "image/webp"],
 
