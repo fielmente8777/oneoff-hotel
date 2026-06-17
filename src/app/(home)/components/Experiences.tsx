@@ -14,7 +14,7 @@ const Experiences: FC<ExploreExperienceDataProps> = ({
   return (
     <Section>
       <div className="flex flex-col md:gap-14 gap-8">
-        <SectionHeading title={title} subTitle={subTitle} textCenter line />
+        <SectionHeading  subTitle={subTitle} textCenter line />
         <ExperiencesSlider cards={cards} />
         <LinkButton
           href={link.href}

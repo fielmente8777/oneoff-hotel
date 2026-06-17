@@ -21,7 +21,7 @@ export const contacts = {
       "https://www.instagram.com/oneoffhotels?igsh=MTZ6aGp6c2NhYTd0YQ%3D%3D&utm_source=qr",
     linkedinUrl:
       "https://www.linkedin.com/company/oneoff-hotels/posts/?feedView=all&viewAsMember=true",
-    pinterestUrl: "https://in.pinterest.com/homefeed/",
+    pinterestUrl: "https://pin.it/6TqDiIPKL",
   },
   formDomain: "oneoffhotel",
   ctas: [""],

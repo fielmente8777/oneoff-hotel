@@ -87,7 +87,7 @@ export default function RootLayout({
           <NavBar />
           {children}
           <Footer />
-          <Whatsapp src="https://wa.me/message/OGSNGP4SG3LDE1" />
+          <Whatsapp />
           <XperiencesPopUp />
           <ImagePopup />
         </WebContextProvider>
