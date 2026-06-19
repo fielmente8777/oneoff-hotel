@@ -42,7 +42,7 @@ export const locationPageData = [
       ],
       link: {
         label: "VARANASI",
-        href: "",
+        href: contacts.locationsAddress.dashashwamedh.link,
         icon: <IoLocationSharp />,
       },
     },
@@ -54,9 +54,8 @@ export const locationPageData = [
       ],
       links: [
         {
-          label:
-            "ADDRESS: D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
-          href: "",
+          label: "ADDRESS: "+contacts.locationsAddress.dashashwamedh.address,
+          href: contacts.locationsAddress.dashashwamedh.link,
         },
         {
           label: "CONTACT: " + contacts.contactCta.varanasi,
@@ -74,7 +73,7 @@ export const locationPageData = [
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-2.jpg",
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-4.jpg",
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-3.jpg",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-6.jpg",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-6.jpg",
       ],
     },
 
@@ -160,7 +159,7 @@ export const locationPageData = [
       ],
       link: {
         label: "VARANASI",
-        href: "",
+        href: contacts.locationsAddress.assiGhat.link,
         icon: <IoLocationSharp />,
       },
     },
@@ -171,10 +170,9 @@ export const locationPageData = [
       ],
       links: [
         {
-          label:
-            "ADDRESS: Ravindrapuri Colony B-1/84-P Ravindrapuri Extention, Opposite Bankati Hanuman Ji Temple, Varanasi",
-          href: "",
-        },
+          label: "ADDRESS: "+contacts.locationsAddress.assiGhat.address,
+          href: contacts.locationsAddress.assiGhat.link,
+        }, 
         {
           label: "CONTACT: " + contacts.contactCta.varanasi,
           href: "tel:" + contacts.contactCta.varanasi,

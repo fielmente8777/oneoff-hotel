@@ -8,12 +8,19 @@ export const contacts = {
       address: "E-574, Greater Kailash II, New Delhi - 110048",
       link: "https://maps.app.goo.gl/hHhrw43xmbfPhzsC6",
     },
+    assiGhat : {
+      address: "Ravindrapuri Colony B-1/84-P Ravindrapuri Extention, Opposite Bankati Hanuman Ji Temple, Varanasi",
+      link: "https://maps.app.goo.gl/FgD9MJPbjd9bpYT67",
+    },
+    dashashwamedh: {
+      address: "D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
+      link: "https://maps.app.goo.gl/iJq98ec8oR4Cbg2X6",
+    }
   },
   phoneNumbers: ["+91 92898 92779", "+91 77530 42847", "+91 98676 03699"],
   emails: [
     "reservations@oneoffhotels.com",
     "bookings@oneoffhotels.com",
-    "LOREMIPSUMAXYZ.COM",
   ],
   socialMediaUrls: {
     facebookUrl: "https://www.facebook.com/share/p/19U6puJmcx",
