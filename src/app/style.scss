@@ -227,13 +227,12 @@
   }
 }
 
-
 .book_now,
 .book_now_2 {
   font-weight: 700;
   border: 1px solid #fff;
   position: relative;
-  width: 9.5rem;
+  width: 15rem;
   height: 3rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -254,13 +253,13 @@
   &::before {
     content: attr(data-label); /* 👈 dynamic text */
     font-weight: 700;
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     text-wrap: nowrap;
     text-transform: uppercase;
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 75%;
     height: 100%;
     z-index: -1;
     display: flex;
@@ -269,10 +268,6 @@
     transition:
       width 0.3s ease-in-out,
       margin 0.3s ease-in-out;
-
-    @media (width < 640px) {
-      font-size: 0.6rem;
-    }
   }
 
   svg {
@@ -295,7 +290,6 @@
 /* Variant 1 (primary) */
 .book_now {
   border: 1px solid var(--secondary);
-
   .span2 {
     color: #fff;
   }
@@ -304,6 +298,7 @@
   &::before {
     color: #fff;
     background: var(--secondary);
+
   }
 
   svg {
@@ -316,6 +311,7 @@
     }
     .span2 {
       color: var(--secondary);
+      padding: 0 1rem ;
     }
   }
 }
@@ -332,6 +328,8 @@
   &::before {
     color: var(--secondary);
     background: #fff;
+    // font-size: 1rem;
+
   }
 
   svg {

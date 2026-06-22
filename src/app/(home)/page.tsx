@@ -13,7 +13,7 @@ export default function Home() {
       
       <HomeAbout
         {...homePageData.aboutHomePage}
-        wrapperClassName="max-w-[37rem]"
+        wrapperClassName="max-w-[45rem]"
       />
       <LocationsCards locations={homePageData.locations} />
       <Experiences {...homePageData.exploreExperienceData} />

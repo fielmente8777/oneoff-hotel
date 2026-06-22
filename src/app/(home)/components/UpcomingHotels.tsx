@@ -15,9 +15,10 @@ const UpcomingHotels: React.FC<UpcomingHotelsProps> = ({ cards }) => {
           spaceBetween={20}
           loop={true}
           modules={[Autoplay]}
+
           pagination={{ clickable: true }}
-          autoplay={{ delay: 2500 }}
-          speed={1000}
+          autoplay={{ delay: 3500 }}
+          speed={2000}
           renderSlide={(card) => <UpcomingHotelsCard {...card} />}
         />
       </div>

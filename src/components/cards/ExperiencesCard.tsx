@@ -27,6 +27,13 @@ const ExperiencesCard: React.FC<ExploreExperienceDataProps["cards"][0]> = ({
       .replace(/\s+/g, "-")
       .replace(/[^a-z0-9-]/g, "");
 
+  // const slug = title
+  //   ?.toLowerCase()
+  //   .replace(/\s+/g, "-")
+  //   .replace(/[^a-z0-9-]/g, "");
+
+  // const href = `/xperiences?location=${location}#${slug}`;
+
   return (
     <>
       <div className="w-full cursor-pointer relative aspect-[4/3.5] group overflow-hidden">

@@ -42,6 +42,7 @@ export interface UpcomingHotelsProps {
 
 export interface BoatToursProps {
   cards: {
+    location: string;
     title: string;
     subTitle?: string;
     description?: string;

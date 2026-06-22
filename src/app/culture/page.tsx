@@ -59,7 +59,7 @@ export default function AboutUs() {
       <Banner {...aboutPageData.bannerData} />
       <HomeAbout
         {...aboutPageData.aboutStayPage}
-        wrapperClassName="max-w-3xl"
+        wrapperClassName="max-w-4xl"
       />
       <Gallery images={aboutPageData.images} />
       <StayAt {...aboutPageData.stayAt} />

@@ -38,7 +38,7 @@ const XperiencesPopUp = () => {
             <div className="max-h-[450px] overflow-y-auto space-y-6 pr-8">
               {popUpData?.popUpData?.map((item, index) => (
                 <div className="space-y-2" key={index}>
-                  <h3 className="md:text-2xl text-xl font-anton">
+                  <h3 className="md:text-2xl text-xl font-anton uppercase">
                     {item.title}
                   </h3>
                   {item?.desc && <p className="md:text-lg ">{item.desc}</p>}

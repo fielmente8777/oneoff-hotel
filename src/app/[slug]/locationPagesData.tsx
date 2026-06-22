@@ -54,7 +54,7 @@ export const locationPageData = [
       ],
       links: [
         {
-          label: "ADDRESS: "+contacts.locationsAddress.dashashwamedh.address,
+          label: "ADDRESS: " + contacts.locationsAddress.dashashwamedh.address,
           href: contacts.locationsAddress.dashashwamedh.link,
         },
         {
@@ -170,9 +170,9 @@ export const locationPageData = [
       ],
       links: [
         {
-          label: "ADDRESS: "+contacts.locationsAddress.assiGhat.address,
+          label: "ADDRESS: " + contacts.locationsAddress.assiGhat.address,
           href: contacts.locationsAddress.assiGhat.link,
-        }, 
+        },
         {
           label: "CONTACT: " + contacts.contactCta.varanasi,
           href: "tel:" + contacts.contactCta.varanasi,
@@ -302,146 +302,146 @@ export const locationPageData = [
         },
       ],
       rooms: [
-        // DEISGNER STUDIO
+        // DESIGNER STUDIO
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02057-HDR.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02063-HDR.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02094-HDR.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02095-HDR.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02465-HDR.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02477-HDR.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02507-HDR.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02568.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02570.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02589.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02590.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02600.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02606.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02620.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02623.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02627.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02640.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02645.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02655.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02733.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02738.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02743.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02767.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02776.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02842.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02846.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02854.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC02874.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC03212.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC03217.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC03227.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC03259.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC03267.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC03271.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
         {
           src: "/the-south-delhi-edition/studio-room-x-2/DSC03274.webp",
-          alt: "DEISGNER STUDIO",
+          alt: "DESIGNER STUDIO",
         },
 
         // SUPERIOR SUITE WITH BALCONY
@@ -461,10 +461,10 @@ export const locationPageData = [
           src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02214-HDR.webp",
           alt: "SUPERIOR SUITE WITH BALCONY ",
         },
-        {
-          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02394.webp",
-          alt: "SUPERIOR SUITE WITH BALCONY ",
-        },
+        // {
+        //   src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02394.webp",
+        //   alt: "SUPERIOR SUITE WITH BALCONY ",
+        // },
         {
           src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02401.webp",
           alt: "SUPERIOR SUITE WITH BALCONY ",

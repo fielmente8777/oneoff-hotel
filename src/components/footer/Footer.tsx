@@ -49,6 +49,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               variant={"secondary"}
+              className="lg:mx-auto  max-lg:!w-50 max-lg:!h-12"
             />
           </div>
         </div>
@@ -99,10 +100,16 @@ const Footer = () => {
       <div className="w-full bg-secondary">
         <Container className="flex  border-t border-white justify-center items-center  w-full gap-2 md:gap-0">
           <div className="flex flex-col md:flex-row items-center justify-between  text-white  uppercase tracking-wider w-full py-4">
-            <span className="px-2 text-lg">
+            <span className="px-2 text-lg max-md:text-center">
               © ONE OFF HOSPITALITY PRIVATE LIMITED {new Date().getFullYear()}
             </span>
-            <span>POWERED BY <Link href="https://www.fielmente.com/" target="_blank">Fielmente</Link></span>
+            <span className="max-md:py-4 max-md:text-center">
+              {" "}
+              POWERED BY{" "}
+              <Link href="https://www.fielmente.com/" target="_blank">
+                Fielmente
+              </Link>
+            </span>
           </div>
         </Container>
       </div>

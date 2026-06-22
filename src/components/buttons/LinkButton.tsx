@@ -21,13 +21,13 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   return (
     <Link
       href={href}
-      className={`${variant === "primary" ? "book_now" : "book_now_2"} ${hide ? "xl:grid hidden" : "grid"} grid-cols-3 items-center justify-center  ${className}`}
+      className={`${variant === "primary" ? "book_now" : "book_now_2"} ${hide ? "xl:grid hidden" : "grid"} grid-cols-[2.5fr_.85fr] items-center justify-center  ${className}`}
       aria-label={label}
       data-label={label}
       {...props}
     >
-      <span className="text-primary col-span-2 span1"></span>
-      <span className="col-span-1 span2">
+      <span className="text-primary  span1"></span>
+      <span className=" span2">
         <ArrowUpRight />
       </span>
     </Link>

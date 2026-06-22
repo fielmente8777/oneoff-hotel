@@ -18,10 +18,10 @@ export const ExperiencePageData = {
       title: "EXPERIENCE",
       subTitle: "VARANASI",
       description:
-        "Discover the timeless charm of the world’s oldest living city. From serene sunrise boat rides on the Ganges to the mesmerizing evening Aarti at Dashashwamedh Ghat, every moment in Varanasi is a journey into spirituality and tradition. Stroll through winding lanes, explore ancient temples, savor local delicacies, and witness the soulful rhythm of life along the ghats. Varanasi is not just a destination—it’s an experience that stays with you forever.",
+        "Discover the timeless charm of the world’s oldest living city. From serene sunrise boat rides on the Ganges to the mesmerizing evening Aarti at Dashashwamedh Ghat, every moment in Varanasi is a journey into spirituality and tradition. Stroll through winding lanes, explore ancient temples, savor local delicacies, and witness the soulful rhythm of life along the ghats. Varanasi is not just a destination it’s an experience that stays with you forever.",
       links: [
         {
-          label: `Reach us at ${contacts.contactCta.varanasi} or send an enquiry — we’ll connect with you shortly.`,
+          label: `Reach us at ${contacts.contactCta.varanasi} or send an enquiry, we’ll connect with you shortly.`,
           href: "tel:" + contacts.contactCta.varanasi,
         },
         {
@@ -45,10 +45,10 @@ export const ExperiencePageData = {
       title: "EXPERIENCE",
       subTitle: "DELHI",
       description:
-        "Discover the timeless charm of the world’s oldest living city. From serene sunrise boat rides on the Ganges to the mesmerizing evening Aarti at Dashashwamedh Ghat, every moment in Varanasi is a journey into spirituality and tradition. Stroll through winding lanes, explore ancient temples, savor local delicacies, and witness the soulful rhythm of life along the ghats. Varanasi is not just a destination—it’s an experience that stays with you forever.",
+        "Our Old Delhi's Belly Tour takes you into the heart of this frenetic and vibrant city to discover its rich history, singular flavors, and sprawling markets that house everything from exotic spices to wedding finery. Your guide will introduce you to the best of the city's street food as you stroll the labyrinthine streets and alleys, giving you the best that Delhi has to offer. This tour is available every day and leaves with guaranteed departures.",
       links: [
         {
-          label: `Reach us at ${contacts.contactCta.delhi} or send an enquiry — we’ll connect with you shortly.`,
+          label: `Reach us at ${contacts.contactCta.delhi} or send an enquiry, we’ll connect with you shortly.`,
           href: "tel:" + contacts.contactCta.delhi,
         },
         {
@@ -69,6 +69,7 @@ export const ExperiencePageData = {
   ],
   tourData: [
     {
+      location: "VARANASI EXPERIENCES",
       title: "BOAT TOURS",
       descriptionlist: [
         "Experience Varanasi from the Ganges with our curated boat tours—serene sunrise rides, soulful evening Aarti views, or luxury cruises on the Bajra. Celebrate special moments, capture timeless photos, or simply soak in the city’s spiritual essence from the water. Each journey is guided by local boatmen who share stories of faith and tradition. Discover Varanasi’s timeless charm as the river reflects the rhythm of life itself.",
@@ -111,6 +112,7 @@ export const ExperiencePageData = {
       ],
     },
     {
+      location: "VARANASI EXPERIENCES",
       title: "WALKING TOURS",
       descriptionlist: [
         "Step into Varanasi’s soul with our guided walking tours. Discover hidden gems in Gupta Kashi, stroll through South City’s vibrant streets, or experience devotion on the Spiritual Walk and Kashi Darshan. Feel the city’s energy after dark on the Night Walk, savor local flavors on the Food Tour, and explore colorful markets on the Shopping Tour, capturing the true essence of Banaras.",
@@ -158,6 +160,7 @@ export const ExperiencePageData = {
       ],
     },
     {
+      location: "VARANASI EXPERIENCES",
       title: "PHOTOGRAPHY TOUR",
       description:
         "Capture Varanasi’s essence on our photography tours. Explore lively streets and ghats on a Street Photography tour, document traditions with our Documentary Movie experiences, or create lasting memories with a Pre-Wedding Shoot along the sacred Ganges and historic lanes. Each tour is designed to inspire creativity while showcasing the vibrant culture, timeless beauty, and unique spirit of Kashi.",
@@ -184,6 +187,7 @@ export const ExperiencePageData = {
       ],
     },
     {
+      location: "VARANASI EXPERIENCES",
       title: "CITY TOURS",
       description:
         "Discover the vibrant spirit of Varanasi with our expertly guided city tours. Explore the city in depth with a Full Day City Tour or experience the local charm on a South City Tour. Venture beyond the city limits with a Sarnath Trip, visiting the sacred site where Lord Buddha gave his first sermon. For a fun and immersive ride through the bustling streets, try our Tuk-Tuk Tours, perfect for seeing the city like a local. Each tour offers a unique perspective, blending history, culture, and everyday life in the holy city of Kashi.",
@@ -214,6 +218,7 @@ export const ExperiencePageData = {
     },
 
     {
+      location: "VARANASI EXPERIENCES",
       title: "SPIRITUAL YATRAS",
       description:
         "Embark on a spiritual journey through Varanasi with our curated yatras. Join the Panchkroshi pilgrimage, explore the 12 Jyotirlinga and 12 Aaditya Yatras, or seek blessings at Astha Bhairav, 9 Durga, and Astha Vinayak temples. Each yatra offers a deep connection to Kashi’s sacred heritage, immersing travelers in devotion, tradition, and the timeless spiritual essence of this holy city.",
@@ -251,6 +256,7 @@ export const ExperiencePageData = {
       ],
     },
     {
+      location: "VARANASI EXPERIENCES",
       title: "DAY TRIP",
       description:
         "Extend your journey from Varanasi with our thoughtfully planned day trips. Visit the holy confluence at Prayagraj, explore Bodhgaya’s sacred sites, discover the legendary city of Ayodhya, or feel the divine aura of Vindhyachal. Each trip blends history, culture, and spirituality, offering travelers a seamless way to experience the region’s iconic landmarks and sacred heritage in just one enriching day.",
@@ -281,6 +287,7 @@ export const ExperiencePageData = {
     },
 
     {
+      location: "VARANASI EXPERIENCES",
       title: "TOUR PACKAGES",
       description:
         "Discover Varanasi with our guided city tours. Enjoy a Full Day City Tour or explore local life on the South City Tour. Visit the sacred Sarnath Trip, where Buddha gave his first sermon, or experience the bustling streets on a fun Tuk-Tuk Tour. Each journey blends history, culture, and the everyday rhythm of Kashi, offering a unique and immersive experience.",
@@ -320,6 +327,7 @@ export const ExperiencePageData = {
     },
 
     {
+      location: "DELHI EXPERIENCES",
       title: "Old Delhi Sensory & Street Food WALK",
       descriptionlist: [
         "Step into the vibrant heart of Shahjahanabad and discover Delhi through its aromas, flavors, and centuries-old streets. Wander through bustling bazaars, hidden spice markets, and iconic eateries while uncovering stories of the city's Mughal past.",
@@ -359,6 +367,7 @@ export const ExperiencePageData = {
       ],
     },
     {
+      location: "DELHI EXPERIENCES",
       title: "LODHI ART DISTRICT & ARCHITECTURE WALK",
       descriptionlist: [
         "Explore India's first open-air public art district where contemporary creativity meets modern urban planning. Discover striking murals, hidden artistic narratives, and the unique architectural character of Lodhi Colony.",
@@ -419,6 +428,7 @@ export const ExperiencePageData = {
       ],
     },
     {
+      location: "DELHI EXPERIENCES",
       title: "The Architectural Heritage of Sunder Nursery & Humayun's Tomb",
       descriptionlist: [
         "Discover one of Delhi's most remarkable heritage restorations. Wander through beautifully landscaped gardens, historic monuments, and the magnificent Humayun's Tomb in a serene cultural setting.",
@@ -468,6 +478,7 @@ export const ExperiencePageData = {
       ],
     },
     {
+      location: "DELHI EXPERIENCES",
       title: "The Artisans of Shahpur Jat & Hauz Khas VILLAGE",
       descriptionlist: [
         "Discover Delhi's creative pulse through its most vibrant urban villages. Explore independent boutiques, contemporary art spaces, and hidden studios where tradition and modern design converge",
@@ -515,6 +526,7 @@ export const ExperiencePageData = {
     },
 
     {
+      location: "DELHI EXPERIENCES",
       title: "An Ultra-Premium Day Trip to Agra",
       descriptionlist: [
         "Embark on a seamless luxury journey to Agra and witness India's most iconic monuments. Enjoy private transportation, expert storytelling, and exclusive perspectives on the Taj Mahal and Agra Fort.",

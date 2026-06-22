@@ -16,18 +16,18 @@ const ExperiencesSlider: React.FC<ExperiencesSliderProps> = ({ cards }) => {
   );
 
   return (
-    <div>
+    <div className="demo">
       <SwiperCarousel
         data={shuffledCards}
         slidesPerView={1}
         spaceBetween={24}
         modules={[Autoplay]}
         autoplay={{
-          delay: 2500,
+          delay: 0,
           pauseOnMouseEnter: true,
         }}
         loop={true}
-        speed={1000}
+        speed={5000}
         breakpoints={{
           768: {
             slidesPerView: 2.5,

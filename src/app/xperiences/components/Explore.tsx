@@ -3,6 +3,7 @@
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponents";
 import { SectionHeading } from "@/components/typography";
+import { useWebContext } from "@/contextApi/WebContext";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -22,13 +23,12 @@ interface ExploreProps {
 }
 
 const Explore: React.FC<ExploreProps> = ({ card }) => {
+  const { selectedLocation, setSelectedLocation } = useWebContext();
+
   const buttons = [...new Set(card.map((item) => item.location))];
+  const activeButton = selectedLocation || buttons[0];
 
-  const [activeButton, setActiveButton] = useState(buttons[0]);
-
-  const selectedCard = card.find(
-    (item) => item.location === activeButton
-  );
+  const selectedCard = card.find((item) => item.location === activeButton);
 
   const images = selectedCard?.images ?? [];
 
@@ -63,7 +63,7 @@ const Explore: React.FC<ExploreProps> = ({ card }) => {
 
   return (
     <SectionWithContainer>
-      <div className="flex flex-wrap gap-4 mb-8">
+      <div className="flex overflow-x-scroll hide-scroll gap-4 mb-8">
         {buttons.map((item) => (
           <button
             key={item}
@@ -72,7 +72,7 @@ const Explore: React.FC<ExploreProps> = ({ card }) => {
                 ? "bg-secondary text-white"
                 : "text-secondary hover:bg-secondary hover:text-white"
             }`}
-            onClick={() => setActiveButton(item)}
+            onClick={() => setSelectedLocation(item)}
           >
             {item}
           </button>
@@ -81,12 +81,9 @@ const Explore: React.FC<ExploreProps> = ({ card }) => {
 
       <div className="grid lg:grid-cols-5 grid-cols-1 gap-4 items-center">
         <div className="lg:col-span-3">
-          <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
             {chunkedImages.map((col, colIndex) => (
-              <div
-                key={colIndex}
-                className="flex flex-col gap-4"
-              >
+              <div key={colIndex} className="flex flex-col gap-4">
                 {col.map((image, index) => {
                   const globalIndex = colIndex * 3 + index;
 
@@ -118,9 +115,7 @@ const Explore: React.FC<ExploreProps> = ({ card }) => {
               subTitle={selectedCard.subTitle}
             />
 
-            <p className="md:text-lg">
-              {selectedCard.description}
-            </p>
+            <p className="md:text-lg">{selectedCard.description}</p>
 
             {selectedCard.links[0] && (
               <Link
@@ -136,6 +131,7 @@ const Explore: React.FC<ExploreProps> = ({ card }) => {
                 href={selectedCard.links[1].href}
                 label={selectedCard.links[1].label}
                 variant="primary"
+                className="max-lg:!w-[90%] max-lg:!h-12"
               />
             )}
           </div>

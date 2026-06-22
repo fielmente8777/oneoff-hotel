@@ -68,7 +68,7 @@ const LocationsCards: React.FC<LocationsCardsProps> = ({ locations }) => {
                       />
                     </div>
                   </div>
-                  <div className="xl:flex hidden flex-col justify-between w-full text-white md:col-span-2 h-full p-8">
+                  <div className="xl:flex hidden flex-col justify-between w-full text-white md:col-span-2 h-full py-8 ps-8 pe-16">
                     <h2 className="md:text-5xl  text-2xl font-anton tracking-wider">
                       {location.title}
                     </h2>
