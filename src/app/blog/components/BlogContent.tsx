@@ -51,16 +51,16 @@ type BlogContentProps = {
 const BlogContent = ({ blogContent }: BlogContentProps) => {
   return (
     <Section>
-      <div className="px-12 py-8 space-y-16">
+      <div className="lg:px-12 px-4 py-8 space-y-16">
         {blogContent?.map((content, index) => (
           <div key={index} className="">
             {content?.image && (
               <div className="grid md:grid-cols-2 gap-12">
                 <div
-                  className={`space-y-6 ${content.image?.order === "right" ? "order-1" : "order-2"}`}
+                  className={`md:space-y-6 space-y-2 ${content.image?.order === "right" ? "order-1" : "order-2"}`}
                 >
                   {title && (
-                    <h1 className="text-secondary md:text-3xl font-anton">
+                    <h1 className="text-secondary md:text-3xl text-2xl font-anton">
                       {content.title}
                     </h1>
                   )}

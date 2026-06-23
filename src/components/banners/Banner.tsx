@@ -23,7 +23,7 @@ const Banner: FC<BannerProps> = ({
       {/* ✅ Case 1: Both Video + Images */}
       {videoSrc && hasImages ? (
         <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 lg:py-12">
-          <div className="w-full h-dvh relative aspect-[4/3] md:col-span-3">
+          <div className="w-full lg:h-dvh relative aspect-[4/3] md:col-span-3">
             <LazyLoadedVideo
               poster={thumbNail || ""}
               src={videoSrc}
@@ -105,7 +105,7 @@ const Banner: FC<BannerProps> = ({
         </div>
       ) : /* ✅ Case 2: Only Video */
       videoSrc ? (
-        <div className="w-full h-dvh relative">
+        <div className="w-full lg:h-dvh max-lg:aspect-4/3 relative">
           <LazyLoadedVideo
             src={videoSrc}
             autoPlay

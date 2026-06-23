@@ -133,11 +133,11 @@ const NavBar = () => {
           />
           <div className="max-xl:block hidden">
             <button
-              className={`xl:hidden transition-all ease-in-out duration-300 ${isOpenMobileMenu ? "rotate-90" : ""}`}
+              className={`xl:hidden text-3xl transition-all ease-in-out duration-300 ${isOpenMobileMenu ? "rotate-90" : ""}`}
               onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
             >
               {!isOpenMobileMenu ? (
-                <GiHamburgerMenu color="#fff" />
+                <GiHamburgerMenu  />
               ) : (
                 <MdClose />
               )}

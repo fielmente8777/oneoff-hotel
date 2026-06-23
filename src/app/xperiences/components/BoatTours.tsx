@@ -9,11 +9,7 @@ import { BtnNextIcon, BtnPrevIcon } from "@/utils/Icons";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { Swiper as SwiperType } from "swiper";
-import {
-  EffectFade,
-  Navigation,
-  Pagination,
-} from "swiper/modules";
+import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
 const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
   const swiperRef = useRef<SwiperType | null>(null);
@@ -43,9 +39,7 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
 
     if (!hash) return;
 
-    const matchedCard = cards.find(
-      (card) => makeId(card.title) === hash
-    );
+    const matchedCard = cards.find((card) => makeId(card.title) === hash);
 
     if (matchedCard) {
       setSelectedLocation(matchedCard.location);
@@ -57,9 +51,7 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
    */
 
   const filteredCards = selectedLocation
-    ? cards.filter(
-        (card) => card.location === selectedLocation
-      )
+    ? cards.filter((card) => card.location === selectedLocation)
     : cards;
 
   /**
@@ -84,23 +76,12 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
 
   const pagination = {
     clickable: true,
-    renderBullet: function (
-      index: number,
-      className: string
-    ) {
-      return (
-        '<span class="' +
-        className +
-        '">' +
-        (index + 1) +
-        "</span>"
-      );
+    renderBullet: function (index: number, className: string) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   };
 
-  const handleClick = (
-    card: BoatToursProps["cards"][0]
-  ) => {
+  const handleClick = (card: BoatToursProps["cards"][0]) => {
     setIsXperiencePopUpOpen(true);
     setPopUpData(card);
   };
@@ -108,7 +89,6 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
   return (
     <Section className="experience">
       <Container className="w-full relative">
-
         <SwiperCarousel
           className="w-full"
           data={filteredCards}
@@ -117,52 +97,49 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
           loop
           effect="fade"
           fadeEffect={{ crossFade: true }}
-          modules={[
-            Navigation,
-            Pagination,
-            EffectFade,
-          ]}
+          modules={[Navigation, Pagination, EffectFade]}
           navigation={{
             nextEl: ".button-next",
             prevEl: ".button-prev",
           }}
           pagination={pagination}
-          onSwiper={(swiper) =>
-            (swiperRef.current = swiper)
-          }
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
           renderSlide={(card) => (
             <div
               id={makeId(card.title)}
               className="grid md:grid-cols-2 grid-cols-1 gap-8 md:gap-14"
             >
               <div className="flex flex-col gap-6">
-
                 <h2 className="md:text-5xl/tight text-2xl font-anton tracking-wider uppercase">
                   {card.title}
                 </h2>
-
-                {card.description && (
-                  <p>{card.description}</p>
+                {card.src && (
+                  <div className="relative w-full md:hidden aspect-[4/3.5]">
+                    <Image
+                      src={card.src}
+                      alt={card.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 )}
+                {card.description && <p>{card.description}</p>}
 
-                {card?.descriptionlist?.map(
-                  (item, index) => (
-                    <p key={index}>{item}</p>
-                  )
-                )}
+                {card?.descriptionlist?.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))}
 
                 <button
                   onClick={() => handleClick(card)}
-                  className="text-secondary flex items-center gap-1 underline mt-12"
+                  className="text-secondary flex items-center gap-1 underline md:mt-12"
                 >
                   KNOW MORE
                   <ArrowUpRight />
                 </button>
-
               </div>
 
               {card.src && (
-                <div className="relative w-full aspect-[4/3.5]">
+                <div className="relative md:block hidden w-full aspect-[4/3.5]">
                   <Image
                     src={card.src}
                     alt={card.title}
@@ -175,7 +152,7 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
           )}
         />
 
-        <div className="absolute z-10 bottom-6 left-[40%] flex items-center gap-4">
+        <div className="absolute z-10 bottom-2 md:bottom-10 left-[40%] flex items-center gap-4">
           <button className="button-prev w-10 aspect-square rounded-full bg-white flex items-center justify-center">
             <BtnPrevIcon />
           </button>
@@ -184,7 +161,6 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
             <BtnNextIcon />
           </button>
         </div>
-
       </Container>
     </Section>
   );

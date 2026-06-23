@@ -31,7 +31,7 @@ const JoinsUsAt: React.FC<JoinsUsAtProps> = ({
                 href={link.href}
                 label={link.label}
                 variant="secondary"
-                className="mt-16"
+                className="mt-16 max-lg:w-[90%]! max-lg:h-12!"
               />
             </div>
           </Container>

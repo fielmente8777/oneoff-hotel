@@ -124,9 +124,9 @@ const NavBar2 = () => {
                 onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
               >
                 {!isOpenMobileMenu ? (
-                  <GiHamburgerMenu color="#fff" />
+                  <GiHamburgerMenu color="#fff" size={30} />
                 ) : (
-                  <MdClose color="#fff" />
+                  <MdClose color="#fff" size={30} />
                 )}
               </button>
 

@@ -56,7 +56,7 @@ const XperiencesPopUp = () => {
               label={"contact us"}
               variant="primary"
               onClick={() => setIsXperiencePopUpOpen(false)}
-              className="md:tracking-wider"
+              className="md:tracking-wider max-lg:w-[50%]! max-lg:h-12!"
             />
           </div>
           {popUpData?.images && (
