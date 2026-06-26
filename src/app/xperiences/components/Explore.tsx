@@ -131,6 +131,8 @@ const Explore: React.FC<ExploreProps> = ({ card }) => {
                 href={selectedCard.links[1].href}
                 label={selectedCard.links[1].label}
                 variant="primary"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="max-lg:!w-[90%] max-lg:!h-12"
               />
             )}

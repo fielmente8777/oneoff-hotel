@@ -34,7 +34,7 @@ const NavBar = () => {
           <div className="">
             <Link
               href={"/"}
-              className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1]"
+              className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.2] aspect-[3/1]"
             >
               <Image
                 src="/logo.png"
@@ -128,7 +128,7 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
             href={contacts.bookingCta.oneOffDelhi}
-            label="Book Now"
+            label="Find a Room"
             variant="primary"
           />
           <div className="max-xl:block hidden">

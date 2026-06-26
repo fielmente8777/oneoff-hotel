@@ -25,8 +25,8 @@ export const ExperiencePageData = {
           href: "tel:" + contacts.contactCta.varanasi,
         },
         {
-          label: "CONTACT US",
-          href: "/contact-us/",
+          label: "enquire now",
+          href: contacts.whatsAppCta.varanasi,
         },
       ],
       images: [
@@ -52,8 +52,8 @@ export const ExperiencePageData = {
           href: "tel:" + contacts.contactCta.delhi,
         },
         {
-          label: "CONTACT US",
-          href: "/contact-us/",
+          label: "enquire now",
+          href: contacts.whatsAppCta.delhi,
         },
       ],
       images: [

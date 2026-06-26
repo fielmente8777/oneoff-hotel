@@ -27,6 +27,8 @@ export const contactUsPageData = {
         title: "Phone:",
         label: contacts.phoneNumbers[0],
         href: "tel:" + contacts.phoneNumbers[0],
+        label2: contacts.phoneNumbers[1],
+        href2: "tel:" + contacts.phoneNumbers[1],
         icon: <PhoneIcon />,
       },
       {
