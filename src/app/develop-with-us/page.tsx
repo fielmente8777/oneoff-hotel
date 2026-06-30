@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 export default function DevelopWithUs() {
   return (
     <main>
-      <Banner images={DevelopWithUsPageData?.bannerData2?.images} />
+      {/* <Banner images={DevelopWithUsPageData?.bannerData2?.images} /> */}
       <DevelopBanner {...DevelopWithUsPageData.bannerData} />
       {/* <Section className="pt-0!">
         <SwiperCarousel

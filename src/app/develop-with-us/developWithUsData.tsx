@@ -4,6 +4,9 @@ export const DevelopWithUsPageData = {
   bannerData: {
     title: "ONE OFF HOTELS",
     subTitle: "DEVELOP WITH US",
+    description:
+      "From boutique hotels and guesthouses to undeveloped properties, One Off Hotels offers a partnership that transforms your vision into a distinctive hospitality experience driven by creativity and individuality.",
+    svgImg: "/develop-with-us/Vector.png",
     images: [
       // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/develop/img-5.jpg",
       // "/bns/BANARAS-ON.jpg",
@@ -52,7 +55,7 @@ export const DevelopWithUsPageData = {
       "/develop-with-us/develop/Rectangle-4027.png",
       "/develop-with-us/develop/Rectangle-4030.png",
       "/develop-with-us/develop/Rectangle-4031.png",
-      "/develop-with-us/develop/Rectangle-4032.png",
+      "/develop-with-us/develop/Rectangle-4032.webp",
       "/develop-with-us/develop/Rectangle-4034.png",
       "/develop-with-us/develop/Rectangle-4086.png",
     ],

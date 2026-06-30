@@ -268,11 +268,11 @@ export const locationPageData = [
     },
 
     aboutLocation: {
-      title: "ONE OFF - THE SOUTH DELHI EDITION",
+      title: "THE SOUTH DELHI EDITION",
       tagLine:
         "Boutique Hotel in the heart of South Delhi's most coveted address.",
       description: [
-        "Rooted in the soul of Greater Kailash II, ONE OFF - The South Delhi Edition is designed for those who know that how your stay shapes how you see a city. Set in a thoughtfully curated space where every room is a considered gesture and every corner carries character, this is not just a hotel - it is an extension of the neighbourhood itself. With individually designed rooms, the property embodies the ONE-OFF ethos of singular spaces and intentional design. From handpicked textiles to locally sourced art, every element reflects the layered, confident personality of South Delhi - cosmopolitan yet rooted, refined yet real.",
+        "Rooted in the soul of Greater Kailash II, The South Delhi Edition is designed for those who know that how your stay shapes how you see a city. Set in a thoughtfully curated space where every room is a considered gesture and every corner carries character, this is not just a hotel - it is an extension of the neighbourhood itself. With individually designed rooms, the property embodies the ONE-OFF ethos of singular spaces and intentional design. From handpicked textiles to locally sourced art, every element reflects the layered, confident personality of South Delhi - cosmopolitan yet rooted, refined yet real.",
       ],
       link: {
         label: "DELHI",

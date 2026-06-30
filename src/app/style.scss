@@ -160,8 +160,23 @@
 
   &:hover .nav-1 {
     max-height: 500px;
-    overflow: visible;
+    overflow-y: scroll;
     visibility: visible;
+    transition-delay: 0.3s;
+    // scrollbar width
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    // scrollbar track
+    &::-webkit-scrollbar-track {
+      background-color: #f1f1f1;
+    }
+
+    // scrollbar thumb
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--secondary);
+    }
 
     > * {
       opacity: 1;

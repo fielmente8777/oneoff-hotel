@@ -9,18 +9,19 @@ export const navBarData: NavLinksProps[] = [
         location: "Delhi",
         label: "The South Delhi Edition",
         href: "/the-south-delhi-edition/",
-        sub: "Boutique stays in the heart of the world’s oldest living city",
+        sub: "A 13-room design hotel in the vibrant heart of Greater Kailash II.",
       },
       {
         location: "Varanasi",
         label: "One Off Dashashwamedh",
         href: "/one-off-dashashwamedh/",
-        sub: "Boutique stays in the heart of the world’s oldest living city",
+        sub: "A serene design-led retreat steps from Varanasi's iconic ghats.",
       },
       {
+        location: "Varanasi",
         label: "One Off X",
         href: "/one-off-x/",
-        sub: "Boutique stays in the heart of the world’s oldest living city",
+        sub: "A restored ancestral bungalow inspired by Wabi Sabi living.",
       },
 
       {

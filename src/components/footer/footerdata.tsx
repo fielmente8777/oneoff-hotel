@@ -79,9 +79,9 @@ export const footerData: FooterDataProps = {
     {
       title: "our hotels",
       links: [
-        { label: "The South Delhi Edition", href: "/develop-with-us/" },
-        { label: "One Off Dashashwamedh", href: "/privacy-policy/" },
-        { label: "One Off X Assi", href: "/terms-and-conditions/" },
+        { label: "The South Delhi Edition", href: "/the-south-delhi-edition/" },
+        { label: "One Off X Assi", href: "/one-off-x/" },
+        { label: "One Off Dashashwamedh", href: "/one-off-dashashwamedh/" },
       ],
     },
     {

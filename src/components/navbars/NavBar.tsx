@@ -17,10 +17,8 @@ const NavBar = () => {
   const pathName = usePathname();
   const paths = [
     "/",
-    "/contact-us/",
     "/one-off-dashashwamedh/",
     "/one-off-x/",
-    "/develop-with-us/",
     "/the-south-delhi-edition/",
   ];
   if (pathName ? paths.includes(pathName) || pathName.includes("blog") : false)

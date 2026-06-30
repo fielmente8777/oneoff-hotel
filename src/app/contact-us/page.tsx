@@ -1,8 +1,8 @@
-import Banner from "@/components/banners/Banner";
 import Image from "next/image";
 import { contactUsPageData } from "./contactUsPageData";
 import Link from "next/link";
 import type { Metadata } from "next";
+import Banner from "./components/Banner";
 
 export const metadata: Metadata = {
   title: "Contact ONE-OFF Hotels | Reservations, Enquiries & Support",
