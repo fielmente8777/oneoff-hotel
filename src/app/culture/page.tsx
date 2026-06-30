@@ -4,6 +4,7 @@ import { aboutPageData } from "./aboutPageData";
 import Gallery from "./components/Gallery";
 import JoinsUsAt from "./components/JoinsUsAt";
 import StayAt from "./components/StayAt";
+import CardSection from "./components/CardSection";
 
 export const metadata: Metadata = {
   title:
@@ -61,6 +62,7 @@ export default function AboutUs() {
         {...aboutPageData.aboutStayPage}
         wrapperClassName="max-w-4xl"
       />
+      <CardSection {...aboutPageData.destination} />
       <StayAt {...aboutPageData.stayAt} />
       <JoinsUsAt {...aboutPageData.joinUsAt} />
     </main>

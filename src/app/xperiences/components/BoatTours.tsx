@@ -87,7 +87,8 @@ const BoatTours: React.FC<BoatToursProps> = ({ cards }) => {
   };
 
   return (
-    <Section className="experience">
+    <Section className="experience relative">
+      <div className="w-px bg-secondary xl:block hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full "/>
       <Container className="w-full relative">
         <SwiperCarousel
           className="w-full"

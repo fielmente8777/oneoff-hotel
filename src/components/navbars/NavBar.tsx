@@ -21,7 +21,6 @@ const NavBar = () => {
     "/one-off-dashashwamedh/",
     "/one-off-x/",
     "/develop-with-us/",
-    "/xperiences/",
     "/the-south-delhi-edition/",
   ];
   if (pathName ? paths.includes(pathName) || pathName.includes("blog") : false)
@@ -34,7 +33,7 @@ const NavBar = () => {
           <div className="">
             <Link
               href={"/"}
-              className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.2] aspect-[3/1]"
+              className="flex relative md:h-[3.5rem] h-[2.6rem]  md:aspect-[4/1.2] aspect-[3/1]"
             >
               <Image
                 src="/logo.png"

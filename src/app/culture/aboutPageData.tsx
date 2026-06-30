@@ -53,24 +53,41 @@ export const aboutPageData = {
       src: "/about-us/Rectangle-4078.png",
     },
     {
-       videoSrc:
+      videoSrc:
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ModelReel1.mp4",
     },
     {
       src: "/about-us/Rectangle-4100.png",
     },
-   
   ],
+  destination: {
+    cards: [
+      {
+        image: "/about-us/curated-destinations.png",
+        title: "CURATED DESTINATIONS",
+        description: [
+          "Every destination has a story waiting to be discovered. We curate remarkable stays that immerse you in local culture, timeless landscapes, and authentic experiences, turning every journey into a meaningful memory.",
+          "DESTINATIONS COMING SOON: Jaipur, Varanasi.",
+        ],
+      },
+      {
+        image: "/about-us/designed.png",
+        title: "DESIGNED FOR MODERN TRAVELLERS",
+        description: [
+          "Every room and shared space is thoughtfully designed with contemporary interiors, premium amenities, high-speed connectivity, and personalized service creating the perfect balance between work, relaxation, and exploration.",
+        ],
+      },
+    ],
+  },
   stayAt: {
-    title: "MEET OUR FOUNDER",
+    title: "OUR FOUNDER",
     subTitle: "ADITYA",
     description: [
       `I’m Aditya, a lawyer turned entrepreneur who traded the courtroom for building brands and experiences that spark curiosity and connection. Guided by the mantra “Stay Foolish, Stay Hungry,” I build ventures that blend global influences with fresh, future focused thinking.`,
 
       "ONE OFF Hotels is my canvas for reinvention, a place where individuality is celebrated, stories are crafted through design and detail, and every stay feels like a one-of-a-kind experience.",
     ],
-    src: "/founder01.png",
-    // src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-1.png",
+    src: "/about-us/founder.png",
     link: {
       label: "Develop with us",
       href: "/develop-with-us/",

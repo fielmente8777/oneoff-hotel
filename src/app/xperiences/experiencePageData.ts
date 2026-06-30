@@ -2,15 +2,38 @@ import { contacts } from "@/utils/constant";
 
 export const ExperiencePageData = {
   bannerData: {
-    images: [
-      "/Xperiences/bnr/Rectangle-1.webp",
-      "/Xperiences/bnr/Rectangle-2.webp",
-      "/Xperiences/bnr/Rectangle-4076.webp",
-      "/Xperiences/bnr/Rectangle-4079.webp",
-      "/Xperiences/bnr/Rectangle-4080.webp",
-      "/Xperiences/bnr/Rectangle-4081.webp",
-      "/Xperiences/bnr/Rectangle-4082.webp",
-    ],
+    // images: [
+    //   "/Xperiences/bnr/Rectangle-1.webp",
+    //   "/Xperiences/bnr/Rectangle-2.webp",
+    //   "/Xperiences/bnr/Rectangle-4076.webp",
+    //   "/Xperiences/bnr/Rectangle-4079.webp",
+    //   "/Xperiences/bnr/Rectangle-4080.webp",
+    //   "/Xperiences/bnr/Rectangle-4081.webp",
+    //   "/Xperiences/bnr/Rectangle-4082.webp",
+    // ],
+
+    cards: [
+      {
+        title:"ONE OFF A KIND",
+        subtitle:"XPERIENCES",
+        description:"Go beyond sightseeing with handcrafted experiences that celebrate local culture, history, and authentic connections. Every moment is thoughtfully curated to make your stay truly one of a kind.",
+        images: [
+          "/Xperience/varanasi-svg.png",
+          "/Xperience/varanasi-img.png",
+        ],
+        location:"VARANASI",
+      },
+      {
+        title:"ONE OFF A KIND",
+        subtitle:"XPERIENCES",
+        description:"Go beyond sightseeing with handcrafted experiences that celebrate local culture, history, and authentic connections. Every moment is thoughtfully curated to make your stay truly one of a kind.",
+        images: [
+          "/Xperience/delhi-svg.png",
+          "/Xperience/delhi-img.png",
+        ],
+        location:"DELHI",
+      },
+    ]
   },
   experience: [
     {

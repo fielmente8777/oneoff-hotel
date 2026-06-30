@@ -62,8 +62,8 @@ const Explore: React.FC<ExploreProps> = ({ card }) => {
   if (!selectedCard) return null;
 
   return (
-    <SectionWithContainer>
-      <div className="flex overflow-x-scroll hide-scroll gap-4 mb-8">
+    <SectionWithContainer sectionClassName="border-y border-secondary">
+      {/* <div className="flex overflow-x-scroll hide-scroll gap-4 mb-8">
         {buttons.map((item) => (
           <button
             key={item}
@@ -77,7 +77,7 @@ const Explore: React.FC<ExploreProps> = ({ card }) => {
             {item}
           </button>
         ))}
-      </div>
+      </div> */}
 
       <div className="grid lg:grid-cols-5 grid-cols-1 gap-4 items-center">
         <div className="lg:col-span-3">

@@ -113,6 +113,7 @@ const Banner: FC<BannerProps> = ({
             autoPlay
             loop
             controls={false}
+            poster={thumbNail}
             muted
           />
           <div className="absolute top-0 left-0 w-full z-10">
