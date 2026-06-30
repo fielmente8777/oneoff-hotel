@@ -28,12 +28,12 @@ export const contacts = {
   ],
   emails: ["reservations@oneoffhotels.com", "bookings@oneoffhotels.com"],
   socialMediaUrls: {
-    facebookUrl: "https://www.facebook.com/share/p/19U6puJmcx",
-    instagramUrl:
+    facebook: "https://www.facebook.com/share/p/19U6puJmcx",
+    instagram:
       "https://www.instagram.com/oneoffhotels?igsh=MTZ6aGp6c2NhYTd0YQ%3D%3D&utm_source=qr",
-    linkedinUrl:
+    linkedin:
       "https://www.linkedin.com/company/oneoff-hotels/posts/?feedView=all&viewAsMember=true",
-    pinterestUrl: "https://pin.it/6TqDiIPKL",
+    pinterest: "https://pin.it/6TqDiIPKL",
   },
   formDomain: "oneoffhotel",
   ctas: [""],

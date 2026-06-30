@@ -6,7 +6,6 @@ import { SectionHeading } from "@/components/typography";
 import { FC } from "react";
 
 const Experiences: FC<ExploreExperienceDataProps> = ({
-  title,
   subTitle,
   link,
   cards,

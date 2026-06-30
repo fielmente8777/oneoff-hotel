@@ -2,7 +2,7 @@ import { NavLinksProps } from "@/@types/type";
 
 export const navBarData: NavLinksProps[] = [
   {
-    label: "Locations",
+    label: "Our Hotels",
     href: "",
     subLinks: [
       {

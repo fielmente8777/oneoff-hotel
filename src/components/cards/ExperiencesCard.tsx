@@ -37,7 +37,7 @@ const ExperiencesCard: React.FC<ExploreExperienceDataProps["cards"][0]> = ({
   return (
     <>
       <div className="w-full cursor-pointer relative aspect-[4/3.5] group overflow-hidden">
-        <div className="w-full h-full inset-0 max-lg:bg-gradient-to-b from-black/0 to-black/70 z-10 absolute pointer-events-none" />
+        <div className="w-full h-full inset-0 bg-black/10 z-10 absolute pointer-events-none" />
         {src && (
           <Link
             href={href || ""}
@@ -50,36 +50,20 @@ const ExperiencesCard: React.FC<ExploreExperienceDataProps["cards"][0]> = ({
               className="object-cover"
             />
 
-            <h3 className="absolute text-primary lg:group-hover:top-0 lg:-top-full max-lg:bottom-0 max-lg:text-center left-0 right-0 px-4 py-2 duration-300 transition-all ease-in-out text-2xl max-lg:text-white lg:bg-background w-full font-anton z-20">
-              {title}
-            </h3>
-            <p className="text-primary lg:absolute lg:group-hover:bottom-0 lg:-bottom-full left-0 right-0 px-4 py-2 duration-300 transition-all ease-in-out bg-background w-full z-10">
-              {description?.slice(0, 100) || ""}{" "}
-              <span className="text-secondary">Read More</span>
-            </p>
+            <div className="absolute inset-x-0 bottom-0 p-4">
+              <div className="transition-transform duration-300 group-hover:-translate-y-20">
+                <h3 className="text-xl text-white max-xl:text-center font-anton">{title}</h3>
+              </div>
+
+              <p className="absolute left-4 right-4 bottom-4 text-white opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                {description?.slice(0, 100)}{" "}
+                <span className="font-semibold">Read More</span>
+              </p>
+            </div>
           </Link>
         )}
-        {videoSrc && (
-          <div className="w-full h-full relative">
-            <YoutubePlayer
-              poster={thumbNail || ""}
-              url={videoSrc}
-              youtubeUrl={videoSrc}
-              title={title || ""}
-            />
-            {!videoSrc && thumbNail && (
-              <Image
-                src={thumbNail}
-                alt="thumbnail"
-                fill
-                className="object-cover"
-                loading="lazy"
-              />
-            )}
-          </div>
-        )}
       </div>
-      <p className="text-center lg:hidden block px-4 pt-4">
+      <p className="text-center xl:hidden block px-4 pt-4">
         {description?.slice(0, 100) || ""}{" "}
         <span className="text-secondary">Read More</span>
       </p>

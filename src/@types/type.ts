@@ -23,6 +23,7 @@ export interface ExploreExperienceDataProps {
     href: string;
   };
   cards: {
+    location?: string;
     title?: string;
     description?: string;
     src?: string;

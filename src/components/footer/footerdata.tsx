@@ -43,22 +43,22 @@ export const footerData: FooterDataProps = {
   socialMediaUrls: [
     {
       label: Object.keys(contacts.socialMediaUrls)[0],
-      href: contacts.socialMediaUrls.facebookUrl,
+      href: contacts.socialMediaUrls.facebook,
       icon: <FillFaceBook />,
     },
     {
       label: Object.keys(contacts.socialMediaUrls)[1],
-      href: contacts.socialMediaUrls.instagramUrl,
+      href: contacts.socialMediaUrls.instagram,
       icon: <FillInstagramIcon />,
     },
     {
       label: Object.keys(contacts.socialMediaUrls)[2],
-      href: contacts.socialMediaUrls.linkedinUrl,
+      href: contacts.socialMediaUrls.linkedin,
       icon: <FillLinkedin />,
     },
     {
       label: Object.keys(contacts.socialMediaUrls)[3],
-      href: contacts.socialMediaUrls.pinterestUrl,
+      href: contacts.socialMediaUrls.pinterest,
       icon: <FillPinterest />,
     },
   ],
@@ -66,42 +66,65 @@ export const footerData: FooterDataProps = {
     {
       title: "LINKS",
       links: [
-        { label: "CULTURE", href: "/culture/" },
-        { label: "XPERIENCES", href: "/xperiences/" },
-        // { label: "DESTINATION", href: "/destination/" },
-        { label: "CONTACT", href: "/contact-us/" },
-        { label: "BLOG", href: "/blog/" },
+        { label: "Culture", href: "/culture/" },
+        { label: "Xperiences", href: "/xperiences/" },
+        { label: "Contact", href: "/contact-us/" },
+        { label: "Blog", href: "/blog/" },
+        { label: "Develop with us", href: "/develop-with-us/" },
+        { label: "Privacy Policy", href: "/privacy-policy/" },
+        { label: "Terms & Conditions", href: "/terms-and-conditions/" },
+        { label: "Cancellation Policy", href: "/cancellation-policy/" },
       ],
     },
     {
-      title: "USEFUL INFO",
+      title: "our hotels",
       links: [
-        { label: "DEVELOP WITH US", href: "/develop-with-us/" },
-        { label: "PRIVACY POLICY", href: "/privacy-policy/" },
-        { label: "TERMS & CONDITIONS", href: "/terms-and-conditions/" },
-        { label: "CANCELLATION POLICY", href: "/cancellation-policy/" },
+        { label: "The South Delhi Edition", href: "/develop-with-us/" },
+        { label: "One Off Dashashwamedh", href: "/privacy-policy/" },
+        { label: "One Off X Assi", href: "/terms-and-conditions/" },
       ],
     },
     {
-      title: "REACH US AT",
+      title: "social",
       links: [
         {
-          label: contacts.emails[1],
-          href: "mailto:" + contacts.emails[1],
-          icon: <FillMailIcon />,
+          label: Object.keys(contacts.socialMediaUrls)[0],
+          href: contacts.socialMediaUrls.instagram,
         },
         {
-          label: contacts.phoneNumbers[0],
-          href: "tel:" + contacts.phoneNumbers[0],
-          icon: <FillCallIcon />,
+          label: Object.keys(contacts.socialMediaUrls)[1],
+          href: contacts.socialMediaUrls.instagram,
         },
         {
-          label: contacts.addresses[0],
-          href: contacts.locationsAddress.delhi.link,
-          icon: <IoLocationSharp />,
+          label: Object.keys(contacts.socialMediaUrls)[2],
+          href: contacts.socialMediaUrls.linkedin,
+        },
+        {
+          label: Object.keys(contacts.socialMediaUrls)[3],
+          href: contacts.socialMediaUrls.pinterest,
         },
       ],
     },
+    // {
+    //   title: "REACH US AT",
+    //   links: [
+    //     {
+    //       label: contacts.emails[1],
+    //       href: "mailto:" + contacts.emails[1],
+    //       icon: <FillMailIcon />,
+    //     },
+    //     {
+    //       label: contacts.phoneNumbers[0],
+    //       href: "tel:" + contacts.phoneNumbers[0],
+    //       icon: <FillCallIcon />,
+    //     },
+    //     {
+    //       label: contacts.addresses[0],
+    //       href: contacts.locationsAddress.delhi.link,
+    //       icon: <IoLocationSharp />,
+    //     },
+    //   ],
+    // },
   ],
   images: [
     "/Rectangle-17.png",
@@ -110,7 +133,7 @@ export const footerData: FooterDataProps = {
     // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-23.png",
     // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-13.png",
     "/Rectangle-20.png",
-    "/Rectangle-21.png"
+    "/Rectangle-21.png",
     // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-14.png",
   ],
 };

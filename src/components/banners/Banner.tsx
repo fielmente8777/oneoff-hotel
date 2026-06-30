@@ -6,6 +6,8 @@ import { Autoplay } from "swiper/modules";
 import NavBar2 from "../navbars/NavBar2";
 import SwiperCarousel from "../sliders/SwiperCarousel";
 import { LazyLoadedVideo } from "../Video2";
+import { Container } from "../sectionComponents";
+import BookingForm from "../BookingForm";
 
 const Banner: FC<BannerProps> = ({
   images,
@@ -19,7 +21,7 @@ const Banner: FC<BannerProps> = ({
   const hasSingleImage = images && images.length === 1;
 
   return (
-    <section className="banner max_screen_width_2">
+    <section className="banner max_screen_width_2 ">
       {/* ✅ Case 1: Both Video + Images */}
       {videoSrc && hasImages ? (
         <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 lg:py-12">
@@ -105,7 +107,7 @@ const Banner: FC<BannerProps> = ({
         </div>
       ) : /* ✅ Case 2: Only Video */
       videoSrc ? (
-        <div className="w-full lg:h-dvh max-lg:aspect-4/3 relative">
+        <div className="w-full xl:h-dvh max-xl:aspect-4/3 max-lg:aspect-[4/2] max-md:aspect-[4/7] relative">
           <LazyLoadedVideo
             src={videoSrc}
             autoPlay
@@ -115,6 +117,11 @@ const Banner: FC<BannerProps> = ({
           />
           <div className="absolute top-0 left-0 w-full z-10">
             <NavBar2 />
+          </div>
+          <div className="absolute bottom-6 inset-x-0 ">
+            <Container className="xl:max-w-5xl! mx-auto">
+              <BookingForm />
+            </Container>
           </div>
         </div>
       ) : /* ✅ Case 3: Only Single Image */

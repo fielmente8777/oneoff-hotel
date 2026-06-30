@@ -24,7 +24,7 @@ export const homePageData = {
   },
   locations: [
     {
-      title: "LOCATIONS",
+      title: "Our Hotels",
       location: "DELHI ",
       subTitle: "THE SOUTH DELHI EDITION",
       description:
@@ -41,7 +41,7 @@ export const homePageData = {
     },
 
     {
-      title: "LOCATIONS",
+      title: "Our Hotels",
       location: "VARANASI",
       subTitle: "ONE OFF X ASSI",
       description:
@@ -58,7 +58,7 @@ export const homePageData = {
     },
 
     {
-      title: "LOCATIONS",
+      title: "Our Hotels",
       location: "VARANASI",
       subTitle: "ONE OFF DASHASHWAMEDH",
       description:
@@ -129,6 +129,7 @@ export const homePageData = {
         title: item.title,
         description: item.description || item.descriptionlist?.[0] || "",
         src: item.src,
+        location: item.location,
       })),
       // {
       //   title: "PHOTOGRAPHY TOUR",
@@ -153,29 +154,26 @@ export const homePageData = {
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-8.png",
       ],
     },
-    // {
-    //   title: "DELHI",
-    //   subTitle: "UPCOMING HOTELS",
-    //   description:
-    //     "Experience timeless charm and modern luxury at our upcoming hotel in Delhi.",
-    //   images: [
-    //     "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-10.png",
-    //     "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-7.png",
-    //   ],
-    // },
     {
       title: "BANARAS",
       subTitle: "UPCOMING HOTELS",
       description:
         "Experience timeless charm and modern luxury at our upcoming hotel in Banaras.",
       images: [
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-10.png",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-7.png",
+        "/home/upcoming-4.jpeg",
+        "/home/upcoming-3.jpeg",
       ],
-      //  [
-      //   "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-12.png",
-      //   "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-9.png",
-      // ],
+    },
+    {
+      title: "BANARAS",
+      subTitle: "UPCOMING HOTELS",
+      description:
+        "Experience timeless charm and modern luxury at our upcoming hotel in Banaras.",
+      images: [
+        "/home/upcoming-1.jpeg",
+        "/home/upcoming-2.jpeg",
+      ],
+      
     },
   ],
   upcomingCafe: {
@@ -218,6 +216,26 @@ export const homePageData = {
 
           {
             src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-19.png",
+          },
+        ],
+      },
+      {
+        cafe: [
+          {
+            src: "/home/cafe/cafe-1.webp",
+          },
+          {
+            src: "/home/cafe/cafe-2.webp",
+          },
+          {
+            src: "/home/cafe/cafe-3.webp",
+          },
+          {
+            src: "/home/cafe/cafe-4.webp",
+          },
+
+          {
+            src: "/home/cafe/cafe-5.webp",
           },
         ],
       },

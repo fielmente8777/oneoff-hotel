@@ -1,14 +1,14 @@
+import Whatsapp from "@/components/ContactButton/WhatsApp";
+import FooterNew from "@/components/footer/FooterNew";
+import NavBar from "@/components/navbars/NavBar";
+import ImagePopup from "@/components/pop-up/ImagePopup";
+import XperiencesPopUp from "@/components/pop-up/XperiencesPopUp";
+import { WebContextProvider } from "@/contextApi/WebContext";
 import type { Metadata } from "next";
+import { Anton } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import "./style.scss";
-import { Anton } from "next/font/google";
-import { WebContextProvider } from "@/contextApi/WebContext";
-import NavBar from "@/components/navbars/NavBar";
-import Footer from "@/components/footer/Footer";
-import XperiencesPopUp from "@/components/pop-up/XperiencesPopUp";
-import Script from "next/script";
-import Whatsapp from "@/components/ContactButton/WhatsApp";
-import ImagePopup from "@/components/pop-up/ImagePopup";
 
 const anton = Anton({
   weight: "400",
@@ -86,7 +86,7 @@ export default function RootLayout({
         <WebContextProvider>
           <NavBar />
           {children}
-          <Footer />
+          <FooterNew />
           <Whatsapp />
           <XperiencesPopUp />
           <ImagePopup />
