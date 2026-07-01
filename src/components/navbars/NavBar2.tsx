@@ -24,7 +24,7 @@ const NavBar2 = () => {
             <div className="">
               <Link
                 href={"/"}
-                className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.2] aspect-[3/1]"
+                className="block relative md:h-[4rem] h-[2.5rem] md:aspect-[4/1.25] aspect-[3/1]"
               >
                 <Image src="/logo1.png" alt="one off hotel" sizes="(max-width: 400px) 100vw, 400px" fill />
               </Link>

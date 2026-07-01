@@ -89,7 +89,7 @@ export const footerData: FooterDataProps = {
       links: [
         {
           label: Object.keys(contacts.socialMediaUrls)[0],
-          href: contacts.socialMediaUrls.instagram,
+          href: contacts.socialMediaUrls.facebook,
         },
         {
           label: Object.keys(contacts.socialMediaUrls)[1],

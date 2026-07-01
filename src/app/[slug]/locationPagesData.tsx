@@ -78,7 +78,7 @@ export const locationPageData = [
     },
     petFriendly: {
       image: "/pets/Rectangle-41.png",
-      title: "DOG FRIENDLY HOTEL ROOMS",
+      title: "PET FRIENDLY HOTEL ROOMS",
       description:
         "Every guest deserves an exceptional stay, including the four-legged ones. Enjoy stylish spaces, thoughtful comforts, and a boutique experience you'll both love.",
     },
@@ -160,7 +160,7 @@ export const locationPageData = [
     },
     petFriendly: {
       image: "/pets/Rectangle-4122.png",
-      title: "DOG FRIENDLY HOTEL ROOMS",
+      title: "PET FRIENDLY HOTEL ROOMS",
       description:
         "Every guest deserves an exceptional stay, including the four-legged ones. Enjoy stylish spaces, thoughtful comforts, and a boutique experience you'll both love.",
     },
@@ -557,7 +557,7 @@ export const locationPageData = [
     ],
     petFriendly: {
       image: "/pets/Rectangle-4121.png",
-      title: "DOG FRIENDLY HOTEL ROOMS",
+      title: "PET FRIENDLY HOTEL ROOMS",
       description:
         "Every guest deserves an exceptional stay, including the four-legged ones. Enjoy stylish spaces, thoughtful comforts, and a boutique experience you'll both love.",
     },
