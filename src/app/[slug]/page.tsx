@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import SlidingGallery from "./components/SlidingGallery";
 import RareExperience from "./components/RareExperience";
 import NewRooms from "./components/NewRooms";
+import PetFriendly from "./components/PetFriendly";
+import KnowMore from "./components/KnowMore";
+import HowtoReach from "./components/HowtoReach";
 
 interface Params {
   params: Promise<{
@@ -104,11 +107,14 @@ export default async function Page({ params }: Params) {
       {pageData.rooms && <Rooms {...pageData.rooms} />}
       {pageData.newRooms && <NewRooms {...pageData.newRooms} />}
       {pageData.amenties && <Amenties amenties={pageData?.amenties} />}
+      {pageData.petFriendly && <PetFriendly {...pageData.petFriendly} />}
       {pageData.slidingGallery && (
         <SlidingGallery images={pageData.slidingGallery} />
       )}
       {pageData.experience && <RareExperience {...pageData.experience} />}
       {pageData.gallery && <Gallery {...pageData.gallery} />}
+      {pageData.howtoReach && <HowtoReach {...pageData.howtoReach} />}
+      {pageData.knowMore && <KnowMore {...pageData.knowMore} />}
 
       {pageData.upComingData && (
         <UpComingLocations {...pageData.upComingData} />

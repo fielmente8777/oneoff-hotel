@@ -29,7 +29,7 @@ export const locationPageData = [
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-1.jpg",
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-4.jpg",
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-9.png",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-8.png",
+        "/vns/Rectangle-4077.png",
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-5.jpg",
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-10.png",
       ],
@@ -75,6 +75,12 @@ export const locationPageData = [
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-3.jpg",
         // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-6.jpg",
       ],
+    },
+    petFriendly: {
+      image: "/pets/Rectangle-41.png",
+      title: "DOG FRIENDLY HOTEL ROOMS",
+      description:
+        "Every guest deserves an exceptional stay, including the four-legged ones. Enjoy stylish spaces, thoughtful comforts, and a boutique experience you'll both love.",
     },
 
     amenties: [
@@ -151,6 +157,12 @@ export const locationPageData = [
       //   "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ONE+OFF+MAIN+FILM/master.m3u8",
       videoSrc:
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ONE%2BOFF%2BMAIN%2BFILM.mp4",
+    },
+    petFriendly: {
+      image: "/pets/Rectangle-4122.png",
+      title: "DOG FRIENDLY HOTEL ROOMS",
+      description:
+        "Every guest deserves an exceptional stay, including the four-legged ones. Enjoy stylish spaces, thoughtful comforts, and a boutique experience you'll both love.",
     },
     aboutLocation: {
       title: "ONE OFF X ASSI",
@@ -543,7 +555,12 @@ export const locationPageData = [
         icon: <LaundaryIcon />,
       },
     ],
-
+    petFriendly: {
+      image: "/pets/Rectangle-4121.png",
+      title: "DOG FRIENDLY HOTEL ROOMS",
+      description:
+        "Every guest deserves an exceptional stay, including the four-legged ones. Enjoy stylish spaces, thoughtful comforts, and a boutique experience you'll both love.",
+    },
     slidingGallery: [
       "/the-south-delhi-edition/living-room/DSC02980.webp",
       "/the-south-delhi-edition/living-room/DSC02992.webp",
@@ -600,6 +617,40 @@ export const locationPageData = [
         "/the-south-delhi-edition/gallery/im-12.png",
       ],
       button: "VIEW MORE",
+    },
+    howtoReach: {
+      image: "/the-south-delhi-edition/Asset-11.png",
+      wayToReach: [
+        {
+          question: "1. How far is the hotel from the airport?",
+          answer:
+            "Ideally situated just a 30-minute drive from Indira Gandhi International Airport, ensuring a smooth arrival and departure.",
+        },
+        {
+          question: "2. How Well Connected Are We?",
+          answer:
+            "A short 2-minute stroll brings you to Greater Kailash Metro Station, connecting you to the best of Delhi.",
+        },
+        {
+          question: "3. What Makes Our Location So Special?",
+          answer:
+            "Just a 5-minute walk to M Block Market, South Delhi's iconic destination for designer boutiques, celebrated cafés, vibrant bars, and upscale dining.",
+        },
+      ],
+    },
+    knowMore: {
+      cards: [
+        {
+          title: "CELEBRATE IN STYLE!",
+          description: "Planning an intimate gathering or a special celebration? From birthdays and anniversaries to private dinners, our thoughtfully designed spaces provide the perfect setting, complemented by personalized hospitality and curated experiences.",
+          image: "/the-south-delhi-edition/Rectangle-4123.png",
+        },
+        {
+          title: "NEED A MEETING SPACE?",
+          description: "Whether you're hosting a client meeting, team workshop, or creative session, our versatile spaces offer a comfortable, design-led environment with modern amenities and attentive service to ensure every gathering is a success.",
+          image: "/the-south-delhi-edition/Rectangle-43.png",
+        },
+      ],
     },
   },
   {

@@ -147,7 +147,7 @@ const Banner: FC<BannerProps> = ({
             speed={2500}
             className="w-full"
             renderSlide={(image) => (
-              <div className="w-full lg:h-dvh lg:aspect-auto relative md:aspect-[4/2.8] aspect-square">
+              <div className="w-full lg:aspect-auto lg:h-dvh relative md:aspect-[4/3] aspect-square">
                 <Image src={image} alt="image" fill className="object-cover" />
                 <div className="absolute inset-0 z-10 bg-black/20" />
               </div>

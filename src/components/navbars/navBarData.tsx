@@ -18,7 +18,6 @@ export const navBarData: NavLinksProps[] = [
         sub: "A serene design-led retreat steps from Varanasi's iconic ghats.",
       },
       {
-        location: "Varanasi",
         label: "One Off X",
         href: "/one-off-x/",
         sub: "A restored ancestral bungalow inspired by Wabi Sabi living.",

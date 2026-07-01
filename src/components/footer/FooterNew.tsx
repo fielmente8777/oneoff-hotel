@@ -29,8 +29,8 @@ const FooterNew = () => {
                   <li key={index}>
                     <Link
                       href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target={link.href.startsWith("http") ? "_blank" : "_self"}
+                      rel={link.href.startsWith("http") ? "noopener noreferrer" : ""}
                       className="text-white capitalize"
                     >
                       {link.label}
