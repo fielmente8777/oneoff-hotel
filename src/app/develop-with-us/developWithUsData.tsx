@@ -5,7 +5,7 @@ export const DevelopWithUsPageData = {
     title: "ONE OFF HOTELS",
     subTitle: "DEVELOP WITH US",
     description:
-      "From boutique hotels and guesthouses to undeveloped properties, One Off Hotels offers a partnership that transforms your vision into a distinctive hospitality experience driven by creativity and individuality.",
+      "From boutique hotels to undeveloped properties, One Off Hotels offers a partnership that transforms your vision into a distinctive hospitality experience driven by creativity and individuality.",
     svgImg: "/develop-with-us/Vector.png",
     images: [
       // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/develop/img-5.jpg",
