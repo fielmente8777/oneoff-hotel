@@ -101,6 +101,6 @@ export const aboutPageData = {
       label: "CONTACT US",
       href: "/contact-us",
     },
-    src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/about/img-7.png",
+    src: "/about-us/join.jpg",
   },
 };
