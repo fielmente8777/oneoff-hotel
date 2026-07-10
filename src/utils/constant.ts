@@ -10,12 +10,14 @@ export const contacts = {
     "LOREMIPSUMAXYZ.COM",
   ],
   socialMediaUrls: {
-    facebookUrl: "https://www.facebook.com/share/p/19U6puJmcx",
+    facebookUrl:
+      "https://www.facebook.com/people/Oneoff-Hotels/61582249198787/",
+    // "https://www.facebook.com/share/p/19U6puJmcx",
     instagramUrl:
       "https://www.instagram.com/oneoffhotels?igsh=MTZ6aGp6c2NhYTd0YQ%3D%3D&utm_source=qr",
     linkedinUrl:
       // "https://www.linkedin.com/company/oneoff-hotels/posts/?feedView=all&viewAsMember=true",
-      "https://www.linkedin.com/company/oneoff-hotels/",
+      "https://www.linkedin.com/company/oneoff-hotels/posts/?feedView=all&viewAsMember=true",
     pinterestUrl: "https://in.pinterest.com/homefeed/",
   },
   formDomain: "oneoffhotel",
@@ -34,7 +36,7 @@ export const contacts = {
   contactCta: {
     delhi: "+91  92898 92779",
     varanasi: "+91 77530 42847",
-    devwithus:"+91 98676 03699",
+    devwithus: "+91 98676 03699",
   },
 };
 
