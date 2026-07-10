@@ -1,4 +1,4 @@
-import { contacts } from "@/utils/constant";
+ import { contacts } from "@/utils/constant";
 import {
   ArtisanalToiletriesIcon,
   CoffeIcon,

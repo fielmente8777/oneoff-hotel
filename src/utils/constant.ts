@@ -3,7 +3,7 @@ export const contacts = {
     // "D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
     "E-574, Greater Kailash II, New Delhi - 110048",
   ],
-  phoneNumbers: ["+91 92898 92779","+91 77530 42847", "+91 98676 03699"],
+  phoneNumbers: ["+91 92898 92779", "+91 77530 42847", "+91 98676 03699"],
   emails: [
     "reservations@oneoffhotels.com",
     "bookings@oneoffhotels.com",
@@ -14,7 +14,8 @@ export const contacts = {
     instagramUrl:
       "https://www.instagram.com/oneoffhotels?igsh=MTZ6aGp6c2NhYTd0YQ%3D%3D&utm_source=qr",
     linkedinUrl:
-      "https://www.linkedin.com/company/oneoff-hotels/posts/?feedView=all&viewAsMember=true",
+      // "https://www.linkedin.com/company/oneoff-hotels/posts/?feedView=all&viewAsMember=true",
+      "https://www.linkedin.com/company/oneoff-hotels/",
     pinterestUrl: "https://in.pinterest.com/homefeed/",
   },
   formDomain: "oneoffhotel",
@@ -30,9 +31,10 @@ export const contacts = {
     oneOffDelhi:
       "https://letsbook.me/booking/oneoffthesouthdelhiedition?checkin=2026-05-26&checkout=2026-05-27&adults=2&children=0",
   },
-  contactCta:{
-     delhi:"+91  92898 92779",
-     varanasi:"+91 77530 42847",
+  contactCta: {
+    delhi: "+91  92898 92779",
+    varanasi: "+91 77530 42847",
+    devwithus:"+91 98676 03699",
   },
 };
 

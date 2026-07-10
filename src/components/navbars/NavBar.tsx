@@ -28,7 +28,8 @@ const NavBar = () => {
     return null;
 
   return (
-    <header className={`max_screen border-b border-secondary`}>
+    // <header className={`max_screen border-b border-secondary`}>
+    <header className="fixed top-0 left-0 right-0 z-50 w-full ">
       <Container>
         <nav className="flex items-center justify-between py-3">
           <div className="">

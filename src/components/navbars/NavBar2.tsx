@@ -18,7 +18,8 @@ const NavBar2 = () => {
 
   return (
     <div>
-      <header className={`max_screen `}>
+      {/* <header className={`max_screen `}> */}
+     <header className="fixed top-0 left-0 right-0 z-50 w-full ">
         <Container>
           <nav className="flex items-center justify-between py-3">
             <div className="">
