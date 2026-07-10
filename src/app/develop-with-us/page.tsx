@@ -1,10 +1,9 @@
-import Banner from "@/components/banners/Banner";
+import type { Metadata } from "next";
 import { DevelopBanner } from "./components/DevelopBanner";
 import DevelopWithUsComponent from "./components/DevelopWithUs";
+import LifestyleSection from "./components/LifestyleSection";
 import WhyDevelopWithUs from "./components/WhyDevelopWithUs";
 import { DevelopWithUsPageData } from "./developWithUsData";
-import type { Metadata } from "next";
-import LifestyleSection from "./components/LifestyleSection";
 
 export const metadata: Metadata = {
   title:

@@ -13,6 +13,7 @@ export interface BannerProps {
   title?: string;
   subTitle?: string;
   description?: string;
+  showBookingForm?: boolean;
 }
 
 export interface ExploreExperienceDataProps {

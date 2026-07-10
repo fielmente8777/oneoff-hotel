@@ -6,6 +6,7 @@ import { Autoplay } from "swiper/modules";
 import NavBar2 from "../navbars/NavBar2";
 import SwiperCarousel from "../sliders/SwiperCarousel";
 import { LazyLoadedVideo } from "../Video2";
+import LazyLoadedVideoNew from "../Video2/LazyLoadedVideoNew";
 import { Container } from "../sectionComponents";
 import BookingForm from "../BookingForm";
 
@@ -16,6 +17,7 @@ const Banner: FC<BannerProps> = ({
   title,
   subTitle,
   description,
+  showBookingForm = false,
 }) => {
   const hasImages = images && images.length > 0;
   const hasSingleImage = images && images.length === 1;
@@ -108,22 +110,18 @@ const Banner: FC<BannerProps> = ({
       ) : /* ✅ Case 2: Only Video */
       videoSrc ? (
         <div className="w-full xl:h-dvh max-xl:aspect-4/3 max-lg:aspect-[4/2] max-md:aspect-[4/7] relative">
-          <LazyLoadedVideo
+          <LazyLoadedVideoNew
             src={videoSrc}
-            autoPlay
-            loop
-            controls={false}
-            poster={thumbNail}
-            muted
+            poster={thumbNail || ""}
           />
           <div className="absolute top-0 left-0 w-full z-10">
             <NavBar2 />
           </div>
-          <div className="absolute bottom-6 inset-x-0 ">
+         {showBookingForm && <div className="absolute bottom-6 inset-x-0 ">
             <Container className="xl:max-w-5xl! mx-auto">
               <BookingForm />
             </Container>
-          </div>
+          </div>}
         </div>
       ) : /* ✅ Case 3: Only Single Image */
       hasSingleImage ? (

@@ -25,7 +25,7 @@ const StayAt: React.FC<StayAtProps> = ({
 }) => {
   const { ref,isInView } = useInView<HTMLDivElement>();
   return (
-    <SectionWithContainer sectionClassName="relative">
+    <SectionWithContainer sectionClassName="relative border-t border-secondary">
       <div className="grid max-w-6xl mx-auto lg:grid-cols-2 grid-cols-1 md:gap-20 items-center">
         <div className="flex flex-col xl:gap-14 gap-8">
           <SectionHeading title={title} subTitle={subTitle} />

@@ -88,7 +88,7 @@ export const locationPageData = [
       ],
     },
     petFriendly: {
-      image: "/pets/Rectangle-41.png",
+      image: "/pets/dashashwamedh.png",
       title: "PET FRIENDLY HOTEL ROOMS",
       description:
         "Every guest deserves an exceptional stay, including the four-legged ones. Enjoy stylish spaces, thoughtful comforts, and a boutique experience you'll both love.",
@@ -583,10 +583,10 @@ export const locationPageData = [
       "/the-south-delhi-edition/living-room/DSC03012.webp",
       "/the-south-delhi-edition/living-room/Rectangle-4118.png",
       "/the-south-delhi-edition/living-room/DSC02992.webp",
-      "/the-south-delhi-edition/studio-room-x-2/cap.jpg",
+      "/the-south-delhi-edition/Rectangle-412.png",
       "/the-south-delhi-edition/living-room/Image-41.jpg",
       "/the-south-delhi-edition/living-room/Image-42.jpg",
-      "/the-south-delhi-edition/studio-room-x-2/cap2.jpg",
+      "/the-south-delhi-edition/Rectangle-4125.png",
       "/the-south-delhi-edition/living-room/Image-34jpg.webp",
       "/the-south-delhi-edition/living-room/Rectangle-4127.png",
       "/the-south-delhi-edition/quada-x-1/DSC02317.webp",
