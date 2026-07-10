@@ -1,4 +1,12 @@
-import React, { forwardRef } from "react";
+"use client";
+
+import React, {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+  useState,
+} from "react";
 
 interface VideoProps {
   src: string;
@@ -19,9 +27,6 @@ interface VideoProps {
   }[];
 }
 
-// forwardRef lets the parent (LazyLoadedVideo) grab the <video> element
-// directly so it can flip `muted` on/off after a user click,
-// which browser autoplay-with-sound policies require.
 const SEOVideo = forwardRef<HTMLVideoElement, VideoProps>(
   (
     {
@@ -39,10 +44,59 @@ const SEOVideo = forwardRef<HTMLVideoElement, VideoProps>(
     },
     ref
   ) => {
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const [isInView, setIsInView] = useState(false);
+
+    // Expose the video element to the parent
+    useImperativeHandle(ref, () => videoRef.current!, []);
+
+    // Pause other videos when this one starts
+    const handlePlay = () => {
+      document.querySelectorAll("video").forEach((video) => {
+        if (video !== videoRef.current) {
+          video.pause();
+        }
+      });
+    };
+
+    // Observe visibility
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsInView(entry.isIntersecting);
+        },
+        {
+          threshold: 0.6,
+        }
+      );
+
+      const target = containerRef.current;
+
+      if (target) observer.observe(target);
+
+      return () => {
+        if (target) observer.unobserve(target);
+      };
+    }, []);
+
+    // Play / Pause on scroll
+    useEffect(() => {
+      const video = videoRef.current;
+
+      if (!video) return;
+
+      if (isInView) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    }, [isInView]);
+
     return (
-      <>
+      <div ref={containerRef} className="w-full h-full">
         <video
-          ref={ref}
+          ref={videoRef}
           src={src}
           poster={poster}
           width={width}
@@ -52,23 +106,19 @@ const SEOVideo = forwardRef<HTMLVideoElement, VideoProps>(
           loop={loop}
           muted={muted}
           preload={preload}
-          picture-in-picture="false"
           title={title}
+          playsInline
+          disablePictureInPicture
           controlsList="nodownload"
           className="w-full h-full object-cover overflow-hidden"
+          onPlay={handlePlay}
         >
           {tracks.map((track, index) => (
-            <track
-              key={index}
-              src={track.src}
-              kind={track.kind}
-              srcLang={track.srcLang}
-              label={track.label}
-            />
+            <track key={index} {...track} />
           ))}
           Sorry, your browser doesn&apos;t support embedded videos.
         </video>
-      </>
+      </div>
     );
   }
 );

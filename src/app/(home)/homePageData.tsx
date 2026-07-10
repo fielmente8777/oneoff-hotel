@@ -79,7 +79,7 @@ export const homePageData = {
     subTitle: "ONE OFF XPERIENCES",
     link: {
       label: "BOOK NOW",
-      href: contacts.bookingCta.oneOffDashashwamedh,
+      href: contacts.bookingCta.oneOffDelhi,
     },
     cards: [
       // {
