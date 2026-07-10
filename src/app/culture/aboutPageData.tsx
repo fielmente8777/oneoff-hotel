@@ -101,6 +101,6 @@ export const aboutPageData = {
       label: "CONTACT US",
       href: "/contact-us",
     },
-    src: "/about-us/join.jpg",
+    src: "/about-us/joinus.jpg",
   },
 };

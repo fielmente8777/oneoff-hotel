@@ -41,7 +41,7 @@ const LifestyleSection = ({ heading, cards }: LifestyleSectionProps) => {
               key={index}
               className={`
       px-4
-      ${index !== cards.length - 1 ? "border-r border-secondary" : ""}
+      ${index !== cards.length - 1 ? "lg:border-r lg:border-secondary" : ""}
     `}
             >
               <LifestyleCard {...card} />
