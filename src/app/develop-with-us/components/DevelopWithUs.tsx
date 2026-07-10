@@ -1,5 +1,5 @@
 import ContactForm from "@/components/forms/ContactForm";
-import { Container } from "@/components/sectionComponents";
+import { Container, Section } from "@/components/sectionComponents";
 import Image from "next/image";
 
 interface DevelopBannerProps {
@@ -21,8 +21,8 @@ const DevelopWithUsComponent = ({
   link,
 }: DevelopBannerProps) => {
   return (
-    <div>
-      <Container>
+    <Section>
+      <Container >
         <div className="grid md:grid-cols-2 gap-4 items-start h-full">
           <div className="h-full">
             {/* <div className="space-y-2">
@@ -62,7 +62,7 @@ const DevelopWithUsComponent = ({
           </div>
         </div>
       </Container>
-    </div>
+    </Section>
   );
 };
 

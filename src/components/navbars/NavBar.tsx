@@ -17,11 +17,8 @@ const NavBar = () => {
   const pathName = usePathname();
   const paths = [
     "/",
-    "/contact-us/",
     "/one-off-dashashwamedh/",
     "/one-off-x/",
-    "/develop-with-us/",
-    "/xperiences/",
     "/the-south-delhi-edition/",
   ];
   if (pathName ? paths.includes(pathName) || pathName.includes("blog") : false)
@@ -35,7 +32,7 @@ const NavBar = () => {
           <div className="">
             <Link
               href={"/"}
-              className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1]"
+              className="flex relative md:h-[4rem] h-[2.6rem]  md:aspect-[4/1.25] aspect-[3/1]"
             >
               <Image
                 src="/logo.png"
@@ -129,16 +126,16 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
             href={contacts.bookingCta.oneOffDelhi}
-            label="Book Now"
+            label="Find a Room"
             variant="primary"
           />
           <div className="max-xl:block hidden">
             <button
-              className={`xl:hidden transition-all ease-in-out duration-300 ${isOpenMobileMenu ? "rotate-90" : ""}`}
+              className={`xl:hidden text-3xl transition-all ease-in-out duration-300 ${isOpenMobileMenu ? "rotate-90" : ""}`}
               onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
             >
               {!isOpenMobileMenu ? (
-                <GiHamburgerMenu color="#fff" />
+                <GiHamburgerMenu  />
               ) : (
                 <MdClose />
               )}

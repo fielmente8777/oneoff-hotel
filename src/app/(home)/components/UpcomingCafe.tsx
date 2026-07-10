@@ -25,12 +25,15 @@ const UpcomingCafe = ({ title, subTitle, cards }: UpcomingCafeProps) => {
           <SectionHeading title={title} subTitle={subTitle} textCenter />
 
           {/* GridView */}
-          <div>
+          <div className="md:block hidden">
             <SwiperCarousel
               data={cards}
               autoplay={{
                 delay: 3000,
               }}
+              slidesPerView={1}
+              loop={true}
+              speed={2000}
               modules={[Autoplay]}
               renderSlide={(item) => <GridView {...item} />}
             />

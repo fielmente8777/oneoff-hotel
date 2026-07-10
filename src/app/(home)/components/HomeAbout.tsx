@@ -22,7 +22,7 @@ const HomeAbout: React.FC<AboutHomeProps> = ({
         <SectionHeading title={title} subTitle={subTitle} textCenter />
         <p className="md:text-lg text-center ">{description}</p>
         {link && (
-          <LinkButton target="_blank" rel="noopener noreferrer" href={link?.href} label={link?.label} className="mx-auto" variant="primary" />
+          <LinkButton target="_blank" rel="noopener noreferrer" href={link?.href} label={link?.label} className="mx-auto max-lg:w-[90%]! max-lg:h-12!" variant="primary" />
         )}
       </div>
     </SectionWithContainer>

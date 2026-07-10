@@ -1,10 +1,10 @@
-import Banner from "@/components/banners/Banner";
-import { aboutPageData } from "./aboutPageData";
-import StayAt from "./components/StayAt";
-import Gallery from "./components/Gallery";
-import HomeAbout from "../(home)/components/HomeAbout";
-import JoinsUsAt from "./components/JoinsUsAt";
 import type { Metadata } from "next";
+import HomeAbout from "../(home)/components/HomeAbout";
+import { aboutPageData } from "./aboutPageData";
+import Gallery from "./components/Gallery";
+import JoinsUsAt from "./components/JoinsUsAt";
+import StayAt from "./components/StayAt";
+import CardSection from "./components/CardSection";
 
 export const metadata: Metadata = {
   title:
@@ -56,12 +56,13 @@ export const metadata: Metadata = {
 export default function AboutUs() {
   return (
     <main>
-      <Banner {...aboutPageData.bannerData} />
+      {/* <Banner {...aboutPageData.bannerData} /> */}
+      <Gallery images={aboutPageData.images} />
       <HomeAbout
         {...aboutPageData.aboutStayPage}
-        wrapperClassName="max-w-3xl"
+        wrapperClassName="max-w-4xl"
       />
-      <Gallery images={aboutPageData.images} />
+      <CardSection {...aboutPageData.destination} />
       <StayAt {...aboutPageData.stayAt} />
       <JoinsUsAt {...aboutPageData.joinUsAt} />
     </main>

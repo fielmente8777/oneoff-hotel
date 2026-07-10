@@ -3,7 +3,7 @@ import { Section } from "@/components/sectionComponents";
 import { SwiperCarousel } from "@/components/sliders";
 import { LazyLoadedVideo } from "@/components/Video2";
 import Image from "next/image";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 interface GalleryProps {
   images: {
@@ -16,24 +16,29 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
   const hasImages = images.length < 4 ? [...images, ...images] : images;
 
   return (
-    <Section defaultPadding={false}>
+    <Section defaultPadding={false} className="relative">
       <SwiperCarousel
         data={hasImages}
         className="w-full"
         slidesPerView={1}
         spaceBetween={0}
         loop={true}
-        modules={[Navigation, Pagination]}
-        pagination={{
-          clickable: true,
-          el: ".gallery-pagination",
-          type: "fraction",
-        }}
+        modules={[Navigation, Autoplay]}
+        // pagination={{
+        //   clickable: true,
+        //   el: ".gallery-pagination",
+        //   type: "fraction",
+        // }}
         navigation={{
           nextEl: ".button-next",
           prevEl: ".button-prev",
         }}
-        autoplay={{ delay: 2500 }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        speed={800}
         swiperSlideClassName="relative w-full aspect-[4/7]"
         breakpoints={{
           768: {
@@ -67,18 +72,18 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
           </div>
         )}
       />
-      <div className="flex justify-evenly items-center mt-4 gap-4 w-fit mx-auto ">
+      <div className="flex justify-between items-center mt-4 gap-4 mx-auto absolute top-1/2 -translate-y-1/2 inset-x-4 z-10">
         {/* button prev */}
-        <button className="button-prev w-14 h-14 flex items-center justify-center">
+        <button className="button-prev w-14 h-14 flex items-center justify-center bg-white/70 rounded-2xl backdrop-blur-md">
           <BtnPrivIcon />
         </button>
         {/* pagination */}
-        <div className="gallery-pagination !w-fit text-[1.375rem] font-medium">
+        {/* <div className="gallery-pagination !w-fit text-[1.375rem] font-medium">
           <span className="gallery-current"></span>
           <span className="gallery-total"></span>
-        </div>
+        </div> */}
         {/* button next */}
-        <button className="button-next w-14 h-14 flex items-center justify-center">
+        <button className="button-next w-14 h-14 flex items-center justify-center bg-white/50 rounded-2xl backdrop-blur-md">
           <BtnNextIcon />
         </button>
       </div>

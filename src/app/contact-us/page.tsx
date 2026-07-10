@@ -1,8 +1,8 @@
-import Banner from "@/components/banners/Banner";
 import Image from "next/image";
 import { contactUsPageData } from "./contactUsPageData";
 import Link from "next/link";
 import type { Metadata } from "next";
+import Banner from "./components/Banner";
 
 export const metadata: Metadata = {
   title: "Contact ONE-OFF Hotels | Reservations, Enquiries & Support",
@@ -76,12 +76,25 @@ export default function ContactUs() {
                     {item.icon}
                     {item.title}
                   </span>
-                  <Link
-                    href={item.href}
-                    className="text-lg text-primary flex items-center gap-2"
-                  >
-                    {item.label}
-                  </Link>
+                  <span className="flex flex-wrap items-center gap-0.5">
+                    <Link
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg text-primary flex items-center gap-2"
+                    >
+                      {item.label}
+                    </Link>
+                    {item.href2 && item.label2 && <span>,</span>}
+                    {item.href2 && item.label2 && (
+                      <Link
+                        href={item.href2}
+                        className="text-lg text-primary flex items-center gap-2"
+                      >
+                        {item.label2}
+                      </Link>
+                    )}
+                  </span>
                 </li>
               ))}
             </ul>

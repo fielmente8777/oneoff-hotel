@@ -4,6 +4,7 @@ import DevelopWithUsComponent from "./components/DevelopWithUs";
 import WhyDevelopWithUs from "./components/WhyDevelopWithUs";
 import { DevelopWithUsPageData } from "./developWithUsData";
 import type { Metadata } from "next";
+import LifestyleSection from "./components/LifestyleSection";
 
 export const metadata: Metadata = {
   title:
@@ -50,13 +51,10 @@ export const metadata: Metadata = {
   },
 };
 
-
-
-
 export default function DevelopWithUs() {
   return (
     <main>
-      <Banner images={DevelopWithUsPageData?.bannerData2?.images} />
+      {/* <Banner images={DevelopWithUsPageData?.bannerData2?.images} /> */}
       <DevelopBanner {...DevelopWithUsPageData.bannerData} />
       {/* <Section className="pt-0!">
         <SwiperCarousel
@@ -81,7 +79,7 @@ export default function DevelopWithUs() {
       </Section> */}
 
       <WhyDevelopWithUs {...DevelopWithUsPageData?.whyDevelopWithUs} />
-
+      <LifestyleSection {...DevelopWithUsPageData.lifestyleData} />
       <DevelopWithUsComponent {...DevelopWithUsPageData.whyChooseUs} />
     </main>
   );

@@ -2,6 +2,8 @@
 import {
   ArtisanalToiletriesIcon,
   CoffeIcon,
+  CommunalSpaceIcon,
+  CoworkingAreaIcon,
   FamilyRoomIcon,
   LaundaryIcon,
   PetFriendly,
@@ -24,12 +26,12 @@ export const locationPageData = [
 
     bannerData: {
       images: [
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-1.jpg",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-4.jpg",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-9.png",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-8.png",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-5.jpg",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-10.png",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-1.jpg",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-4.jpg",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-9.png",
+        "/vns/Rectangle-4077.png",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-5.jpg",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-10.png",
       ],
     },
 
@@ -40,7 +42,7 @@ export const locationPageData = [
       ],
       link: {
         label: "VARANASI",
-        href: "",
+        href: contacts.locationsAddress.dashashwamedh.link,
         icon: <IoLocationSharp />,
       },
     },
@@ -52,9 +54,8 @@ export const locationPageData = [
       ],
       links: [
         {
-          label:
-            "ADDRESS: D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
-          href: "",
+          label: "ADDRESS: " + contacts.locationsAddress.dashashwamedh.address,
+          href: contacts.locationsAddress.dashashwamedh.link,
         },
         {
           label: "CONTACT: " + contacts.contactCta.varanasi,
@@ -67,13 +68,25 @@ export const locationPageData = [
       ],
       amenities: [""],
       images: [
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-7.jpg",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-1.jpg",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-2.jpg",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-4.jpg",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-3.jpg",
-        "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-6.jpg",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-7.jpg",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-1.jpg",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-2.jpg",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/home/img-4.jpg",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-3.jpg",
+        // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/vns/img-6.jpg",
+        "/vns/das1.jpg",
+        "/vns/das2.jpg",
+        "/vns/das3.jpg",
+        "/vns/das4.jpg",
+        "/vns/das5.jpg",
+        "/vns/das6.jpg",
       ],
+    },
+    petFriendly: {
+      image: "/pets/Rectangle-41.png",
+      title: "PET FRIENDLY HOTEL ROOMS",
+      description:
+        "Every guest deserves an exceptional stay, including the four-legged ones. Enjoy stylish spaces, thoughtful comforts, and a boutique experience you'll both love.",
     },
 
     amenties: [
@@ -151,6 +164,12 @@ export const locationPageData = [
       videoSrc:
         "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/ONE%2BOFF%2BMAIN%2BFILM.mp4",
     },
+    petFriendly: {
+      image: "/pets/Rectangle-4122.png",
+      title: "PET FRIENDLY HOTEL ROOMS",
+      description:
+        "Every guest deserves an exceptional stay, including the four-legged ones. Enjoy stylish spaces, thoughtful comforts, and a boutique experience you'll both love.",
+    },
     aboutLocation: {
       title: "ONE OFF X ASSI",
       description: [
@@ -158,7 +177,7 @@ export const locationPageData = [
       ],
       link: {
         label: "VARANASI",
-        href: "",
+        href: contacts.locationsAddress.assiGhat.link,
         icon: <IoLocationSharp />,
       },
     },
@@ -169,9 +188,8 @@ export const locationPageData = [
       ],
       links: [
         {
-          label:
-            "ADDRESS: Ravindrapuri Colony B-1/84-P Ravindrapuri Extention, Opposite Bankati Hanuman Ji Temple, Varanasi",
-          href: "",
+          label: "ADDRESS: " + contacts.locationsAddress.assiGhat.address,
+          href: contacts.locationsAddress.assiGhat.link,
         },
         {
           label: "CONTACT: " + contacts.contactCta.varanasi,
@@ -258,38 +276,42 @@ export const locationPageData = [
     },
     bannerData: {
       images: [
-        "/the-south-delhi-edition/banner/Rectangle-4076.png",
+        // "/the-south-delhi-edition/banner/Rectangle-4076.png",
         "/the-south-delhi-edition/banner/Rectangle-4079.png",
-        "/the-south-delhi-edition/banner/Rectangle-4080.png",
-        "/the-south-delhi-edition/banner/Rectangle-4081.png",
         "/the-south-delhi-edition/banner/Rectangle-4082.png",
-        "/the-south-delhi-edition/banner/Rectangle-4083.png",
+        "/the-south-delhi-edition/quada-x-1/DSC02375.webp",
+        "/the-south-delhi-edition/studio-room-x-2/DSC02738.webp",
+        "/the-south-delhi-edition/studio-room-x-2/DSC02846.webp",
+        // "/the-south-delhi-edition/banner/Rectangle-4080.png",
+        // "/develop-with-us/develop/Rectangle-4031.png",
+        // "/the-south-delhi-edition/banner/Rectangle-4081.png",
       ],
     },
 
     aboutLocation: {
-      title: "ONE OFF - THE SOUTH DELHI EDITION",
-      description: [
+      title: "THE SOUTH DELHI EDITION",
+      tagLine:
         "Boutique Hotel in the heart of South Delhi's most coveted address.",
-        "Rooted in the soul of Greater Kailash II, ONE OFF - The South Delhi Edition is designed for those who know that how you stay shapes how you see a city. Set in a thoughtfully curated space where every room is a considered gesture and every corner carries character, this is not just a hotel - it is an extension of the neighbourhood itself. With individually designed rooms, the property embodies the ONE-OFF ethos of singular spaces and intentional design. From handpicked textiles to locally sourced art, every element reflects the layered, confident personality of South Delhi - cosmopolitan yet rooted, refined yet real.",
+      description: [
+        "Rooted in the soul of Greater Kailash II, The South Delhi Edition is designed for those who know that how your stay shapes how you see a city. Set in a thoughtfully curated space where every room is a considered gesture and every corner carries character, this is not just a hotel - it is an extension of the neighbourhood itself. With individually designed rooms, the property embodies the ONE-OFF ethos of singular spaces and intentional design. From handpicked textiles to locally sourced art, every element reflects the layered, confident personality of South Delhi - cosmopolitan yet rooted, refined yet real.",
       ],
       link: {
         label: "DELHI",
-        href: "",
+        href: contacts.locationsAddress.delhi.link,
         icon: <IoLocationSharp />,
       },
     },
 
     newRooms: {
       title: "DESIGN AS AN EXPERIENCE",
-      subTitle: "EXPLORE DESIGNER ROOMS",
+      subTitle: "SLEEP WITH US",
       description: [
         "The modern traveller deserves more than a place to sleep. ONE OFF - The South Delhi Edition is a space to think, unwind, host, and feel genuinely at home in one of India's most dynamic cities.",
       ],
       links: [
         {
           label: "ADDRESS: E-574, Greater Kailash II, New Delhi - 110048",
-          href: "",
+          href: contacts.locationsAddress.delhi.link,
         },
         {
           label: "CONTACT: " + contacts.contactCta.delhi,
@@ -301,9 +323,93 @@ export const locationPageData = [
         },
       ],
       rooms: [
+        // DESIGNER STUDIO
+        {
+          src: "/the-south-delhi-edition/studio-room-x-2/DSC02477-HDR.webp",
+          alt: "DESIGNER STUDIO",
+        },
+        {
+          src: "/the-south-delhi-edition/studio-room-x-2/DSC03212.webp",
+          alt: "DESIGNER STUDIO",
+        },
+        {
+          src: "/the-south-delhi-edition/studio-room-x-2/DSC02874.webp",
+          alt: "DESIGNER STUDIO",
+        },
+        {
+          src: "/the-south-delhi-edition/studio-room-x-2/DSC02738.webp",
+          alt: "DESIGNER STUDIO",
+        },
+        {
+          src: "/the-south-delhi-edition/studio-room-x-2/DSC02568.webp",
+          alt: "DESIGNER STUDIO",
+        },
+
+        {
+          src: "/the-south-delhi-edition/studio-room-x-2/DSC02589.webp",
+          alt: "DESIGNER STUDIO",
+        },
+        {
+          src: "/the-south-delhi-edition/studio-room-x-2/DSC02627.webp",
+          alt: "DESIGNER STUDIO",
+        },
+
+        {
+          src: "/the-south-delhi-edition/studio-room-x-2/DSC03271.webp",
+          alt: "DESIGNER STUDIO",
+        },
+        {
+          src: "/the-south-delhi-edition/studio-room-x-2/DSC03267.webp",
+          alt: "DESIGNER STUDIO",
+        },
+        {
+          src: "/the-south-delhi-edition/studio-room-x-2/DSC02776.webp",
+          alt: "DESIGNER STUDIO",
+        },
+
+        // SUPERIOR SUITE WITH BALCONY
+
+        {
+          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02202-HDR.webp",
+          alt: "SUPERIOR SUITE WITH BALCONY ",
+        },
+        {
+          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02401.webp",
+          alt: "SUPERIOR SUITE WITH BALCONY ",
+        },
+        {
+          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02184-HDR.webp",
+          alt: "SUPERIOR SUITE WITH BALCONY ",
+        },
+
+        {
+          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02214-HDR.webp",
+          alt: "SUPERIOR SUITE WITH BALCONY ",
+        },
+        // {
+        //   src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02168-HDR.webp",
+        //   alt: "SUPERIOR SUITE WITH BALCONY ",
+        // },
+        // {
+        //   src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02394.webp",
+        //   alt: "SUPERIOR SUITE WITH BALCONY ",
+        // },
+
         // DESIGNER ROOM 1
         {
+          src: "/the-south-delhi-edition/designer-room-1/Image-7.webp",
+          alt: "DESIGNER ROOM 1",
+        },
+        {
+          src: "/the-south-delhi-edition/designer-room-1/Image-58.webp",
+          alt: "DESIGNER ROOM 1",
+        },
+        {
           src: "/the-south-delhi-edition/designer-room-1/DSC03590-HDR.webp",
+          alt: "DESIGNER ROOM 1",
+        },
+        {
+          src: "/the-south-delhi-edition/designer-room-1/Image-6.webp",
           alt: "DESIGNER ROOM 1",
         },
         {
@@ -318,50 +424,15 @@ export const locationPageData = [
           src: "/the-south-delhi-edition/designer-room-1/Image-3.webp",
           alt: "DESIGNER ROOM 1",
         },
-        {
-          src: "/the-south-delhi-edition/designer-room-1/Image-35.webp",
-          alt: "DESIGNER ROOM 1",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-1/Image-4.webp",
-          alt: "DESIGNER ROOM 1",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-1/Image-5.webp",
-          alt: "DESIGNER ROOM 1",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-1/Image-58.webp",
-          alt: "DESIGNER ROOM 1",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-1/Image-6.webp",
-          alt: "DESIGNER ROOM 1",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-1/Image-7.webp",
-          alt: "DESIGNER ROOM 1",
-        },
 
         // DESIGNER ROOM 2
-        {
-          src: "/the-south-delhi-edition/designer-room-2/DSC03612-HDR.webp",
-          alt: "DESIGNER ROOM 2",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-2/DSC03624-HDR.webp",
-          alt: "DESIGNER ROOM 2",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-2/Image-11.webp",
-          alt: "DESIGNER ROOM 2",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-2/Image-12.webp",
-          alt: "DESIGNER ROOM 2",
-        },
+
         {
           src: "/the-south-delhi-edition/designer-room-2/Image-13.webp",
+          alt: "DESIGNER ROOM 2",
+        },
+        {
+          src: "/the-south-delhi-edition/designer-room-2/Image-41.webp",
           alt: "DESIGNER ROOM 2",
         },
         {
@@ -372,319 +443,68 @@ export const locationPageData = [
           src: "/the-south-delhi-edition/designer-room-2/Image-15.webp",
           alt: "DESIGNER ROOM 2",
         },
-        {
-          src: "/the-south-delhi-edition/designer-room-2/Image-16.webp",
-          alt: "DESIGNER ROOM 2",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-2/Image-41.webp",
-          alt: "DESIGNER ROOM 2",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-2/Image-42.webp",
-          alt: "DESIGNER ROOM 2",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-2/Image-44.webp",
-          alt: "DESIGNER ROOM 2",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-2/Image-46.webp",
-          alt: "DESIGNER ROOM 2",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-2/Image-48.webp",
-          alt: "DESIGNER ROOM 2",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-2/Image-9.webp",
-          alt: "DESIGNER ROOM 2",
-        },
+
         // DESIGNER ROOM 3
-        {
-          src: "/the-south-delhi-edition/designer-room-3/DSC03648-HDR.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/DSC03671-HDR.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/Image-17.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/Image-19.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/Image-20.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/Image-21.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/Image-22.webp",
-          alt: "DESIGNER ROOM 3",
-        },
+
         {
           src: "/the-south-delhi-edition/designer-room-3/Image-23.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/Image-24.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/Image-25.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/Image-45.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/Image-47.webp",
-          alt: "DESIGNER ROOM 3",
-        },
-        {
-          src: "/the-south-delhi-edition/designer-room-3/Image-49.webp",
           alt: "DESIGNER ROOM 3",
         },
         {
           src: "/the-south-delhi-edition/designer-room-3/Image-50.webp",
           alt: "DESIGNER ROOM 3",
         },
-
-        // STUDIO ROOM X 2
         {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02057-HDR.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02063-HDR.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02094-HDR.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02095-HDR.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02465-HDR.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02477-HDR.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02507-HDR.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02568.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02570.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02589.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02590.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02600.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02606.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02620.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02623.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02627.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02640.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02645.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02655.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02733.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02738.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02743.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02767.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02776.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02842.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02846.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02854.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC02874.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC03212.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC03217.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC03227.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC03259.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC03267.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC03271.webp",
-          alt: "STUDIO ROOM X 2",
-        },
-        {
-          src: "/the-south-delhi-edition/studio-room-x-2/DSC03274.webp",
-          alt: "STUDIO ROOM X 2",
+          src: "/the-south-delhi-edition/designer-room-3/Image-17.webp",
+          alt: "DESIGNER ROOM 3",
         },
 
-        // SUITE WITH BALCONY X 3
         {
-          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02168-HDR.webp",
-          alt: "SUITE WITH BALCONY X 3",
-        },
-        {
-          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02184-HDR.webp",
-          alt: "SUITE WITH BALCONY X 3",
-        },
-        {
-          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02202-HDR.webp",
-          alt: "SUITE WITH BALCONY X 3",
-        },
-        {
-          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02214-HDR.webp",
-          alt: "SUITE WITH BALCONY X 3",
-        },
-        {
-          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02394.webp",
-          alt: "SUITE WITH BALCONY X 3",
-        },
-        {
-          src: "/the-south-delhi-edition/suite-with-balcony-x-3/DSC02401.webp",
-          alt: "SUITE WITH BALCONY X 3",
+          src: "/the-south-delhi-edition/designer-room-3/Image-20.webp",
+          alt: "DESIGNER ROOM 3",
         },
 
-        // SUITE WITH NON BALCONY  X 4
         {
-          src: "/the-south-delhi-edition/suite-with-non-balcony-x-4/DSC02116-HDR.webp",
-          alt: "SUITE WITH NON BALCONY  X 4",
-        },
-        {
-          src: "/the-south-delhi-edition/suite-with-non-balcony-x-4/DSC02146-HDR.webp",
-          alt: "SUITE WITH NON BALCONY  X 4",
-        },
-        {
-          src: "/the-south-delhi-edition/suite-with-non-balcony-x-4/DSC02155-HDR.webp",
-          alt: "SUITE WITH NON BALCONY  X 4",
-        },
-        {
-          src: "/the-south-delhi-edition/suite-with-non-balcony-x-4/DSC02425-HDR.webp",
-          alt: "SUITE WITH NON BALCONY  X 4",
-        },
-        {
-          src: "/the-south-delhi-edition/suite-with-non-balcony-x-4/DSC02436-HDR.webp",
-          alt: "SUITE WITH NON BALCONY  X 4",
-        },
-        {
-          src: "/the-south-delhi-edition/suite-with-non-balcony-x-4/DSC02456-HDR.webp",
-          alt: "SUITE WITH NON BALCONY  X 4",
+          src: "/the-south-delhi-edition/designer-room-3/Image-22.webp",
+          alt: "DESIGNER ROOM 3",
         },
 
-        // QUAD X 1
+        // FRIENDLY QUADRUPLE
 
         {
           src: "/the-south-delhi-edition/quada-x-1/DSC02250-HDR.webp",
-          alt: "QUAD X 1",
-        },
-        {
-          src: "/the-south-delhi-edition/quada-x-1/DSC02274-HDR.webp",
-          alt: "QUAD X 1",
-        },
-        {
-          src: "/the-south-delhi-edition/quada-x-1/DSC02283-HDR.webp",
-          alt: "QUAD X 1",
+          alt: "FRIENDLY QUADRUPLE ",
         },
         {
           src: "/the-south-delhi-edition/quada-x-1/DSC02317.webp",
-          alt: "QUAD X 1",
+          alt: "FRIENDLY QUADRUPLE ",
         },
         {
-          src: "/the-south-delhi-edition/quada-x-1/DSC02331.webp",
-          alt: "QUAD X 1",
+          src: "/the-south-delhi-edition/quada-x-1/DSC02274-HDR.webp",
+          alt: "FRIENDLY QUADRUPLE ",
         },
         {
           src: "/the-south-delhi-edition/quada-x-1/DSC02348.webp",
-          alt: "QUAD X 1",
+          alt: "FRIENDLY QUADRUPLE ",
+        },
+
+        // SUITE
+        {
+          src: "/the-south-delhi-edition/suite-with-non-balcony-x-4/DSC02116-HDR.webp",
+          alt: "SUITE",
+        },
+
+        {
+          src: "/the-south-delhi-edition/suite-with-non-balcony-x-4/DSC02155-HDR.webp",
+          alt: "SUITE",
         },
         {
-          src: "/the-south-delhi-edition/quada-x-1/DSC02355.webp",
-          alt: "QUAD X 1",
+          src: "/the-south-delhi-edition/suite-with-non-balcony-x-4/DSC02456-HDR.webp",
+          alt: "SUITE",
         },
         {
-          src: "/the-south-delhi-edition/quada-x-1/DSC02375.webp",
-          alt: "QUAD X 1",
+          src: "/the-south-delhi-edition/suite-with-non-balcony-x-4/DSC02425-HDR.webp",
+          alt: "SUITE",
         },
       ],
     },
@@ -707,9 +527,14 @@ export const locationPageData = [
         label: "PET FRIENDLY",
         icon: <PetFriendly />,
       },
+
       {
         label: "SECURITY",
         icon: <SecurityIcon />,
+      },
+      {
+        label: "COMMUNAL SPACE",
+        icon: <CommunalSpaceIcon />,
       },
       {
         label: "TEA/COFFEE MAKER",
@@ -728,30 +553,32 @@ export const locationPageData = [
         icon: <ArtisanalToiletriesIcon />,
       },
       {
+        label: "COWORKING AREA",
+        icon: <CoworkingAreaIcon />,
+      },
+      {
         label: "LAUNDRY (ADD-ON)",
         icon: <LaundaryIcon />,
       },
     ],
-
+    petFriendly: {
+      image: "/pets/delhi.jpg",
+      title: "PET FRIENDLY HOTEL ROOMS",
+      description:
+        "Every guest deserves an exceptional stay, including the four-legged ones. Enjoy stylish spaces, thoughtful comforts, and a boutique experience you'll both love.",
+    },
     slidingGallery: [
-      "/the-south-delhi-edition/living-room/DSC02980.webp",
-      "/the-south-delhi-edition/living-room/DSC02992.webp",
-      "/the-south-delhi-edition/living-room/DSC02997.webp",
+      "/the-south-delhi-edition/studio-room-x-2/DSC02767.webp",
       "/the-south-delhi-edition/living-room/DSC03012.webp",
-      "/the-south-delhi-edition/living-room/DSC03672-HDR.webp",
-      "/the-south-delhi-edition/living-room/DSC03738-HDR.webp",
-      "/the-south-delhi-edition/living-room/Image-10.webp",
-      "/the-south-delhi-edition/living-room/Image-26.webp",
-      "/the-south-delhi-edition/living-room/Image-27.webp",
-      "/the-south-delhi-edition/living-room/Image-28.webp",
-      "/the-south-delhi-edition/living-room/Image-29.webp",
+      "/the-south-delhi-edition/living-room/Rectangle-4118.png",
+      "/the-south-delhi-edition/living-room/DSC02992.webp",
+      "/the-south-delhi-edition/studio-room-x-2/cap.jpg",
+      "/the-south-delhi-edition/living-room/Image-41.jpg",
+      "/the-south-delhi-edition/living-room/Image-42.jpg",
+      "/the-south-delhi-edition/studio-room-x-2/cap2.jpg",
       "/the-south-delhi-edition/living-room/Image-34jpg.webp",
-      "/the-south-delhi-edition/living-room/Image-36jpg.webp",
-      "/the-south-delhi-edition/living-room/Image-37.webp",
-      "/the-south-delhi-edition/living-room/Image-38.webp",
-      "/the-south-delhi-edition/living-room/Image-39.webp",
-      "/the-south-delhi-edition/living-room/Image-40.webp",
-      "/the-south-delhi-edition/living-room/Image-57jpg.webp",
+      "/the-south-delhi-edition/living-room/Rectangle-4127.png",
+      "/the-south-delhi-edition/quada-x-1/DSC02317.webp",
     ],
     experience: {
       title: "A RARE EXPERIENCE",
@@ -789,6 +616,40 @@ export const locationPageData = [
         "/the-south-delhi-edition/gallery/im-12.png",
       ],
       button: "VIEW MORE",
+    },
+    howtoReach: {
+      image: "/the-south-delhi-edition/Asset-11.png",
+      wayToReach: [
+        {
+          question: "1. How far is the hotel from the airport?",
+          answer:
+            "Ideally situated just a 30-minute drive from Indira Gandhi International Airport, ensuring a smooth arrival and departure.",
+        },
+        {
+          question: "2. How Well Connected Are We?",
+          answer:
+            "A short 2-minute stroll brings you to Greater Kailash Metro Station, connecting you to the best of Delhi.",
+        },
+        {
+          question: "3. What Makes Our Location So Special?",
+          answer:
+            "Just a 5-minute walk to M Block Market, South Delhi's iconic destination for designer boutiques, celebrated cafés, vibrant bars, and upscale dining.",
+        },
+      ],
+    },
+    knowMore: {
+      cards: [
+        {
+          title: "CELEBRATE IN STYLE!",
+          description: "Planning an intimate gathering or a special celebration? From birthdays and anniversaries to private dinners, our thoughtfully designed spaces provide the perfect setting, complemented by personalized hospitality and curated experiences.",
+          image: "/the-south-delhi-edition/Rectangle-4123.png",
+        },
+        {
+          title: "NEED A MEETING SPACE?",
+          description: "Whether you're hosting a client meeting, team workshop, or creative session, our versatile spaces offer a comfortable, design-led environment with modern amenities and attentive service to ensure every gathering is a success.",
+          image: "/the-south-delhi-edition/Rectangle-43.png",
+        },
+      ],
     },
   },
   {

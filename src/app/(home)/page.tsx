@@ -1,10 +1,10 @@
 import Banner from "@/components/banners/Banner";
-import { homePageData } from "./homePageData";
 import Experiences from "./components/Experiences";
-import UpcomingHotels from "./components/UpcomingHotels";
-import LocationsCards from "./components/LocationsCards";
 import HomeAbout from "./components/HomeAbout";
+import LocationsCards from "./components/LocationsCards";
 import UpcomingCafe from "./components/UpcomingCafe";
+import UpcomingHotels from "./components/UpcomingHotels";
+import { homePageData } from "./homePageData";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Banner {...homePageData.bannerData} />
       <HomeAbout
         {...homePageData.aboutHomePage}
-        wrapperClassName="max-w-[37rem]"
+        wrapperClassName="max-w-[45rem]"
       />
       <LocationsCards locations={homePageData.locations} />
       <Experiences {...homePageData.exploreExperienceData} />

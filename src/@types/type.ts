@@ -23,6 +23,7 @@ export interface ExploreExperienceDataProps {
     href: string;
   };
   cards: {
+    location?: string;
     title?: string;
     description?: string;
     src?: string;
@@ -42,6 +43,7 @@ export interface UpcomingHotelsProps {
 
 export interface BoatToursProps {
   cards: {
+    location: string;
     title: string;
     subTitle?: string;
     description?: string;

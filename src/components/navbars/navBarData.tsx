@@ -2,26 +2,27 @@ import { NavLinksProps } from "@/@types/type";
 
 export const navBarData: NavLinksProps[] = [
   {
-    label: "Locations",
+    label: "Our Hotels",
     href: "",
     subLinks: [
-      {
-        location: "Varanasi",
-        label: "One Off Dashashwamedh",
-        href: "/one-off-dashashwamedh/",
-        sub: "Boutique stays in the heart of the world’s oldest living city",
-      },
-      {
-        label: "One Off X",
-        href: "/one-off-x/",
-        sub: "Boutique stays in the heart of the world’s oldest living city",
-      },
       {
         location: "Delhi",
         label: "The South Delhi Edition",
         href: "/the-south-delhi-edition/",
-        sub: "Boutique stays in the heart of the world’s oldest living city",
+        sub: "A 13-room design hotel in the vibrant heart of Greater Kailash II.",
       },
+      {
+        location: "Varanasi",
+        label: "One Off Dashashwamedh",
+        href: "/one-off-dashashwamedh/",
+        sub: "A serene design-led retreat steps from Varanasi's iconic ghats.",
+      },
+      {
+        label: "One Off X",
+        href: "/one-off-x/",
+        sub: "A restored ancestral bungalow inspired by Wabi Sabi living.",
+      },
+
       {
         location: "Upcoming",
         label: "Jaipur (Upcoming)",

@@ -9,6 +9,8 @@ interface OpenGalleryProps {
 }
 
 interface IWebContext {
+  selectedLocation: string;
+  setSelectedLocation: React.Dispatch<React.SetStateAction<string>>;
   isOpenMobileMenu: boolean;
   setIsOpenMobileMenu: React.Dispatch<React.SetStateAction<boolean>>;
   isXperiencePopUpOpen: boolean;
@@ -35,6 +37,9 @@ interface IWebContext {
 }
 
 export const WebContext = createContext<IWebContext>({
+  selectedLocation: "",
+  setSelectedLocation: () => {},
+
   isOpenMobileMenu: false,
   setIsOpenMobileMenu: () => {},
   isXperiencePopUpOpen: false,
@@ -76,6 +81,7 @@ export const WebContextProvider = ({ children }: IWebContextProvider) => {
   const [imageCurrentIndex, setImageCurrentIndex] = useState(0);
 
   const [selectRoom, setSelectRoom] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState("");
 
   const openGallery = ({ images, index = 0 }: OpenGalleryProps) => {
     setPassImagesArray(images);
@@ -96,6 +102,8 @@ export const WebContextProvider = ({ children }: IWebContextProvider) => {
   return (
     <WebContext.Provider
       value={{
+        selectedLocation,
+        setSelectedLocation,
         selectRoom,
         setSelectRoom,
         openImageModal,

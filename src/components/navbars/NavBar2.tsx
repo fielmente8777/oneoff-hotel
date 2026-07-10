@@ -18,16 +18,20 @@ const NavBar2 = () => {
 
   return (
     <div>
-      {/* <header className={`max_screen `}> */}
-     <header className="fixed top-0 left-0 right-0 z-50 w-full ">
+      <header className="fixed top-0 left-0 right-0 z-50 w-full">
         <Container>
           <nav className="flex items-center justify-between py-3">
             <div className="">
               <Link
                 href={"/"}
-                className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1]"
+                className="block relative md:h-[4rem] h-[2.5rem] md:aspect-[4/1.25] aspect-[3/1]"
               >
-                <Image src="/logo1.png" alt="one off hotel" sizes="(max-width: 400px) 100vw, 400px" fill />
+                <Image
+                  src="/logo1.png"
+                  alt="one off hotel"
+                  sizes="(max-width: 400px) 100vw, 400px"
+                  fill
+                />
               </Link>
             </div>
             <ul className="xl:flex hidden item-center gap-10">
@@ -116,7 +120,7 @@ const NavBar2 = () => {
               target="_blank"
               rel="noopener noreferrer"
               href={contacts.bookingCta.oneOffDelhi}
-              label="Book Now"
+              label="Find a Room"
               variant="secondary"
             />
             <div className="max-xl:block hidden">
@@ -125,9 +129,9 @@ const NavBar2 = () => {
                 onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
               >
                 {!isOpenMobileMenu ? (
-                  <GiHamburgerMenu color="#fff" />
+                  <GiHamburgerMenu color="#fff" size={30} />
                 ) : (
-                  <MdClose color="#fff" />
+                  <MdClose color="#fff" size={30} />
                 )}
               </button>
 

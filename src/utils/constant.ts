@@ -3,22 +3,37 @@ export const contacts = {
     // "D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
     "E-574, Greater Kailash II, New Delhi - 110048",
   ],
-  phoneNumbers: ["+91 92898 92779", "+91 77530 42847", "+91 98676 03699"],
-  emails: [
-    "reservations@oneoffhotels.com",
-    "bookings@oneoffhotels.com",
-    "LOREMIPSUMAXYZ.COM",
+  locationsAddress: {
+    delhi: {
+      address: "E-574, Greater Kailash II, New Delhi - 110048",
+      link: "https://maps.app.goo.gl/hHhrw43xmbfPhzsC6",
+    },
+    assiGhat: {
+      address:
+        "Ravindrapuri Colony B-1/84-P Ravindrapuri Extention, Opposite Bankati Hanuman Ji Temple, Varanasi",
+      link: "https://maps.app.goo.gl/FgD9MJPbjd9bpYT67",
+    },
+    dashashwamedh: {
+      address:
+        "D-38/26-1NM, Hauz Katora, Varanasi, Next to Baba Thandai, Gadoliya, Varanasi - 221001",
+      link: "https://maps.app.goo.gl/iJq98ec8oR4Cbg2X6",
+    },
+  },
+
+  phoneNumbers: [
+    "+91 92898 92779",
+    "+91 99183 70278",
+    "+91 77530 42847",
+    "+91 98676 03699",
   ],
+  emails: ["reservations@oneoffhotels.com", "bookings@oneoffhotels.com"],
   socialMediaUrls: {
-    facebookUrl:
-      "https://www.facebook.com/people/Oneoff-Hotels/61582249198787/",
-    // "https://www.facebook.com/share/p/19U6puJmcx",
-    instagramUrl:
+    facebook: "https://www.facebook.com/people/Oneoff-Hotels/61582249198787/",
+    instagram:
       "https://www.instagram.com/oneoffhotels?igsh=MTZ6aGp6c2NhYTd0YQ%3D%3D&utm_source=qr",
-    linkedinUrl:
-      // "https://www.linkedin.com/company/oneoff-hotels/posts/?feedView=all&viewAsMember=true",
+    linkedin:
       "https://www.linkedin.com/company/oneoff-hotels/posts/?feedView=all&viewAsMember=true",
-    pinterestUrl: "https://in.pinterest.com/homefeed/",
+    pinterest: "https://pin.it/6TqDiIPKL",
   },
   formDomain: "oneoffhotel",
   ctas: [""],
@@ -36,7 +51,10 @@ export const contacts = {
   contactCta: {
     delhi: "+91  92898 92779",
     varanasi: "+91 77530 42847",
-    devwithus: "+91 98676 03699",
+  },
+  whatsAppCta: {
+    delhi: "https://wa.me/message/G2JQBLWQB52KC1",
+    varanasi: "https://wa.me/message/OGSNGP4SG3LDE1",
   },
 };
 
