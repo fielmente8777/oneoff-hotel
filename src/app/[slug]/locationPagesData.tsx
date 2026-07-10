@@ -1,4 +1,4 @@
- import { contacts } from "@/utils/constant";
+import { contacts } from "@/utils/constant";
 import {
   ArtisanalToiletriesIcon,
   CoffeIcon,
@@ -583,10 +583,10 @@ export const locationPageData = [
       "/the-south-delhi-edition/living-room/DSC03012.webp",
       "/the-south-delhi-edition/living-room/Rectangle-4118.png",
       "/the-south-delhi-edition/living-room/DSC02992.webp",
-      "/the-south-delhi-edition/studio-room-x-2/cap.jpg",
+      "/the-south-delhi-edition/living-room/girl2.jpg",
       "/the-south-delhi-edition/living-room/Image-41.jpg",
       "/the-south-delhi-edition/living-room/Image-42.jpg",
-      "/the-south-delhi-edition/studio-room-x-2/cap2.jpg",
+      "/the-south-delhi-edition/living-room/girl.jpg",
       "/the-south-delhi-edition/living-room/Image-34jpg.webp",
       "/the-south-delhi-edition/living-room/Rectangle-4127.png",
       "/the-south-delhi-edition/quada-x-1/DSC02317.webp",
@@ -652,12 +652,14 @@ export const locationPageData = [
       cards: [
         {
           title: "CELEBRATE IN STYLE!",
-          description: "Planning an intimate gathering or a special celebration? From birthdays and anniversaries to private dinners, our thoughtfully designed spaces provide the perfect setting, complemented by personalized hospitality and curated experiences.",
+          description:
+            "Planning an intimate gathering or a special celebration? From birthdays and anniversaries to private dinners, our thoughtfully designed spaces provide the perfect setting, complemented by personalized hospitality and curated experiences.",
           image: "/the-south-delhi-edition/Rectangle-4123.png",
         },
         {
           title: "NEED A MEETING SPACE?",
-          description: "Whether you're hosting a client meeting, team workshop, or creative session, our versatile spaces offer a comfortable, design-led environment with modern amenities and attentive service to ensure every gathering is a success.",
+          description:
+            "Whether you're hosting a client meeting, team workshop, or creative session, our versatile spaces offer a comfortable, design-led environment with modern amenities and attentive service to ensure every gathering is a success.",
           image: "/the-south-delhi-edition/Rectangle-43.png",
         },
       ],
