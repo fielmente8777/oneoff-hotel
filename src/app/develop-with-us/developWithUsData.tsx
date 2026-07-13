@@ -54,7 +54,6 @@ export const DevelopWithUsPageData = {
       // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/one-off-hotels/develop/img-7.jpg",
       "/develop-with-us/develop/Rectangle-4027.png",
       "/develop-with-us/develop/Rectangle-4030.png",
-      "/develop-with-us/develop/Rectangle-4031.png",
       "/develop-with-us/develop/Rectangle-4032.webp",
       "/develop-with-us/develop/Rectangle-4034.png",
       "/develop-with-us/develop/Rectangle-4086.png",
