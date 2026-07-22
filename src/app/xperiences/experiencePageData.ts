@@ -29,7 +29,7 @@ export const ExperiencePageData = {
         description:"Go beyond sightseeing with handcrafted experiences that celebrate local culture, history, and authentic connections. Every moment is thoughtfully curated to make your stay truly one of a kind.",
         images: [
           "/Xperience/delhi-svg.png",
-          "/Xperience/delhi-img.png",
+          "/Xperience/delhi-img.jpeg",
         ],
         location:"DELHI",
       },

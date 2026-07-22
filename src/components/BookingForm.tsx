@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { FiCalendar, FiMapPin, FiUsers } from "react-icons/fi";
 import {
   FillCalenderIcon,
   FillLocation,
@@ -18,7 +17,9 @@ const locations = [
 ];
 
 export default function BookingForm() {
-  const [location, setLocation] = useState(locations[0]);
+  const [location, setLocation] = useState<(typeof locations)[number] | null>(
+    null
+  );
   const [locationOpen, setLocationOpen] = useState(false);
   const [guestOpen, setGuestOpen] = useState(false);
   const [search, setSearch] = useState("");
@@ -84,7 +85,7 @@ export default function BookingForm() {
 
   const handleSearch = () => {
     window.open(
-      `https://letsbook.me/booking/${location.slug}?checkin=${formatDate(startDate)}&checkout=${formatDate(endDate)}&adults=${adults}&children=${children}`,
+      `https://letsbook.me/booking/${location?.slug}?checkin=${formatDate(startDate)}&checkout=${formatDate(endDate)}&adults=${adults}&children=${children}`,
       "_blank"
     );
   };
@@ -105,11 +106,7 @@ export default function BookingForm() {
           onClick={() => setLocationOpen((o) => !o)}
         >
           <FillLocation />
-          <span className={labelCls}>
-            {location.name !== locations[0].name
-              ? location.name
-              : "Find Location"}
-          </span>
+          <span className={labelCls}>{location?.name || "Find Location"}</span>
 
           {locationOpen && (
             <div className="absolute left-0 top-full z-50 mt-0.5 w-64 rounded-b-md bg-background shadow-xl overflow-hidden">
@@ -122,13 +119,13 @@ export default function BookingForm() {
               />
               {filteredLocations.map((item) => (
                 <button
+                  type="button"
                   key={item.slug}
-                  onClick={(e) => {
-                    e.stopPropagation();
+                  onClick={() => {
                     setLocation(item);
                     setLocationOpen(false);
                   }}
-                  className="block w-full px-4 py-2.5 text-left text-sm"
+                  className="block w-full px-4 py-3 text-left text-sm hover:bg-white/10"
                 >
                   {item.name}
                 </button>
