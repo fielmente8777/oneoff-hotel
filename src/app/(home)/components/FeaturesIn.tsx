@@ -11,7 +11,7 @@ const FeaturesIn = () => {
       title: "Hospemag",
     },
     {
-      logo: "/insta.png",
+      logo: "/The-Best-List.png",
       link: "https://www.instagram.com/p/DYUo7R6mM6y/?igsh=MW9xYzFxMGxqbHh0aw%3D%3D",
       title: "Instagram",
     },
@@ -26,7 +26,7 @@ const FeaturesIn = () => {
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center gap-8 max-w-6xl mx-auto w-full">
         <div className="">
           <SectionHeading
-            subTitle="Features In"
+            subTitle="Featured In"
             subTitleClassName="lg:text-4xl! uppercase"
             smTextCenter
           />
@@ -43,7 +43,7 @@ const FeaturesIn = () => {
               src={feature.logo}
               alt={feature.title}
               fill
-              className="object-contain "
+              className="object-contain px-1"
             />
           </Link>
         ))}
