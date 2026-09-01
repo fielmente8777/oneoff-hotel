@@ -5,11 +5,12 @@ import LocationsCards from "./components/LocationsCards";
 import UpcomingCafe from "./components/UpcomingCafe";
 import UpcomingHotels from "./components/UpcomingHotels";
 import { homePageData } from "./homePageData";
+import FeaturesIn from "./components/FeaturesIn";
 
 export default function Home() {
   return (
     <main>
-      <Banner {...homePageData.bannerData} />
+      <Banner {...homePageData.bannerData} showBookingForm   />
       <HomeAbout
         {...homePageData.aboutHomePage}
         wrapperClassName="max-w-[45rem]"
@@ -17,6 +18,7 @@ export default function Home() {
       <LocationsCards locations={homePageData.locations} />
       <Experiences {...homePageData.exploreExperienceData} />
       <UpcomingHotels cards={homePageData.upcomingHotels} />
+      <FeaturesIn />
       <UpcomingCafe {...homePageData?.upcomingCafe} />
     </main>
   );

@@ -10,15 +10,29 @@ import LinkButton from "../buttons/LinkButton";
 import { Container } from "../sectionComponents";
 import MobileNav from "./MobileNav";
 import { navBarData } from "./navBarData";
+import { useEffect, useState } from "react";
 
 const NavBar2 = () => {
   const { setIsOpenMobileMenu, isOpenMobileMenu } = useWebContext();
 
   const pathName = usePathname();
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // threshold
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div>
-      <header className="fixed top-0 left-0 right-0 z-50 w-full">
+    <div
+      className={`fixed flex inset-x-0 items-center justify-center top-0 z-50  transition-all ease-in-out duration-300  ${isScrolled ? "bg-background backdrop-blur-sm" : "bg-transparent"}`}
+    >
+      <header className="max_screen mx-auto w-full">
         <Container>
           <nav className="flex items-center justify-between py-3">
             <div className="">
@@ -41,7 +55,7 @@ const NavBar2 = () => {
                   <li key={index + "vn"} className="relative nav">
                     <Link
                       href={link.href ? link.href : "#"}
-                      className="relative text-nowrap text-white tracking-widest py-2 uppercase font-bold text-sm flex items-center gap-1 text-dark"
+                      className={`relative text-nowrap  tracking-widest py-2 uppercase font-bold text-sm flex items-center gap-1 ${isScrolled ? "" : "text-white"}`}
                     >
                       {link.label}
                       <span className="span-border bg-white!"></span>
@@ -56,7 +70,7 @@ const NavBar2 = () => {
                         {link.subLinks.map((subLink, subIndex) => {
                           return (
                             <span
-                              className="relative group nav-2"
+                              className={`relative group nav-2 ${!isScrolled ? "" : "bg-background!"}`}
                               key={subIndex + "sub"}
                             >
                               {subLink.location && (
@@ -121,7 +135,8 @@ const NavBar2 = () => {
               rel="noopener noreferrer"
               href={contacts.bookingCta.oneOffDelhi}
               label="Find a Room"
-              variant="secondary"
+              variant={!isScrolled ? "secondary" : "primary"}
+              className="duration-700 ease-in-out"
             />
             <div className="max-xl:block hidden">
               <button

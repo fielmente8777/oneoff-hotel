@@ -26,7 +26,7 @@ const HowtoReach: React.FC<HowtoReachProps> = ({ image, wayToReach }) => {
         {wayToReach.map((item, index) => (
           <div className="relative" key={index}>
             {index !== wayToReach.length - 1 && (
-              <div className="absolute -top-16 max-xl:hidden -right-5 w-px h-[163%] bg-white" />
+              <div className="absolute -top-16 max-xl:hidden -right-[0.8rem] w-px h-[151%] bg-white" />
             )}
             <WhyToReachCard {...item} />
           </div>

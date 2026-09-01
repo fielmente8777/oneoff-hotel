@@ -57,13 +57,13 @@ const FooterNew = () => {
       </Container>
       <div className="w-full bg-secondary">
         <Container className="flex  border-t border-white justify-center items-center  w-full gap-2 md:gap-0">
-          <div className="flex flex-col md:flex-row items-center justify-between  text-white  uppercase tracking-wider w-full py-4">
+          <div className="flex flex-col md:flex-row items-center justify-between  text-white tracking-wider w-full py-4">
             <span className="px-2 max-md:text-center">
-              © ONE OFF Hotels 2026 {new Date().getFullYear()}
+              © ONE OFF Hotels {new Date().getFullYear()}
             </span>
             <span className="max-md:py-4 max-md:text-center">
               {" "}
-              POWERED BY{" "}
+              Powered by{" "}
               <Link href="https://www.fielmente.com/" target="_blank">
                 Fielmente
               </Link>

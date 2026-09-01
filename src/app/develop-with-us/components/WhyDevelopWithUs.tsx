@@ -43,13 +43,13 @@ const WhyDevelopWithUs = ({
             {link.label}
           </Link>
 
-          <div className="absolute bottom-1 right-0">
-            <div className="relative w-40 aspect-[4/2]">
+          <div className="absolute bottom-1 right-2">
+            <div className="relative w-40 aspect-[4/3.38]">
               <Image
-                src={"/dwu/DevelopBanner2.png"}
+                src={"/dwu/Asset.png"}
                 alt="image"
                 fill
-                className="object-contain"
+                className="object-cover"
               />
             </div>
           </div>
@@ -61,6 +61,7 @@ const WhyDevelopWithUs = ({
               delay: 5000,
             }}
             navigation
+            loop
             modules={[Autoplay, Navigation]}
             data={cards}
             renderSlide={(src) => (

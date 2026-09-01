@@ -52,7 +52,7 @@ const ExperiencesCard: React.FC<ExploreExperienceDataProps["cards"][0]> = ({
 
             <div className="absolute inset-x-0 bottom-0 p-4">
               <div className="transition-transform duration-300 group-hover:-translate-y-20">
-                <h3 className="text-xl text-white max-xl:text-center font-anton">{title}</h3>
+                <h3 className="text-xl text-white max-xl:text-center uppercase font-anton">{title}</h3>
               </div>
 
               <p className="absolute left-4 right-4 bottom-4 text-white opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
